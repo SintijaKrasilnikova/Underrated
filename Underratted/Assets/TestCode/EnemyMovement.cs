@@ -11,17 +11,13 @@ public class EnemyMovement : MonoBehaviour
 
     public Rigidbody rigidBody;
     public float enemyRadius = 5f;
-    //Transform target;
+    public float attackDistance = 1f;
+
 
     public Transform target;
     private Vector3 enemyMoveDirection;
-    public Vector3 startPosition;
-
-
-    //private void Awake()
-    //{
-    //    rigidBody = GetComponent<Rigidbody2D>();
-    //}
+    private Vector3 startPosition;
+    public bool isHunting = false;
 
     // Start is called before the first frame update
     void Start()
@@ -34,71 +30,34 @@ public class EnemyMovement : MonoBehaviour
     {
         if (target != null)
         {
-            //Vector3 direction = (target.position - transform.position).normalized;
-            //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-            // rigidBody.rotation.y = angle;
-            // Vector3 distance = Vector3.Distance(transform.position, startPosition);
-            //Vector3.Distance(transform.position, startPosition);
-
-            //if (Mathf.Abs(Vector3.Distance(startPosition, transform.position)) < enemyRadius)
-            //{
-            //    Vector3 direction = (target.position - transform.position).normalized;
-            //    enemyMoveDirection = new Vector3(direction.x, 0, direction.z);
-
-
-            //    //Vector3 enemyToPlayer = new Vector3(direction.x, 0, direction.z);
-            //    //rigidBody.velocity = enemyToPlayer * enemyMoveSpeed * Time.deltaTime;
-            //}
-            //else
-            //{
-            //    Vector3 backDirection = (startPosition - transform.position).normalized;
-            //    enemyMoveDirection = new Vector3(backDirection.x, 0, backDirection.z);
-
-            //    //Vector3 enemyToStart = new Vector3(backDirection.x, 0, backDirection.z);
-            //    //rigidBody.velocity = enemyToStart * enemyMoveSpeed * Time.deltaTime;
-            //}
-
-
-            if (Mathf.Abs( transform.position.x - startPosition.x) < enemyRadius || Mathf.Abs(transform.position.z - startPosition.z) < enemyRadius)
+            // OR for a square range, AND for a circle
+            if (Mathf.Abs(target.position.x + attackDistance - startPosition.x) < enemyRadius && Mathf.Abs(target.position.z + attackDistance - startPosition.z) < enemyRadius)
             {
                 Vector3 direction = (target.position - transform.position).normalized;
-                enemyMoveDirection = new Vector3(direction.x, 0, direction.z);
+                Vector3 enemyToPlayer = new Vector3(direction.x, 0, direction.z);
+                
+                EnemyMove(enemyToPlayer);
+
+                isHunting = true;
             }
             else
             {
                 Vector3 backDirection = (startPosition - transform.position).normalized;
-                enemyMoveDirection = new Vector3(backDirection.x, 0, backDirection.z);
-            }
+                Vector3 enemyToStart = new Vector3(backDirection.x, 0, backDirection.z);
 
-            enemyMove();
-            //enemyMoveDirection = new Vector3(direction.x, 0, direction.z);
+                EnemyMove(enemyToStart);
+                isHunting = false;
+            }
         }
     }
 
-    //private void FixedUpdate()
-    //{
-    //    if (target != null)
-    //    {
-    //        rigidBody.velocity = enemyMoveDirection * enemyMoveSpeed * Time.deltaTime;
-    //    }
-    //}
-
-    private void enemyMove()
+    private void EnemyMove(Vector3 currentDirection)
     {
         if (target != null)
         {
-            rigidBody.velocity = enemyMoveDirection * enemyMoveSpeed * Time.deltaTime;
+            rigidBody.velocity = currentDirection * enemyMoveSpeed * 100 * Time.deltaTime;
         }
     }
 
-    //void LateUpdate()
-    //{
-
-    //    if (target != null)
-    //    {
-    //        rigidBody.velocity = enemyMoveDirection * enemyMoveSpeed * Time.deltaTime;
-    //    }
-
-    //}
 }
