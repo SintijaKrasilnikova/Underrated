@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2580163014734532542}
   - component: {fileID: 2580163014734532541}
   - component: {fileID: 1029966905090939310}
+  - component: {fileID: -206304281002385206}
   m_Layer: 0
   m_Name: Enemy_test
   m_TagString: Enemy
@@ -102,6 +103,7 @@ MonoBehaviour:
   enemyMoveSpeed: 20
   rigidBody: {fileID: 2580163014734532542}
   enemyRadius: 5
+  attackDistance: 1
   target: {fileID: 0}
   isHunting: 0
 --- !u!54 &2580163014734532542
@@ -147,3 +149,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 9
   currentHealth: 0
+--- !u!95 &-206304281002385206
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2580163014734532538}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c6a76b0323193ae48a3222c89a29c8a1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
