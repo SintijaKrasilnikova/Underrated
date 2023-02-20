@@ -8,8 +8,10 @@ public class normalAttack : MonoBehaviour
     private GameObject attackArea = default;
    // public BoxCollider attackArea;
     private bool attacking = false;
-    private float timeToAttack = 0.25f;
+    private float timeToAttack = 0.6f;
     private float timer = 0f;
+
+    public Animator plyerAnimator;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +39,8 @@ public class normalAttack : MonoBehaviour
                 attackArea.SetActive(attacking);
             }
         }
+
+        plyerAnimator.SetBool("Attacking", attacking);
     }
 
     private void Attack()
