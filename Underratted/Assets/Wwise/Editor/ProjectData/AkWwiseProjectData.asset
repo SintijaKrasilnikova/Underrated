@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1558f9340dc3ff46a3c86b1d786ec28e
     GuidInternal: 
-    m_lastTime: -8585251280620871549
+    m_lastTime: -8585246996131385195
     List:
     - name: Main
       guid: d84c12b8016ff448a38b5be01bf74ce1
@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: efbdfc1406597641a03cf89d5cf2a378
     GuidInternal: 
-    m_lastTime: -8585251280620791458
+    m_lastTime: -8585246997598248542
     List:
     - name: Ambience
       guid: 2340bda589aeac4bb453eec8b06ccfb8
@@ -375,6 +375,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2340bda589aeac4bb453eec8b06ccfb8
       Path: Events\Default Work Unit\Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SwordSwipe
+      guid: ab076bb51ef9ba41b1a37f8fd8988eda
+      id: 1496710346
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: SwordSwipe
+        ObjectType: 3
+        guid: ab076bb51ef9ba41b1a37f8fd8988eda
+      Path: Events\Default Work Unit\SwordSwipe
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -588,7 +605,7 @@ MonoBehaviour:
     m_lastTime: -8585251305646435847
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000a0000000b000000
+  ExpandedWaapiItemIds: 010000000500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
