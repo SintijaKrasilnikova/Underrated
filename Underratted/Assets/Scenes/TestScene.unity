@@ -684,6 +684,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plyerAnimator: {fileID: 1508613282}
+  swordSwipeSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2150bca68c123c24baef41b06fbd7de9, type: 2}
 --- !u!114 &1508613284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -712,6 +716,7 @@ GameObject:
   - component: {fileID: 1825258039}
   - component: {fileID: 1825258040}
   - component: {fileID: 1825258036}
+  - component: {fileID: 1825258041}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -827,6 +832,30 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &1825258041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825258035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6c39f80a551f245bf4f8d579b03221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 51af2ffbf51ff7c4ebf7701aba0dcede, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &1827049933
 GameObject:
   m_ObjectHideFlags: 0
