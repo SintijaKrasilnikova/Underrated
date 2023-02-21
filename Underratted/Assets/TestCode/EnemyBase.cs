@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using static UnityEngine.GraphicsBuffer;
 
 public class EnemyBase : MonoBehaviour
 {
@@ -16,6 +17,15 @@ public class EnemyBase : MonoBehaviour
     public Animator enemyAnimator;
     public NavMeshAgent enemyAI;
     public Rigidbody enemyRigidBody;
+
+    public bool shouldWander = true;
+    public bool shouldHunt = true;
+    public float huntingDistance = 5f;
+    
+
+    private bool isHunting = false;
+    private Vector3 startPosition;
+    
     //public BoxCollider enemyCollsisionBox;// = gameOunity inibject.AddComponent<BoxCollider>();
 
     //private bool deathAnimation = false;
@@ -48,14 +58,15 @@ public class EnemyBase : MonoBehaviour
         //this.gameObject.AddComponent<BoxCollider>();
         //enemyCollsisionBox = GetComponent<BoxCollider>();
 
-
-
+        startPosition= transform.position;
     }
+
+
 
     // Update is called once per frame
     public void Update()
     {
-        enemyAI.destination = playerTransform.position;
+        
     }
 
     //basic damage function to the player
@@ -68,8 +79,19 @@ public class EnemyBase : MonoBehaviour
 
     }
 
-    protected void moveToPlayer()
+    protected void huntPlayer()
     {
+
+        if (shouldHunt == true && Mathf.Abs(playerTransform.position.x - startPosition.x) < huntingDistance && Mathf.Abs(playerTransform.position.z - startPosition.z) < huntingDistance)
+        {
+            enemyAI.destination = playerTransform.position;
+            isHunting = true;
+        }
+        else //return to the start position
+        {
+            isHunting = false;
+
+        }
 
     }
 

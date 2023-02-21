@@ -13,6 +13,8 @@ public class normalAttack : MonoBehaviour
 
     public Animator plyerAnimator;
 
+    public AK.Wwise.Event swordSwipeSound = new AK.Wwise.Event();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +48,7 @@ public class normalAttack : MonoBehaviour
     private void Attack()
     {
         attacking = true;
+        swordSwipeSound.Post(gameObject);
         attackArea.SetActive(attacking);
     }
 }

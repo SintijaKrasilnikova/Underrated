@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &2580163014734532529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,9 +103,10 @@ MonoBehaviour:
   enemyMoveSpeed: 20
   rigidBody: {fileID: 2580163014734532542}
   enemyRadius: 5
-  attackDistance: 1
+  safeDistance: 3
   target: {fileID: 0}
   isHunting: 0
+  enemyAnimator: {fileID: 0}
 --- !u!54 &2580163014734532542
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -149,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 9
   currentHealth: 0
+  currentAnimator: {fileID: 0}
 --- !u!95 &-206304281002385206
 Animator:
   serializedVersion: 3
