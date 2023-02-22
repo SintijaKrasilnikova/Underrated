@@ -11,6 +11,8 @@ public class normalAttack : MonoBehaviour
     private float timeToAttack = 0.6f;
     private float timer = 0f;
 
+    private bool soundTheSwipe = false;
+
     public Animator plyerAnimator;
 
     public AK.Wwise.Event swordSwipeSound = new AK.Wwise.Event();
@@ -25,18 +27,25 @@ public class normalAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && attacking ==false)
         {
             Attack();
+            soundTheSwipe = true;
         }
         
         if(attacking)
         {
+            if (soundTheSwipe == true)
+            {
+                swordSwipeSound.Post(gameObject);
+                soundTheSwipe = false;
+            }
             timer += Time.deltaTime;
 
             if(timer >= timeToAttack)
             {
                 timer = 0;
+               
                 attacking = false;
                 attackArea.SetActive(attacking);
             }
@@ -48,7 +57,7 @@ public class normalAttack : MonoBehaviour
     private void Attack()
     {
         attacking = true;
-        swordSwipeSound.Post(gameObject);
+       
         attackArea.SetActive(attacking);
     }
 }
