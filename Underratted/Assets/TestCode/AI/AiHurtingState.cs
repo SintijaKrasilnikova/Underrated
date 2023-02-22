@@ -2,24 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AiDeathState : AiState
+public class AiHurtingState : AiState
 {
-
     public AiStateId GetId()
     {
-        return AiStateId.Death;
+        return AiStateId.Hurting;
     }
+
     public void Enter(AiAgent agent)
     {
-        Debug.Log("Died");
+        Debug.Log("Hurting");
     }
 
     public void Exit(AiAgent agent)
     {
+       
     }
 
     public void Update(AiAgent agent)
     {
-        
+       
     }
 }

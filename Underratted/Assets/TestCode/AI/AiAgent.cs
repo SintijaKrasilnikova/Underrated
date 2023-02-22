@@ -11,19 +11,29 @@ public class AiAgent : MonoBehaviour
 
     public AiAgentConfig config;
     public Animator enemyAnimator;
+    public Vector3 startPositionEnemy;
+
+    public Transform playerTransform;
+    
 
 
     // Start is called before the first frame update
     void Start()
     {
+        startPositionEnemy = transform.position;
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+
         enemyAnimator.GetComponent<Animator>();
         navAgent = GetComponent<NavMeshAgent>();
 
         stateMachine = new AiStateMachine(this);
 
         stateMachine.RegisterState(new AiHuntPlayerState());
+        stateMachine.RegisterState(new AiDeathState());
         stateMachine.RegisterState(new AiAttackState());
-        //stateMachine.RegisterState(new AiDeathState());
+        stateMachine.RegisterState(new AiWanderingState());
+        //stateMachine.RegisterState(new AiHurtingState());
+       
         stateMachine.ChangeState(initialState);
     }
 
@@ -31,5 +41,6 @@ public class AiAgent : MonoBehaviour
     void Update()
     {
         stateMachine.Update();
+
     }
 }

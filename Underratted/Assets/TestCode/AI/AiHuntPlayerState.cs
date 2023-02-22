@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AiHuntPlayerState : AiState
 {
-    public Transform playerTransform;
+    //public Transform playerTransform;
     private Vector3 startPosition;
     private bool isHunting = false;
 
@@ -15,20 +15,23 @@ public class AiHuntPlayerState : AiState
    
     public void Enter(AiAgent agent)
     {
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-        startPosition = playerTransform.position;
+        Debug.Log("Hunting");
+
+        //agent.playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        startPosition = agent.playerTransform.position;
 
     }
     public void Update(AiAgent agent)
     {
 
-        agent.navAgent.destination = playerTransform.position;
+        agent.navAgent.destination = agent.playerTransform.position;
 
         isHunting = true;
         agent.enemyAnimator.SetBool("Hunting", isHunting);
+        agent.enemyAnimator.SetBool("Moving", isHunting);
 
         //left
-        if (playerTransform.position.x < agent.transform.localPosition.x)
+        if (agent.playerTransform.position.x < agent.transform.localPosition.x)
         {
             agent.enemyAnimator.SetFloat("FacingRight", -1);
             agent.enemyAnimator.SetFloat("FacingUp", 0);
@@ -41,10 +44,24 @@ public class AiHuntPlayerState : AiState
             //Debug.Log("Right");
         }
 
-        if(agent.navAgent.velocity == Vector3.zero && isHunting == true)
+        //if(agent.navAgent.velocity == Vector3.zero && isHunting == true)
+        //{
+        //    AiAttackState attackState = agent.stateMachine.GetState(AiStateId.Attack) as AiAttackState;
+        //    agent.stateMachine.ChangeState(AiStateId.Attack);
+        //}
+
+        if (Mathf.Abs(agent.playerTransform.position.x - agent.transform.position.x) < agent.navAgent.stoppingDistance
+            && Mathf.Abs(agent.playerTransform.position.z - agent.transform.position.z) < agent.navAgent.stoppingDistance)
         {
             AiAttackState attackState = agent.stateMachine.GetState(AiStateId.Attack) as AiAttackState;
             agent.stateMachine.ChangeState(AiStateId.Attack);
+        }
+
+        if (Mathf.Abs(agent.playerTransform.position.x - agent.navAgent.stoppingDistance - agent.transform.position.x) > agent.config.huntingDistance
+            && Mathf.Abs(agent.playerTransform.position.z - agent.navAgent.stoppingDistance - agent.transform.position.z) > agent.config.huntingDistance)
+        {
+            AiWanderingState wanderState = agent.stateMachine.GetState(AiStateId.Wander) as AiWanderingState;
+            agent.stateMachine.ChangeState(AiStateId.Wander);
         }
 
     }

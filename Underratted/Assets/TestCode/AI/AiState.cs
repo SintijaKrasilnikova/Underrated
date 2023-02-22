@@ -7,7 +7,9 @@ public enum AiStateId
 {
     HuntPlayer,
     Death,
-    Attack
+    Attack,
+    Wander,
+    Hurting
 }
 
 
