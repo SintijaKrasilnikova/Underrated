@@ -45,7 +45,7 @@ public class AiAttackState : AiState
 
     public void Exit(AiAgent agent)
     {
-        
+        //GameObject.FindGameObjectWithTag("Player");
     }
 
 }

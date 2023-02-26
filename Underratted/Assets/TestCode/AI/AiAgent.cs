@@ -14,7 +14,11 @@ public class AiAgent : MonoBehaviour
     public Vector3 startPositionEnemy;
 
     public Transform playerTransform;
+
+    public bool startWanderingLeft = true;
     
+    //public bool facingLeft;
+
 
 
     // Start is called before the first frame update

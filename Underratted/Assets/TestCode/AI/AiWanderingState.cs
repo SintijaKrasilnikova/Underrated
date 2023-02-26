@@ -28,9 +28,11 @@ public class AiWanderingState : AiState
         desiredPositionNeg = agent.startPositionEnemy - agent.config.wanderDistance;
         desiredPositionPos = agent.startPositionEnemy + agent.config.wanderDistance;
 
-        currentDirectionLeft = agent.config.startWanderingLeft;
+        currentDirectionLeft = agent.startWanderingLeft;
 
-        if(currentDirectionLeft == true)
+        agent.navAgent.stoppingDistance = 0;
+
+        if (currentDirectionLeft == true)
         {
             agent.navAgent.destination = desiredPositionNeg;
             agent.enemyAnimator.SetFloat("FacingRight", -1);
@@ -62,7 +64,8 @@ public class AiWanderingState : AiState
         {
             //agent.navAgent.destination = desiredPositionNeg;
 
-            if (agent.transform.position.x == desiredPositionNeg.x && agent.transform.position.z == desiredPositionNeg.z)
+            if (agent.transform.position.x == desiredPositionNeg.x  && 
+                agent.transform.position.z == desiredPositionNeg.z )
             {
                 currentDirectionLeft = false;
                 agent.navAgent.destination = desiredPositionPos;
@@ -75,7 +78,8 @@ public class AiWanderingState : AiState
         {
             //agent.navAgent.destination = desiredPositionPos;
 
-            if (agent.transform.position.x == desiredPositionPos.x && agent.transform.position.z == desiredPositionPos.z)
+            if (agent.transform.position.x  == desiredPositionPos.x  && 
+                agent.transform.position.z  == desiredPositionPos.z )
             {
                 currentDirectionLeft = true;
                 agent.navAgent.destination = desiredPositionNeg;

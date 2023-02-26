@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: AI_defaultValues
   m_EditorClassIdentifier: 
   huntingDistance: 10
+  huntingStopDistance: 5
   wanderDistance: {x: 10, y: 0, z: 0}
-  startWanderingLeft: 0

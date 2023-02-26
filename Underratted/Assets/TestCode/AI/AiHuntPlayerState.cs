@@ -20,6 +20,8 @@ public class AiHuntPlayerState : AiState
         //agent.playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         startPosition = agent.playerTransform.position;
 
+        agent.navAgent.stoppingDistance = agent.config.huntingStopDistance;
+
     }
     public void Update(AiAgent agent)
     {
@@ -35,12 +37,14 @@ public class AiHuntPlayerState : AiState
         {
             agent.enemyAnimator.SetFloat("FacingRight", -1);
             agent.enemyAnimator.SetFloat("FacingUp", 0);
+            agent.startWanderingLeft = true;
             //Debug.Log("Left");
         }
         else
         {
             agent.enemyAnimator.SetFloat("FacingRight", 1);
-            agent.enemyAnimator.SetFloat("FacingUp", 0); 
+            agent.enemyAnimator.SetFloat("FacingUp", 0);
+            agent.startWanderingLeft = false;
             //Debug.Log("Right");
         }
 
