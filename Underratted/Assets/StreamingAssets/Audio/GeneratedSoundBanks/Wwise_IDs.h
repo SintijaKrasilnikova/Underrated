@@ -14,8 +14,26 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID FOOTSTEPSPLAYER = 3865216745U;
+        static const AkUniqueID FREAKERDEATH = 268554923U;
         static const AkUniqueID SWORDSWIPE = 1496710346U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace FOOTSTEPMATERIALS
+        {
+            static const AkUniqueID GROUP = 105740227U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID STONE = 1216965916U;
+                static const AkUniqueID WOOD = 2058049674U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEPMATERIALS
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {
