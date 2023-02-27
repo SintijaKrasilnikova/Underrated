@@ -52,6 +52,7 @@ public class normalAttack : MonoBehaviour
         }
 
         plyerAnimator.SetBool("Attacking", attacking);
+        
     }
 
     private void Attack()

@@ -8,6 +8,9 @@ public class AiHuntPlayerState : AiState
     private Vector3 startPosition;
     private bool isHunting = false;
 
+    
+    private float attackCoolDown;
+
     public AiStateId GetId()
     {
         return AiStateId.HuntPlayer;
@@ -22,6 +25,7 @@ public class AiHuntPlayerState : AiState
 
         agent.navAgent.stoppingDistance = agent.config.huntingStopDistance;
 
+        attackCoolDown = 0f;
     }
     public void Update(AiAgent agent)
     {
@@ -54,11 +58,24 @@ public class AiHuntPlayerState : AiState
         //    agent.stateMachine.ChangeState(AiStateId.Attack);
         //}
 
-        if (Mathf.Abs(agent.playerTransform.position.x - agent.transform.position.x) < agent.navAgent.stoppingDistance
-            && Mathf.Abs(agent.playerTransform.position.z - agent.transform.position.z) < agent.navAgent.stoppingDistance)
+        if (agent.readyToAttack == true)
         {
-            AiAttackState attackState = agent.stateMachine.GetState(AiStateId.Attack) as AiAttackState;
-            agent.stateMachine.ChangeState(AiStateId.Attack);
+            if (Mathf.Abs(agent.playerTransform.position.x - agent.transform.position.x) < agent.navAgent.stoppingDistance
+                && Mathf.Abs(agent.playerTransform.position.z - agent.transform.position.z) < agent.navAgent.stoppingDistance)
+            {
+                AiAttackState attackState = agent.stateMachine.GetState(AiStateId.Attack) as AiAttackState;
+                agent.stateMachine.ChangeState(AiStateId.Attack);
+            }
+        }
+        else
+        {
+            if(attackCoolDown> agent.config.attackSpeed)
+            {
+                attackCoolDown = 0f;
+                agent.readyToAttack = true;
+            }
+            else
+                attackCoolDown += Time.deltaTime;
         }
 
         if (Mathf.Abs(agent.playerTransform.position.x - agent.navAgent.stoppingDistance - agent.transform.position.x) > agent.config.huntingDistance

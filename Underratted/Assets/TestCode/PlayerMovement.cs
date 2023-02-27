@@ -2,19 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterMovementScript : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    //reference https://www.youtube.com/watch?v=b1uoLBp2I1w
-
-    private Vector3 velocity;
+    //private Vector3 velocity;
     private Vector3 playerMovementInput;
 
-    [SerializeField] private CharacterController Controller;
-    [Space]
+    //[SerializeField] private CharacterController Controller;
+    //[Space]
     [SerializeField] private float speed;
-    [SerializeField] private float gravity = 9.81f;
-
-    
+    [SerializeField] private Rigidbody playerBody;
 
     private bool facingUp;
     private bool facingLeft;
@@ -25,7 +21,7 @@ public class CharacterMovementScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -44,12 +40,13 @@ public class CharacterMovementScript : MonoBehaviour
             //left right for animation
             if (Input.GetAxis("Horizontal") < 0)// && Input.GetAxis("Vertical") ==0)
             {
-                plyerAnimator.SetFloat("FacingUp", 0); 
+                plyerAnimator.SetFloat("FacingUp", 0);
                 plyerAnimator.SetFloat("FacingRight", -1); //left
+                //playerBody.transform.eulerAngles = new Vector3(0, 180, 0);
             }
             else if (Input.GetAxis("Horizontal") > 0)
             {
-                plyerAnimator.SetFloat("FacingUp", 0); 
+                plyerAnimator.SetFloat("FacingUp", 0);
                 plyerAnimator.SetFloat("FacingRight", 1); //right
             }
 
@@ -59,7 +56,7 @@ public class CharacterMovementScript : MonoBehaviour
                 plyerAnimator.SetFloat("FacingRight", 0);
                 plyerAnimator.SetFloat("FacingUp", -1); //down
             }
-            else if(Input.GetAxis("Vertical") > 0)
+            else if (Input.GetAxis("Vertical") > 0)
             {
                 plyerAnimator.SetFloat("FacingRight", 0);
                 plyerAnimator.SetFloat("FacingUp", 1); //up
@@ -70,17 +67,9 @@ public class CharacterMovementScript : MonoBehaviour
 
     private void MovePlayer()
     {
-        Vector3 movePlayer = transform.TransformDirection(playerMovementInput);
+        Vector3 movePlayer = (transform.TransformDirection(playerMovementInput) * speed);
 
-        if(Controller.isGrounded)
-        {
-            velocity.y = -1f;
-        }
-        else
-        {
-            velocity.y -= gravity * 2f * Time.deltaTime;
-        }
-        Controller.Move(movePlayer * speed * Time.deltaTime);
-        Controller.Move(velocity);
+        playerBody.velocity = new Vector3(movePlayer.x, 0, movePlayer.z);
+        
     }
 }
