@@ -10,10 +10,10 @@ public class BeetleAttackArea : MonoBehaviour
         if (collision.tag == "Player")
         {
 
-            var healthComp = collision.GetComponent<health>();
+            var healthComp = collision.GetComponent<Health>();
             if (healthComp != null)
             {
-                Debug.Log("Health decreased");
+                //Debug.Log("Health decreased");
                 healthComp.TakeDamage(beetleDamage);
             }
         }

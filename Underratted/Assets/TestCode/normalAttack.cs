@@ -35,11 +35,11 @@ public class normalAttack : MonoBehaviour
         
         if(attacking)
         {
-            if (soundTheSwipe == true)
-            {
-                swordSwipeSound.Post(gameObject);
-                soundTheSwipe = false;
-            }
+            //if (soundTheSwipe == true)
+            //{
+            //    swordSwipeSound.Post(gameObject);
+            //    soundTheSwipe = false;
+            //}
             timer += Time.deltaTime;
 
             if(timer >= timeToAttack)

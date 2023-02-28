@@ -22,7 +22,7 @@ public class AiWanderingState : AiState
 
     public void Enter(AiAgent agent)
     {
-        Debug.Log("Wandering");
+        //Debug.Log("Wandering");
 
         //Vector3 stoppingDist = new Vector3(agent.navAgent.stoppingDistance, agent.navAgent.stoppingDistance, agent.navAgent.stoppingDistance);
         desiredPositionNeg = agent.startPositionEnemy - agent.config.wanderDistance;

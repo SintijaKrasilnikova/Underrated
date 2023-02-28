@@ -18,7 +18,7 @@ public class AiHuntPlayerState : AiState
    
     public void Enter(AiAgent agent)
     {
-        Debug.Log("Hunting");
+        //Debug.Log("Hunting");
 
         //agent.playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         startPosition = agent.playerTransform.position;

@@ -4,13 +4,13 @@ using UnityEngine;
 
 
 
-public class health : MonoBehaviour
+public class Health : MonoBehaviour
 {
 
     public int maxHealth = 9;
     public int currentHealth;
 
-    public Animator currentAnimator;
+    //public Animator currentAnimator;
     AiAgent agent;
 
     private bool enemiesHealth = false;
@@ -20,12 +20,21 @@ public class health : MonoBehaviour
         currentHealth = maxHealth;
 
         //get the animator of gameObject
-        currentAnimator = gameObject.GetComponent<Animator>();
+        //currentAnimator = gameObject.GetComponent<Animator>();
 
         if (gameObject.CompareTag("Enemy"))
         {
-            agent = gameObject.GetComponent<AiAgent>();
+            if(gameObject.GetComponentInParent<AiAgent>(false))
+            {
+                Debug.Log("Enemy Found");
+                agent = gameObject.GetComponentInParent<AiAgent>(false);
+            }
+            //agent = gameObject.GetComponent<AiAgent>();
             enemiesHealth = true;
+        }
+        else
+        {
+            enemiesHealth = false;
         }
 
     }
@@ -45,6 +54,18 @@ public class health : MonoBehaviour
                 //agent.stateMachine.ChangeState(AiStateId.Death);
                 //Destroy(gameObject);
             }
+        }
+        else
+        {
+            //if health belongs to an enemy
+            if (enemiesHealth == true)
+            {
+                Debug.Log("Health taken");
+                //AiHurtingState hurtState = agent.stateMachine.GetState(AiStateId.Hurting) as AiHurtingState;
+                agent.stateMachine.ChangeState(AiStateId.Hurting);
+                
+            }
+
         }
     }
 }
