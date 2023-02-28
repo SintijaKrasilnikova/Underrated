@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID SWORDSWIPE = 1496710346U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
