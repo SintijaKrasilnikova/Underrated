@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID FOOTSTEPSPLAYER = 3865216745U;
         static const AkUniqueID FREAKERDEATH = 268554923U;
+        static const AkUniqueID FREAKERHIT = 3122002442U;
         static const AkUniqueID SPINATTACK = 3607344297U;
         static const AkUniqueID SPINATTACKSTOP = 4097783889U;
         static const AkUniqueID SWORDSWIPE = 1496710346U;
