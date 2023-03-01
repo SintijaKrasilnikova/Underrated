@@ -2,14 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class normalAttack : MonoBehaviour
+public class NormalAttack : MonoBehaviour
 {
 
     private GameObject attackArea = default;
    // public BoxCollider attackArea;
     private bool attacking = false;
-    private float timeToAttack = 0.6f;
-    private float timer = 0f;
+    private bool resting = false;
+
+
+    private float timeToAttack = 0.5f;
+    private float attackTimer = 0f;
+    private float restTimer = 0f;
+
+    public float timeBetweenAttacks = 0.6f;
 
     private bool soundTheSwipe = false;
 
@@ -22,15 +28,17 @@ public class normalAttack : MonoBehaviour
     {
         attackArea = transform.GetChild(0).gameObject;
         attackArea.SetActive(attacking);
+        timeBetweenAttacks += timeToAttack;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && attacking ==false)
+        if(Input.GetKeyDown(KeyCode.Space) && attacking == false && resting == false)
         {
             Attack();
             soundTheSwipe = true;
+            resting = true;
         }
         
         if(attacking)
@@ -40,14 +48,25 @@ public class normalAttack : MonoBehaviour
             //    swordSwipeSound.Post(gameObject);
             //    soundTheSwipe = false;
             //}
-            timer += Time.deltaTime;
-
-            if(timer >= timeToAttack)
+            attackTimer += Time.deltaTime;
+           
+            if(attackTimer >= timeToAttack)
             {
-                timer = 0;
-               
+                attackTimer = 0;
                 attacking = false;
                 attackArea.SetActive(attacking);
+            }
+
+        }
+
+        if(resting)
+        {
+            restTimer += Time.deltaTime;
+
+            if (restTimer >= timeBetweenAttacks)
+            {
+                restTimer = 0;
+                resting = false;
             }
         }
 
