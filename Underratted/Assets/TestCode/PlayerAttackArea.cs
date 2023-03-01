@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class normalAttackArea : MonoBehaviour
+public class PlayerAttackArea : MonoBehaviour
 {
     public int damage = 3;
 
@@ -11,10 +11,10 @@ public class normalAttackArea : MonoBehaviour
         if(collision.tag == "Enemy")
         {
            
-            var healthComp = collision.GetComponent<health>();
+            var healthComp = collision.GetComponent<Health>();
             if(healthComp!=null)
             {
-                Debug.Log("Health decreased");
+                //Debug.Log("Health decreased");
                 healthComp.TakeDamage(damage);
             }
         }

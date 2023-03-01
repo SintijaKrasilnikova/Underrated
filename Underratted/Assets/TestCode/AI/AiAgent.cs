@@ -40,7 +40,7 @@ public class AiAgent : MonoBehaviour
         stateMachine.RegisterState(new AiDeathState());
         stateMachine.RegisterState(new AiAttackState());
         stateMachine.RegisterState(new AiWanderingState());
-        //stateMachine.RegisterState(new AiHurtingState());
+        stateMachine.RegisterState(new AiHurtingState());
        
         stateMachine.ChangeState(initialState);
 

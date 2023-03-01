@@ -19,7 +19,7 @@ public class AiAttackState : AiState
 
     public void Enter(AiAgent agent)
     {
-        Debug.Log("Attack");
+        //Debug.Log("Attack");
 
         attacking = true;
         agent.readyToAttack = false;
@@ -50,7 +50,7 @@ public class AiAttackState : AiState
             {
                 areaActive = true;
                 attackArea.SetActive(true);
-                Debug.Log(timer);
+                //Debug.Log(timer);
 
             }
            
