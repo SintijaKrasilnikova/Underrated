@@ -18,10 +18,18 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator plyerAnimator;
 
+    private float deathTime = 0.2f;
+    private float deathTimer=0;
+    private bool deathAnimationCalled = false;
+
+    private float hurtTime = 0.2f;
+    private float hurtTimer = 0;
+    private bool hurtAnimationCalled = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        deathAnimationCalled = false;
     }
 
     // Update is called once per frame
@@ -63,6 +71,35 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+
+        //player is hurting
+        if (hurtAnimationCalled == true)
+        {
+            if (hurtTimer > hurtTime)
+            {
+                plyerAnimator.SetBool("Hurt", false);
+                hurtAnimationCalled = false;
+                hurtTimer = 0f;
+            }
+            else
+            {
+                hurtTimer += Time.deltaTime;
+            }
+        }
+        //player has been killed
+        if(deathAnimationCalled== true)
+        {
+            if (deathTimer > deathTime)
+            {
+                deathTimer = 0f;
+                gameObject.SetActive(false);
+            }
+            else
+            {
+                deathTimer += Time.deltaTime;
+            }
+        }
+
     }
 
     private void MovePlayer()
@@ -71,5 +108,20 @@ public class PlayerMovement : MonoBehaviour
 
         playerBody.velocity = new Vector3(movePlayer.x, 0, movePlayer.z);
         
+    }
+
+    public void HurtPlayer(int currentHP)
+    {
+        if (currentHP <= 0)
+        {
+            
+            plyerAnimator.SetBool("Death", true);
+            deathAnimationCalled = true;
+        }
+        else
+        {
+            plyerAnimator.SetBool("Hurt", true);
+            hurtAnimationCalled = true;
+        }
     }
 }

@@ -25,13 +25,23 @@ public class AiHurtingState : AiState
         if (timer < hurtTime)
         {
             timer += Time.deltaTime;
-            Debug.Log("Timer");
+            //Debug.Log("Timer");
         }
-        else
+        else 
         {
             AiHuntPlayerState huntState = agent.stateMachine.GetState(AiStateId.HuntPlayer) as AiHuntPlayerState;
             agent.stateMachine.ChangeState(AiStateId.HuntPlayer);
         }
+
+        if (agent.enemiesHealth.getCurrentHealth() <= 0)
+        {
+            Debug.Log("changed to death state");
+            AiDeathState deathState = agent.stateMachine.GetState(AiStateId.Death) as AiDeathState;
+            agent.stateMachine.ChangeState(AiStateId.Death);
+
+        }
+
+        //Debug.Log(agent.enemiesHealth.getCurrentHealth());
     }
 
     public void Exit(AiAgent agent)

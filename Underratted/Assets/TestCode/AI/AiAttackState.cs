@@ -59,9 +59,9 @@ public class AiAttackState : AiState
             {
                 timer = 0;
 
-                attacking = false;
-                agent.enemyAnimator.SetBool("Attacking", attacking);
-                attackArea.SetActive(false);
+                //attacking = false;
+                //agent.enemyAnimator.SetBool("Attacking", attacking);
+                //attackArea.SetActive(false);
 
                 AiHuntPlayerState huntState = agent.stateMachine.GetState(AiStateId.HuntPlayer) as AiHuntPlayerState;
                 agent.stateMachine.ChangeState(AiStateId.HuntPlayer);
@@ -74,7 +74,9 @@ public class AiAttackState : AiState
 
     public void Exit(AiAgent agent)
     {
-        //GameObject.FindGameObjectWithTag("Player");
+        attacking = false;
+        attackArea.SetActive(false);
+        agent.enemyAnimator.SetBool("Attacking", false);
     }
 
 }
