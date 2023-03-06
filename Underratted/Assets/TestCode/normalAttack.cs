@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NormalAttack : MonoBehaviour
 {
+    //basic sword attack
 
     private GameObject attackArea = default;
    // public BoxCollider attackArea;

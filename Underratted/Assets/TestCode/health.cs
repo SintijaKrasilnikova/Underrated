@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    //health script
 
     public int maxHealth = 9;
     public int currentHealth;
