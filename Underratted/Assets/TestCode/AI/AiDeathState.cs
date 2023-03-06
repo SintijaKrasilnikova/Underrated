@@ -5,6 +5,8 @@ using UnityEngine;
 public class AiDeathState : AiState
 {
 
+    private float deathTime = 0.5f;
+    private float deathTimer = 0f;
     public AiStateId GetId()
     {
         return AiStateId.Death;
@@ -12,11 +14,18 @@ public class AiDeathState : AiState
     public void Enter(AiAgent agent)
     {
         Debug.Log("Died");
+        deathTimer = 0f;
+        agent.enemyAnimator.SetBool("Dying", true);
     }
 
     public void Update(AiAgent agent)
     {
-        agent.gameObject.SetActive(false);
+        deathTimer += Time.deltaTime;
+
+        if (deathTimer > deathTime)
+        {
+            agent.gameObject.SetActive(false);
+        }
        
     }
 
