@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1558f9340dc3ff46a3c86b1d786ec28e
     GuidInternal: 
-    m_lastTime: -8585241457024043477
+    m_lastTime: -8585238944854378166
     List:
     - name: Main
       guid: d84c12b8016ff448a38b5be01bf74ce1
@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: efbdfc1406597641a03cf89d5cf2a378
     GuidInternal: 
-    m_lastTime: -8585241458793790693
+    m_lastTime: -8585238886824350201
     List:
     - name: Ambience
       guid: 2340bda589aeac4bb453eec8b06ccfb8
@@ -409,6 +409,57 @@ MonoBehaviour:
         ObjectType: 3
         guid: 98d4be7787e9714cb3224cd7e01da3f1
       Path: Events\Default Work Unit\FreakerDeath
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FreakerHit
+      guid: e528568de96b234b8bf7e5b79af447f1
+      id: 3122002442
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: FreakerHit
+        ObjectType: 3
+        guid: e528568de96b234b8bf7e5b79af447f1
+      Path: Events\Default Work Unit\FreakerHit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SpinAttack
+      guid: 12c2749bb963be4299b62e1fe047134e
+      id: 3607344297
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: SpinAttack
+        ObjectType: 3
+        guid: 12c2749bb963be4299b62e1fe047134e
+      Path: Events\Default Work Unit\SpinAttack
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SpinAttackStop
+      guid: d12fe58e5137084cb3de154a6d7e9614
+      id: 4097783889
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: SpinAttackStop
+        ObjectType: 3
+        guid: d12fe58e5137084cb3de154a6d7e9614
+      Path: Events\Default Work Unit\SpinAttackStop
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -705,7 +756,7 @@ MonoBehaviour:
     m_lastTime: -8585251305646435847
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000b0000000c000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

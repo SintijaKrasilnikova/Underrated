@@ -26,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
     private float hurtTimer = 0;
     private bool hurtAnimationCalled = false;
 
+    public AK.Wwise.Event footstepSound = new AK.Wwise.Event();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,12 +52,14 @@ public class PlayerMovement : MonoBehaviour
             {
                 plyerAnimator.SetFloat("FacingUp", 0);
                 plyerAnimator.SetFloat("FacingRight", -1); //left
+                footstepSound.Post(gameObject);
                 //playerBody.transform.eulerAngles = new Vector3(0, 180, 0);
             }
             else if (Input.GetAxis("Horizontal") > 0)
             {
                 plyerAnimator.SetFloat("FacingUp", 0);
                 plyerAnimator.SetFloat("FacingRight", 1); //right
+                footstepSound.Post(gameObject);
             }
 
             //up down for animation
@@ -63,11 +67,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 plyerAnimator.SetFloat("FacingRight", 0);
                 plyerAnimator.SetFloat("FacingUp", -1); //down
+                footstepSound.Post(gameObject);
             }
             else if (Input.GetAxis("Vertical") > 0)
             {
                 plyerAnimator.SetFloat("FacingRight", 0);
                 plyerAnimator.SetFloat("FacingUp", 1); //up
+                footstepSound.Post(gameObject);
             }
         }
 
