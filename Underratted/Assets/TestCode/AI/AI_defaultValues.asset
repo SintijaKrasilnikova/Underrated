@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: AI_defaultValues
   m_EditorClassIdentifier: 
   huntingDistance: 10
-  huntingStopDistance: 5
+  huntingStopDistance: 4
   wanderDistance: {x: 10, y: 0, z: 0}
+  attackSpeed: 2
+  attackPrepare: 0.5

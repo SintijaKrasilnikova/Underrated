@@ -4,14 +4,16 @@ using UnityEngine;
 
 
 
-public class health : MonoBehaviour
+public class Health : MonoBehaviour
 {
+    //health script
 
     public int maxHealth = 9;
     public int currentHealth;
 
-    public Animator currentAnimator;
+    //public Animator currentAnimator;
     AiAgent agent;
+    PlayerMovement playerMoveRef;
 
     private bool enemiesHealth = false;
     // Start is called before the first frame update
@@ -20,11 +22,28 @@ public class health : MonoBehaviour
         currentHealth = maxHealth;
 
         //get the animator of gameObject
-        currentAnimator = gameObject.GetComponent<Animator>();
+        //currentAnimator = gameObject.GetComponent<Animator>();
 
-        if (gameObject.CompareTag("Enemy"))
+        if(gameObject.CompareTag("Player"))
         {
-            agent = gameObject.GetComponent<AiAgent>();
+
+            if (gameObject.GetComponent<PlayerMovement>())
+            {
+
+                playerMoveRef = gameObject.GetComponent<PlayerMovement>();
+            }
+
+            enemiesHealth = false;
+
+        }
+        else //must be enemy
+        {
+            if(gameObject.GetComponentInParent<AiAgent>(false))
+            {
+               // Debug.Log("Enemy Found");
+                agent = gameObject.GetComponentInParent<AiAgent>(false);
+            }
+            //agent = gameObject.GetComponent<AiAgent>();
             enemiesHealth = true;
         }
 
@@ -32,19 +51,39 @@ public class health : MonoBehaviour
 
     public void TakeDamage(int damageAmount)
     {
-        currentHealth -= damageAmount;
-
-        //death check
-        if( currentHealth <= 0)
+        if (currentHealth > 0)
         {
-
             //if health belongs to an enemy
             if (enemiesHealth == true)
             {
-                //AiDeathState deathState = agent.stateMachine.GetState(AiStateId.Death) as AiDeathState;
-                //agent.stateMachine.ChangeState(AiStateId.Death);
-                //Destroy(gameObject);
+                Debug.Log("Health taken");
+                currentHealth -= damageAmount;
+
+                AiHurtingState hurtState = agent.stateMachine.GetState(AiStateId.Hurting) as AiHurtingState;
+                agent.stateMachine.ChangeState(AiStateId.Hurting);
+
             }
+            else
+            {
+                currentHealth -= damageAmount;
+                playerMoveRef.HurtPlayer(currentHealth);
+               
+            }
+
+
         }
+        //else 
+        //{
+        //    //health belongs to the player
+        //    if (enemiesHealth == false)
+        //    {
+        //        playerMoveRef.KillPlayer();
+        //    }
+        //}
+    }
+
+    public int getCurrentHealth()
+    {
+        return currentHealth;
     }
 }

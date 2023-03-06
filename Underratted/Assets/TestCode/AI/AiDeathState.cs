@@ -14,12 +14,15 @@ public class AiDeathState : AiState
         Debug.Log("Died");
     }
 
-    public void Exit(AiAgent agent)
-    {
-    }
-
     public void Update(AiAgent agent)
     {
-        
+        agent.gameObject.SetActive(false);
+       
+    }
+
+    public void Exit(AiAgent agent)
+    {
+
+        //agent.gameObject.SetActive(false);
     }
 }
