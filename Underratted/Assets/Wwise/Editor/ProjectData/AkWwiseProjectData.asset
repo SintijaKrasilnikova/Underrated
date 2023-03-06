@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1558f9340dc3ff46a3c86b1d786ec28e
     GuidInternal: 
-    m_lastTime: -8585246996131385195
+    m_lastTime: -8585238944854378166
     List:
     - name: Main
       guid: d84c12b8016ff448a38b5be01bf74ce1
@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: efbdfc1406597641a03cf89d5cf2a378
     GuidInternal: 
-    m_lastTime: -8585246000179841706
+    m_lastTime: -8585238886824350201
     List:
     - name: Ambience
       guid: 2340bda589aeac4bb453eec8b06ccfb8
@@ -375,6 +375,91 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2340bda589aeac4bb453eec8b06ccfb8
       Path: Events\Default Work Unit\Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FootstepsPlayer
+      guid: 7b9f9f4728bbdf4692c78f1aa57b5e81
+      id: 3865216745
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: FootstepsPlayer
+        ObjectType: 3
+        guid: 7b9f9f4728bbdf4692c78f1aa57b5e81
+      Path: Events\Default Work Unit\FootstepsPlayer
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FreakerDeath
+      guid: 98d4be7787e9714cb3224cd7e01da3f1
+      id: 268554923
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: FreakerDeath
+        ObjectType: 3
+        guid: 98d4be7787e9714cb3224cd7e01da3f1
+      Path: Events\Default Work Unit\FreakerDeath
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FreakerHit
+      guid: e528568de96b234b8bf7e5b79af447f1
+      id: 3122002442
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: FreakerHit
+        ObjectType: 3
+        guid: e528568de96b234b8bf7e5b79af447f1
+      Path: Events\Default Work Unit\FreakerHit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SpinAttack
+      guid: 12c2749bb963be4299b62e1fe047134e
+      id: 3607344297
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: SpinAttack
+        ObjectType: 3
+        guid: 12c2749bb963be4299b62e1fe047134e
+      Path: Events\Default Work Unit\SpinAttack
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SpinAttackStop
+      guid: d12fe58e5137084cb3de154a6d7e9614
+      id: 4097783889
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: SpinAttackStop
+        ObjectType: 3
+        guid: d12fe58e5137084cb3de154a6d7e9614
+      Path: Events\Default Work Unit\SpinAttackStop
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -588,8 +673,74 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 746da9f586d65148b93f37c697c8fa5a
     GuidInternal: 
-    m_lastTime: -8585251305646495686
-    List: []
+    m_lastTime: -8585241472528345704
+    List:
+    - name: FootstepMaterials
+      guid: 6312ee37db9f89459e77893cb98ad6ac
+      id: 105740227
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 746da9f586d65148b93f37c697c8fa5a
+      - ElementName: FootstepMaterials
+        ObjectType: 11
+        guid: 6312ee37db9f89459e77893cb98ad6ac
+      Path: Switches\Default Work Unit\FootstepMaterials
+      values:
+      - name: Grass
+        guid: bf47c9064084ee40bd031ae19f6e9dfc
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 746da9f586d65148b93f37c697c8fa5a
+        - ElementName: FootstepMaterials
+          ObjectType: 11
+          guid: 6312ee37db9f89459e77893cb98ad6ac
+        - ElementName: Grass
+          ObjectType: 10
+          guid: bf47c9064084ee40bd031ae19f6e9dfc
+      - name: Stone
+        guid: a60266ed2fc53743b908dcb5bc489a82
+        id: 1216965916
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 746da9f586d65148b93f37c697c8fa5a
+        - ElementName: FootstepMaterials
+          ObjectType: 11
+          guid: 6312ee37db9f89459e77893cb98ad6ac
+        - ElementName: Stone
+          ObjectType: 10
+          guid: a60266ed2fc53743b908dcb5bc489a82
+      - name: Wood
+        guid: 6c8f21d1ed1bbb44883338716c54522d
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 746da9f586d65148b93f37c697c8fa5a
+        - ElementName: FootstepMaterials
+          ObjectType: 11
+          guid: 6312ee37db9f89459e77893cb98ad6ac
+        - ElementName: Wood
+          ObjectType: 10
+          guid: 6c8f21d1ed1bbb44883338716c54522d
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -605,7 +756,7 @@ MonoBehaviour:
     m_lastTime: -8585251305646435847
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 06000000070000000b0000000c000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
