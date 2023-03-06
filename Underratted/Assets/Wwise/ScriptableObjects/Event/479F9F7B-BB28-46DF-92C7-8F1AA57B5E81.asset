@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8816c2dbc51010a4f86fd7ade8618859, type: 3}
-  m_Name: AI_defaultValues
+  m_Script: {fileID: 11500000, guid: 40d03a3687d0c914f873ce0bd345709e, type: 3}
+  m_Name: 479F9F7B-BB28-46DF-92C7-8F1AA57B5E81
   m_EditorClassIdentifier: 
-  huntingDistance: 10
-  huntingStopDistance: 4
-  wanderDistance: {x: 10, y: 0, z: 0}
-  attackSpeed: 2
-  attackPrepare: 0.5
+  objectName: FootstepsPlayer
+  id: 3865216745
+  guid: 479F9F7B-BB28-46DF-92C7-8F1AA57B5E81

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class characterMovementScript : MonoBehaviour
+public class CharacterMovementScript : MonoBehaviour
 {
     //reference https://www.youtube.com/watch?v=b1uoLBp2I1w
 

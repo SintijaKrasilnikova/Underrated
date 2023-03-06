@@ -11,7 +11,7 @@ public class EnemyBase : MonoBehaviour
     //player tranform
     public Transform playerTransform;
     //player health component
-    public health playerHealth;
+    public Health playerHealth;
 
     
     public Animator enemyAnimator;
