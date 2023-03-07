@@ -191,6 +191,7 @@ GameObject:
   - component: {fileID: 4346592855576192720}
   - component: {fileID: 4715616759871832215}
   - component: {fileID: 4715616759871832214}
+  - component: {fileID: 3451209142568752710}
   m_Layer: 0
   m_Name: Beetle
   m_TagString: Enemy
@@ -328,3 +329,17 @@ NavMeshAgent:
   m_BaseOffset: -0.11
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &3451209142568752710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7115591626079144352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a2846377bf860f469dbd328b04164ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinCardRef: {fileID: 0}
+  attackTimer: {fileID: 0}

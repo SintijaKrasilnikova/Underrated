@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NormalAttack : MonoBehaviour
+public class PlayerSwipeAttack : MonoBehaviour
 {
     //basic sword attack
 
     private GameObject attackArea = default;
-   // public BoxCollider attackArea;
     private bool attacking = false;
     private bool resting = false;
 
@@ -35,14 +34,14 @@ public class NormalAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && attacking == false && resting == false)
+        if (Input.GetKeyDown(KeyCode.Space) && attacking == false && resting == false)
         {
             Attack();
             soundTheSwipe = true;
             resting = true;
         }
-        
-        if(attacking)
+
+        if (attacking)
         {
             //if (soundTheSwipe == true)
             //{
@@ -50,8 +49,8 @@ public class NormalAttack : MonoBehaviour
             //    soundTheSwipe = false;
             //}
             attackTimer += Time.deltaTime;
-           
-            if(attackTimer >= timeToAttack)
+
+            if (attackTimer >= timeToAttack)
             {
                 attackTimer = 0;
                 attacking = false;
@@ -60,7 +59,7 @@ public class NormalAttack : MonoBehaviour
 
         }
 
-        if(resting)
+        if (resting)
         {
             restTimer += Time.deltaTime;
 
@@ -72,13 +71,13 @@ public class NormalAttack : MonoBehaviour
         }
 
         plyerAnimator.SetBool("Attacking", attacking);
-        
+
     }
 
     private void Attack()
     {
         attacking = true;
-       
+
         attackArea.SetActive(attacking);
     }
 }
