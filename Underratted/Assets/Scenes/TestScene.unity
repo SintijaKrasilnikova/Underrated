@@ -186,6 +186,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3451209142568752710, guid: 5250207a45d14a0469f7ab84046050e6, type: 3}
+      propertyPath: spinRef
+      value: 
+      objectReference: {fileID: 1988049532}
+    - target: {fileID: 3451209142568752710, guid: 5250207a45d14a0469f7ab84046050e6, type: 3}
+      propertyPath: attackTimer
+      value: 
+      objectReference: {fileID: 1375130666}
+    - target: {fileID: 3451209142568752710, guid: 5250207a45d14a0469f7ab84046050e6, type: 3}
+      propertyPath: spinCardRef
+      value: 
+      objectReference: {fileID: 1988049528}
     - target: {fileID: 4715616759871832215, guid: 5250207a45d14a0469f7ab84046050e6, type: 3}
       propertyPath: playerTransform
       value: 
@@ -340,6 +352,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3451209142568752710, guid: 5250207a45d14a0469f7ab84046050e6, type: 3}
+      propertyPath: spinRef
+      value: 
+      objectReference: {fileID: 1988049532}
+    - target: {fileID: 3451209142568752710, guid: 5250207a45d14a0469f7ab84046050e6, type: 3}
+      propertyPath: attackTimer
+      value: 
+      objectReference: {fileID: 1375130666}
+    - target: {fileID: 3451209142568752710, guid: 5250207a45d14a0469f7ab84046050e6, type: 3}
+      propertyPath: spinCardRef
+      value: 
+      objectReference: {fileID: 1988049528}
     - target: {fileID: 4715616759871832215, guid: 5250207a45d14a0469f7ab84046050e6, type: 3}
       propertyPath: playerTransform
       value: 
@@ -394,6 +418,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5250207a45d14a0469f7ab84046050e6, type: 3}
+--- !u!1 &989881191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 989881192}
+  - component: {fileID: 989881193}
+  - component: {fileID: 989881194}
+  m_Layer: 0
+  m_Name: spinAttackArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &989881192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989881191}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_Children: []
+  m_Father: {fileID: 1508613279}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &989881193
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989881191}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.43, y: 1.85, z: 3.21}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &989881194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989881191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b307750ff4900654f9b6a6b346c185ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
 --- !u!1 &1091049860 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9096671540562890197, guid: c4f7b41da4889df4ab63451262295c72, type: 3}
@@ -413,6 +495,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forAttackArea: 1
   startLocalOffset: {x: -7, y: 4.5, z: 0}
+--- !u!1 &1375130656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9096671540959480012, guid: c4f7b41da4889df4ab63451262295c72, type: 3}
+  m_PrefabInstance: {fileID: 9096671539471848529}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1375130657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375130656}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eda1d002937a344e9d57a17b83df52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: 0.6
+  plyerAnimator: {fileID: 1375130663}
+  swordSwipeSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+--- !u!95 &1375130663 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9096671540959480051, guid: c4f7b41da4889df4ab63451262295c72, type: 3}
+  m_PrefabInstance: {fileID: 9096671539471848529}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1375130666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375130656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 311735f1b2814d34a8a18d7110ff00a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plyerAnimator: {fileID: 1375130663}
+  basicAttackTime: 0.6
+  spinAttackTime: 1
+  restTime: 0.5
 --- !u!4 &1508613279 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9096671540959480014, guid: c4f7b41da4889df4ab63451262295c72, type: 3}
@@ -784,6 +910,117 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1988049528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1988049530}
+  - component: {fileID: 1988049529}
+  - component: {fileID: 1988049531}
+  - component: {fileID: 1988049532}
+  m_Layer: 0
+  m_Name: SpinCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!212 &1988049529
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988049528}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 4372b677c138944498b80b637313960c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12.5, y: 15.023475}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1988049530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988049528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 12.79}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1988049531
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988049528}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.5, y: 15.023475, z: 2.28}
+  m_Center: {x: 0, y: 7.5117373, z: 0}
+--- !u!114 &1988049532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988049528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e652606e01dde940a7fdb93a512203f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinPickedUp: 0
 --- !u!1001 &3697809353459807279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -791,6 +1028,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3451209142568752710, guid: 5250207a45d14a0469f7ab84046050e6, type: 3}
+      propertyPath: spinRef
+      value: 
+      objectReference: {fileID: 1988049532}
+    - target: {fileID: 3451209142568752710, guid: 5250207a45d14a0469f7ab84046050e6, type: 3}
+      propertyPath: attackTimer
+      value: 
+      objectReference: {fileID: 1375130666}
+    - target: {fileID: 3451209142568752710, guid: 5250207a45d14a0469f7ab84046050e6, type: 3}
+      propertyPath: spinCardRef
+      value: 
+      objectReference: {fileID: 1988049528}
     - target: {fileID: 4715616759871832215, guid: 5250207a45d14a0469f7ab84046050e6, type: 3}
       propertyPath: playerTransform
       value: 
@@ -931,4 +1180,5 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 9096671539026174339, guid: c4f7b41da4889df4ab63451262295c72, type: 3}
     - {fileID: 9096671540959480048, guid: c4f7b41da4889df4ab63451262295c72, type: 3}
+    - {fileID: 9096671540959480050, guid: c4f7b41da4889df4ab63451262295c72, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4f7b41da4889df4ab63451262295c72, type: 3}

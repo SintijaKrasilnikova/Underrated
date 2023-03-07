@@ -24,6 +24,7 @@ public class AiDeathState : AiState
 
         if (deathTimer > deathTime)
         {
+            agent.GetComponent<CardRandomDropper>().chanceToDropCard(90);
             agent.gameObject.SetActive(false);
         }
        

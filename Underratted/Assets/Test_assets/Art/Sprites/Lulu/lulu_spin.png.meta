@@ -1,37 +1,25 @@
 fileFormatVersion: 2
-guid: ec2977e0bef5dd94d92b8e9637526e76
+guid: b8f83549ef8ffe74591bae5b8fb54f35
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4135818603563381180
-    second: bug_right_walk_0
+      213: 8686268836705741588
+    second: lulu_spin_0
   - first:
-      213: 2956367528387225669
-    second: bug_right_walk_1
+      213: 8876959652609362450
+    second: lulu_spin_1
   - first:
-      213: 4727037530327417689
-    second: bug_right_walk_2
+      213: 1682924907202963158
+    second: lulu_spin_2
   - first:
-      213: -6493900759573959899
-    second: bug_right_walk_3
+      213: -152430611644248156
+    second: lulu_spin_3
   - first:
-      213: -1243309282750311534
-    second: bug_right_walk_4
+      213: 961371967993773266
+    second: lulu_spin_4
   - first:
-      213: 2516052070950886694
-    second: bug_right_walk_5
-  - first:
-      213: 8380185787178632133
-    second: bug_right_walk_6
-  - first:
-      213: -1567414582253801753
-    second: bug_right_walk_7
-  - first:
-      213: -6847541554508468915
-    second: bug_right_walk_8
-  - first:
-      213: 6443064535639121521
-    second: bug_right_walk_9
+      213: 6964535584225677036
+    second: lulu_spin_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -193,118 +181,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bug_right_walk_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 545
-        width: 1653.6
-        height: 545
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb1f8d08b11656930800000000000000
-      internalID: 4135818603563381180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bug_right_walk_1
-      rect:
-        serializedVersion: 2
-        x: 1653
-        y: 545
-        width: 1653.6
-        height: 545
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54825038a90270920800000000000000
-      internalID: 2956367528387225669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bug_right_walk_2
-      rect:
-        serializedVersion: 2
-        x: 3306
-        y: 545
-        width: 1653.6
-        height: 545
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9530b13c69fc99140800000000000000
-      internalID: 4727037530327417689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bug_right_walk_3
-      rect:
-        serializedVersion: 2
-        x: 4959
-        y: 545
-        width: 1653.6
-        height: 545
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52b64f25aa701e5a0800000000000000
-      internalID: -6493900759573959899
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bug_right_walk_4
-      rect:
-        serializedVersion: 2
-        x: 6612
-        y: 545
-        width: 1653.6
-        height: 545
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 293d8bf6bc0eebee0800000000000000
-      internalID: -1243309282750311534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bug_right_walk_5
+      name: lulu_spin_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1653.6
-        height: 545
+        width: 1351
+        height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62dd9652700dae220800000000000000
-      internalID: 2516052070950886694
+      spriteID: 41b24633c73db8870800000000000000
+      internalID: 8686268836705741588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bug_right_walk_6
+      name: lulu_spin_1
       rect:
         serializedVersion: 2
-        x: 1653
+        x: 1351
         y: 0
-        width: 1653.6
-        height: 545
+        width: 1351
+        height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,20 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c34f84c2966c4470800000000000000
-      internalID: 8380185787178632133
+      spriteID: 21a814b95cb413b70800000000000000
+      internalID: 8876959652609362450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bug_right_walk_7
+      name: lulu_spin_2
       rect:
         serializedVersion: 2
-        x: 3306
+        x: 2702
         y: 0
-        width: 1653.6
-        height: 545
+        width: 1351
+        height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7eeaef0fdbc6f3ae0800000000000000
-      internalID: -1567414582253801753
+      spriteID: 6d66d7d5943fa5710800000000000000
+      internalID: 1682924907202963158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bug_right_walk_8
+      name: lulu_spin_3
       rect:
         serializedVersion: 2
-        x: 4959
+        x: 4053
         y: 0
-        width: 1653.6
-        height: 545
+        width: 1351
+        height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -375,20 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4debca6c35a8f0a0800000000000000
-      internalID: -6847541554508468915
+      spriteID: 4af8c049a2572edf0800000000000000
+      internalID: -152430611644248156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bug_right_walk_9
+      name: lulu_spin_4
       rect:
         serializedVersion: 2
-        x: 6612
+        x: 5404
         y: 0
-        width: 1653.6
-        height: 545
+        width: 1351
+        height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,8 +279,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17edfafee0d5a6950800000000000000
-      internalID: 6443064535639121521
+      spriteID: 2dc794916ba775d00800000000000000
+      internalID: 961371967993773266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lulu_spin_5
+      rect:
+        serializedVersion: 2
+        x: 6755
+        y: 0
+        width: 1351
+        height: 1090
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceec653d63007a060800000000000000
+      internalID: 6964535584225677036
       vertices: []
       indices: 
       edges: []
@@ -405,7 +309,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a26e1505172ab814280d1279e4352e70
+    spriteID: 8f608a97c725a3749a30f6eb0837ac79
     internalID: 0
     vertices: []
     indices: 

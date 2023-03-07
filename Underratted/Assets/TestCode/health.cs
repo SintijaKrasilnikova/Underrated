@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class Health : MonoBehaviour
 {
     //health script
@@ -24,7 +22,7 @@ public class Health : MonoBehaviour
         //get the animator of gameObject
         //currentAnimator = gameObject.GetComponent<Animator>();
 
-        if(gameObject.CompareTag("Player"))
+        if (gameObject.CompareTag("Player"))
         {
 
             if (gameObject.GetComponent<PlayerMovement>())
@@ -38,9 +36,9 @@ public class Health : MonoBehaviour
         }
         else //must be enemy
         {
-            if(gameObject.GetComponentInParent<AiAgent>(false))
+            if (gameObject.GetComponentInParent<AiAgent>(false))
             {
-               // Debug.Log("Enemy Found");
+                // Debug.Log("Enemy Found");
                 agent = gameObject.GetComponentInParent<AiAgent>(false);
             }
             //agent = gameObject.GetComponent<AiAgent>();
@@ -67,7 +65,7 @@ public class Health : MonoBehaviour
             {
                 currentHealth -= damageAmount;
                 playerMoveRef.HurtPlayer(currentHealth);
-               
+
             }
 
 
