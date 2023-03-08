@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator plyerAnimator;
 
-    private float deathTime = 0.2f;
+    private float deathTime = 0.9f;
     private float deathTimer=0;
     private bool deathAnimationCalled = false;
 
@@ -98,7 +99,8 @@ public class PlayerMovement : MonoBehaviour
             if (deathTimer > deathTime)
             {
                 deathTimer = 0f;
-                gameObject.SetActive(false);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                //gameObject.SetActive(false);
             }
             else
             {

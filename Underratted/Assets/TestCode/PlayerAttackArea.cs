@@ -8,7 +8,7 @@ public class PlayerAttackArea : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if(collision.tag == "Enemy")
+        if(collision.CompareTag("Enemy"))
         {
            
             var healthComp = collision.GetComponent<Health>();
