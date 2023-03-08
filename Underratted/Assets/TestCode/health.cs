@@ -14,6 +14,9 @@ public class Health : MonoBehaviour
     PlayerMovement playerMoveRef;
 
     private bool enemiesHealth = false;
+
+    public KnockbackTest knock;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,6 +67,7 @@ public class Health : MonoBehaviour
             else
             {
                 currentHealth -= damageAmount;
+                knock.Knockback();
                 playerMoveRef.HurtPlayer(currentHealth);
 
             }
