@@ -20,7 +20,8 @@ public class DummyParent : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Sword"))
+        //when enemy dies, spray blood and spawn a pool of blood
+        if (other.gameObject.CompareTag("AttackArea"))
         {
             Instantiate(bloodSpray, dummy.transform.position, dummy.transform.rotation);
             Instantiate(bloodSplat, gameObject.transform.position, gameObject.transform.rotation);

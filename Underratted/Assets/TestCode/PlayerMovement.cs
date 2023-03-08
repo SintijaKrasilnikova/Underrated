@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     //private Vector3 velocity;
-    private Vector3 playerMovementInput;
+    public Vector3 playerMovementInput;
 
     //[SerializeField] private CharacterController Controller;
     //[Space]

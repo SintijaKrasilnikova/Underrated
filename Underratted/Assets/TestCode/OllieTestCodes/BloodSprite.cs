@@ -10,6 +10,7 @@ public class BloodSprite : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //spawn a random pool of blood
         rend = GetComponent<SpriteRenderer>();
         int rand = Random.Range(0, blood.Length);
         rend.sprite = blood[rand];

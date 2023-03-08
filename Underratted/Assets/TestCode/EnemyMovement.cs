@@ -17,7 +17,7 @@ public class EnemyMovement : MonoBehaviour
    // private Vector3 safeDistanceVector = new Vector3(safeDistance, 0, safeDistance);
 
     public Transform target;
-    private Vector3 enemyMoveDirection;
+    public Vector3 enemyMoveDirection;
     private Vector3 startPosition;
     public bool isHunting = false;
 
