@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6855202773145885025}
   - component: {fileID: 5070076689690120061}
   m_Layer: 0
-  m_Name: Blood2
+  m_Name: blood2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: d1c20d979af21ae4c8154e8fa6b7c5e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
