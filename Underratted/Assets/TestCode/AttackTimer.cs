@@ -26,6 +26,11 @@ public class AttackTimer : MonoBehaviour
     public float spinAttackTime = 1.0f;
     public float restTime = 0.5f;
 
+    public bool soundTheSwipe = false; 
+    public bool soundTheSpin = false; 
+    public AK.Wwise.Event swordSwipeSound;
+    public AK.Wwise.Event spinSwipeSound;
+
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +52,7 @@ public class AttackTimer : MonoBehaviour
                 currentAttackTime = basicAttackTime;
                 basicAttackArea.SetActive(true);
                 currentAttackArea = basicAttackArea;
+                soundTheSwipe = true;
 
                 plyerAnimator.SetBool("Attacking", true);
             }
@@ -57,6 +63,7 @@ public class AttackTimer : MonoBehaviour
                 currentAttackTime = spinAttackTime;
                 spinAttackArea.SetActive(true);
                 currentAttackArea = spinAttackArea;
+                soundTheSpin = true;
 
                 plyerAnimator.SetBool("Spin", true);
             }
@@ -71,11 +78,18 @@ public class AttackTimer : MonoBehaviour
     {
         if (attacking)
         {
-            //if (soundTheSwipe == true)
-            //{
-            //    swordSwipeSound.Post(gameObject);
-            //    soundTheSwipe = false;
-            //}
+            if (soundTheSwipe == true)
+            {
+                swordSwipeSound.Post(gameObject);
+                soundTheSwipe = false;
+            }
+
+            if (soundTheSpin == true)
+            {
+                spinSwipeSound.Post(gameObject);
+                soundTheSpin = false;
+            }
+
             attackTimer += Time.deltaTime;
             
             if (attackTimer >= attackTime)
