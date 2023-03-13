@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class ReloadScene : MonoBehaviour
 {
-    
-    public void resetScene()
+
+    private void OnTriggerEnter(Collider collision)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (collision.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

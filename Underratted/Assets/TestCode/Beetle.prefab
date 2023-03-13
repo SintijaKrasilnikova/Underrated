@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3697809353670973264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 1, z: 0}
+  m_LocalPosition: {x: -2.5, y: 1, z: 0}
   m_LocalScale: {x: 7.4966702, y: 4.1754756, z: 11}
   m_Children: []
   m_Father: {fileID: 7115591626079144357}
@@ -151,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 9
   currentHealth: 0
+  knock: {fileID: 0}
 --- !u!114 &3697809353870582717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,4 +343,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spinCardRef: {fileID: 0}
+  spinRef: {fileID: 0}
   attackTimer: {fileID: 0}

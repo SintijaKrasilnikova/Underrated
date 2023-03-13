@@ -114,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 movePlayer = (transform.TransformDirection(playerMovementInput) * speed);
 
-        playerBody.velocity = new Vector3(movePlayer.x, 0, movePlayer.z);
+        playerBody.velocity = new Vector3(movePlayer.x, playerBody.velocity.y, movePlayer.z);
         
     }
 
