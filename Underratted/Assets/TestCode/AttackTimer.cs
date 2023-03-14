@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -5,29 +6,20 @@ using UnityEngine;
 
 public class AttackTimer : MonoBehaviour
 {
-
-    public Animator plyerAnimator;
     private GameObject basicAttackArea = default;
     private GameObject spinAttackArea = default;
     private bool spinAttackActive = false;
-
     private GameObject currentAttackArea = default;
 
 
     private bool attacking = false;
     private bool resting = false;
 
-    private float attackTimer = 0f;
-    private float restTimer = 0f;
-
-    private float currentAttackTime=0f;
-
-    public float basicAttackTime=0.6f;
+    public float basicAttackTime = 0.6f;
     public float spinAttackTime = 1.0f;
-    public float restTime = 0.5f;
+    public float restTime = 1.0f;
 
-    public bool soundTheSwipe = false; 
-    public bool soundTheSpin = false; 
+    public Animator plyerAnimator;
     public AK.Wwise.Event swordSwipeSound;
     public AK.Wwise.Event spinSwipeSound;
 
@@ -48,80 +40,85 @@ public class AttackTimer : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.I))
             {
-                attacking = true;
-                currentAttackTime = basicAttackTime;
-                basicAttackArea.SetActive(true);
-                currentAttackArea = basicAttackArea;
-                soundTheSwipe = true;
-
-                plyerAnimator.SetBool("Attacking", true);
+                SetCurrentAttackActive(true, "normal");
+                Invoke(nameof(EndAttack), basicAttackTime);
             }
 
             else if (Input.GetKeyDown(KeyCode.O) && spinAttackActive == true)
             {
-                attacking = true;
-                currentAttackTime = spinAttackTime;
-                spinAttackArea.SetActive(true);
-                currentAttackArea = spinAttackArea;
-                soundTheSpin = true;
-
-                plyerAnimator.SetBool("Spin", true);
+                SetCurrentAttackActive(true, "spin");
+                Invoke(nameof(EndAttack), basicAttackTime);
             }
 
-        }
-
-        TimedAttack(currentAttackTime, restTime);
-
-    }
-
-    public void TimedAttack(float attackTime, float restTime)
-    {
-        if (attacking)
-        {
-            if (soundTheSwipe == true)
-            {
-                swordSwipeSound.Post(gameObject);
-                soundTheSwipe = false;
-            }
-
-            if (soundTheSpin == true)
-            {
-                spinSwipeSound.Post(gameObject);
-                soundTheSpin = false;
-            }
-
-            attackTimer += Time.deltaTime;
-            
-            if (attackTimer >= attackTime)
-            {
-                attackTimer = 0;
-                attacking = false;
-                plyerAnimator.SetBool("Attacking", false);
-                plyerAnimator.SetBool("Spin", false);
-
-                if (currentAttackArea)
-                {
-                    currentAttackArea.SetActive(false);
-                    resting = true;
-                }
-            }
-
-        }
-
-        if (resting == true && attacking==false)
-        {
-            restTimer += Time.deltaTime;
-
-            if (restTimer >= restTime)
-            {
-                restTimer = 0;
-                resting = false;
-            }
         }
     }
 
-    public void setSpinActive(bool active)
+    public void SetSpinActive(bool active)
     {
         spinAttackActive = active;
     }
+
+    public void SetCurrentAttackActive(bool active, string attackType)
+    {
+        //sets active/inactive the currentAttackArea based on type and plays the according sound/animation
+        if (active)
+        {
+            
+            switch (attackType)
+            {
+                case "normal":
+                    {
+                        swordSwipeSound.Post(gameObject);
+
+                        currentAttackArea = basicAttackArea;
+                        plyerAnimator.SetBool("Attacking", active);
+                        break;
+                    }
+                case "spin":
+                    {
+
+                        spinSwipeSound.Post(gameObject);
+
+                        currentAttackArea = spinAttackArea;
+                        plyerAnimator.SetBool("Spin", active);
+                        break;
+                    }
+
+                default:
+                    // code block
+                    break;
+            }
+
+        }
+        else
+        {
+            plyerAnimator.SetBool("Attacking", false);
+            plyerAnimator.SetBool("Spin", false);
+        }
+
+        attacking = active;
+        currentAttackArea.SetActive(active);
+    }
+
+    public void EndAttack()
+    {
+        //set animations back to movement
+        plyerAnimator.SetBool("Attacking", false);
+        plyerAnimator.SetBool("Spin", false);
+
+        //disable the attack area
+        attacking = false;
+        currentAttackArea.SetActive(false);
+
+        //call the rest time
+        resting = true;
+        Invoke(nameof(ResetRest), restTime);
+
+    }
+
+    public void ResetRest()
+    {
+        resting = false;
+    }
+
 }

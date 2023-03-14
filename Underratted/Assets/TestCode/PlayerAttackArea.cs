@@ -6,12 +6,13 @@ public class PlayerAttackArea : MonoBehaviour
 {
     public int damage = 3;
 
+    
     private void OnTriggerEnter(Collider collision)
     {
         if(collision.CompareTag("Enemy"))
         {
            
-            var healthComp = collision.GetComponent<Health>();
+            var healthComp = collision.GetComponent<EnemyHealth>();
             if(healthComp!=null)
             {
                 //Debug.Log("Health decreased");

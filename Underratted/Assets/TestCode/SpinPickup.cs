@@ -10,7 +10,7 @@ public class SpinPickup : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<AttackTimer>().setSpinActive(true);
+            collision.GetComponent<AttackTimer>().SetSpinActive(true);
 
 
             this.gameObject.SetActive(false);
