@@ -7,7 +7,7 @@ public class PlayerHealth : MonoBehaviour
     PlayerMovement playerMoveRef;
     public KnockbackTest knock;
 
-    public int maxHealth = 9;
+    public int maxHealth = 8;
     public int currentHealth;
     public float immunityTime = 1f;
 
@@ -36,6 +36,7 @@ public class PlayerHealth : MonoBehaviour
             currentHealth -= damageAmount;
             knock.Knockback();
             playerMoveRef.HurtPlayer(currentHealth);
+            justAttacked = true;
 
             Invoke(nameof(BeImmune), immunityTime);
         }
@@ -48,6 +49,6 @@ public class PlayerHealth : MonoBehaviour
 
     public void BeImmune()
     {
-        justAttacked = true;
+        justAttacked = false;
     }
 }
