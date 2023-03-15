@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private bool immunity = false;
     private bool facingUp;
     private bool facingLeft;
+    private bool spedUp = false;
 
 
     public AK.Wwise.Event footstepSound = new AK.Wwise.Event();
@@ -86,24 +87,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void HurtPlayer(int currentHP)
     {
-        //if (immunity == false)
-        //{
-        //    if (currentHP <= 0)
-        //    {
-
-        //        plyerAnimator.SetBool("Death", true);
-        //        Invoke(nameof(PlayerDeath), deathTime);
-        //    }
-        //    else
-        //    {
-        //        plyerAnimator.SetBool("Hurt", true);
-        //        Invoke(nameof(ResetHurt), hurtTime);
-        //    }
-        //}
-        //else
-        //{
-        //    Invoke(nameof(ImmunityOff), immuneTime);
-        //}
 
         if (currentHP <= 0)
         {
@@ -134,5 +117,14 @@ public class PlayerMovement : MonoBehaviour
         immunity = true;
     }
 
+
+    public void SpeedUp()
+    {
+        if (spedUp == false)
+        {
+            speed *= 1.5f;
+            spedUp = true;
+        }
+    }
 
 }

@@ -8,8 +8,10 @@ public class PlayerHealth : MonoBehaviour
     public KnockbackTest knock;
 
     public int maxHealth = 8;
-    public int currentHealth;
     public float immunityTime = 1f;
+    public int healthGainFromCard = 2;
+    public int currentHealth;
+    
 
     private bool justAttacked = false;
 
@@ -50,5 +52,10 @@ public class PlayerHealth : MonoBehaviour
     public void BeImmune()
     {
         justAttacked = false;
+    }
+
+    public void AddHealth()
+    {
+        currentHealth += healthGainFromCard;
     }
 }

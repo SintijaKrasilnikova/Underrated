@@ -4,8 +4,18 @@ using UnityEngine;
 
 public class PlayerAttackArea : MonoBehaviour
 {
-    public int damage = 3;
+    public int extraDamage = 0;
 
+    private AttackTimer baseAttackRef;
+    private int baseDamage;
+    private int damage;
+    void Start()
+    {
+        baseAttackRef = this.GetComponentInParent<AttackTimer>();
+        baseDamage = baseAttackRef.GetBaseDamage();
+        damage = baseDamage + extraDamage;
+    }
+    
     
     private void OnTriggerEnter(Collider collision)
     {
@@ -17,6 +27,7 @@ public class PlayerAttackArea : MonoBehaviour
             {
                 //Debug.Log("Health decreased");
                 healthComp.TakeDamage(damage);
+                this.gameObject.SetActive(false);
             }
         }
 

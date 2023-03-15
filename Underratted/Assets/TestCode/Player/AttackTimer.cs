@@ -15,6 +15,8 @@ public class AttackTimer : MonoBehaviour
     private bool attacking = false;
     private bool resting = false;
 
+    public int baseDamage = 3;
+
     public float basicAttackTime = 0.6f;
     public float spinAttackTime = 1.0f;
     public float restTime = 1.0f;
@@ -119,6 +121,16 @@ public class AttackTimer : MonoBehaviour
     public void ResetRest()
     {
         resting = false;
+    }
+
+    public int GetBaseDamage()
+    {
+        return baseDamage;
+    }
+
+    public void IncreaseBaseDamage(int inc)
+    {
+        baseDamage += inc;
     }
 
 }
