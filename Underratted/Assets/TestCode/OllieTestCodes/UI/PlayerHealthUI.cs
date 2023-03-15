@@ -6,7 +6,7 @@ public class PlayerHealthUI : MonoBehaviour
 {
     // made using https://www.youtube.com/watch?v=Dn_BUIVdAPg 
 
-    public Health playerHealth;
+    public PlayerHealth playerHealth;
 
     public int playersHealth = 0;
 
