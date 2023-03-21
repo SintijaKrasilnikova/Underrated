@@ -3,11 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-
   tags:
   - Enemy
   - AttackArea
-
+  - UIActive
+  - PlayerCard
   layers:
   - Default
   - TransparentFX
@@ -42,12 +42,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Foreground
-    uniqueID: 857002695
-    locked: 0
-  - name: Background
-    uniqueID: 1619384661
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

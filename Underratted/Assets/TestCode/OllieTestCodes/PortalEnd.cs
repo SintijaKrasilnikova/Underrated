@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class PortalEnd : MonoBehaviour
 {
     private int LoadNextLevel;
+    public GameObject endScreen;
+    public Card_Numbers playerRef;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +20,22 @@ public class PortalEnd : MonoBehaviour
         
     }
 
+    //load the end card screen if the player picked up a card in the level
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(0);
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                if (playerRef.hasCard == true)
+                {
+                    endScreen.SetActive(true);
+                }
+                else if (playerRef.hasCard == false)
+                {
+                    SceneManager.LoadScene(0);
+                }
+            }
         }
     }
 }

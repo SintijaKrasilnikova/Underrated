@@ -9,9 +9,12 @@ public class HealthPickup : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             var playerHealth = collision.GetComponent<PlayerHealth>();
+            var playerCards = collision.GetComponent<Card_Numbers>();
 
             playerHealth.AddHealth();
+
             Destroy(this);
+
 
         }
     }
