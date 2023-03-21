@@ -24,12 +24,19 @@ public class PlayerHealthUI : MonoBehaviour
         int previousHealth = playersHealth;
 
         //if the players health is not the same as the last frame change the UI sprite
-        if(playerHealth.currentHealth != lastFrameHealth)
+        if(playerHealth.currentHealth < lastFrameHealth)
         {
             if (playersHealth >= transform.childCount - 1)
                 playersHealth = 0;
             else
                 playersHealth++;
+        }
+        if (playerHealth.currentHealth > lastFrameHealth)
+        {
+            if (playersHealth >= transform.childCount - 1)
+                playersHealth = 0;
+            else
+                playersHealth--;
         }
         lastFrameHealth = playerHealth.currentHealth;
 

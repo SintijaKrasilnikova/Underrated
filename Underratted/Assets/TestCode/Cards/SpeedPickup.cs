@@ -9,8 +9,10 @@ public class SpeedPickup : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             var playerMove = collision.GetComponent<PlayerMovement>();
+            var playerCards = collision.GetComponent<Card_Numbers>();
 
             playerMove.SpeedUp();
+            playerCards.speedCard++;
             this.gameObject.SetActive(false);
 
         }
