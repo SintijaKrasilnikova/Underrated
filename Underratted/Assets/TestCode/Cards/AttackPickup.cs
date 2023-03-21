@@ -10,8 +10,10 @@ public class AttackPickup : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             var playerAttack = collision.GetComponent<AttackTimer>();
+            var playerCards = collision.GetComponent<Card_Numbers>();
 
             playerAttack.IncreaseBaseDamage(increaseAmount);
+            playerCards.attackCard++;
             this.gameObject.SetActive(false);
 
         }
