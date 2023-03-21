@@ -43,7 +43,8 @@ public class CardRandom : MonoBehaviour, IEventSystemHandler, ISelectHandler, ID
         {
             cardImage.sprite = health;
             buffDescRef = "Health +1";
-            cardValue = 1;
+
+            cardValue = 3;
         }
         if(randomCard == 2)
         {
@@ -55,7 +56,7 @@ public class CardRandom : MonoBehaviour, IEventSystemHandler, ISelectHandler, ID
         {
             cardImage.sprite = speed;
             buffDescRef = "Speed +1";
-            cardValue = 3;
+            cardValue = 1;
         }
     }
 

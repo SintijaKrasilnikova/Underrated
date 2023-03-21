@@ -12,9 +12,8 @@ public class HealthPickup : MonoBehaviour
             var playerCards = collision.GetComponent<Card_Numbers>();
 
             playerHealth.AddHealth();
-
-            Destroy(this);
-
+            playerCards.healthCard++;
+            this.gameObject.SetActive(false);
 
         }
     }
