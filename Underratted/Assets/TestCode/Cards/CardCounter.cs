@@ -9,6 +9,7 @@ public class CardCounter : MonoBehaviour
     public static bool healthUp = false;
     public static bool attackUp = false;
 
+   
 
     //spin attack
     public bool GetSpinUp()

@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [Space]
     [SerializeField] private float speed;
     [SerializeField] private Rigidbody playerBody;
-
+   
 
 
     public Animator plyerAnimator;
@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     private bool facingUp;
     private bool facingLeft;
     private bool spedUp = false;
+    private bool canMove = true;
 
 
     public AK.Wwise.Event footstepSound = new AK.Wwise.Event();
@@ -31,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
     }
 
     // Update is called once per frame
@@ -44,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         plyerAnimator.SetFloat("Speed", playerMovementInput.sqrMagnitude);
 
 
-        if (playerMovementInput.sqrMagnitude >= 0.01)
+        if (playerMovementInput.sqrMagnitude >= 0.01 && canMove ==true)
         {
             //left right for animation
             if (Input.GetAxis("Horizontal") < 0)
@@ -77,11 +79,19 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    public void SetCanMove(bool canMoveNow)
+    {
+        canMove = canMoveNow;
+    }
+
     private void MovePlayer()
     {
-        Vector3 movePlayer = (transform.TransformDirection(playerMovementInput) * speed);
+        if (canMove == true)
+        {
+            Vector3 movePlayer = (transform.TransformDirection(playerMovementInput) * speed);
 
-        playerBody.velocity = new Vector3(movePlayer.x, playerBody.velocity.y, movePlayer.z);
+            playerBody.velocity = new Vector3(movePlayer.x, playerBody.velocity.y, movePlayer.z);
+        }
         
     }
 

@@ -14,6 +14,9 @@ public class MixAnim : MonoBehaviour
 
     //new card spawned at end of animation
     public GameObject newCard;
+    private bool canChangeCard = true;
+
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -23,14 +26,18 @@ public class MixAnim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        uiCard = GameObject.FindGameObjectWithTag("UIActive");
-        uiCardAnim = uiCard.GetComponent<Animator>();
+        if (canChangeCard)
+        {
+            uiCard = GameObject.FindGameObjectWithTag("UIActive");
+            uiCardAnim = uiCard.GetComponent<Animator>();
+        }
     }
 
     public void Mix()
     {
         playerCard.SetBool("Mix", true);
         uiCardAnim.SetBool("Mix", true);
+        canChangeCard = false;
     }
 
     public void HideMiddleCard()
@@ -50,9 +57,11 @@ public class MixAnim : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    //combines the two halves
     public void MakeNewCard()
     {
         newCard.SetActive(true);
+        Debug.Log("Mix");
     }
 
 }
