@@ -4395,6 +4395,7 @@ MonoBehaviour:
   bloodSplat: {fileID: 7182290579097533017, guid: b4169706f5ab45d4698a39ce819f46c0, type: 3}
   bloodSpray: {fileID: 5554346237774116556, guid: e1419115d3252d947b1347d83780aaea, type: 3}
   bloodPos: {fileID: 347406020}
+  health: {fileID: 1319874879}
 --- !u!114 &464100306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4443,6 +4444,7 @@ MonoBehaviour:
   bloodSplat: {fileID: 7182290579097533017, guid: b4169706f5ab45d4698a39ce819f46c0, type: 3}
   bloodSpray: {fileID: 5554346237774116556, guid: e1419115d3252d947b1347d83780aaea, type: 3}
   bloodPos: {fileID: 2125264847}
+  health: {fileID: 1319874879}
 --- !u!1 &474451465
 GameObject:
   m_ObjectHideFlags: 0
@@ -9916,6 +9918,7 @@ MonoBehaviour:
   bloodSplat: {fileID: 7182290579097533017, guid: b4169706f5ab45d4698a39ce819f46c0, type: 3}
   bloodSpray: {fileID: 5554346237774116556, guid: e1419115d3252d947b1347d83780aaea, type: 3}
   bloodPos: {fileID: 1766121329}
+  health: {fileID: 1319874879}
 --- !u!114 &988586483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10453,6 +10456,7 @@ MonoBehaviour:
   bloodSplat: {fileID: 7182290579097533017, guid: b4169706f5ab45d4698a39ce819f46c0, type: 3}
   bloodSpray: {fileID: 5554346237774116556, guid: e1419115d3252d947b1347d83780aaea, type: 3}
   bloodPos: {fileID: 357613909}
+  health: {fileID: 1319874879}
 --- !u!114 &1038914401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11071,6 +11075,7 @@ MonoBehaviour:
   bloodSplat: {fileID: 7182290579097533017, guid: b4169706f5ab45d4698a39ce819f46c0, type: 3}
   bloodSpray: {fileID: 5554346237774116556, guid: e1419115d3252d947b1347d83780aaea, type: 3}
   bloodPos: {fileID: 1660694942}
+  health: {fileID: 1319874879}
 --- !u!114 &1127910875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12727,10 +12732,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f40da5ddc0ccf7149b2562fb8196672a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickup: {fileID: 7417698155081932655, guid: 09a6597f7c4892a46b1957094b699a50, type: 3}
   knock: {fileID: 1319874873}
   maxHealth: 8
   immunityTime: 1
+  healthGainFromPickup: 2
+  healthPickupChance: 100
   healthGainFromCard: 2
+  healthGainFromSteal: 2
+  healthStealChance: 20
   currentHealth: 0
 --- !u!114 &1319874881
 MonoBehaviour:
@@ -12744,6 +12754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08fb2804de3b14646b801f9b882b230c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+
   spinUp: 0
   speedUp: 0
   healthUp: 0
@@ -12764,6 +12775,7 @@ MonoBehaviour:
   attackCard: 0
   healthCard: 0
   hasCard: 0
+
 --- !u!4 &1319874883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4285983444861824898, guid: df0778f9dc54abd46b58af257b6b4d30, type: 3}
@@ -27090,6 +27102,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4285983444727293751, guid: df0778f9dc54abd46b58af257b6b4d30, type: 3}
+      propertyPath: critChance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4285983444727293751, guid: df0778f9dc54abd46b58af257b6b4d30, type: 3}
       propertyPath: spinSwipeSound.WwiseObjectReference
       value: 

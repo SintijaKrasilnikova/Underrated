@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class EnemyDeath : MonoBehaviour
 {
-    public GameObject bloodSplat;
-    public GameObject bloodSpray;
-    public GameObject bloodPos;
+    [SerializeField] private GameObject bloodSplat;
+    [SerializeField] private GameObject bloodSpray;
+    [SerializeField] private GameObject bloodPos;
+    [SerializeField] private PlayerHealth health;
+    //[SerializeField] private GameObject healthPickup;
 
     bool canMakeBlood = true;
     // Start is called before the first frame update
@@ -29,5 +31,8 @@ public class EnemyDeath : MonoBehaviour
             Instantiate(bloodSplat, bloodPos.transform.position, bloodPos.transform.rotation);
             canMakeBlood = false;
         }
+
+        health.LifeSteal();
+        //health.HealthPickUp();
     }
 }
