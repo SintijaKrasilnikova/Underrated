@@ -22,6 +22,8 @@ public class CardRandom : MonoBehaviour, IEventSystemHandler, ISelectHandler, ID
 
     public Animator animator;
 
+    public AK.Wwise.Event cardHighlight;
+
     public void OnDeselect(BaseEventData eventData)
     {
         gameObject.tag = "Untagged";
@@ -32,6 +34,7 @@ public class CardRandom : MonoBehaviour, IEventSystemHandler, ISelectHandler, ID
     {
         gameObject.tag = "UIActive";
         playerPos.tag = "UIActive";
+        cardHighlight.Post(gameObject);
     }
 
     private void Awake()

@@ -19,6 +19,8 @@ public class MixAnim : MonoBehaviour
     public GameObject continueMsg;
     public GameObject titleMsg;
 
+    public AK.Wwise.Event combineCardSound; 
+
    
     // Start is called before the first frame update
     void Start()
@@ -38,7 +40,7 @@ public class MixAnim : MonoBehaviour
 
     public void Mix()
     {
-        titleMsg.SetActive(false);
+        //titleMsg.SetActive(false);
         playerCard.SetBool("Mix", true);
         uiCardAnim.SetBool("Mix", true);
         canChangeCard = false;
@@ -64,6 +66,7 @@ public class MixAnim : MonoBehaviour
     //combines the two halves
     public void MakeNewCard()
     {
+        combineCardSound.Post(gameObject);
         continueMsg.SetActive(true);
         canLoadNextLevel = true;
         newCard.SetActive(true);

@@ -8,6 +8,8 @@ public class SpeedPickup : MonoBehaviour
     public BoxCollider col;
     bool hasBeenPickedUp = false;
 
+    public AK.Wwise.Event pickupSoundSpeed;
+
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Player"))
@@ -17,6 +19,7 @@ public class SpeedPickup : MonoBehaviour
 
             playerMove.SpeedUp();
             playerCards.speedCard++;
+            pickupSoundSpeed.Post(gameObject);
 
             col.enabled = false;
             hasBeenPickedUp = true;

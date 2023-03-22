@@ -7,6 +7,7 @@ public class HealthPickup : MonoBehaviour
     public GameObject pickupRef;
     public BoxCollider col;
     bool hasBeenPickedUp = false;
+    public AK.Wwise.Event pickupSoundHealth;
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Player"))
@@ -16,6 +17,7 @@ public class HealthPickup : MonoBehaviour
 
             playerHealth.AddHealth();
             playerCards.healthCard++;
+            pickupSoundHealth.Post(gameObject);
 
             col.enabled = false;
             hasBeenPickedUp = true;

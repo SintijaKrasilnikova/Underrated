@@ -6,7 +6,7 @@ public class FreakerDeath : MonoBehaviour
 {
     public AK.Wwise.Event freakerDeathSound;
     // Start is called before the first frame update
-    void deathSound()
+    void DeathSound()
     {
         freakerDeathSound.Post(gameObject);
 
