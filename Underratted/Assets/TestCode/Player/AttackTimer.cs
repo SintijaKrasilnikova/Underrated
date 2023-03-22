@@ -8,6 +8,7 @@ public class AttackTimer : MonoBehaviour
 {
     private GameObject basicAttackArea = default;
     private GameObject spinAttackArea = default;
+    private GameObject trailAttackArea = default;
     private bool spinAttackActive = false;
     private GameObject currentAttackArea = default;
 
@@ -32,6 +33,9 @@ public class AttackTimer : MonoBehaviour
     public int critDamageValue = 10;
     public bool willCrit = false;
 
+    public bool damageTrailActivated = false;
+
+
 
 
 
@@ -42,6 +46,9 @@ public class AttackTimer : MonoBehaviour
         basicAttackArea.SetActive(false);
         spinAttackArea = transform.GetChild(1).gameObject;
         spinAttackArea.SetActive(false);
+
+        trailAttackArea = transform.GetChild(3).gameObject;
+        //trailAttackArea.SetActive(false);
 
         startBaseDamage = baseDamage;
     }
@@ -64,6 +71,17 @@ public class AttackTimer : MonoBehaviour
             }
 
         }
+
+        if(damageTrailActivated)
+        {
+            trailAttackArea.SetActive(true);
+        }
+    }
+
+    public void SetTrailAreaActive()
+    {
+        trailAttackArea.SetActive(true);
+        damageTrailActivated = true;
     }
 
     public void SetSpinActive(bool active)

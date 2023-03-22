@@ -22,7 +22,7 @@ public class ActivateCombinedCards : MonoBehaviour
         if (cardOver.AttackSpeed == true)
         {
             //damage trail
-
+            //attack.SetTrailAreaActive();
         }
         if (cardOver.HealthSpeed == true)
         {
