@@ -26,9 +26,11 @@ public class AttackTimer : MonoBehaviour
     public AK.Wwise.Event swordSwipeSound;
     public AK.Wwise.Event spinSwipeSound;
 
+
     public bool critPossibleActive = false;
     public int critChance = 10;
     public int critDamageValue = 10;
+    public bool willCrit = false;
 
 
 
@@ -72,6 +74,7 @@ public class AttackTimer : MonoBehaviour
     public void SetCurrentAttackActive(bool active, string attackType)
     {
 
+
         
         if (critPossibleActive )
         {
@@ -79,9 +82,16 @@ public class AttackTimer : MonoBehaviour
 
             if(randomCritChance< critChance)
             {
+
+                willCrit = true;
                 baseDamage = critDamageValue;
             }
+            else
+            {
+                willCrit = false;
+            }
         }
+
         //sets active/inactive the currentAttackArea based on type and plays the according sound/animation
         if (active)
         {
