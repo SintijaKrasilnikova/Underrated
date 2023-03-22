@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class SpeedPickup : MonoBehaviour
 {
+    public GameObject pickupRef;
+    public BoxCollider col;
+    bool hasBeenPickedUp = false;
+
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Player"))
@@ -13,8 +17,24 @@ public class SpeedPickup : MonoBehaviour
 
             playerMove.SpeedUp();
             playerCards.speedCard++;
-            this.gameObject.SetActive(false);
 
+            col.enabled = false;
+            hasBeenPickedUp = true;
         }
+    }
+
+    private void Update()
+    {
+        if (hasBeenPickedUp)
+        {
+            gameObject.transform.position = pickupRef.transform.position;
+            StartCoroutine(PickedUp(1.5f));
+        }
+    }
+
+    IEnumerator PickedUp(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        this.gameObject.SetActive(false);
     }
 }
