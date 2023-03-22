@@ -17,6 +17,7 @@ public class MixAnim : MonoBehaviour
     private bool canChangeCard = true;
     public bool canLoadNextLevel = false;
     public GameObject continueMsg;
+    public GameObject titleMsg;
 
    
     // Start is called before the first frame update
@@ -37,6 +38,7 @@ public class MixAnim : MonoBehaviour
 
     public void Mix()
     {
+        titleMsg.SetActive(false);
         playerCard.SetBool("Mix", true);
         uiCardAnim.SetBool("Mix", true);
         canChangeCard = false;
