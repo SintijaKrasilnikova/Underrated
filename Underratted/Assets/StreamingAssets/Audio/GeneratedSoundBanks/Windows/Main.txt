@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	85412153	Ambience			\Default Work Unit\Ambience	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	69146544	TownCenterAmbience02	C:\Users\keirm\Documents\WwiseProjects\UnderrattedSSG\.cache\Windows\SFX\TownCenterAmbience02_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\TownCenterAmbience02		5431392
-

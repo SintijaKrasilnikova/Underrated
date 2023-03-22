@@ -33,7 +33,7 @@ public class AiHurtingState : AiState
             agent.stateMachine.ChangeState(AiStateId.HuntPlayer);
         }
 
-        if (agent.enemiesHealth.getCurrentHealth() <= 0)
+        if (agent.enemiesHealth.GetCurrentHealth() <= 0)
         {
             Debug.Log("changed to death state");
             AiDeathState deathState = agent.stateMachine.GetState(AiStateId.Death) as AiDeathState;

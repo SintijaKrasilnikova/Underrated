@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - AttackArea
+  - UIActive
+  - PlayerCard
   layers:
   - Default
   - TransparentFX
@@ -13,7 +15,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
@@ -40,12 +42,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Foreground
-    uniqueID: 857002695
+  - name: Path
+    uniqueID: 1482175829
     locked: 0
-  - name: Background
-    uniqueID: 1619384661
+  - name: BloodSplat
+    uniqueID: 111662835
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Particle
+    uniqueID: 2527646437
     locked: 0
