@@ -21,7 +21,9 @@ public class PlayerAttackArea : MonoBehaviour
     {
         if(collision.CompareTag("Enemy"))
         {
-           
+            baseDamage = baseAttackRef.GetBaseDamage();
+            damage = baseDamage + extraDamage;
+
             var healthComp = collision.GetComponent<EnemyHealth>();
             if(healthComp!=null)
             {

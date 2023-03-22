@@ -16,6 +16,7 @@ public class AttackTimer : MonoBehaviour
     private bool resting = false;
 
     public int baseDamage = 3;
+    private int startBaseDamage = 3;
 
     public float basicAttackTime = 0.6f;
     public float spinAttackTime = 1.0f;
@@ -25,15 +26,14 @@ public class AttackTimer : MonoBehaviour
     public AK.Wwise.Event swordSwipeSound;
     public AK.Wwise.Event spinSwipeSound;
 
-<<<<<<< Updated upstream
-=======
+
     public bool critPossibleActive = false;
     public int critChance = 10;
     public int critDamageValue = 10;
     public bool willCrit = false;
 
 
->>>>>>> Stashed changes
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +42,8 @@ public class AttackTimer : MonoBehaviour
         basicAttackArea.SetActive(false);
         spinAttackArea = transform.GetChild(1).gameObject;
         spinAttackArea.SetActive(false);
+
+        startBaseDamage = baseDamage;
     }
 
     // Update is called once per frame
@@ -71,8 +73,7 @@ public class AttackTimer : MonoBehaviour
 
     public void SetCurrentAttackActive(bool active, string attackType)
     {
-<<<<<<< Updated upstream
-=======
+
 
         
         if (critPossibleActive )
@@ -81,6 +82,7 @@ public class AttackTimer : MonoBehaviour
 
             if(randomCritChance< critChance)
             {
+
                 willCrit = true;
                 baseDamage = critDamageValue;
             }
@@ -89,7 +91,7 @@ public class AttackTimer : MonoBehaviour
                 willCrit = false;
             }
         }
->>>>>>> Stashed changes
+
         //sets active/inactive the currentAttackArea based on type and plays the according sound/animation
         if (active)
         {
@@ -140,6 +142,7 @@ public class AttackTimer : MonoBehaviour
         attacking = false;
         currentAttackArea.SetActive(false);
 
+        baseDamage = startBaseDamage;
         //call the rest time
         resting = true;
         Invoke(nameof(ResetRest), restTime);
@@ -161,4 +164,13 @@ public class AttackTimer : MonoBehaviour
         baseDamage += inc;
     }
 
+    public void SetCritPossibleActive()
+    {
+        critPossibleActive = true;
+    }
+
+    public void ChangeRestTime()
+    {
+        restTime /= 2;
+    }
 }

@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class CardCounter : MonoBehaviour
 {
-    public bool spinUp = false;
-    public bool speedUp = false;
-    public bool healthUp = false;
-    public bool attackUp = false;
+    public static bool spinUp = false;
+    public static bool speedUp = false;
+    public static bool healthUp = false;
+    public static bool attackUp = false;
+
+   
+
     //spin attack
     public bool GetSpinUp()
     {

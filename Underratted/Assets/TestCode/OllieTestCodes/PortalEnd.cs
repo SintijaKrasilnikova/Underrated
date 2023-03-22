@@ -8,6 +8,8 @@ public class PortalEnd : MonoBehaviour
     private int LoadNextLevel;
     public GameObject endScreen;
     public Card_Numbers playerRef;
+    public PlayerMovement playerMove;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +29,15 @@ public class PortalEnd : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                if (playerRef.hasCard == true)
+                //Debug.Log(playerRef.GetHasCard());
+
+                if (playerRef.GetHasCard() == true)
                 {
+
+                    playerMove.SetCanMove(false);
                     endScreen.SetActive(true);
                 }
-                else if (playerRef.hasCard == false)
+                else //if (playerRef.hasCard == false)
                 {
                     SceneManager.LoadScene(0);
                 }
