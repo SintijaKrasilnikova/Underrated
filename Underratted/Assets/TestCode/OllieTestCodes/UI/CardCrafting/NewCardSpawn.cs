@@ -44,7 +44,7 @@ public class NewCardSpawn : MonoBehaviour
                 break;
         }
 
-        SceneManager.LoadScene(0);
+        //SceneManager.LoadScene(0);
 
     }
 

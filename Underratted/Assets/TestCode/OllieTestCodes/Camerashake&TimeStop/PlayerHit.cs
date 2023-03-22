@@ -11,13 +11,11 @@ public class PlayerHit : MonoBehaviour
     public GameObject hitParticle;
     public GameObject critParticle;
 
-    AttackTimer attackData;
-
-    public Time_Stop timeStopper;
+    public AttackTimer attackData;
 
     private void Start()
     {
-        attackData = GetComponentInParent<AttackTimer>();
+        //attackData = GetComponentInParent<AttackTimer>();
     }
 
     private void OnTriggerEnter(Collider other)

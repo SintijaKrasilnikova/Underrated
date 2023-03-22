@@ -15,12 +15,14 @@ public class MixAnim : MonoBehaviour
     //new card spawned at end of animation
     public GameObject newCard;
     private bool canChangeCard = true;
+    public bool canLoadNextLevel = false;
+    public GameObject continueMsg;
 
    
     // Start is called before the first frame update
     void Start()
     {
-        
+        canLoadNextLevel = false;
     }
 
     // Update is called once per frame
@@ -60,6 +62,8 @@ public class MixAnim : MonoBehaviour
     //combines the two halves
     public void MakeNewCard()
     {
+        continueMsg.SetActive(true);
+        canLoadNextLevel = true;
         newCard.SetActive(true);
         Debug.Log("Mix");
     }

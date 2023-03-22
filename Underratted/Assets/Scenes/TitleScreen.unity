@@ -237,6 +237,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feb0e9204be0040428e66e08e1e7c90b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animCheck: {fileID: 0}
+  isStartScreen: 1
 --- !u!1 &495461490
 GameObject:
   m_ObjectHideFlags: 0
