@@ -41,6 +41,7 @@ public class MixAnim : MonoBehaviour
     public void Mix()
     {
         //titleMsg.SetActive(false);
+        combineCardSound.Post(gameObject);
         playerCard.SetBool("Mix", true);
         uiCardAnim.SetBool("Mix", true);
         canChangeCard = false;
@@ -66,7 +67,6 @@ public class MixAnim : MonoBehaviour
     //combines the two halves
     public void MakeNewCard()
     {
-        combineCardSound.Post(gameObject);
         continueMsg.SetActive(true);
         canLoadNextLevel = true;
         newCard.SetActive(true);
