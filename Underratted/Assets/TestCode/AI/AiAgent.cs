@@ -14,7 +14,8 @@ public class AiAgent : MonoBehaviour
     public Vector3 startPositionEnemy;
 
     public Transform playerTransform;
-    public Health enemiesHealth;
+    public EnemyHealth enemiesHealth;
+    //public Health enemiesHealth;
 
     public bool startWanderingLeft = true;
 
@@ -34,7 +35,7 @@ public class AiAgent : MonoBehaviour
 
         enemyAnimator.GetComponent<Animator>();
         navAgent = GetComponent<NavMeshAgent>();
-        enemiesHealth = GetComponentInChildren<Health>();
+        enemiesHealth = GetComponentInChildren<EnemyHealth>();
 
         stateMachine = new AiStateMachine(this);
 
