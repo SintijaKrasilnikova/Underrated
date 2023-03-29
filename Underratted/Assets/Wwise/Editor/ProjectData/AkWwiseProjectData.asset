@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1558f9340dc3ff46a3c86b1d786ec28e
     GuidInternal: 
-    m_lastTime: -8585238944854378166
+    m_lastTime: -8585221167365881205
     List:
     - name: Main
       guid: d84c12b8016ff448a38b5be01bf74ce1
@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: efbdfc1406597641a03cf89d5cf2a378
     GuidInternal: 
-    m_lastTime: -8585233160046626332
+    m_lastTime: -8585220109360550888
     List:
     - name: Ambience
       guid: 2340bda589aeac4bb453eec8b06ccfb8
@@ -375,6 +375,57 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2340bda589aeac4bb453eec8b06ccfb8
       Path: Events\Default Work Unit\Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: CardCombine
+      guid: 39c7c9e8b3aa4e46bed3b0df0418d0b8
+      id: 2097014402
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: CardCombine
+        ObjectType: 3
+        guid: 39c7c9e8b3aa4e46bed3b0df0418d0b8
+      Path: Events\Default Work Unit\CardCombine
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: CardHighlight
+      guid: b7c8c997f6020a4ea61242219660c309
+      id: 1624507745
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: CardHighlight
+        ObjectType: 3
+        guid: b7c8c997f6020a4ea61242219660c309
+      Path: Events\Default Work Unit\CardHighlight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: CardPickup
+      guid: 9b1d7b206c67184f8328e0f9a6fa107a
+      id: 1900974107
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: CardPickup
+        ObjectType: 3
+        guid: 9b1d7b206c67184f8328e0f9a6fa107a
+      Path: Events\Default Work Unit\CardPickup
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -426,6 +477,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: e528568de96b234b8bf7e5b79af447f1
       Path: Events\Default Work Unit\FreakerHit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PortalClose
+      guid: 70f6677e274f4648864d136cc7af07de
+      id: 3124086097
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: PortalClose
+        ObjectType: 3
+        guid: 70f6677e274f4648864d136cc7af07de
+      Path: Events\Default Work Unit\PortalClose
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PortalLoop
+      guid: 122f8ff9088a8f478dc7ab0386a168fa
+      id: 468214889
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: PortalLoop
+        ObjectType: 3
+        guid: 122f8ff9088a8f478dc7ab0386a168fa
+      Path: Events\Default Work Unit\PortalLoop
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -756,7 +841,7 @@ MonoBehaviour:
     m_lastTime: -8585251305646435847
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000
+  ExpandedWaapiItemIds: 050000000600000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

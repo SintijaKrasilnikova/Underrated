@@ -9,6 +9,7 @@ public class AttackPickup : MonoBehaviour
     public GameObject pickupRef;
     public BoxCollider col;
     bool hasBeenPickedUp = false;
+    public AK.Wwise.Event pickupSoundAttack;
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Player"))
@@ -18,6 +19,7 @@ public class AttackPickup : MonoBehaviour
 
             playerAttack.IncreaseBaseDamage(increaseAmount);
             playerCards.attackCard++;
+            pickupSoundAttack.Post(gameObject);
 
             col.enabled = false;
             hasBeenPickedUp = true;

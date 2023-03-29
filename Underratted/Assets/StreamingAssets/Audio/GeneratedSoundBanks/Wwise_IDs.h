@@ -14,9 +14,14 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID CARDCOMBINE = 2097014402U;
+        static const AkUniqueID CARDHIGHLIGHT = 1624507745U;
+        static const AkUniqueID CARDPICKUP = 1900974107U;
         static const AkUniqueID FOOTSTEPSPLAYER = 3865216745U;
         static const AkUniqueID FREAKERDEATH = 268554923U;
         static const AkUniqueID FREAKERHIT = 3122002442U;
+        static const AkUniqueID PORTALCLOSE = 3124086097U;
+        static const AkUniqueID PORTALLOOP = 468214889U;
         static const AkUniqueID SPINATTACK = 3607344297U;
         static const AkUniqueID SPINATTACKSTOP = 4097783889U;
         static const AkUniqueID SWORDSWIPE = 1496710346U;

@@ -6,7 +6,7 @@ public class FreakerHurt : MonoBehaviour
 {
     public AK.Wwise.Event freakerHurtSound;
     // Start is called before the first frame update
-    void hurtSound()
+    void HurtSound()
     {
         freakerHurtSound.Post(gameObject);
 
