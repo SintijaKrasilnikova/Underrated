@@ -42,7 +42,8 @@ public class PortalEnd : MonoBehaviour
                 }
                 else //if (playerRef.hasCard == false)
                 {
-                    SceneManager.LoadScene(1);
+                    //SceneManager.LoadScene(1);
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
             }
         }

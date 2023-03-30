@@ -1,14 +1,12 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class AttackTimer : MonoBehaviour
+public class AttackManager : MonoBehaviour
 {
-    public GameObject basicAttackArea = default;
-    public GameObject spinAttackArea = default;
-    public GameObject trailAttackArea = default;
+    private GameObject basicAttackArea = default;
+    private GameObject spinAttackArea = default;
+    private GameObject trailAttackArea = default;
     private bool spinAttackActive = false;
     private GameObject currentAttackArea = default;
 
@@ -19,7 +17,6 @@ public class AttackTimer : MonoBehaviour
     public int baseDamage = 3;
     private int startBaseDamage = 3;
 
-    public bool lulu4 = false;
     public float basicAttackTime = 0.6f;
     public float spinAttackTime = 1.0f;
     public float restTime = 1.0f;
@@ -43,15 +40,12 @@ public class AttackTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (lulu4 == false)
-        {
-            basicAttackArea = transform.GetChild(0).gameObject;
-            basicAttackArea.SetActive(false);
-            spinAttackArea = transform.GetChild(1).gameObject;
-            spinAttackArea.SetActive(false);
+        basicAttackArea = transform.GetChild(0).gameObject;
+        basicAttackArea.SetActive(false);
+        spinAttackArea = transform.GetChild(1).gameObject;
+        spinAttackArea.SetActive(false);
 
-            trailAttackArea = transform.GetChild(3).gameObject;
-        }
+        trailAttackArea = transform.GetChild(3).gameObject;
         //trailAttackArea.SetActive(false);
 
         startBaseDamage = baseDamage;
@@ -76,7 +70,7 @@ public class AttackTimer : MonoBehaviour
 
         }
 
-        if(damageTrailActivated)
+        if (damageTrailActivated)
         {
             trailAttackArea.SetActive(true);
         }
@@ -97,12 +91,12 @@ public class AttackTimer : MonoBehaviour
     {
 
 
-        
-        if (critPossibleActive )
+
+        if (critPossibleActive)
         {
             int randomCritChance = UnityEngine.Random.Range(1, 100);
 
-            if(randomCritChance< critChance)
+            if (randomCritChance < critChance)
             {
 
                 willCrit = true;
@@ -117,7 +111,7 @@ public class AttackTimer : MonoBehaviour
         //sets active/inactive the currentAttackArea based on type and plays the according sound/animation
         if (active)
         {
-            
+
             switch (attackType)
             {
                 case "normal":
