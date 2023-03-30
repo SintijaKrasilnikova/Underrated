@@ -26,21 +26,27 @@ public class NewCardSpawn : MonoBehaviour
         {
             case 1://Speed + Speed ability
                 cardOver.SpeedSpeed = true;
+                cardOver.fullCards.Add(1);
                 break;
             case 2://Speed + Attack ability
                 cardOver.AttackSpeed = true;
+                cardOver.fullCards.Add(2);
                 break;
             case 3://Speed + Health ability
                 cardOver.HealthSpeed = true;
+                cardOver.fullCards.Add(3);
                 break;
             case 4://Attack + Attack ability
                 cardOver.AttackAttack = true;
+                cardOver.fullCards.Add(4);
                 break;
             case 5://Health + Attack ability
                 cardOver.HealthAttack = true;
+                cardOver.fullCards.Add(5);
                 break;
             case 6://Health + Health ability
                 cardOver.HealthHealth = true;
+                cardOver.fullCards.Add(6);
                 break;
         }
 

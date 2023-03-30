@@ -4769,7 +4769,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d5b3a558a1e7f4a4182b166bb2f27cf7, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9660,7 +9660,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d5b3a558a1e7f4a4182b166bb2f27cf7, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19401,7 +19401,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d5b3a558a1e7f4a4182b166bb2f27cf7, type: 2}
+  - {fileID: 2100000, guid: 830bb431f9e850844b5336a62e0dd8e0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19442,8 +19442,8 @@ ParticleSystemRenderer:
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
   m_VertexStreams: 00010304
-  m_Mesh: {fileID: -5901618312429366645, guid: f6471d85eb962e448a11b953af7be670, type: 3}
-  m_Mesh1: {fileID: -4401986795023594268, guid: f6471d85eb962e448a11b953af7be670, type: 3}
+  m_Mesh: {fileID: -5901618312429366645, guid: 1bfd39c312100e54db9053e2142f7066, type: 3}
+  m_Mesh1: {fileID: -4401986795023594268, guid: 1bfd39c312100e54db9053e2142f7066, type: 3}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
@@ -19488,6 +19488,8 @@ MonoBehaviour:
   critPossibleActive: 0
   critChance: 10
   critDamageValue: 10
+  willCrit: 0
+  damageTrailActivated: 0
 --- !u!114 &276954296951986951
 MonoBehaviour:
   m_ObjectHideFlags: 0

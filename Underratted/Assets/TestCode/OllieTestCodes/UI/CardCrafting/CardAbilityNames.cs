@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CardAbilityNames : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class CardAbilityNames : MonoBehaviour
     public int abilityNumb;
     public string[] abilityNames;
     public Sprite[] abilities;
+    public EventSystem eventSystem;
 
     //[SerializeField] private CardOverseer cardOver;
 
@@ -16,6 +18,11 @@ public class CardAbilityNames : MonoBehaviour
     void Start()
     {
         
+    }
+
+    private void Awake()
+    {
+        eventSystem.SetSelectedGameObject(uiCard);
     }
 
     // Update is called once per frame
