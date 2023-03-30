@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: f8d44576d89d9f24889246cf55ebb114
   - enabled: 1
+<<<<<<< Updated upstream
+=======
+    path: Assets/Scenes/OllieScene/CardStart.unity
+    guid: e73c74a5db003a44aa8948a144b27171
+  - enabled: 1
+    path: Assets/Scenes/SP_TestScene.unity
+    guid: cb7e221f6e4b13448b5ed664b136228c
+  - enabled: 0
+>>>>>>> Stashed changes
     path: Assets/Scenes/OllieScene/Environment_FP.unity
     guid: 38fc0cfca2d45274e8531c01e7a62926
   m_configObjects: {}

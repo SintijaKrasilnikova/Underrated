@@ -19,5 +19,17 @@ public class StartGame : MonoBehaviour
         {
             SceneManager.LoadScene(1);
         }
+<<<<<<< Updated upstream
+=======
+        else if (Input.GetKey(KeyCode.Space) && animCheck.canLoadNextLevel)
+        {
+        
+            SceneManager.LoadScene(1);
+        }
+        if (Input.GetKey(KeyCode.B))
+        {
+            SceneManager.LoadScene(4);
+        }
+>>>>>>> Stashed changes
     }
 }
