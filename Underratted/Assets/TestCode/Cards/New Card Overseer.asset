@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: New Card Overseer
   m_EditorClassIdentifier: 
   _HealthHealth: 0
-  _HealthAttack: 0
-  _HealthSpeed: 0
+  _HealthAttack: 1
+  _HealthSpeed: 1
   _AttackAttack: 0
-  _AttackSpeed: 0
+  _AttackSpeed: 1
   _SpeedSpeed: 0
+  fullCards: 
+  loadoutCards: 02000000000000000200000000000000000000000000000000000000
