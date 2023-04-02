@@ -29,8 +29,16 @@ public class AiHurtingState : AiState
         }
         else 
         {
-            AiHuntPlayerState huntState = agent.stateMachine.GetState(AiStateId.HuntPlayer) as AiHuntPlayerState;
-            agent.stateMachine.ChangeState(AiStateId.HuntPlayer);
+            if (agent.config.doesEnemyMove == true)
+            {
+                AiHuntPlayerState huntState = agent.stateMachine.GetState(AiStateId.HuntPlayer) as AiHuntPlayerState;
+                agent.stateMachine.ChangeState(AiStateId.HuntPlayer);
+            }
+            else
+            {
+                AiWanderingState wanderState = agent.stateMachine.GetState(AiStateId.Wander) as AiWanderingState;
+                agent.stateMachine.ChangeState(AiStateId.Wander);
+            }
         }
 
         if (agent.enemiesHealth.GetCurrentHealth() <= 0)

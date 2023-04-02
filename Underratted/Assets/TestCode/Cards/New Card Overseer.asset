@@ -16,5 +16,5 @@ MonoBehaviour:
   _HealthAttack: 0
   _HealthSpeed: 0
   _AttackAttack: 0
-  _AttackSpeed: 0
+  _AttackSpeed: 1
   _SpeedSpeed: 0
