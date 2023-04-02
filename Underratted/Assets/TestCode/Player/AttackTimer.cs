@@ -6,9 +6,9 @@ using UnityEngine;
 
 public class AttackTimer : MonoBehaviour
 {
-    private GameObject basicAttackArea = default;
-    private GameObject spinAttackArea = default;
-    private GameObject trailAttackArea = default;
+    public GameObject basicAttackArea = default;
+    public GameObject spinAttackArea = default;
+    public GameObject trailAttackArea = default;
     private bool spinAttackActive = false;
     private GameObject currentAttackArea = default;
 
@@ -19,6 +19,7 @@ public class AttackTimer : MonoBehaviour
     public int baseDamage = 3;
     private int startBaseDamage = 3;
 
+    public bool lulu4 = false;
     public float basicAttackTime = 0.6f;
     public float spinAttackTime = 1.0f;
     public float restTime = 1.0f;
@@ -42,12 +43,15 @@ public class AttackTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        basicAttackArea = transform.GetChild(0).gameObject;
-        basicAttackArea.SetActive(false);
-        spinAttackArea = transform.GetChild(1).gameObject;
-        spinAttackArea.SetActive(false);
+        if (lulu4 == false)
+        {
+            basicAttackArea = transform.GetChild(0).gameObject;
+            basicAttackArea.SetActive(false);
+            spinAttackArea = transform.GetChild(1).gameObject;
+            spinAttackArea.SetActive(false);
 
-        trailAttackArea = transform.GetChild(3).gameObject;
+            trailAttackArea = transform.GetChild(3).gameObject;
+        }
         //trailAttackArea.SetActive(false);
 
         startBaseDamage = baseDamage;

@@ -9,7 +9,8 @@ public enum AiStateId
     Death,
     Attack,
     Wander,
-    Hurting
+    Hurting,
+    Idle
 }
 
 

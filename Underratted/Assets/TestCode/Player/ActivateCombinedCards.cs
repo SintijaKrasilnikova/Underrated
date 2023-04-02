@@ -22,7 +22,7 @@ public class ActivateCombinedCards : MonoBehaviour
         if (cardOver.AttackSpeed == true)
         {
             //damage trail
-            //attack.SetTrailAreaActive();
+            attack.SetTrailAreaActive();
         }
         if (cardOver.HealthSpeed == true)
         {
@@ -46,6 +46,7 @@ public class ActivateCombinedCards : MonoBehaviour
         if (cardOver.HealthHealth == true)
         {
             //increases health droprates
+            playerHealth.IncreaseHealthPickupRate();
 
         }
 

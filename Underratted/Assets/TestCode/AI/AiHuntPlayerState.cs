@@ -69,7 +69,7 @@ public class AiHuntPlayerState : AiState
         }
         else
         {
-            if(attackCoolDown> agent.config.attackSpeed)
+            if(attackCoolDown> agent.config.attackCooldown)
             {
                 attackCoolDown = 0f;
                 agent.readyToAttack = true;

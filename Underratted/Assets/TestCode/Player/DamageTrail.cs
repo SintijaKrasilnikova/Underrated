@@ -5,6 +5,10 @@ using UnityEngine;
 public class DamageTrail : MonoBehaviour
 {
     public int trailDamage = 1;
+    public float damageCoolDown = 2f;
+
+    private float timer = 0;
+    private bool isOnCooldown = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +18,17 @@ public class DamageTrail : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+        if (isOnCooldown)
+        {
+            if (timer > damageCoolDown)
+            {
+                isOnCooldown = false;
+                timer = 0;
+            }
+
+            timer += Time.deltaTime;
+        }
 
     }
 
@@ -24,12 +39,16 @@ public class DamageTrail : MonoBehaviour
             //baseDamage = baseAttackRef.GetBaseDamage();
             //damage = baseDamage + extraDamage;
 
-            var healthComp = collision.GetComponent<EnemyHealth>();
-            if (healthComp != null)
+            if (isOnCooldown == false)
             {
-                //Debug.Log("Health decreased");
-                healthComp.TakeDamage(trailDamage);
-                //this.gameObject.SetActive(false);
+                var healthComp = collision.GetComponent<EnemyHealth>();
+                if (healthComp != null)
+                {
+                    isOnCooldown = true;
+                    //Debug.Log("Health decreased");
+                    healthComp.TakeDamage(trailDamage);
+                    //this.gameObject.SetActive(false);
+                }
             }
         }
 
