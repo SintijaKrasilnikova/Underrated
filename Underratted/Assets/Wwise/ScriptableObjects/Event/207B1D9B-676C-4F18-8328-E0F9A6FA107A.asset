@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40d03a3687d0c914f873ce0bd345709e, type: 3}
   m_Name: 207B1D9B-676C-4F18-8328-E0F9A6FA107A
   m_EditorClassIdentifier: 
-  objectName: CardPickup
-  id: 1900974107
+  objectName: CardEquip
+  id: 969587109
   guid: 207B1D9B-676C-4F18-8328-E0F9A6FA107A
