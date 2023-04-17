@@ -1,6 +1,7 @@
 using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float deathTime = 0.9f;
     [SerializeField] public float hurtTime = 0.3f;
     [SerializeField] public float immuneTime = 1.0f;
+    [SerializeField] public float dodgeTime = 0.8f;
     [Space]
     [SerializeField] private float speed;
     [SerializeField] private Rigidbody playerBody;
@@ -26,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     private bool facingLeft;
     private bool spedUp = false;
     private bool canMove = true;
+    private bool canDodge = true;
 
     public CinemachineVirtualCamera deathCam;
     public GameObject deathUI;
@@ -44,10 +47,14 @@ public class PlayerMovement : MonoBehaviour
     {
         playerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
 
+        Dodge();
+
         MovePlayer();
         plyerAnimator.SetFloat("Horizontal", playerMovementInput.x);
         plyerAnimator.SetFloat("Vertical", playerMovementInput.z);
         plyerAnimator.SetFloat("Speed", playerMovementInput.sqrMagnitude);
+
+
 
 
         if (playerMovementInput.sqrMagnitude >= 0.01 && canMove ==true)
@@ -81,8 +88,52 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+       
+
     }
 
+    private void Dodge()
+    {
+        if (Input.GetKeyDown(KeyCode.O) && canDodge == true)
+        {
+            canMove = false;
+            plyerAnimator.SetBool("Dodging", true);
+            canDodge = false;
+            float dodgeForceValue = 5000f;
+            Vector3 dodgeForce = new Vector3(0, 0, 0);
+            if (plyerAnimator.GetFloat("FacingUp") == 1)
+            {
+                // dodgeForce = new Vector3(dodgeForce.x, dodgeForce.y, dodgeForce.z - dodgeForceValue);
+                dodgeForce = new Vector3(0, dodgeForce.y, -dodgeForceValue);
+            }
+            else if (plyerAnimator.GetFloat("FacingUp") == -1)
+            {
+                //dodgeForce = new Vector3(dodgeForce.x, dodgeForce.y, dodgeForce.z + dodgeForceValue);
+                dodgeForce = new Vector3(0, dodgeForce.y, +dodgeForceValue);
+            }
+
+            if (plyerAnimator.GetFloat("FacingRight") == -1)
+            {
+                //dodgeForce = new Vector3(dodgeForce.x + dodgeForceValue, dodgeForce.y, dodgeForce.z);
+                dodgeForce = new Vector3(+dodgeForceValue, dodgeForce.y, 0);
+            }
+            else if (plyerAnimator.GetFloat("FacingRight") == 1)
+            {
+                //dodgeForce = new Vector3(dodgeForce.x - dodgeForceValue, dodgeForce.y, dodgeForce.z);
+                dodgeForce = new Vector3(-dodgeForceValue, dodgeForce.y, 0);
+            }
+            playerBody.AddForce(dodgeForce);
+            Invoke(nameof(RestoreDodge), dodgeTime);
+            //Debug.Log("Dodge called");
+        }
+    }
+
+    public void RestoreDodge()
+    {
+        canMove = true;
+        plyerAnimator.SetBool("Dodging", false);
+        canDodge = true;
+    }
     public void SetCanMove(bool canMoveNow)
     {
         canMove = canMoveNow;
