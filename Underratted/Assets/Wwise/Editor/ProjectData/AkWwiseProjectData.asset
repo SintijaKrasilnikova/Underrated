@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1558f9340dc3ff46a3c86b1d786ec28e
     GuidInternal: 
-    m_lastTime: -8585221167365881205
+    m_lastTime: -8585209064435179688
     List:
     - name: Main
       guid: d84c12b8016ff448a38b5be01bf74ce1
@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: efbdfc1406597641a03cf89d5cf2a378
     GuidInternal: 
-    m_lastTime: -8585220109360550888
+    m_lastTime: -8585208821965829872
     List:
     - name: Ambience
       guid: 2340bda589aeac4bb453eec8b06ccfb8
@@ -395,6 +395,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: CardEquip
+      guid: 9b1d7b206c67184f8328e0f9a6fa107a
+      id: 969587109
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: CardEquip
+        ObjectType: 3
+        guid: 9b1d7b206c67184f8328e0f9a6fa107a
+      Path: Events\Default Work Unit\CardEquip
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: CardHighlight
       guid: b7c8c997f6020a4ea61242219660c309
       id: 1624507745
@@ -409,23 +426,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: b7c8c997f6020a4ea61242219660c309
       Path: Events\Default Work Unit\CardHighlight
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: CardPickup
-      guid: 9b1d7b206c67184f8328e0f9a6fa107a
-      id: 1900974107
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: efbdfc1406597641a03cf89d5cf2a378
-      - ElementName: CardPickup
-        ObjectType: 3
-        guid: 9b1d7b206c67184f8328e0f9a6fa107a
-      Path: Events\Default Work Unit\CardPickup
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -477,6 +477,91 @@ MonoBehaviour:
         ObjectType: 3
         guid: e528568de96b234b8bf7e5b79af447f1
       Path: Events\Default Work Unit\FreakerHit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FrogDeath
+      guid: 1d8428a90ee83f4986f4d2762dced9c9
+      id: 1231350003
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: FrogDeath
+        ObjectType: 3
+        guid: 1d8428a90ee83f4986f4d2762dced9c9
+      Path: Events\Default Work Unit\FrogDeath
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FrogHit
+      guid: 1dc65f9be8e8134fa813b944a837d140
+      id: 2012877250
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: FrogHit
+        ObjectType: 3
+        guid: 1dc65f9be8e8134fa813b944a837d140
+      Path: Events\Default Work Unit\FrogHit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: HealPickup
+      guid: 7dbaa65500cafe4e854c1fcd4148fe6a
+      id: 669525935
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: HealPickup
+        ObjectType: 3
+        guid: 7dbaa65500cafe4e854c1fcd4148fe6a
+      Path: Events\Default Work Unit\HealPickup
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Inventory
+      guid: 49fc6f7a702004469bb006d45d8090c5
+      id: 203281819
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: Inventory
+        ObjectType: 3
+        guid: 49fc6f7a702004469bb006d45d8090c5
+      Path: Events\Default Work Unit\Inventory
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayerDodge
+      guid: f6a08af82023b844aa7a93ffcc34e5ae
+      id: 906551347
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: PlayerDodge
+        ObjectType: 3
+        guid: f6a08af82023b844aa7a93ffcc34e5ae
+      Path: Events\Default Work Unit\PlayerDodge
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -841,7 +926,7 @@ MonoBehaviour:
     m_lastTime: -8585251305646435847
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

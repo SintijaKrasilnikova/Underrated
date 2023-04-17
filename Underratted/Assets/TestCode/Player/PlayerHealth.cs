@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 8;
     public float immunityTime = 1f;
     public int healthGainFromPickup = 2;
-    public int healthPickupChance = 100;
+    public int healthPickupChance = 20;
     public int healthGainFromCard = 2;
     public int healthGainFromSteal = 2;
     public int healthStealChance = 20;
@@ -75,16 +75,20 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    //public void HealthPickUp()
-    //{
-    //    int randomChance = Random.Range(1, 100);
+    public void HealthPickUp(Vector3 enemyPos)
+    {
+        int randomChance = Random.Range(1, 100);
 
-    //    if (randomChance < healthPickupChance)
-    //    {
-    //        Instantiate(pickup, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y , gameObject.transform.position.z), Quaternion.identity);
-    //        //currentHealth += healthGainFromPickup;
-    //    }
-    //}
+        if (randomChance < healthPickupChance)
+        {
+            Instantiate(pickup, enemyPos, Quaternion.identity);
+        }
+    }
+
+    public void GainHealthFromPickup()
+    {
+        currentHealth += healthGainFromPickup;
+    }
 
     public void SetLifestealActive()
     {

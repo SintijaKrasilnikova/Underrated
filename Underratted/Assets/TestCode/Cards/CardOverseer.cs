@@ -6,7 +6,8 @@ using UnityEngine;
 public class CardOverseer : ScriptableObject
 {
     //Health
-	[SerializeField]
+    [SerializeField]
+
 	private bool _HealthHealth;
 
 	public bool HealthHealth
@@ -63,6 +64,7 @@ public class CardOverseer : ScriptableObject
         set { _SpeedSpeed = value; }
     }
 
-
+    public List<int> fullCards = new List<int>();
+    public List<int> loadoutCards = new List<int>();
 }
     

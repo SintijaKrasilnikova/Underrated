@@ -26,5 +26,9 @@ public class StartGame : MonoBehaviour
         
             SceneManager.LoadScene(1);
         }
+        if (Input.GetKey(KeyCode.B))
+        {
+            SceneManager.LoadScene(4);
+        }
     }
 }

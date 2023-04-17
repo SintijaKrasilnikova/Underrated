@@ -22,6 +22,7 @@ public class CardRandomDropper : MonoBehaviour
     public AttackTimer attackTimer;
 
     public GameObject currentCardRef = default;
+    public PlayerHealth playerHealthRef = default;
 
     //public bool spinUp = false;
     //public bool speedUp = false;
@@ -88,6 +89,7 @@ public class CardRandomDropper : MonoBehaviour
         int randomChance = Random.Range(1, 100);
 
 
+        //card is dropped
         if (randomChance < dropChances && currentUp == false)
         {
             //drop the card
@@ -95,6 +97,11 @@ public class CardRandomDropper : MonoBehaviour
             currentCardRef.transform.position = gameObject.transform.position;
             currentCardRef.SetActive(true);
             //attackTimer.setSpinActive(true);
+        }
+        else //chance to drop the health pickup
+        {
+            playerHealthRef.HealthPickUp(this.transform.position);
+
         }
 
 

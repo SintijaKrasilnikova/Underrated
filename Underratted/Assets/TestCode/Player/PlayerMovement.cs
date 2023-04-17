@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,13 +27,16 @@ public class PlayerMovement : MonoBehaviour
     private bool spedUp = false;
     private bool canMove = true;
 
+    public CinemachineVirtualCamera deathCam;
+    public GameObject deathUI;
+
 
     public AK.Wwise.Event footstepSound = new AK.Wwise.Event();
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -119,7 +123,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void PlayerDeath()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        canMove = false;
+        deathCam.Priority = 21;
+        deathUI.SetActive(true);
+        this.GetComponent<Renderer>().sortingOrder = 1;
     }
 
     public void ImmunityOff()

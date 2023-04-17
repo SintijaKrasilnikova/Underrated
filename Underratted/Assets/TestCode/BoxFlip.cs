@@ -5,8 +5,8 @@ using UnityEngine;
 public class BoxFlip : MonoBehaviour
 {
 
-    public bool forAttackArea = false;
-    public Vector3 startLocalOffset;
+    //public bool forAttackArea = false;
+    private Vector3 startLocalOffset;
 
     private BoxCollider boxCollider;
     private Animator animator;
@@ -17,10 +17,10 @@ public class BoxFlip : MonoBehaviour
         boxCollider = gameObject.GetComponent<BoxCollider>();
         animator = gameObject.GetComponentInParent<Animator>(false);
        
-        if(forAttackArea == false)
-        {
-            startLocalOffset = boxCollider.transform.localPosition;
-        }
+        //if(forAttackArea == false)
+        //{
+        startLocalOffset = boxCollider.transform.localPosition;
+       // }
 
     }
 
@@ -30,13 +30,13 @@ public class BoxFlip : MonoBehaviour
 
         if (animator.GetFloat("FacingRight") == 1)
         {
-            boxCollider.transform.localPosition = new Vector3(-Mathf.Abs(startLocalOffset.x), startLocalOffset.y, startLocalOffset.z);
+            boxCollider.transform.localPosition = new Vector3(Mathf.Abs(startLocalOffset.x), startLocalOffset.y, startLocalOffset.z);
             //boxCollider.transform.localPosition = new Vector3(Mathf.Abs(startLocalOffset.x), startLocalOffset.y, startLocalOffset.z);
 
         }
         else if (animator.GetFloat("FacingRight") == -1)
         {
-            boxCollider.transform.localPosition = new Vector3(Mathf.Abs(startLocalOffset.x), startLocalOffset.y, startLocalOffset.z);
+            boxCollider.transform.localPosition = new Vector3(-Mathf.Abs(startLocalOffset.x), startLocalOffset.y, startLocalOffset.z);
 
             //boxCollider.transform.localPosition = new Vector3(-Mathf.Abs(startLocalOffset.x), startLocalOffset.y, startLocalOffset.z);
         }

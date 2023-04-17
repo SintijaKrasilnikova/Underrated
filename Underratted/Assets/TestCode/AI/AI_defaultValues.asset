@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8816c2dbc51010a4f86fd7ade8618859, type: 3}
   m_Name: AI_defaultValues
   m_EditorClassIdentifier: 
-  huntingDistance: 10
-  huntingStopDistance: 3
+  doesEnemyMove: 1
+  huntingDistance: 5
+  huntingStopDistance: 2
   wanderDistance: {x: 10, y: 0, z: 0}
-  attackSpeed: 2
+  attackCooldown: 3
   attackPrepare: 0.5

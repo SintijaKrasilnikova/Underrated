@@ -8,6 +8,8 @@ TagManager:
   - AttackArea
   - UIActive
   - PlayerCard
+  - SkillButton
+  - PassiveButton
   layers:
   - Default
   - TransparentFX

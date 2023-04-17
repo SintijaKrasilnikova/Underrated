@@ -63,8 +63,35 @@ public class AiAttackState : AiState
                 //agent.enemyAnimator.SetBool("Attacking", attacking);
                 //attackArea.SetActive(false);
 
-                AiHuntPlayerState huntState = agent.stateMachine.GetState(AiStateId.HuntPlayer) as AiHuntPlayerState;
-                agent.stateMachine.ChangeState(AiStateId.HuntPlayer);
+                if (agent.config.doesEnemyMove == true)
+                {
+                    AiHuntPlayerState huntState = agent.stateMachine.GetState(AiStateId.HuntPlayer) as AiHuntPlayerState;
+                    agent.stateMachine.ChangeState(AiStateId.HuntPlayer);
+                }
+                else
+                {
+                    AiWanderingState wanderState = agent.stateMachine.GetState(AiStateId.Wander) as AiWanderingState;
+                    agent.stateMachine.ChangeState(AiStateId.Wander);
+                }
+            }
+        }
+
+        if (agent.config.doesEnemyMove == false)
+        {
+            //left
+            if (agent.playerTransform.position.x < agent.transform.localPosition.x)
+            {
+                agent.enemyAnimator.SetFloat("FacingRight", -1);
+                agent.enemyAnimator.SetFloat("FacingUp", 0);
+                agent.startWanderingLeft = true;
+                //Debug.Log("Left");
+            }
+            else
+            {
+                agent.enemyAnimator.SetFloat("FacingRight", 1);
+                agent.enemyAnimator.SetFloat("FacingUp", 0);
+                agent.startWanderingLeft = false;
+                //Debug.Log("Right");
             }
         }
 
