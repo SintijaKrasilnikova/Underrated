@@ -29,6 +29,13 @@ public class PlayerMovement : MonoBehaviour
     private bool spedUp = false;
     private bool canMove = true;
     private bool canDodge = true;
+    private bool movingDiognaly = false;
+    private bool playerCanControl = true;
+    //1-left
+    //2-right
+    //3-down
+    //4-up
+    private int lastDirection = 1;
 
     public CinemachineVirtualCamera deathCam;
     public GameObject deathUI;
@@ -45,94 +52,170 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
-
-        Dodge();
-
-        MovePlayer();
-        plyerAnimator.SetFloat("Horizontal", playerMovementInput.x);
-        plyerAnimator.SetFloat("Vertical", playerMovementInput.z);
-        plyerAnimator.SetFloat("Speed", playerMovementInput.sqrMagnitude);
-
-
-
-
-        if (playerMovementInput.sqrMagnitude >= 0.01 && canMove ==true)
+        if (playerCanControl == true)
         {
-            //left right for animation
-            if (Input.GetAxis("Horizontal") < 0)
+            playerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+        }
+        else
+            playerMovementInput = new Vector3(0, 0, 0);
+
+        //playerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+
+        if (playerCanControl == true)
+        {
+            //MovePlayer();
+            plyerAnimator.SetFloat("Horizontal", playerMovementInput.x);
+            plyerAnimator.SetFloat("Vertical", playerMovementInput.z);
+            plyerAnimator.SetFloat("Speed", playerMovementInput.sqrMagnitude);
+
+            if(Input.GetAxis("Horizontal") != 0 && Input.GetAxis("Vertical") != 0)
             {
-                plyerAnimator.SetFloat("FacingUp", 0);
-                plyerAnimator.SetFloat("FacingRight", -1); //left
-                footstepSound.Post(gameObject);
+                movingDiognaly = true;
             }
-            else if (Input.GetAxis("Horizontal") > 0)
+            else
             {
-                plyerAnimator.SetFloat("FacingUp", 0);
-                plyerAnimator.SetFloat("FacingRight", 1); //right
-                footstepSound.Post(gameObject);
+                movingDiognaly = false;
             }
 
-            //up down for animation
-            if (Input.GetAxis("Vertical") < 0)
+            if (playerMovementInput.sqrMagnitude >= 0.01 && canMove == true)
             {
-                plyerAnimator.SetFloat("FacingRight", 0);
-                plyerAnimator.SetFloat("FacingUp", -1); //down
-                footstepSound.Post(gameObject);
+                MovePlayer();
+                //left right for animation
+                if (Input.GetAxis("Horizontal") < 0)
+                {
+                   // plyerAnimator.SetFloat("FacingUp", 0);
+                    plyerAnimator.SetFloat("FacingRight", -1); //left
+                    lastDirection = 1;
+                    footstepSound.Post(gameObject);
+                }
+                else if (Input.GetAxis("Horizontal") > 0)
+                {
+                    //plyerAnimator.SetFloat("FacingUp", 0);
+                    plyerAnimator.SetFloat("FacingRight", 1); //right
+                    lastDirection = 2;
+                    footstepSound.Post(gameObject);
+                }
+
+                //up down for animation
+                if (Input.GetAxis("Vertical") < 0)
+                {
+                    //plyerAnimator.SetFloat("FacingRight", 0);
+                    plyerAnimator.SetFloat("FacingUp", -1); //down
+                    lastDirection = 3;
+                    footstepSound.Post(gameObject);
+                }
+                else if (Input.GetAxis("Vertical") > 0)
+                {
+                    //plyerAnimator.SetFloat("FacingRight", 0);
+                    plyerAnimator.SetFloat("FacingUp", 1); //up
+                    lastDirection = 4;
+                    footstepSound.Post(gameObject);
+                }
             }
-            else if (Input.GetAxis("Vertical") > 0)
+            else
             {
-                plyerAnimator.SetFloat("FacingRight", 0);
-                plyerAnimator.SetFloat("FacingUp", 1); //up
-                footstepSound.Post(gameObject);
+                //1-left
+                //2-right
+                //3-down
+                //4-up
+                switch (lastDirection)
+                {
+                    case 1:
+                        {
+                            plyerAnimator.SetFloat("FacingUp", 0);
+                            plyerAnimator.SetFloat("FacingRight", -1); //left
+                            break;
+                        }
+                    case 2:
+                        {
+                            plyerAnimator.SetFloat("FacingUp", 0);
+                            plyerAnimator.SetFloat("FacingRight", 1); //right
+                            break;
+                        }
+                    case 3:
+                        {
+                            plyerAnimator.SetFloat("FacingRight", 0);
+                            plyerAnimator.SetFloat("FacingUp", -1); //down
+                            break;
+                        }
+                    case 4:
+                        {
+                            plyerAnimator.SetFloat("FacingRight", 0);
+                            plyerAnimator.SetFloat("FacingUp", 1); //up
+                            break;
+                        }
+                }
             }
         }
 
-       
+        Dodge();
 
+    }
+
+    public void SetCanDoge(bool newCanDodge)
+    {
+        canDodge = newCanDodge;
     }
 
     private void Dodge()
     {
-        if (Input.GetKeyDown(KeyCode.O) && canDodge == true)
+        if (Input.GetKeyDown(KeyCode.P) && canDodge == true)
         {
-            canMove = false;
+            //canMove = false;
+            playerCanControl = false;
             plyerAnimator.SetBool("Dodging", true);
             canDodge = false;
             float dodgeForceValue = 5000f;
             Vector3 dodgeForce = new Vector3(0, 0, 0);
             if (plyerAnimator.GetFloat("FacingUp") == 1)
             {
-                // dodgeForce = new Vector3(dodgeForce.x, dodgeForce.y, dodgeForce.z - dodgeForceValue);
-                dodgeForce = new Vector3(0, dodgeForce.y, -dodgeForceValue);
+                dodgeForce = new Vector3(dodgeForce.x, dodgeForce.y, dodgeForce.z - dodgeForceValue);
+                //dodgeForce = new Vector3(0, dodgeForce.y, -dodgeForceValue);
             }
             else if (plyerAnimator.GetFloat("FacingUp") == -1)
             {
-                //dodgeForce = new Vector3(dodgeForce.x, dodgeForce.y, dodgeForce.z + dodgeForceValue);
-                dodgeForce = new Vector3(0, dodgeForce.y, +dodgeForceValue);
+                dodgeForce = new Vector3(dodgeForce.x, dodgeForce.y, dodgeForce.z + dodgeForceValue);
+                //dodgeForce = new Vector3(0, dodgeForce.y, +dodgeForceValue);
             }
+
+            //if(movingDiognaly ==false)
+            //{
+            //    dodgeForce.z = 0;
+            //}
 
             if (plyerAnimator.GetFloat("FacingRight") == -1)
             {
-                //dodgeForce = new Vector3(dodgeForce.x + dodgeForceValue, dodgeForce.y, dodgeForce.z);
-                dodgeForce = new Vector3(+dodgeForceValue, dodgeForce.y, 0);
+                if (movingDiognaly == false)
+                {
+                    dodgeForce.z = 0;
+                }
+                dodgeForce = new Vector3(dodgeForce.x + dodgeForceValue, dodgeForce.y, dodgeForce.z);
+                //dodgeForce = new Vector3(+dodgeForceValue, dodgeForce.y, 0);
             }
             else if (plyerAnimator.GetFloat("FacingRight") == 1)
             {
-                //dodgeForce = new Vector3(dodgeForce.x - dodgeForceValue, dodgeForce.y, dodgeForce.z);
-                dodgeForce = new Vector3(-dodgeForceValue, dodgeForce.y, 0);
+                if (movingDiognaly == false)
+                {
+                    dodgeForce.z = 0;
+                }
+                dodgeForce = new Vector3(dodgeForce.x - dodgeForceValue, dodgeForce.y, dodgeForce.z);
+                //dodgeForce = new Vector3(-dodgeForceValue, dodgeForce.y, 0);
             }
+
+            playerBody.velocity = new Vector3(0,0,0);
             playerBody.AddForce(dodgeForce);
             Invoke(nameof(RestoreDodge), dodgeTime);
             //Debug.Log("Dodge called");
         }
+
     }
 
     public void RestoreDodge()
     {
-        canMove = true;
+        //canMove = true;
         plyerAnimator.SetBool("Dodging", false);
         canDodge = true;
+        playerCanControl = true;
     }
     public void SetCanMove(bool canMoveNow)
     {
@@ -141,11 +224,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer()
     {
-        if (canMove == true)
+        if (canMove == true )
         {
-            Vector3 movePlayer = (transform.TransformDirection(playerMovementInput) * speed);
+            //playerMovementInput = playerMovementInput.normalized;
+            Vector3 movePlayer = (transform.TransformDirection(playerMovementInput)) * speed;
+            Debug.Log(movePlayer);
+            //movePlayer = movePlayer.normalized ;
+            Vector3 playerVelocity = new Vector3(movePlayer.x, playerBody.velocity.y, movePlayer.z);
 
-            playerBody.velocity = new Vector3(movePlayer.x, playerBody.velocity.y, movePlayer.z);
+            playerBody.velocity = playerVelocity;
         }
         
     }

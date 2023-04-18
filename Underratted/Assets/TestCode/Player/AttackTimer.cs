@@ -6,11 +6,14 @@ using UnityEngine;
 
 public class AttackTimer : MonoBehaviour
 {
+    public PlayerMovement movementRef;
+
     public GameObject basicAttackArea = default;
     public GameObject spinAttackArea = default;
     public GameObject trailAttackArea = default;
     private bool spinAttackActive = false;
     private GameObject currentAttackArea = default;
+
 
 
     private bool attacking = false;
@@ -71,7 +74,7 @@ public class AttackTimer : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.O) && spinAttackActive == true)
             {
                 SetCurrentAttackActive(true, "spin");
-                Invoke(nameof(EndAttack), basicAttackTime);
+                Invoke(nameof(EndAttack), spinAttackTime);
             }
 
         }
@@ -96,7 +99,7 @@ public class AttackTimer : MonoBehaviour
     public void SetCurrentAttackActive(bool active, string attackType)
     {
 
-
+        movementRef.SetCanDoge(false);
         
         if (critPossibleActive )
         {
@@ -159,6 +162,7 @@ public class AttackTimer : MonoBehaviour
         //set animations back to movement
         plyerAnimator.SetBool("Attacking", false);
         plyerAnimator.SetBool("Spin", false);
+        movementRef.SetCanDoge(true);
 
         //disable the attack area
         attacking = false;
