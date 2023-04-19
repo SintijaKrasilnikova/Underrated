@@ -6,7 +6,7 @@ using UnityEngine;
 public class AiAttackState : AiState
 {
     private bool attacking = false;
-    private float timeToAttack = 0.9f;
+    //private float timeToAttack = 0.9f;
     
     private float timer = 0f;
     private GameObject attackArea = default;
@@ -55,7 +55,7 @@ public class AiAttackState : AiState
             }
            
 
-            if (timer >= timeToAttack)
+            if (timer >= agent.config.attackDuraton)
             {
                 timer = 0;
 

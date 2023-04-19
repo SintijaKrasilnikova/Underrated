@@ -18,3 +18,4 @@ MonoBehaviour:
   wanderDistance: {x: 3, y: 0, z: 3}
   attackCooldown: 1.5
   attackPrepare: 0.5
+  attackDuraton: 1.5

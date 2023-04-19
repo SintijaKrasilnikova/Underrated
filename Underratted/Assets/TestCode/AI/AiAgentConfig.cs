@@ -15,6 +15,7 @@ public class AiAgentConfig : ScriptableObject
 
     public float attackCooldown = 3f;
     public float attackPrepare = 0.5f;
+    public float attackDuraton = 0.9f;
     //public bool startWanderingLeft = true;
 
     //public Vector3 dangerDistance = new Vector3(0, 0, 0);
