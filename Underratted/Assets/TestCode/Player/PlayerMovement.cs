@@ -42,6 +42,9 @@ public class PlayerMovement : MonoBehaviour
 
 
     public AK.Wwise.Event footstepSound = new AK.Wwise.Event();
+    public AK.Wwise.Event playerDodge;
+    public AK.Wwise.Event deathSound;
+    public AK.Wwise.Event playerHitSound;
 
     //just for alpha for the swipe down animation
     public GameObject slashDown;
@@ -194,8 +197,9 @@ public class PlayerMovement : MonoBehaviour
             playerCanControl = false;
             plyerAnimator.SetBool("Dodging", true);
             canDodge = false;
-            float dodgeForceValue = 5000f;
+            float dodgeForceValue = 25000f;
             Vector3 dodgeForce = new Vector3(0, 0, 0);
+            playerDodge.Post(gameObject);
             if (plyerAnimator.GetFloat("FacingUp") == 1)
             {
                 dodgeForce = new Vector3(dodgeForce.x, dodgeForce.y, dodgeForce.z - dodgeForceValue);
@@ -279,6 +283,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             plyerAnimator.SetBool("Hurt", true);
+            playerHitSound.Post(gameObject);
             Invoke(nameof(ResetHurt), hurtTime);
         }
     }
@@ -296,6 +301,7 @@ public class PlayerMovement : MonoBehaviour
         deathCam.Priority = 21;
         deathUI.SetActive(true);
         this.GetComponent<Renderer>().sortingOrder = 1;
+        deathSound.Post(gameObject);
     }
 
     public void ImmunityOff()

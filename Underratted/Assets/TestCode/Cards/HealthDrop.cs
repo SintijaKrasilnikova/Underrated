@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HealthDrop : MonoBehaviour
 {
+    public AK.Wwise.Event pickupSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class HealthDrop : MonoBehaviour
             //var playerCards = collision.GetComponent<Card_Numbers>();
 
             playerHealth.GainHealthFromPickup();
+            pickupSound.Post(gameObject);
             Destroy(this.gameObject);
 
             //col.enabled = false;

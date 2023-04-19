@@ -14,19 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _HealthHealth: 0
   _HealthAttack: 0
-  _HealthSpeed: 0
+  _HealthSpeed: 1
   _AttackAttack: 1
   _AttackSpeed: 1
-  _SpeedSpeed: 1
+  _SpeedSpeed: 0
   halfCards: 
-  fullCards: 020000000100000002000000020000000100000004000000
-  loadoutCards: 030000000100000002000000
-  loadoutCardUse: 000000000000000002000000020000000200000002000000
+  fullCards: 030000000400000002000000
+  loadoutCards: 
+  loadoutCardUse: 020000000200000002000000020000000200000002000000
   rechargeAmount: 0.34
   loadoutCardRecharge:
-  - 0.68
-  - 0.68
-  - 0.68
-  - 3.6799998
-  - 3.6799998
-  - 3.6799998
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  firstRun: 0

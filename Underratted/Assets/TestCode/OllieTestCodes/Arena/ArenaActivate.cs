@@ -33,7 +33,7 @@ public class ArenaActivate : MonoBehaviour
             activateArena = true;
         }
 
-        if(activateArena && enemiesKilled == goalKills)
+        if(activateArena && enemiesKilled > goalKills)
         {
             arenaUI.SetActive(false);
             walls.SetActive(false);

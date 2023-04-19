@@ -97,6 +97,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7797bf418fe72fc4595e93329734bcd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9710a98a6ddae8a41a7e57e739f1ef34, type: 2}
 --- !u!135 &5097822145246179329
 SphereCollider:
   m_ObjectHideFlags: 0

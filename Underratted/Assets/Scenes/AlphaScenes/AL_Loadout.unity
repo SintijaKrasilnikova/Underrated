@@ -390,6 +390,10 @@ MonoBehaviour:
   buttonImage: {fileID: 142511921}
   hasCard: 0
   selectedCard: {fileID: 0}
+  cardEquipSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &193157924
 GameObject:
   m_ObjectHideFlags: 0
@@ -6733,6 +6737,10 @@ MonoBehaviour:
   buttonImage: {fileID: 1533581380}
   hasCard: 0
   selectedCard: {fileID: 0}
+  cardEquipSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 21d07dcc81733154e8beaf99d13b8399, type: 2}
 --- !u!1 &1598538233
 GameObject:
   m_ObjectHideFlags: 0
@@ -7515,6 +7523,10 @@ MonoBehaviour:
   buttonImage: {fileID: 0}
   hasCard: 0
   selectedCard: {fileID: 0}
+  cardEquipSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1789290945
 GameObject:
   m_ObjectHideFlags: 0
@@ -7670,6 +7682,10 @@ MonoBehaviour:
   buttonImage: {fileID: 1789290948}
   hasCard: 0
   selectedCard: {fileID: 0}
+  cardEquipSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1800417520
 GameObject:
   m_ObjectHideFlags: 0
@@ -7824,6 +7840,10 @@ MonoBehaviour:
   buttonImage: {fileID: 1800417523}
   hasCard: 0
   selectedCard: {fileID: 0}
+  cardEquipSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 21d07dcc81733154e8beaf99d13b8399, type: 2}
 --- !u!1 &1804430697
 GameObject:
   m_ObjectHideFlags: 0

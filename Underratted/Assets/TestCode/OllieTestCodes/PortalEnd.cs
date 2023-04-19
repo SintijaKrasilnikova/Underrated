@@ -48,7 +48,7 @@ public class PortalEnd : MonoBehaviour
                 {
                     health.TakeDamage(100);
                 }
-                if (playerRef.hasCard == false)
+                if (playerRef.hasCard == false && isAlphaPortal == false)
                 {
                     //SceneManager.LoadScene(1);
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

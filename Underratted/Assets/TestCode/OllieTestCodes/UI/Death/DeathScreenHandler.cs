@@ -5,6 +5,7 @@ using UnityEngine;
 public class DeathScreenHandler : MonoBehaviour
 {
     public GameObject fadeOut;
+    public AK.Wwise.Event restartPressed;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,7 @@ public class DeathScreenHandler : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            restartPressed.Post(gameObject);
             fadeOut.SetActive(true);
         }
     }

@@ -14,6 +14,7 @@ public class CardStart_Buttons : MonoBehaviour, IEventSystemHandler, ISelectHand
     public Image buttonImage;
     public bool hasCard = false;
     public CardStart_Cards selectedCard;
+    public AK.Wwise.Event cardEquipSound;
     public void OnDeselect(BaseEventData eventData)
     {
         isSelected = false;
@@ -52,6 +53,7 @@ public class CardStart_Buttons : MonoBehaviour, IEventSystemHandler, ISelectHand
                 buttonImage.sprite = baseSprite;
                 selectedCard.cardUse++;
                 selectedCard = null;
+                cardEquipSound.Post(gameObject);
             }
         }
 
