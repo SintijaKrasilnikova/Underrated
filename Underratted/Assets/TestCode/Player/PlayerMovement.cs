@@ -79,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (playerMovementInput.sqrMagnitude >= 0.01 && canMove == true)
             {
-                MovePlayer();
+                //MovePlayer();
                 //left right for animation
                 if (Input.GetAxis("Horizontal") < 0)
                 {
@@ -87,6 +87,11 @@ public class PlayerMovement : MonoBehaviour
                     plyerAnimator.SetFloat("FacingRight", -1); //left
                     lastDirection = 1;
                     footstepSound.Post(gameObject);
+
+                    if(Input.GetAxis("Vertical")==0)
+                    {
+                        plyerAnimator.SetFloat("FacingUp", 0);
+                    }
                 }
                 else if (Input.GetAxis("Horizontal") > 0)
                 {
@@ -94,6 +99,11 @@ public class PlayerMovement : MonoBehaviour
                     plyerAnimator.SetFloat("FacingRight", 1); //right
                     lastDirection = 2;
                     footstepSound.Post(gameObject);
+
+                    if (Input.GetAxis("Vertical") == 0)
+                    {
+                        plyerAnimator.SetFloat("FacingUp", 0);
+                    }
                 }
 
                 //up down for animation
@@ -103,6 +113,11 @@ public class PlayerMovement : MonoBehaviour
                     plyerAnimator.SetFloat("FacingUp", -1); //down
                     lastDirection = 3;
                     footstepSound.Post(gameObject);
+
+                    if (Input.GetAxis("Horizontal") == 0)
+                    {
+                        plyerAnimator.SetFloat("FacingRight", 0);
+                    }
                 }
                 else if (Input.GetAxis("Vertical") > 0)
                 {
@@ -110,6 +125,11 @@ public class PlayerMovement : MonoBehaviour
                     plyerAnimator.SetFloat("FacingUp", 1); //up
                     lastDirection = 4;
                     footstepSound.Post(gameObject);
+
+                    if (Input.GetAxis("Horizontal") == 0)
+                    {
+                        plyerAnimator.SetFloat("FacingRight", 0);
+                    }
                 }
             }
             else
@@ -150,6 +170,12 @@ public class PlayerMovement : MonoBehaviour
 
         Dodge();
 
+    }
+
+    void FixedUpdate()
+    {
+        if(canMove)
+            MovePlayer();
     }
 
     public void SetCanDoge(bool newCanDodge)
@@ -226,8 +252,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (canMove == true )
         {
-            //playerMovementInput = playerMovementInput.normalized;
-            Vector3 movePlayer = (transform.TransformDirection(playerMovementInput)) * speed;
+            
+            Vector3 movePlayer = playerMovementInput.normalized * speed;
+            //Vector3 movePlayer = (transform.TransformDirection(playerMovementInput)) * speed;
             Debug.Log(movePlayer);
             //movePlayer = movePlayer.normalized ;
             Vector3 playerVelocity = new Vector3(movePlayer.x, playerBody.velocity.y, movePlayer.z);
