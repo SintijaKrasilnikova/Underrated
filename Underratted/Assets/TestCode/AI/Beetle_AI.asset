@@ -17,4 +17,5 @@ MonoBehaviour:
   huntingStopDistance: 2
   wanderDistance: {x: 10, y: 0, z: 0}
   attackCooldown: 3
-  attackPrepare: 0.5
+  attackPrepare: 0.3
+  attackDuraton: 0.6

@@ -109,12 +109,12 @@ TextureImporter:
       name: frog_idle_left_0
       rect:
         serializedVersion: 2
-        x: 40
+        x: 0
         y: 0
-        width: 1532
-        height: 1090
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 624.4
+        height: 1089
+      alignment: 9
+      pivot: {x: 0.5, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -130,12 +130,12 @@ TextureImporter:
       name: frog_idle_left_1
       rect:
         serializedVersion: 2
-        x: 1572
+        x: 624
         y: 0
-        width: 1532
-        height: 1090
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 624.4
+        height: 1089
+      alignment: 9
+      pivot: {x: 0.5, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,12 +151,12 @@ TextureImporter:
       name: frog_idle_left_2
       rect:
         serializedVersion: 2
-        x: 3104
+        x: 1248
         y: 0
-        width: 1532
-        height: 1090
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 624.4
+        height: 1089
+      alignment: 9
+      pivot: {x: 0.5, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,12 +172,12 @@ TextureImporter:
       name: frog_idle_left_3
       rect:
         serializedVersion: 2
-        x: 4636
+        x: 1872
         y: 0
-        width: 1532
-        height: 1090
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 624.4
+        height: 1089
+      alignment: 9
+      pivot: {x: 0.5, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,12 +193,12 @@ TextureImporter:
       name: frog_idle_left_4
       rect:
         serializedVersion: 2
-        x: 6168
+        x: 2496
         y: 0
-        width: 1532
-        height: 1090
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 624.4
+        height: 1089
+      alignment: 9
+      pivot: {x: 0.5, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
