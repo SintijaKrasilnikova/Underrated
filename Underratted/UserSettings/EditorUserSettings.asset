@@ -6,38 +6,22 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedScenePath-0:
-<<<<<<< Updated upstream
       value: 22424703114646680e0b0227036c7c3129231d39381b2535232c5326ece92021
-=======
-      value: 22424703114646680e0b0227036c7a1e001e0a252225233e39691b3cf0a0183df4e23aa9b6742a323016f6
       flags: 0
     RecentlyUsedScenePath-1:
-      value: 22424703114646680e0b0227036c7e1c061f19192f2d28353e66383df4e92637ecea33e7f37a19332b42c339123b0d71e704001fef
+      value: 22424703114646680e0b0227036c701c1a1e1d192f2d2835621d2d0cd6e5272cd1e433e7e2742a323016f6
       flags: 0
     RecentlyUsedScenePath-2:
-      value: 22424703114646680e0b0227036c7c1104133b25212a2f3e2c3d143cecae2136ebf32f
+      value: 22424703114646680e0b0227036c7e1c061f19192f2d28353e663c1fddcc3b39e6e823fda92f31352d1b
       flags: 0
     RecentlyUsedScenePath-3:
-      value: 22424703114646680e0b0227036c7a1e001e0a252225233e39693b3cf0a0183df4e23aa7f234362820
+      value: 22424703114646680e0b0227036c7e1c061f19192f2d28353e663c1fddcc312ee7eb67a9aa7a1c33291ba1290a371526
       flags: 0
     RecentlyUsedScenePath-4:
-      value: 22424703114646680e0b0227036c7a1e001e0a252225233e39691b3cf0a00434e3fe22ecf42e7129370bfb25
-      flags: 0
-    RecentlyUsedScenePath-5:
-      value: 22424703114646680e0b0227036c7a1e001e0a252225233e39692d3fe3f9203df1f378fce9332b25
-      flags: 0
-    RecentlyUsedScenePath-6:
-      value: 22424703114646680e0b0227036c7a1e001e0a252225233e391a1e36ece57a2decee22f0
-      flags: 0
-    RecentlyUsedScenePath-7:
-      value: 22424703114646680e0b0227036c73150012146a7d686070193c093cf0e93534acf238e0f323
-      flags: 0
-    RecentlyUsedScenePath-8:
       value: 22424703114646680e0b0227036c7e1c061f19192f2d28353e663c1fddd4212cedf53fe8eb163a2a3c0ea1290a371526
       flags: 0
-    RecentlyUsedScenePath-9:
-      value: 22424703114646680e0b0227036c701c1a1e1d192f2d2835621d2d0cd6e5272cd1e433e7e2742a323016f6
->>>>>>> Stashed changes
+    vcSharedLogLevel:
+      value: 0d5e400f0650
       flags: 0
   m_VCAutomaticAdd: 1
   m_VCDebugCom: 0

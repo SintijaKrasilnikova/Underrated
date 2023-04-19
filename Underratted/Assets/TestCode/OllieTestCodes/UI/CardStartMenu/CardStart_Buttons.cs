@@ -51,6 +51,7 @@ public class CardStart_Buttons : MonoBehaviour, IEventSystemHandler, ISelectHand
             {
                 buttonImage.sprite = baseSprite;
                 selectedCard.cardUse++;
+                selectedCard = null;
             }
         }
 

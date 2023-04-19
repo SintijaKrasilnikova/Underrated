@@ -11,7 +11,7 @@ public class AttackTimer : MonoBehaviour
     public GameObject basicAttackArea = default;
     public GameObject spinAttackArea = default;
     public GameObject trailAttackArea = default;
-    private bool spinAttackActive = false;
+    private bool spinAttackActive = true;
     private GameObject currentAttackArea = default;
 
 

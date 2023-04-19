@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HealthPickup : MonoBehaviour
 {
+    [SerializeField] private CardOverseer cardOver;
+
     public GameObject pickupRef;
     public BoxCollider col;
     bool hasBeenPickedUp = false;
@@ -17,6 +19,7 @@ public class HealthPickup : MonoBehaviour
 
             playerHealth.AddHealth();
             playerCards.healthCard++;
+            cardOver.halfCards.Add(2);
             pickupSoundHealth.Post(gameObject);
 
             col.enabled = false;
