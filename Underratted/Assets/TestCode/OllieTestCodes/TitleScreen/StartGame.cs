@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
+    [SerializeField] private CardOverseer cardOver;
+
     private int LoadNextLevel;
     public MixAnim animCheck;
     public bool isStartScreen = false;
@@ -19,7 +21,16 @@ public class StartGame : MonoBehaviour
     {
         if((Input.GetKey(KeyCode.Space) && isStartScreen))
         {
-            SceneManager.LoadScene(1);
+            if (cardOver.firstRun)
+            {
+                cardOver.firstRun = false;
+                SceneManager.LoadScene(2);
+            }
+            else
+            {
+                SceneManager.LoadScene(1);
+            }
+
         }
         else if (Input.GetKey(KeyCode.Space) && animCheck.canLoadNextLevel)
         {

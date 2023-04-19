@@ -12,6 +12,9 @@ public class PortalEnd : MonoBehaviour
     public GameObject lulu;
     public AK.Wwise.Event endLevelSound;
     public GameObject cardholder;
+
+    public bool isAlphaPortal = false;
+    public PlayerHealth health;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,11 +44,17 @@ public class PortalEnd : MonoBehaviour
                     playerMove.SetCanMove(false);
                     endScreen.SetActive(true);
                 }
-                else //if (playerRef.hasCard == false)
+                if (isAlphaPortal)
+                {
+                    health.TakeDamage(100);
+                }
+                if (playerRef.hasCard == false)
                 {
                     //SceneManager.LoadScene(1);
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 }
+
+
             }
         }
     }

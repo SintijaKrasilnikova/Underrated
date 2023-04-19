@@ -35,30 +35,13 @@ public class SelectingCard : MonoBehaviour
 
     private void Awake()
     {
-        var selectImage = gameObject.GetComponent<Image>();
-        if (cardNumberRef == 0)
-        {
-            selectImage.sprite = speed;
-            buffText = "Speed +1";
-            playerCardNumber = 1;
-        }
-        else if(cardNumberRef == 1)
-        {
-            selectImage.sprite = attack;
-            buffText = "Attack +1";
-            playerCardNumber = 2;
-        }
-        else if(cardNumberRef == 2)
-        {
-            selectImage.sprite = health;
-            buffText = "Health +1";
-            playerCardNumber = 3;
-        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        cardNumberRef = cardOver.halfCards[0];
         //find the active ui card and set it as the move ref
         moveRef = GameObject.FindGameObjectWithTag("UIActive");
         moveRef.GetComponent<CardRandom>();
@@ -84,6 +67,26 @@ public class SelectingCard : MonoBehaviour
             animator.SetBool("MiddleIdle", false);
             animator.SetBool("LeftIdle", false);
             animator.SetBool("RightIdle", true);
+        }
+
+        var selectImage = gameObject.GetComponent<Image>();
+        if (cardNumberRef == 0)
+        {
+            selectImage.sprite = speed;
+            buffText = "Speed +1";
+            playerCardNumber = 1;
+        }
+        else if (cardNumberRef == 1)
+        {
+            selectImage.sprite = attack;
+            buffText = "Attack +1";
+            playerCardNumber = 2;
+        }
+        else if (cardNumberRef == 2)
+        {
+            selectImage.sprite = health;
+            buffText = "Health +1";
+            playerCardNumber = 3;
         }
 
     }
