@@ -10,6 +10,10 @@ public class CardStart_Buttons : MonoBehaviour, IEventSystemHandler, ISelectHand
     public GameObject passiveMenu;
     public bool isSelected = false;
     public GameObject nextToSelect;
+    public Sprite baseSprite;
+    public Image buttonImage;
+    public bool hasCard = false;
+    public CardStart_Cards selectedCard;
     public void OnDeselect(BaseEventData eventData)
     {
         isSelected = false;
@@ -29,6 +33,8 @@ public class CardStart_Buttons : MonoBehaviour, IEventSystemHandler, ISelectHand
             skillMenu.SetActive(false);
             passiveMenu.SetActive(true);
         }
+
+
     }
     // Start is called before the first frame update
     void Start()
@@ -39,7 +45,15 @@ public class CardStart_Buttons : MonoBehaviour, IEventSystemHandler, ISelectHand
     // Update is called once per frame
     void Update()
     {
-        
+        if(isSelected && hasCard)
+        {
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                buttonImage.sprite = baseSprite;
+                selectedCard.cardUse++;
+            }
+        }
+
     }
 
     public void buttonClicked()

@@ -66,5 +66,19 @@ public class CardOverseer : ScriptableObject
 
     public List<int> fullCards = new List<int>();
     public List<int> loadoutCards = new List<int>();
+    public List<int> loadoutCardUse = new List<int>();
+    public float rechargeAmount;
+    public List<float> loadoutCardRecharge = new List<float>();
+
+    public void rechargeCards()
+    {
+        loadoutCardRecharge[0] += rechargeAmount;
+        loadoutCardRecharge[1] += rechargeAmount;
+        loadoutCardRecharge[2] += rechargeAmount;
+        loadoutCardRecharge[3] += rechargeAmount;
+        loadoutCardRecharge[4] += rechargeAmount;
+        loadoutCardRecharge[5] += rechargeAmount;
+
+    }
 }
     
