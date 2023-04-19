@@ -10,7 +10,7 @@ public class Card_Numbers : MonoBehaviour
     public int attackCard = 0;
     public int healthCard = 0;
 
-    private bool hasCard = false;
+    public bool hasCard = false;
     // Start is called before the first frame update
     void Start()
     {

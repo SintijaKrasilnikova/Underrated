@@ -70,6 +70,7 @@ public class CardOverseer : ScriptableObject
     public List<int> loadoutCardUse = new List<int>();
     public float rechargeAmount;
     public List<float> loadoutCardRecharge = new List<float>();
+    public bool firstRun = false;
 
     public void rechargeCards()
     {

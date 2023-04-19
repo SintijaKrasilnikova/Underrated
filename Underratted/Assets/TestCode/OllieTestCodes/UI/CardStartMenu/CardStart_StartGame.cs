@@ -42,11 +42,11 @@ public class CardStart_StartGame : MonoBehaviour
         }
 
 
-        if (passive1.selectedCard.cardUse <= 0)
+        if (passive1.selectedCard != null && passive1.selectedCard.cardUse <= 0)
         {
             cardOver.loadoutCardRecharge[passive1.selectedCard.cardID] = 0f;
         }
-        if (passive2.selectedCard.cardUse <= 0)
+        if (passive2.selectedCard != null && passive2.selectedCard.cardUse <= 0)
         {
             cardOver.loadoutCardRecharge[passive2.selectedCard.cardID] = 0f;
         }
