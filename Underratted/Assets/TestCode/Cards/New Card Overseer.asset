@@ -19,4 +19,17 @@ MonoBehaviour:
   _AttackSpeed: 1
   _SpeedSpeed: 0
   fullCards: 
+<<<<<<< Updated upstream
   loadoutCards: 02000000000000000200000000000000000000000000000000000000
+=======
+  loadoutCards: 020000000000000002000000000000000000000000000000040000000400000001000000
+  loadoutCardUse: 00000000
+  rechargeAmount: 5
+  loadoutCardRecharge:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+>>>>>>> Stashed changes

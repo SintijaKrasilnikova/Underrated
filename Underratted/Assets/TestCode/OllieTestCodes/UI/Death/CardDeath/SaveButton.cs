@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class SaveButton : MonoBehaviour
 {
@@ -30,14 +31,10 @@ public class SaveButton : MonoBehaviour
     public void ButtonClicked()
     {
         //find the cards in the overseer to check if any slots are empty
-        foreach (int slot in cardOver.loadoutCards)
+
+        if(cardOver.loadoutCards.All(x => x != currentButton.GetComponent<DeathCardSelector>().cardID))
         {
-            //if so, break and add card to that slot
-            if (cardOver.loadoutCards[slot] == 0)
-            {
-                cardOver.loadoutCards[slot] = currentButton.GetComponent<DeathCardSelector>().cardID;
-                break;
-            }
+            cardOver.loadoutCards.Add(currentButton.GetComponent<DeathCardSelector>().cardID);
         }
         SceneManager.LoadScene(0);
     }

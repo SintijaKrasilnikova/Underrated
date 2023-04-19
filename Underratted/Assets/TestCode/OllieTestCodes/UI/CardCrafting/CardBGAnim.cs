@@ -6,10 +6,12 @@ using UnityEngine.UI;
 
 public class CardBGAnim : MonoBehaviour
 {
+    [SerializeField] private CardOverseer cardOver;
     public GameObject assets;
     public EventSystem eventSystem;
     public GameObject deathCard;
     public bool isBG;
+    public GameObject pickcardTest;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,10 +26,16 @@ public class CardBGAnim : MonoBehaviour
 
     public void activeateAssets()
     {
+        assets.SetActive(true);
         if (isBG)
         {
+            cardOver.rechargeCards();
             eventSystem.SetSelectedGameObject(deathCard);
         }
-        assets.SetActive(true);
+    }
+
+    public void test()
+    {
+        pickcardTest.SetActive(true);
     }
 }
