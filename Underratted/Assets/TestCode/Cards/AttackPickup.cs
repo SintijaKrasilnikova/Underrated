@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AttackPickup : MonoBehaviour
 {
+    [SerializeField] private CardOverseer cardOver;
+
     public int increaseAmount = 2;
 
     public GameObject pickupRef;
@@ -19,6 +21,7 @@ public class AttackPickup : MonoBehaviour
 
             playerAttack.IncreaseBaseDamage(increaseAmount);
             playerCards.attackCard++;
+            cardOver.halfCards.Add(1);
             pickupSoundAttack.Post(gameObject);
 
             col.enabled = false;

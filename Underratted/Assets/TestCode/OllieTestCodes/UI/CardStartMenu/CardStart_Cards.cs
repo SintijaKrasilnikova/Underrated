@@ -43,23 +43,18 @@ public class CardStart_Cards : MonoBehaviour
             rechargeBar.SetActive(false);
             hasBeenSelected = false;
         }
-
-        cardID = cardOver.loadoutCards[inventoryID];
-        if(cardID == 0)
-        {
-            this.gameObject.SetActive(false);
-        }
-        cardImage.sprite = cardSprites[cardID];
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (cardOver.loadoutCardRecharge[cardID] > 1)
+        if (cardOver.loadoutCards.Count < cardID +1)
         {
-            cardOver.loadoutCardRecharge[cardID] = 1;
+            this.gameObject.SetActive(false);
         }
+        cardImage.sprite = cardSprites[cardOver.loadoutCards[cardID]];
 
+        //see all selected buttons in scene
         foreach (CardStart_Buttons button in buttons)
         {
             if (button.isSelected)
@@ -68,6 +63,7 @@ public class CardStart_Cards : MonoBehaviour
             }
         }
 
+        //cross enabled when no cards left to show cant equip more
         if(cardUse != 0)
         {
             cross.SetActive(false);

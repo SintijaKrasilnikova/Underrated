@@ -11,16 +11,11 @@ public class DeathCardSelector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    private void Awake()
-    {
         int indexElement;
         var currentSprite = gameObject.GetComponent<Image>();
 
         //pick a random card from the list the player has
-        indexElement = Random.Range(0, cardOver.fullCards.Count);
+        indexElement = Random.Range(2, cardOver.fullCards.Count - 1);
         cardID = cardOver.fullCards[indexElement];
 
         //remove element from list
@@ -28,11 +23,22 @@ public class DeathCardSelector : MonoBehaviour
 
         //change card sprite to be the right card
         currentSprite.sprite = cardSprites[cardID];
+
+
+    }
+
+    private void Awake()
+    {
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (cardID == 0)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

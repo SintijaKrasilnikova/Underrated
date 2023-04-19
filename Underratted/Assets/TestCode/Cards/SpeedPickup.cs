@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SpeedPickup : MonoBehaviour
 {
+    [SerializeField] private CardOverseer cardOver;
+
     public GameObject pickupRef;
     public BoxCollider col;
     bool hasBeenPickedUp = false;
@@ -19,6 +21,7 @@ public class SpeedPickup : MonoBehaviour
 
             playerMove.SpeedUp();
             playerCards.speedCard++;
+            cardOver.halfCards.Add(0);
             pickupSoundSpeed.Post(gameObject);
 
             col.enabled = false;

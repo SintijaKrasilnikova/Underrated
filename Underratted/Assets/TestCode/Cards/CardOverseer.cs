@@ -64,6 +64,7 @@ public class CardOverseer : ScriptableObject
         set { _SpeedSpeed = value; }
     }
 
+    public List<int> halfCards = new List<int>();
     public List<int> fullCards = new List<int>();
     public List<int> loadoutCards = new List<int>();
     public List<int> loadoutCardUse = new List<int>();

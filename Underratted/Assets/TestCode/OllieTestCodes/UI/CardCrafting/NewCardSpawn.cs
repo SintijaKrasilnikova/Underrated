@@ -10,14 +10,19 @@ public class NewCardSpawn : MonoBehaviour
 
     [SerializeField] private CardOverseer cardOver;
 
+    public bool canRemoveListEle = true;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
+
     }
 
     private void Awake()
     {
+        
+
         //Debug.Log("Combined");
         var cardImage = gameObject.GetComponent<Image>();
         cardImage.sprite = cardAbilityRef.abilities[cardAbilityRef.abilityNumb];
@@ -57,6 +62,10 @@ public class NewCardSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (canRemoveListEle)
+        {
+            cardOver.halfCards.RemoveAt(0);
+            canRemoveListEle = false;
+        }
     }
 }

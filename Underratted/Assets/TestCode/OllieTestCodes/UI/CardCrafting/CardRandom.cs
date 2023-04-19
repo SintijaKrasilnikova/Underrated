@@ -22,6 +22,8 @@ public class CardRandom : MonoBehaviour, IEventSystemHandler, ISelectHandler, ID
 
     public Animator animator;
 
+    public bool wasCrafted = false;
+
     public AK.Wwise.Event cardHighlight;
 
     public void OnDeselect(BaseEventData eventData)
@@ -66,6 +68,11 @@ public class CardRandom : MonoBehaviour, IEventSystemHandler, ISelectHandler, ID
     // Update is called once per frame
     void Update()
     {
+        if (wasCrafted)
+        {
+            gameObject.SetActive(false);
+        }
+
         //animation plays when active and stops when inactive
         if(gameObject.tag == "UIActive")
         {
@@ -75,5 +82,10 @@ public class CardRandom : MonoBehaviour, IEventSystemHandler, ISelectHandler, ID
         {
             animator.speed = 0f;
         }
+    }
+
+    public void WasCrafted()
+    {
+        wasCrafted = true;
     }
 }

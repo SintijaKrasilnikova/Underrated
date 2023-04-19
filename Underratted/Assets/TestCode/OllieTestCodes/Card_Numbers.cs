@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Card_Numbers : MonoBehaviour
 {
+    [SerializeField] private CardOverseer cardOver;
+
     public int speedCard = 0;
     public int attackCard = 0;
     public int healthCard = 0;
@@ -18,7 +20,12 @@ public class Card_Numbers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(speedCard > 0)
+        if (cardOver.halfCards.Count > 0)
+        {
+            hasCard = true;
+        }
+
+        if (speedCard > 0)
         {
             hasCard = true;
         }

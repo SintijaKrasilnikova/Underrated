@@ -11,7 +11,7 @@ public class PortalEnd : MonoBehaviour
     public PlayerMovement playerMove;
     public GameObject lulu;
     public AK.Wwise.Event endLevelSound;
-
+    public GameObject cardholder;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +35,7 @@ public class PortalEnd : MonoBehaviour
 
                 if (playerRef.GetHasCard() == true)
                 {
+                    cardholder.SetActive(false);
                     //lulu.SetActive(false);
                     endLevelSound.Post(gameObject);
                     playerMove.SetCanMove(false);

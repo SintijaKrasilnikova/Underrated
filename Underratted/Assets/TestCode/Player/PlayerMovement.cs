@@ -43,6 +43,9 @@ public class PlayerMovement : MonoBehaviour
 
     public AK.Wwise.Event footstepSound = new AK.Wwise.Event();
 
+    //just for alpha for the swipe down animation
+    public GameObject slashDown;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -283,4 +286,13 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+
+    public void DownAttack()
+    {
+        slashDown.SetActive(true);
+    }
+    public void DownAttackDone()
+    {
+        slashDown.SetActive(false);
+    }
 }

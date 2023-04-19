@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class SelectingCard : MonoBehaviour
 {
+    [SerializeField] private CardOverseer cardOver;
+
     public GameObject moveRef;
     public CardRandom cardRef;
     public Vector2 currentPos;
@@ -23,28 +25,30 @@ public class SelectingCard : MonoBehaviour
     //ref for ability descriptions
     public int playerCardNumber;
 
+    public int cardNumberRef;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        cardNumberRef = cardOver.halfCards[0];
     }
 
     private void Awake()
     {
         var selectImage = gameObject.GetComponent<Image>();
-        if (cardNumber.speedCard > 0)
+        if (cardNumberRef == 0)
         {
             selectImage.sprite = speed;
             buffText = "Speed +1";
             playerCardNumber = 1;
         }
-        else if(cardNumber.attackCard > 0)
+        else if(cardNumberRef == 1)
         {
             selectImage.sprite = attack;
             buffText = "Attack +1";
             playerCardNumber = 2;
         }
-        else if(cardNumber.healthCard > 0)
+        else if(cardNumberRef == 2)
         {
             selectImage.sprite = health;
             buffText = "Health +1";
@@ -59,8 +63,8 @@ public class SelectingCard : MonoBehaviour
         moveRef = GameObject.FindGameObjectWithTag("UIActive");
         moveRef.GetComponent<CardRandom>();
         //this can maybe go since its using animation now
-        MoveTowards = new Vector2(moveRef.GetComponent<CardRandom>().playerPos.transform.position.x, moveRef.GetComponent<CardRandom>().playerPos.transform.position.y);
-        transform.LeanMoveLocal(new Vector2(MoveTowards.x, MoveTowards.y), 0);
+        //MoveTowards = new Vector2(moveRef.GetComponent<CardRandom>().playerPos.transform.position.x, moveRef.GetComponent<CardRandom>().playerPos.transform.position.y);
+        //transform.LeanMoveLocal(new Vector2(MoveTowards.x, MoveTowards.y), 0);
 
         //trigger animation based on the currently active card
         if(moveRef.GetComponent<CardRandom>().cardNumb == 1)

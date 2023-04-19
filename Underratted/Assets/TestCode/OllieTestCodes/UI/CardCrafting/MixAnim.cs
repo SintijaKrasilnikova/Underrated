@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MixAnim : MonoBehaviour
 {
+    [SerializeField] private CardOverseer cardOver;
+
     public Animator playerCard;
     public GameObject uiCard;
     Animator uiCardAnim;
@@ -14,13 +16,14 @@ public class MixAnim : MonoBehaviour
 
     //new card spawned at end of animation
     public GameObject newCard;
-    private bool canChangeCard = true;
+    public bool canChangeCard = true;
     public bool canLoadNextLevel = false;
     public GameObject continueMsg;
     public GameObject titleMsg;
 
     public AK.Wwise.Event combineCardSound; 
 
+    public bool isReal = false;
    
     // Start is called before the first frame update
     void Start()
@@ -44,7 +47,10 @@ public class MixAnim : MonoBehaviour
         combineCardSound.Post(gameObject);
         playerCard.SetBool("Mix", true);
         uiCardAnim.SetBool("Mix", true);
-        canChangeCard = false;
+        if(isReal)
+        {
+            canChangeCard = false;
+        }
     }
 
     public void HideMiddleCard()
@@ -67,9 +73,16 @@ public class MixAnim : MonoBehaviour
     //combines the two halves
     public void MakeNewCard()
     {
+        if (isReal)
+        {
+            //cardOver.halfCards.RemoveAt(0);
+        }
+
+        uiCard.GetComponent<CardRandom>().wasCrafted = true;
         continueMsg.SetActive(true);
         canLoadNextLevel = true;
         newCard.SetActive(true);
+        canChangeCard = true;
         Debug.Log("Mix");
     }
 
