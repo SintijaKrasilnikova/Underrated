@@ -1129,6 +1129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 12100562}
   - component: {fileID: 12100561}
+  - component: {fileID: 12100563}
   m_Layer: 0
   m_Name: Tree 6 (2)
   m_TagString: Untagged
@@ -1202,6 +1203,19 @@ Transform:
   m_Father: {fileID: 1719827378}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+--- !u!65 &12100563
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12100560}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.97, y: 12.17, z: 0.2}
+  m_Center: {x: 0, y: 7.62, z: 0}
 --- !u!1 &14823676
 GameObject:
   m_ObjectHideFlags: 0
@@ -4401,6 +4415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 61259186}
   - component: {fileID: 61259185}
+  - component: {fileID: 61259187}
   m_Layer: 0
   m_Name: Tree 6 (5)
   m_TagString: Untagged
@@ -4474,6 +4489,19 @@ Transform:
   m_Father: {fileID: 1719827378}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+--- !u!65 &61259187
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61259184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.97, y: 12.17, z: 0.2}
+  m_Center: {x: 0, y: 7.62, z: 0}
 --- !u!1 &62106969
 GameObject:
   m_ObjectHideFlags: 0
@@ -12115,6 +12143,48 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7629811779324647873, guid: b0bc859f05d4ee2448048827269b1292, type: 3}
+--- !u!23 &207774556
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207774554}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &208497199
 GameObject:
   m_ObjectHideFlags: 0
@@ -17251,6 +17321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 295379730}
   - component: {fileID: 295379729}
+  - component: {fileID: 295379731}
   m_Layer: 0
   m_Name: Tree 6 (4)
   m_TagString: Untagged
@@ -17324,6 +17395,19 @@ Transform:
   m_Father: {fileID: 1719827378}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+--- !u!65 &295379731
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295379728}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.97, y: 12.17, z: 0.2}
+  m_Center: {x: 0, y: 7.62, z: 0}
 --- !u!1 &297341261 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8706855358580277556, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
@@ -28232,6 +28316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 465160348}
   - component: {fileID: 465160347}
+  - component: {fileID: 465160349}
   m_Layer: 0
   m_Name: Tree 6 (8)
   m_TagString: Untagged
@@ -28305,6 +28390,19 @@ Transform:
   m_Father: {fileID: 1719827378}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+--- !u!65 &465160349
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465160346}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.97, y: 12.17, z: 0.2}
+  m_Center: {x: 0, y: 7.62, z: 0}
 --- !u!1 &466415844
 GameObject:
   m_ObjectHideFlags: 0
@@ -90943,6 +91041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1457331035}
   - component: {fileID: 1457331034}
+  - component: {fileID: 1457331036}
   m_Layer: 0
   m_Name: Tree 6 (7)
   m_TagString: Untagged
@@ -91016,6 +91115,19 @@ Transform:
   m_Father: {fileID: 1719827378}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+--- !u!65 &1457331036
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457331033}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.97, y: 12.17, z: 0.2}
+  m_Center: {x: 0, y: 7.62, z: 0}
 --- !u!1 &1457972231
 GameObject:
   m_ObjectHideFlags: 0
@@ -98544,6 +98656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1568376075}
   - component: {fileID: 1568376074}
+  - component: {fileID: 1568376076}
   m_Layer: 0
   m_Name: Tree 6 (1)
   m_TagString: Untagged
@@ -98617,6 +98730,19 @@ Transform:
   m_Father: {fileID: 1719827378}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+--- !u!65 &1568376076
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568376073}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.97, y: 12.17, z: 0.2}
+  m_Center: {x: 0, y: 7.62, z: 0}
 --- !u!1 &1569657525
 GameObject:
   m_ObjectHideFlags: 0
@@ -102544,6 +102670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1632305257}
   - component: {fileID: 1632305256}
+  - component: {fileID: 1632305258}
   m_Layer: 0
   m_Name: Tree 6 (3)
   m_TagString: Untagged
@@ -102617,6 +102744,19 @@ Transform:
   m_Father: {fileID: 1719827378}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+--- !u!65 &1632305258
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632305255}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.97, y: 12.17, z: 0.2}
+  m_Center: {x: 0, y: 7.62, z: 0}
 --- !u!1 &1632956760
 GameObject:
   m_ObjectHideFlags: 0
@@ -132525,6 +132665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2127139970}
   - component: {fileID: 2127139969}
+  - component: {fileID: 2127139971}
   m_Layer: 0
   m_Name: Tree 6
   m_TagString: Untagged
@@ -132598,6 +132739,19 @@ Transform:
   m_Father: {fileID: 1719827378}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+--- !u!65 &2127139971
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127139968}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.97, y: 12.17, z: 0.2}
+  m_Center: {x: 0, y: 7.62, z: 0}
 --- !u!1 &2127542248
 GameObject:
   m_ObjectHideFlags: 0
@@ -132774,6 +132928,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2129978180}
   - component: {fileID: 2129978179}
+  - component: {fileID: 2129978181}
   m_Layer: 0
   m_Name: Tree 6 (6)
   m_TagString: Untagged
@@ -132847,6 +133002,19 @@ Transform:
   m_Father: {fileID: 1719827378}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+--- !u!65 &2129978181
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129978178}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.97, y: 12.17, z: 0.2}
+  m_Center: {x: 0, y: 7.62, z: 0}
 --- !u!1 &2131119451
 GameObject:
   m_ObjectHideFlags: 0
