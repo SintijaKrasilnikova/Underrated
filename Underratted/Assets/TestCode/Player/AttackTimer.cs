@@ -105,8 +105,8 @@ public class AttackTimer : MonoBehaviour
         spinFillValue = UiValueRegen(spinFillValue, spinRestTime);
         normAttackFillValue = UiValueRegen(normAttackFillValue, normalRestTime);
 
-        Debug.Log(spinFillValue);
-        Debug.Log(normAttackFillValue);
+        //Debug.Log(spinFillValue);
+        //Debug.Log(normAttackFillValue);
 
     }
 

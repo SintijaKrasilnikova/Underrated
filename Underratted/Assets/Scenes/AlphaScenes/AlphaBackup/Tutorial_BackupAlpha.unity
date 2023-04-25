@@ -40746,6 +40746,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CM vcam1
       objectReference: {fileID: 0}
+    - target: {fileID: 1334286830696379030, guid: fe4f0e15c55e8794096518d17c284112, type: 3}
+      propertyPath: m_TagString
+      value: Camera
+      objectReference: {fileID: 0}
     - target: {fileID: 1334286830696379032, guid: fe4f0e15c55e8794096518d17c284112, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -56749,6 +56753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardOver: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+  demoEnd: 0
   creationAssets: {fileID: 1131204582}
   mixImage: {fileID: 1721828343}
   mixedCard: {fileID: 297341261}
@@ -102671,6 +102676,7 @@ GameObject:
   - component: {fileID: 1632305257}
   - component: {fileID: 1632305256}
   - component: {fileID: 1632305258}
+  - component: {fileID: 1632305259}
   m_Layer: 0
   m_Name: Tree 6 (3)
   m_TagString: Untagged
@@ -102738,7 +102744,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632305255}
   m_LocalRotation: {x: 0.08715578, y: -0, z: -0, w: 0.9961947}
-  m_LocalPosition: {x: -22.6, y: 0, z: 0}
+  m_LocalPosition: {x: -27.95, y: 0.22, z: -20.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1719827378}
@@ -102757,6 +102763,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.97, y: 12.17, z: 0.2}
   m_Center: {x: 0, y: 7.62, z: 0}
+--- !u!114 &1632305259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632305255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5a1645b405f6b42867d5d8c59c92e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRef: {fileID: 0}
+  render: {fileID: 0}
+  treeToCameraDist: 15
 --- !u!1 &1632956760
 GameObject:
   m_ObjectHideFlags: 0
