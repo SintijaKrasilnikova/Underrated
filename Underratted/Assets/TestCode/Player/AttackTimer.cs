@@ -25,7 +25,15 @@ public class AttackTimer : MonoBehaviour
     public bool lulu4 = false;
     public float basicAttackTime = 0.6f;
     public float spinAttackTime = 1.0f;
-    public float restTime = 1.0f;
+
+    //cooldown tracker values
+    private float currentRestTime = 0f;
+    public float spinFillValue = 0;
+    public float normAttackFillValue = 0;
+
+    //max values for the ability cooldown
+    public float normalRestTime = 1.0f;
+    public float spinRestTime = 3.0f;
 
     public Animator plyerAnimator;
     public AK.Wwise.Event swordSwipeSound;
@@ -38,6 +46,8 @@ public class AttackTimer : MonoBehaviour
     public bool willCrit = false;
 
     public bool damageTrailActivated = false;
+
+   
 
 
 
@@ -83,6 +93,21 @@ public class AttackTimer : MonoBehaviour
         {
             trailAttackArea.SetActive(true);
         }
+
+        //if(resting == true)
+        //{
+        //    UiValueRegen(spinFillValue, spinRestTime);
+        //    UiValueRegen(normAttackFillValue, normalRestTime);
+
+        //}
+
+        //UiValueRegen(spinFillValue, spinRestTime);
+        spinFillValue = UiValueRegen(spinFillValue, spinRestTime);
+        normAttackFillValue = UiValueRegen(normAttackFillValue, normalRestTime);
+
+        Debug.Log(spinFillValue);
+        Debug.Log(normAttackFillValue);
+
     }
 
     public void SetTrailAreaActive()
@@ -159,6 +184,19 @@ public class AttackTimer : MonoBehaviour
 
     public void EndAttack()
     {
+
+        if(plyerAnimator.GetBool("Spin") == true)
+        {
+            currentRestTime = spinRestTime;
+            spinFillValue = 0;
+
+        }
+        else
+        {
+            currentRestTime = normalRestTime;
+            normAttackFillValue = 0;
+        }
+
         //set animations back to movement
         plyerAnimator.SetBool("Attacking", false);
         plyerAnimator.SetBool("Spin", false);
@@ -171,13 +209,28 @@ public class AttackTimer : MonoBehaviour
         baseDamage = startBaseDamage;
         //call the rest time
         resting = true;
-        Invoke(nameof(ResetRest), restTime);
+        Invoke(nameof(ResetRest), currentRestTime);
 
+    }
+
+    public float UiValueRegen(float value, float valueMax)
+    {
+        if(value<valueMax)
+        {
+            value += Time.deltaTime;
+        }
+        else
+        {
+            value = valueMax;
+        }
+
+        return value;
     }
 
     public void ResetRest()
     {
         resting = false;
+
     }
 
     public int GetBaseDamage()
@@ -197,6 +250,9 @@ public class AttackTimer : MonoBehaviour
 
     public void ChangeRestTime()
     {
-        restTime /= 2;
-    }
+        //currentRestTime /= 2;
+
+        normalRestTime /= 2;
+        spinRestTime /= 2;
+}
 }
