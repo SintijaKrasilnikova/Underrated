@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     private bool spedUp = false;
     private bool canMove = true;
     private bool canDodge = true;
+    private bool dodgeAvailable = false;
     private bool movingDiognaly = false;
     private bool playerCanControl = true;
     //1-left
@@ -184,61 +185,70 @@ public class PlayerMovement : MonoBehaviour
             MovePlayer();
     }
 
+    public void SetDodgeIsAvailable()
+    {
+        dodgeAvailable = true;
+    }
+
     public void SetCanDoge(bool newCanDodge)
     {
-        canDodge = newCanDodge;
+        if(dodgeAvailable)
+            canDodge = newCanDodge;
     }
 
     private void Dodge()
     {
-        if (Input.GetKeyDown(KeyCode.P) && canDodge == true)
+        if (dodgeAvailable)
         {
-            //canMove = false;
-            playerCanControl = false;
-            plyerAnimator.SetBool("Dodging", true);
-            canDodge = false;
-            float dodgeForceValue = 25000f;
-            Vector3 dodgeForce = new Vector3(0, 0, 0);
-            playerDodge.Post(gameObject);
-            if (plyerAnimator.GetFloat("FacingUp") == 1)
+            if (Input.GetKeyDown(KeyCode.P) && canDodge == true)
             {
-                dodgeForce = new Vector3(dodgeForce.x, dodgeForce.y, dodgeForce.z - dodgeForceValue);
-                //dodgeForce = new Vector3(0, dodgeForce.y, -dodgeForceValue);
-            }
-            else if (plyerAnimator.GetFloat("FacingUp") == -1)
-            {
-                dodgeForce = new Vector3(dodgeForce.x, dodgeForce.y, dodgeForce.z + dodgeForceValue);
-                //dodgeForce = new Vector3(0, dodgeForce.y, +dodgeForceValue);
-            }
-
-            //if(movingDiognaly ==false)
-            //{
-            //    dodgeForce.z = 0;
-            //}
-
-            if (plyerAnimator.GetFloat("FacingRight") == -1)
-            {
-                if (movingDiognaly == false)
+                //canMove = false;
+                playerCanControl = false;
+                plyerAnimator.SetBool("Dodging", true);
+                canDodge = false;
+                float dodgeForceValue = 25000f;
+                Vector3 dodgeForce = new Vector3(0, 0, 0);
+                playerDodge.Post(gameObject);
+                if (plyerAnimator.GetFloat("FacingUp") == 1)
                 {
-                    dodgeForce.z = 0;
+                    dodgeForce = new Vector3(dodgeForce.x, dodgeForce.y, dodgeForce.z - dodgeForceValue);
+                    //dodgeForce = new Vector3(0, dodgeForce.y, -dodgeForceValue);
                 }
-                dodgeForce = new Vector3(dodgeForce.x + dodgeForceValue, dodgeForce.y, dodgeForce.z);
-                //dodgeForce = new Vector3(+dodgeForceValue, dodgeForce.y, 0);
-            }
-            else if (plyerAnimator.GetFloat("FacingRight") == 1)
-            {
-                if (movingDiognaly == false)
+                else if (plyerAnimator.GetFloat("FacingUp") == -1)
                 {
-                    dodgeForce.z = 0;
+                    dodgeForce = new Vector3(dodgeForce.x, dodgeForce.y, dodgeForce.z + dodgeForceValue);
+                    //dodgeForce = new Vector3(0, dodgeForce.y, +dodgeForceValue);
                 }
-                dodgeForce = new Vector3(dodgeForce.x - dodgeForceValue, dodgeForce.y, dodgeForce.z);
-                //dodgeForce = new Vector3(-dodgeForceValue, dodgeForce.y, 0);
-            }
 
-            playerBody.velocity = new Vector3(0,0,0);
-            playerBody.AddForce(dodgeForce);
-            Invoke(nameof(RestoreDodge), dodgeTime);
-            //Debug.Log("Dodge called");
+                //if(movingDiognaly ==false)
+                //{
+                //    dodgeForce.z = 0;
+                //}
+
+                if (plyerAnimator.GetFloat("FacingRight") == -1)
+                {
+                    if (movingDiognaly == false)
+                    {
+                        dodgeForce.z = 0;
+                    }
+                    dodgeForce = new Vector3(dodgeForce.x + dodgeForceValue, dodgeForce.y, dodgeForce.z);
+                    //dodgeForce = new Vector3(+dodgeForceValue, dodgeForce.y, 0);
+                }
+                else if (plyerAnimator.GetFloat("FacingRight") == 1)
+                {
+                    if (movingDiognaly == false)
+                    {
+                        dodgeForce.z = 0;
+                    }
+                    dodgeForce = new Vector3(dodgeForce.x - dodgeForceValue, dodgeForce.y, dodgeForce.z);
+                    //dodgeForce = new Vector3(-dodgeForceValue, dodgeForce.y, 0);
+                }
+
+                playerBody.velocity = new Vector3(0, 0, 0);
+                playerBody.AddForce(dodgeForce);
+                Invoke(nameof(RestoreDodge), dodgeTime);
+                //Debug.Log("Dodge called");
+            }
         }
 
     }
@@ -262,7 +272,7 @@ public class PlayerMovement : MonoBehaviour
             
             Vector3 movePlayer = playerMovementInput.normalized * speed;
             //Vector3 movePlayer = (transform.TransformDirection(playerMovementInput)) * speed;
-            Debug.Log(movePlayer);
+            //Debug.Log(movePlayer);
             //movePlayer = movePlayer.normalized ;
             Vector3 playerVelocity = new Vector3(movePlayer.x, playerBody.velocity.y, movePlayer.z);
 

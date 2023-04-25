@@ -11,6 +11,7 @@ TagManager:
   - SkillButton
   - PassiveButton
   - ArenaHandler
+  - Camera
   layers:
   - Default
   - TransparentFX

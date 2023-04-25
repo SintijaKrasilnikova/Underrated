@@ -42,21 +42,21 @@ public class CardRandomDropper : MonoBehaviour
     public void ChanceToDropCard()
     {
         string cardType = prefferdCardType;
-        if (cardType != "spin" && cardType != "speed" && cardType != "health" && cardType != "attack")
+        if (cardType != "speed" && cardType != "health" && cardType != "attack")
         {
             cardType = ChooseRandomCard();
         }
         //what card does enemy have a chance of dropping
         switch (cardType)
         {
-            case "spin":
-                {
-                    currentCardRef = spinRef.gameObject;
-                    spinRef.setSpinPickedUp(true);
-                    currentUp = cardHistroyRef.GetSpinUp();
-                    cardHistroyRef.SetSpinUp(true);
-                    break;
-                }
+            //case "spin":
+            //    {
+            //        currentCardRef = spinRef.gameObject;
+            //        spinRef.setSpinPickedUp(true);
+            //        currentUp = cardHistroyRef.GetSpinUp();
+            //        cardHistroyRef.SetSpinUp(true);
+            //        break;
+            //    }
             case "speed":
                 {
                     currentCardRef = speedRef.gameObject;
@@ -109,16 +109,16 @@ public class CardRandomDropper : MonoBehaviour
 
     private string ChooseRandomCard()
     {
-        int randomCard = Random.Range(0, 4);
+        int randomCard = Random.Range(1, 4);
         string chosenCardName = "";
 
         switch (randomCard)
         {
-            case 0:
-                {
-                    chosenCardName = "spin";
-                    break;
-                }
+            //case 0:
+            //    {
+            //        chosenCardName = "spin";
+            //        break;
+            //    }
             case 1:
                 {
                     chosenCardName = "speed";
