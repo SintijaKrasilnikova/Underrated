@@ -50,6 +50,11 @@ public class ActivateCombinedCards : MonoBehaviour
 
         }
 
+        if(cardOver.DodgeActive == true)
+        {
+            playerMovement.SetDodgeIsAvailable();
+        }
+
     }
 
   

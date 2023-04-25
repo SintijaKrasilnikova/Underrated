@@ -7,6 +7,9 @@ using UnityEngine.EventSystems;
 public class CraftingNextScene : MonoBehaviour
 {
     [SerializeField] private CardOverseer cardOver;
+
+    public bool demoEnd = false;
+
     public GameObject creationAssets;
     public GameObject mixImage;
     public GameObject mixedCard;
@@ -57,7 +60,14 @@ public class CraftingNextScene : MonoBehaviour
 
         if(cardOver.halfCards.Count <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            if (demoEnd == false)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+            else
+            {
+                SceneManager.LoadScene(0);
+            }
         }
     }
 }

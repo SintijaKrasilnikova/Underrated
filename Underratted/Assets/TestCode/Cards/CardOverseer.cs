@@ -64,6 +64,16 @@ public class CardOverseer : ScriptableObject
         set { _SpeedSpeed = value; }
     }
 
+    //dodge
+    [SerializeField]
+    private bool _Dodge;
+
+    public bool DodgeActive
+    {
+        get { return _Dodge; }
+        set { _Dodge = value; }
+    }
+
     public List<int> halfCards = new List<int>();
     public List<int> fullCards = new List<int>();
     public List<int> loadoutCards = new List<int>();
