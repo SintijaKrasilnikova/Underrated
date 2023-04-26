@@ -21,12 +21,12 @@ MonoBehaviour:
   _Dodge: 1
   halfCards: 
   fullCards: 
-  loadoutCards: 
+  loadoutCards: 010000000200000003000000040000000500000006000000
   loadoutCardUse: 020000000200000002000000020000000200000002000000
   rechargeAmount: 0.34
   loadoutCardRecharge:
-  - 2.36
-  - 2.36
+  - 1.2
+  - 1.1
   - 2.36
   - 2.36
   - 2.36

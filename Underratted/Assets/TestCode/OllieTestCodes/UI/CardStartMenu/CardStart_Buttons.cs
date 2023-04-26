@@ -15,13 +15,20 @@ public class CardStart_Buttons : MonoBehaviour, IEventSystemHandler, ISelectHand
     public bool hasCard = false;
     public CardStart_Cards selectedCard;
     public AK.Wwise.Event cardEquipSound;
+
+    public Outline outline;
+    public bool isPassive = false;
+    public int equippedID;
+    public CardStartDescriptions descriptionRef;
     public void OnDeselect(BaseEventData eventData)
     {
+        //outline.enabled = false;
         isSelected = false;
     }
 
     public void OnSelect(BaseEventData eventData)
     {
+        //outline.enabled = true;
         isSelected = true;
 
         if (gameObject.tag == "SkillButton")
@@ -40,7 +47,8 @@ public class CardStart_Buttons : MonoBehaviour, IEventSystemHandler, ISelectHand
     // Start is called before the first frame update
     void Start()
     {
-        
+        //outline = this.GetComponent<Outline>();
+        //outline.enabled = false;
     }
 
     // Update is called once per frame
@@ -57,6 +65,10 @@ public class CardStart_Buttons : MonoBehaviour, IEventSystemHandler, ISelectHand
             }
         }
 
+        if (hasCard)
+        {
+            equippedID = selectedCard.cardID;
+        }
     }
 
     public void buttonClicked()
