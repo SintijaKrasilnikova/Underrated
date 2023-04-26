@@ -47315,6 +47315,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3350864199433112401, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
+      propertyPath: overSeer
+      value: 
+      objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+    - target: {fileID: 3350864199433112401, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: maxHealth
       value: 8
       objectReference: {fileID: 0}
@@ -106096,6 +106100,10 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 1115910588}
+    - target: {fileID: 4732347171282376896, guid: 825b83e5fe3e81444af0cafba698fb12, type: 3}
+      propertyPath: overSeer
+      value: 
+      objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
     - target: {fileID: 4732347171282376896, guid: 825b83e5fe3e81444af0cafba698fb12, type: 3}
       propertyPath: endScreen
       value: 

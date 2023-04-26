@@ -19,7 +19,7 @@ public class SpeedPickup : MonoBehaviour
             var playerMove = collision.GetComponent<PlayerMovement>();
             var playerCards = collision.GetComponent<Card_Numbers>();
 
-            playerMove.SpeedUp();
+            //playerMove.SpeedUp();
             playerCards.speedCard++;
             cardOver.halfCards.Add(0);
             pickupSoundSpeed.Post(gameObject);
