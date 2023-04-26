@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerAttackArea : MonoBehaviour
 {
-    public int extraDamage = 0;
+    public float extraDamage = 0;
 
     private AttackTimer baseAttackRef;
-    private int baseDamage;
-    private int damage;
+    private float baseDamage;
+    private float damage;
     void Start()
     {
         baseAttackRef = this.GetComponentInParent<AttackTimer>();
