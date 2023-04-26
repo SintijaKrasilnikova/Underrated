@@ -14,11 +14,14 @@ public class PortalEnd : MonoBehaviour
     public GameObject cardholder;
 
     public bool isAlphaPortal = false;
-    public PlayerHealth health;
+    private PlayerHealth health;
+    public CardOverseer overSeer;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        health = playerRef.GetComponent<PlayerHealth>();
+        //overSeer = playerRef.GetComponent<CardOverseer>();
     }
 
     // Update is called once per frame
@@ -32,6 +35,9 @@ public class PortalEnd : MonoBehaviour
     {
          if (collision.gameObject.CompareTag("Player"))
         {
+
+            overSeer.CurrentHealth = health.GetCurrentHealth();
+
             //Debug.Log(playerRef.GetHasCard());
             bool LuluHasCard = playerRef.GetHasCard();
 

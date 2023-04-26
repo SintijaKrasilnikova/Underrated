@@ -19,8 +19,8 @@ public class AttackTimer : MonoBehaviour
     private bool attacking = false;
     private bool resting = false;
 
-    public int baseDamage = 3;
-    private int startBaseDamage = 3;
+    public float baseDamage = 3f;
+    private float startBaseDamage = 3f;
 
     public bool lulu4 = false;
     public float basicAttackTime = 0.6f;
@@ -44,6 +44,8 @@ public class AttackTimer : MonoBehaviour
     public int critChance = 10;
     public int critDamageValue = 10;
     public bool willCrit = false;
+
+    private int critCap = 50;
 
     public bool damageTrailActivated = false;
 
@@ -108,6 +110,13 @@ public class AttackTimer : MonoBehaviour
         //Debug.Log(spinFillValue);
         //Debug.Log(normAttackFillValue);
 
+    }
+
+    public void IncreaseCritChance(int critInc)
+    {
+        if(critChance < critCap)
+            critChance += critInc;
+        
     }
 
     public void SetTrailAreaActive()
@@ -233,12 +242,12 @@ public class AttackTimer : MonoBehaviour
 
     }
 
-    public int GetBaseDamage()
+    public float GetBaseDamage()
     {
         return baseDamage;
     }
 
-    public void IncreaseBaseDamage(int inc)
+    public void IncreaseBaseDamage(float inc)
     {
         baseDamage += inc;
     }
@@ -252,7 +261,14 @@ public class AttackTimer : MonoBehaviour
     {
         //currentRestTime /= 2;
 
-        normalRestTime /= 2;
-        spinRestTime /= 2;
-}
+        //normalRestTime /= 2;
+        //spinRestTime /= 2;
+
+
+        normalRestTime -= normalRestTime /20;
+        spinRestTime -= spinRestTime / 20;
+
+    }
+
+
 }

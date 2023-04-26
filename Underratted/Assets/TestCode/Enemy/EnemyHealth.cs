@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
 
-    public int maxHealth = 9;
-    public int currentHealth;
+    public float maxHealth = 9;
+    public float currentHealth;
 
     AiAgent agent;
 
@@ -32,7 +32,7 @@ public class EnemyHealth : MonoBehaviour
     }
 
 
-    public void TakeDamage(int damageAmount)
+    public void TakeDamage(float damageAmount)
     {
         if (currentHealth > 0)
         {
@@ -44,7 +44,7 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    public int GetCurrentHealth()
+    public float GetCurrentHealth()
     {
         return currentHealth;
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageTrail : MonoBehaviour
 {
-    public int trailDamage = 1;
+    public float trailDamage = 1;
     public float damageCoolDown = 2f;
 
     private float timer = 0;

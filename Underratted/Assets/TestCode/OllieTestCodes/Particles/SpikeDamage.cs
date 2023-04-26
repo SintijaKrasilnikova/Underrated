@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class SpikeDamage : MonoBehaviour
 {
-    public int extraDamage = 0;
+    public float extraDamage = 0;
 
     private AttackTimer baseAttackRef;
-    public int baseDamage;
-    public int damage;
+    public float baseDamage;
+    public float damage;
     void Start()
     {
         baseAttackRef = this.GetComponent<AttackTimer>();

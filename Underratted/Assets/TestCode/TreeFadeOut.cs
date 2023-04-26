@@ -10,6 +10,8 @@ public class TreeFadeOut : MonoBehaviour
     public GameObject playerRef = default;
     public SpriteRenderer render = default;
     [SerializeField] private float treeToCameraDist = 15f;
+    [SerializeField] private float closeValue = 2f;
+
 
     private Color originalColor;
 
@@ -33,16 +35,32 @@ public class TreeFadeOut : MonoBehaviour
         //float dist = Mathf.Abs(cameraRef.transform.position.z - transform.position.z);
         float dist = Mathf.Abs(transform.position.z - cameraRef.transform.position.z);
 
+        
+
+        //float dist = Mathf.Abs(transform.position.z - playerRef.transform.position.z);
+
         if (dist < treeToCameraDist)
         {
+
+            float distBasedAlpha = dist/ (treeToCameraDist - closeValue);
             //float zDist = Mathf.Abs(cameraRef.transform.position.z - transform.position.z);
 
-            float zDist = Mathf.Abs(treeToCameraDist - dist);
+            //float zDist = Mathf.Abs(treeToCameraDist - dist);
 
             //Debug.Log(dist);
 
             //Color newColor = new Color(0,0,0,zDist);
-            render.color = Color.clear;
+            //render.color = Color.clear;
+
+            if (dist < closeValue)
+            {
+                render.color = Color.clear;
+            }
+            else
+                render.color = new Color(originalColor.r, originalColor.g, originalColor.b , distBasedAlpha);
+
+            Debug.Log(distBasedAlpha);
+            //Debug.Log("AAAAAAAAAA");
             //render.color = newColor;
         }
         else
@@ -50,7 +68,7 @@ public class TreeFadeOut : MonoBehaviour
             render.color = originalColor;
         }
 
-        Debug.Log(dist);
+        //Debug.Log(distBasedAlpha);
         //Debug.Log(Vector3.Distance(transform.position, cameraRef.transform.position));
     }
 }
