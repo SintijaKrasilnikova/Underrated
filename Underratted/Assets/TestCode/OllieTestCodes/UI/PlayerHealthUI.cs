@@ -6,11 +6,14 @@ public class PlayerHealthUI : MonoBehaviour
 {
     // made using https://www.youtube.com/watch?v=Dn_BUIVdAPg 
 
-    public PlayerHealth playerHealth;
+    public PlayerHealth playerHealthRef;
 
     public int playersHealth = 0;
 
     int lastFrameHealth = 4;
+
+    public GameObject[] healthSprites;
+    GameObject currentSprite;
 
     // Start is called before the first frame update
     void Start()
@@ -21,29 +24,43 @@ public class PlayerHealthUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int previousHealth = playersHealth;
+        playersHealth = playerHealthRef.currentHealth;
+        if(playersHealth > 0)
+        {
+            HideHealth();
+            currentSprite = healthSprites[playersHealth];
+            currentSprite.SetActive(true);
+        }
+
+        if(playersHealth < 0)
+        {
+            currentSprite = healthSprites[0];
+            currentSprite.SetActive(true);
+        }
+
+        //int previousHealth = playersHealth;
 
         //if the players health is not the same as the last frame change the UI sprite
-        if(playerHealth.currentHealth < lastFrameHealth)
-        {
-            if (playersHealth >= transform.childCount - 1)
-                playersHealth = 0;
-            else
-                playersHealth++;
-        }
-        if (playerHealth.currentHealth > lastFrameHealth)
-        {
-            if (playersHealth >= transform.childCount - 1)
-                playersHealth = 0;
-            else
-                playersHealth--;
-        }
-        lastFrameHealth = playerHealth.currentHealth;
+        //if(playerHealth.currentHealth < lastFrameHealth)
+        //{
+        //    if (playersHealth >= transform.childCount - 1)
+        //        playersHealth = 0;
+        //    else
+        //        playersHealth++;
+        //}
+        //if (playerHealth.currentHealth > lastFrameHealth)
+        //{
+        //    if (playersHealth >= transform.childCount - 1)
+        //        playersHealth = 0;
+        //    else
+        //        playersHealth--;
+        //}
+        //lastFrameHealth = playerHealth.currentHealth;
 
-        if(previousHealth != playersHealth)
-        {
-            HealthChange();
-        }
+        //if(previousHealth != playersHealth)
+        //{
+        //    HealthChange();
+        //}
     }
 
     void HealthChange()
@@ -57,6 +74,14 @@ public class PlayerHealthUI : MonoBehaviour
             else
                 health.gameObject.SetActive(false);
             i++;
+        }
+    }
+
+    void HideHealth()
+    {
+        foreach(var card in healthSprites)
+        {
+            card.SetActive(false);
         }
     }
 }

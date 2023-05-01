@@ -64,6 +64,37 @@ public class CardOverseer : ScriptableObject
         set { _SpeedSpeed = value; }
     }
 
+    //dodge
+    [SerializeField]
+    private bool _Dodge;
+
+    public bool DodgeActive
+    {
+        get { return _Dodge; }
+        set { _Dodge = value; }
+    }
+
+    //Current Health
+    [SerializeField]
+
+    private int _CurrentHealth;
+
+    public int CurrentHealth
+    {
+        get { return _CurrentHealth; }
+        set { _CurrentHealth = value; }
+    }
+
+    ////Current Health
+
+    //private bool _StartHealthSet = false;
+
+    //public bool StartHealthSet
+    //{
+    //    get { return _StartHealthSet; }
+    //    set { _StartHealthSet = value; }
+    //}
+
     public List<int> halfCards = new List<int>();
     public List<int> fullCards = new List<int>();
     public List<int> loadoutCards = new List<int>();

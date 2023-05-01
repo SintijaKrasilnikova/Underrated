@@ -14,11 +14,14 @@ public class PortalEnd : MonoBehaviour
     public GameObject cardholder;
 
     public bool isAlphaPortal = false;
-    public PlayerHealth health;
+    private PlayerHealth health;
+    public CardOverseer overSeer;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        health = playerRef.GetComponent<PlayerHealth>();
+        //overSeer = playerRef.GetComponent<CardOverseer>();
     }
 
     // Update is called once per frame
@@ -28,34 +31,37 @@ public class PortalEnd : MonoBehaviour
     }
 
     //load the end card screen if the player picked up a card in the level
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+         if (collision.gameObject.CompareTag("Player"))
         {
-            if (collision.gameObject.CompareTag("Player"))
+
+            overSeer.CurrentHealth = health.GetCurrentHealth();
+
+            //Debug.Log(playerRef.GetHasCard());
+            bool LuluHasCard = playerRef.GetHasCard();
+
+            if (LuluHasCard == true)
             {
-                //Debug.Log(playerRef.GetHasCard());
-
-                if (playerRef.GetHasCard() == true)
-                {
-                    cardholder.SetActive(false);
-                    //lulu.SetActive(false);
-                    endLevelSound.Post(gameObject);
-                    playerMove.SetCanMove(false);
-                    endScreen.SetActive(true);
-                }
-                if (isAlphaPortal)
-                {
-                    health.TakeDamage(100);
-                }
-                if (playerRef.hasCard == false && isAlphaPortal == false)
-                {
-                    //SceneManager.LoadScene(1);
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                }
-
-
+                cardholder.SetActive(false);
+                //lulu.SetActive(false);
+                endLevelSound.Post(gameObject);
+                playerMove.SetCanMove(false);
+                endScreen.SetActive(true);
             }
+
+            if (isAlphaPortal == true && LuluHasCard == false)
+            {
+                SceneManager.LoadScene(0);
+            }
+
+            if (LuluHasCard == false && isAlphaPortal == false)
+            {
+                //SceneManager.LoadScene(1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+
+
         }
     }
 }

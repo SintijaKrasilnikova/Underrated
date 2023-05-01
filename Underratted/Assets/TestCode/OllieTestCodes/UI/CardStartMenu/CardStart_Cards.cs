@@ -20,6 +20,7 @@ public class CardStart_Cards : MonoBehaviour
     public int inventoryID;
 
     public int cardUse;
+    public float cardRecharge;
     public bool isRecharging = false;
 
     public TextMeshProUGUI useText;
@@ -30,6 +31,8 @@ public class CardStart_Cards : MonoBehaviour
     void Start()
     {
         cardUse = cardOver.loadoutCardUse[cardID];
+        cardRecharge = cardOver.loadoutCardRecharge[cardID];
+
         if(cardUse <= 0)
         {
             isRecharging = true;
@@ -38,6 +41,13 @@ public class CardStart_Cards : MonoBehaviour
             useRef.SetActive(false);
         }
         else
+        {
+            isRecharging = false;
+            rechargeBar.SetActive(false);
+            hasBeenSelected = false;
+        }
+
+        if (cardRecharge > 1.0f)
         {
             isRecharging = false;
             rechargeBar.SetActive(false);
@@ -73,7 +83,7 @@ public class CardStart_Cards : MonoBehaviour
             cross.SetActive(true);
         }
 
-        useText.text = cardUse.ToString();
+        useText.text = "X" + cardUse.ToString();
 
         //if (hasBeenSelected)
         {
@@ -90,6 +100,9 @@ public class CardStart_Cards : MonoBehaviour
     {
         if(cardUse != 0)
         {
+            currentButton.GetComponent<CardStart_Buttons>().hasCard = true;
+            currentButton.GetComponent<CardStart_Buttons>().equippedID = cardID;
+            currentButton.GetComponent<CardStartDescriptions>().cardEquipped();
             currentButton.GetComponent<Image>().sprite = cardImage.sprite;
             currentButton.GetComponent<Button>().Select();
             currentButton.GetComponent<CardStart_Buttons>().hasCard = true;
