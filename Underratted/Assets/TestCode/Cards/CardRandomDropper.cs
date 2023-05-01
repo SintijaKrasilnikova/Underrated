@@ -9,7 +9,8 @@ public class CardRandomDropper : MonoBehaviour
     //private bool spinAlreadyDropped = false;
     //public GameObject spinCardRef = default;
 
-    public int dropChances;
+    //public int dropChances;
+    private int dropChances = 40;
     public string prefferdCardType;
 
     public SpinPickup spinRef = default;

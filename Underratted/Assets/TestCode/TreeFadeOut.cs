@@ -18,7 +18,7 @@ public class TreeFadeOut : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cameraRef = GameObject.FindGameObjectWithTag("Camera");
+        cameraRef = GameObject.FindGameObjectWithTag("MainCamera");
         playerRef = GameObject.FindGameObjectWithTag("Player");
         render = this.gameObject.GetComponent<SpriteRenderer>();
 
@@ -59,7 +59,7 @@ public class TreeFadeOut : MonoBehaviour
             else
                 render.color = new Color(originalColor.r, originalColor.g, originalColor.b , distBasedAlpha);
 
-            Debug.Log(distBasedAlpha);
+            //Debug.Log(distBasedAlpha);
             //Debug.Log("AAAAAAAAAA");
             //render.color = newColor;
         }
