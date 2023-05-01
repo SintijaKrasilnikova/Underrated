@@ -64,6 +64,8 @@ public class AiWanderingState : AiState
 
     public void Update(AiAgent agent)
     {
+        //float cspeed = agent.navAgent.speed;
+        //Debug.Log(cspeed);
         //if enemy moves
         if (agent.config.doesEnemyMove == true)
         {

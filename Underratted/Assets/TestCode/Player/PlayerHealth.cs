@@ -48,6 +48,11 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void SetCurrentHealthToMax()
+    {
+        currentHealth = maxHealth;
+    }
+
     public void TakeDamage(int damageAmount)
     {
         if (justAttacked == false)
@@ -57,8 +62,14 @@ public class PlayerHealth : MonoBehaviour
             playerMoveRef.HurtPlayer(currentHealth);
             justAttacked = true;
 
-            Invoke(nameof(BeImmune), immunityTime);
+            CallImunity();
+            //Invoke(nameof(BeImmune), immunityTime);
         }
+    }
+
+    public void CallImunity()
+    {
+        Invoke(nameof(BeImmune), immunityTime);
     }
 
     public int GetCurrentHealth()

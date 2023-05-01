@@ -6,7 +6,9 @@ using UnityEngine;
 
 public class AttackTimer : MonoBehaviour
 {
-    public PlayerMovement movementRef;
+    [SerializeField] private GameObject player;
+    private PlayerMovement movementRef;
+    private PlayerHealth health;
 
     public GameObject basicAttackArea = default;
     public GameObject spinAttackArea = default;
@@ -17,7 +19,8 @@ public class AttackTimer : MonoBehaviour
 
 
     private bool attacking = false;
-    private bool resting = false;
+    private bool normalResting = false;
+    private bool spinResting = false;
 
     public float baseDamage = 3f;
     private float startBaseDamage = 3f;
@@ -60,6 +63,9 @@ public class AttackTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        movementRef = player.GetComponent<PlayerMovement>();
+        health = player.GetComponent<PlayerHealth>();
+
         if (lulu4 == false)
         {
             basicAttackArea = transform.GetChild(0).gameObject;
@@ -77,17 +83,18 @@ public class AttackTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (attacking == false && resting == false)
+        if (attacking == false)// && resting == false)
         {
-            if (Input.GetKeyDown(KeyCode.I))
+            if (Input.GetKeyDown(KeyCode.I) && normalResting == false)
             {
                 SetCurrentAttackActive(true, "normal");
                 Invoke(nameof(EndAttack), basicAttackTime);
             }
 
-            else if (Input.GetKeyDown(KeyCode.O) && spinAttackActive == true)
+            else if (Input.GetKeyDown(KeyCode.O) && spinAttackActive == true && spinResting == false)
             {
                 SetCurrentAttackActive(true, "spin");
+                health.CallImunity();
                 Invoke(nameof(EndAttack), spinAttackTime);
             }
 
@@ -135,6 +142,7 @@ public class AttackTimer : MonoBehaviour
     public void SetCurrentAttackActive(bool active, string attackType)
     {
 
+       
         movementRef.SetCanDoge(false);
 
         if (critPossibleActive )
@@ -166,6 +174,7 @@ public class AttackTimer : MonoBehaviour
 
                         currentAttackArea = basicAttackArea;
                         plyerAnimator.SetBool("Attacking", active);
+                        movementRef.HalfSpeed();
                         break;
                     }
                 case "spin":
@@ -196,17 +205,20 @@ public class AttackTimer : MonoBehaviour
 
     public void EndAttack()
     {
+        movementRef.SetSpeedNormal();
 
-        if(plyerAnimator.GetBool("Spin") == true)
+        if (plyerAnimator.GetBool("Spin") == true)
         {
             currentRestTime = spinRestTime;
             spinFillValue = 0;
+            spinResting = true;
 
         }
         else
         {
             currentRestTime = normalRestTime;
             normAttackFillValue = 0;
+            normalResting = true;
         }
 
         //set animations back to movement
@@ -220,7 +232,7 @@ public class AttackTimer : MonoBehaviour
 
         baseDamage = startBaseDamage;
         //call the rest time
-        resting = true;
+        //resting = true;
         Invoke(nameof(ResetRest), currentRestTime);
 
     }
@@ -241,7 +253,11 @@ public class AttackTimer : MonoBehaviour
 
     public void ResetRest()
     {
-        resting = false;
+        //resting = false;
+        if (normalResting == true)
+            normalResting = false;
+        else if(spinResting == true)
+            spinResting = false;
 
     }
 
