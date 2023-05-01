@@ -26942,7 +26942,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525363866}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32f6fb3e1642576418ea564e786e3aa4, type: 3}
   m_Name: 
@@ -90008,15 +90008,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7401994044644677000, guid: d52270345a776c744b8a2489177153b3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.12980229
+      value: 0.1298023
       objectReference: {fileID: 0}
     - target: {fileID: 7401994044644677000, guid: d52270345a776c744b8a2489177153b3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000019074568
+      value: -0.000000019074568
       objectReference: {fileID: 0}
     - target: {fileID: 7401994044644677000, guid: d52270345a776c744b8a2489177153b3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000002497048
+      value: 0.0000000024970483
       objectReference: {fileID: 0}
     - target: {fileID: 7401994044644677000, guid: d52270345a776c744b8a2489177153b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -102388,6 +102388,10 @@ MonoBehaviour:
   killedText: {fileID: 2126131300}
   enemiesKilled: 0
   goalKills: 5
+  arenaSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5c5feb9743d81ab49b58ea6c95c0dcab, type: 2}
 --- !u!4 &1939337441
 Transform:
   m_ObjectHideFlags: 0

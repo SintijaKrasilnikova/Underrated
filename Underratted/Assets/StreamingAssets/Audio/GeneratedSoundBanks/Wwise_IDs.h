@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID AMBIENCEGENERAL = 497051163U;
         static const AkUniqueID AMBIENCEPAUSED = 2088329783U;
         static const AkUniqueID AMBIENCEUNPAUSED = 3908593538U;
+        static const AkUniqueID ARENACLOSE = 406582702U;
         static const AkUniqueID CARDCOMBINE = 2097014402U;
         static const AkUniqueID CARDEQUIP = 969587109U;
         static const AkUniqueID CARDHIGHLIGHT = 1624507745U;

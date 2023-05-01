@@ -269,6 +269,9 @@ GameObject:
   - component: {fileID: 81264984}
   - component: {fileID: 81264986}
   - component: {fileID: 81264983}
+  - component: {fileID: 81264987}
+  - component: {fileID: 81264989}
+  - component: {fileID: 81264988}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -369,6 +372,88 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &81264987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81264982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6c39f80a551f245bf4f8d579b03221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 51af2ffbf51ff7c4ebf7701aba0dcede, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &81264988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81264982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec7be116920f5042b4eff42138806f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 05f90dd16d8547a4f9fbcbe2d83d9a8d, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!114 &81264989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81264982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32f6fb3e1642576418ea564e786e3aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2d73b6d64e874bd41b0295de04cd6fc5, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
+  LargeModePositions: []
+  multiPositionArray: []
 --- !u!1 &121437190
 GameObject:
   m_ObjectHideFlags: 0
@@ -3068,6 +3153,10 @@ MonoBehaviour:
   useText: {fileID: 752683148}
   rechargeBar: {fileID: 282435822}
   useRef: {fileID: 752683146}
+  cardEquip:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 21d07dcc81733154e8beaf99d13b8399, type: 2}
 --- !u!114 &499719272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3957,6 +4046,10 @@ MonoBehaviour:
   useText: {fileID: 793115440}
   rechargeBar: {fileID: 1306047535}
   useRef: {fileID: 793115438}
+  cardEquip:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 21d07dcc81733154e8beaf99d13b8399, type: 2}
 --- !u!114 &696165283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5127,6 +5220,10 @@ MonoBehaviour:
   useText: {fileID: 666199752}
   rechargeBar: {fileID: 1598538233}
   useRef: {fileID: 666199750}
+  cardEquip:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 21d07dcc81733154e8beaf99d13b8399, type: 2}
 --- !u!114 &875614953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5786,6 +5883,10 @@ MonoBehaviour:
   useText: {fileID: 1490506435}
   rechargeBar: {fileID: 1291802181}
   useRef: {fileID: 1490506433}
+  cardEquip:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 21d07dcc81733154e8beaf99d13b8399, type: 2}
 --- !u!114 &1006163219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6135,6 +6236,10 @@ MonoBehaviour:
   useText: {fileID: 1415108058}
   rechargeBar: {fileID: 465077478}
   useRef: {fileID: 1415108056}
+  cardEquip:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 21d07dcc81733154e8beaf99d13b8399, type: 2}
 --- !u!114 &1031848786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6466,6 +6571,10 @@ MonoBehaviour:
   useText: {fileID: 1663092032}
   rechargeBar: {fileID: 1310567710}
   useRef: {fileID: 1663092030}
+  cardEquip:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 21d07dcc81733154e8beaf99d13b8399, type: 2}
 --- !u!114 &1115373620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8511,6 +8620,10 @@ MonoBehaviour:
   useText: {fileID: 0}
   rechargeBar: {fileID: 0}
   useRef: {fileID: 0}
+  cardEquip:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 21d07dcc81733154e8beaf99d13b8399, type: 2}
 --- !u!1 &1453441009
 GameObject:
   m_ObjectHideFlags: 0
@@ -11808,6 +11921,10 @@ MonoBehaviour:
   useText: {fileID: 0}
   rechargeBar: {fileID: 0}
   useRef: {fileID: 0}
+  cardEquip:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 21d07dcc81733154e8beaf99d13b8399, type: 2}
 --- !u!1 &2058050125
 GameObject:
   m_ObjectHideFlags: 0

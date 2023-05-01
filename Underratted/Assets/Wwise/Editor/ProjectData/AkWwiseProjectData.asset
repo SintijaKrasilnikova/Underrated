@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1558f9340dc3ff46a3c86b1d786ec28e
     GuidInternal: 
-    m_lastTime: -8585190850162265730
+    m_lastTime: -8585186543568779196
     List:
     - name: Main
       guid: d84c12b8016ff448a38b5be01bf74ce1
@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: efbdfc1406597641a03cf89d5cf2a378
     GuidInternal: 
-    m_lastTime: -8585186663685976638
+    m_lastTime: -8585186552715216609
     List:
     - name: AmbienceGeneral
       guid: 6f0ce7cdfde16f45b3ddf2754b75cc4a
@@ -409,6 +409,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 3bba63c373a13e489307d3ef9271ed5f
       Path: Events\Default Work Unit\AmbienceUnPaused
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ArenaClose
+      guid: 66a57b8c100d274a86056b96c2fcd64e
+      id: 406582702
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: ArenaClose
+        ObjectType: 3
+        guid: 66a57b8c100d274a86056b96c2fcd64e
+      Path: Events\Default Work Unit\ArenaClose
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1275,7 +1292,7 @@ MonoBehaviour:
     m_lastTime: -8585251305646435847
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000700000028000000290000002a0000002b0000002c0000002d000000
+  ExpandedWaapiItemIds: 01000000050000000600000007000000260000002700000028000000290000002a0000002b0000002c0000002d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
