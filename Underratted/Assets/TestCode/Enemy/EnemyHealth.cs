@@ -10,6 +10,8 @@ public class EnemyHealth : MonoBehaviour
 
     AiAgent agent;
 
+    public AK.Wwise.Event hitSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +40,7 @@ public class EnemyHealth : MonoBehaviour
         {
             Debug.Log("Health taken");
             currentHealth -= damageAmount;
-
+            hitSound.Post(gameObject);
             AiHurtingState hurtState = agent.stateMachine.GetState(AiStateId.Hurting) as AiHurtingState;
             agent.stateMachine.ChangeState(AiStateId.Hurting);
         }
