@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1558f9340dc3ff46a3c86b1d786ec28e
     GuidInternal: 
-    m_lastTime: -8585196765005196650
+    m_lastTime: -8585190850162265730
     List:
     - name: Main
       guid: d84c12b8016ff448a38b5be01bf74ce1
@@ -359,11 +359,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: efbdfc1406597641a03cf89d5cf2a378
     GuidInternal: 
-    m_lastTime: -8585196765005316331
+    m_lastTime: -8585186663685976638
     List:
-    - name: Ambience
-      guid: 2340bda589aeac4bb453eec8b06ccfb8
-      id: 85412153
+    - name: AmbienceGeneral
+      guid: 6f0ce7cdfde16f45b3ddf2754b75cc4a
+      id: 497051163
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -371,10 +371,44 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: efbdfc1406597641a03cf89d5cf2a378
-      - ElementName: Ambience
+      - ElementName: AmbienceGeneral
         ObjectType: 3
-        guid: 2340bda589aeac4bb453eec8b06ccfb8
-      Path: Events\Default Work Unit\Ambience
+        guid: 6f0ce7cdfde16f45b3ddf2754b75cc4a
+      Path: Events\Default Work Unit\AmbienceGeneral
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AmbiencePaused
+      guid: f943faf8d643c042ae529497230e2b49
+      id: 2088329783
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: AmbiencePaused
+        ObjectType: 3
+        guid: f943faf8d643c042ae529497230e2b49
+      Path: Events\Default Work Unit\AmbiencePaused
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AmbienceUnPaused
+      guid: 3bba63c373a13e489307d3ef9271ed5f
+      id: 3908593538
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: AmbienceUnPaused
+        ObjectType: 3
+        guid: 3bba63c373a13e489307d3ef9271ed5f
+      Path: Events\Default Work Unit\AmbienceUnPaused
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -599,6 +633,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Music
+      guid: 2340bda589aeac4bb453eec8b06ccfb8
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: Music
+        ObjectType: 3
+        guid: 2340bda589aeac4bb453eec8b06ccfb8
+      Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: PlayerDeath
       guid: ebfdf3750999934d9cfe8608aecf2529
       id: 1656947812
@@ -769,6 +820,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: WaterfallAmbience
+      guid: 3f6c57e4e95c0c40be665e3d2f02dfa8
+      id: 1942255421
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: WaterfallAmbience
+        ObjectType: 3
+        guid: 3f6c57e4e95c0c40be665e3d2f02dfa8
+      Path: Events\Default Work Unit\WaterfallAmbience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -781,8 +849,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 704a6fcb86eff249b283a19ab9ea7723
     GuidInternal: 
-    m_lastTime: -8585251305646565500
-    List: []
+    m_lastTime: -8585190877462341253
+    List:
+    - name: Ambience
+      guid: fe87453318858c499afecef0da286f13
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 704a6fcb86eff249b283a19ab9ea7723
+      - ElementName: Ambience
+        ObjectType: 13
+        guid: fe87453318858c499afecef0da286f13
+      Path: Game Parameters\Default Work Unit\Ambience
   - PhysicalPath: Game Parameters\Factory Soundseed Air Game Syncs.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -962,8 +1044,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 746da9f586d65148b93f37c697c8fa5a
     GuidInternal: 
-    m_lastTime: -8585201193977116831
+    m_lastTime: -8585186663685848618
     List:
+    - name: Ambience
+      guid: d540d38eeaf1fd449b8a42f8f0565349
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 746da9f586d65148b93f37c697c8fa5a
+      - ElementName: Ambience
+        ObjectType: 11
+        guid: d540d38eeaf1fd449b8a42f8f0565349
+      Path: Switches\Default Work Unit\Ambience
+      values:
+      - name: Birds
+        guid: 6bb3bd54d0ad974db4dccbf70587d770
+        id: 352130103
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 746da9f586d65148b93f37c697c8fa5a
+        - ElementName: Ambience
+          ObjectType: 11
+          guid: d540d38eeaf1fd449b8a42f8f0565349
+        - ElementName: Birds
+          ObjectType: 10
+          guid: 6bb3bd54d0ad974db4dccbf70587d770
+      - name: NoBirds
+        guid: a567b3e099de6e49a59db153b1c06b6e
+        id: 2538573924
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 746da9f586d65148b93f37c697c8fa5a
+        - ElementName: Ambience
+          ObjectType: 11
+          guid: d540d38eeaf1fd449b8a42f8f0565349
+        - ElementName: NoBirds
+          ObjectType: 10
+          guid: a567b3e099de6e49a59db153b1c06b6e
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: FootstepMaterials
       guid: 6312ee37db9f89459e77893cb98ad6ac
       id: 105740227
@@ -1011,6 +1143,22 @@ MonoBehaviour:
         - ElementName: Stone
           ObjectType: 10
           guid: a60266ed2fc53743b908dcb5bc489a82
+      - name: Water
+        guid: faee40e47e5e664dbd12de102aa8e83d
+        id: 2654748154
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 746da9f586d65148b93f37c697c8fa5a
+        - ElementName: FootstepMaterials
+          ObjectType: 11
+          guid: 6312ee37db9f89459e77893cb98ad6ac
+        - ElementName: Water
+          ObjectType: 10
+          guid: faee40e47e5e664dbd12de102aa8e83d
       - name: Wood
         guid: 6c8f21d1ed1bbb44883338716c54522d
         id: 2058049674
@@ -1127,7 +1275,7 @@ MonoBehaviour:
     m_lastTime: -8585251305646435847
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000500000006000000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000028000000290000002a0000002b0000002c0000002d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

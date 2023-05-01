@@ -32128,6 +32128,8 @@ GameObject:
   - component: {fileID: 525363867}
   - component: {fileID: 525363873}
   - component: {fileID: 525363874}
+  - component: {fileID: 525363875}
+  - component: {fileID: 525363876}
   m_Layer: 0
   m_Name: Main Camera (1)
   m_TagString: MainCamera
@@ -32322,6 +32324,64 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 2d73b6d64e874bd41b0295de04cd6fc5, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
+  LargeModePositions: []
+  multiPositionArray: []
+--- !u!114 &525363875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525363866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec7be116920f5042b4eff42138806f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 455e9d20142694142ae4cff949cd13ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!114 &525363876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525363866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32f6fb3e1642576418ea564e786e3aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5476bd70e120f7c43a6670b9ccb7dae3, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -56805,6 +56865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardOver: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+  demoEnd: 0
   creationAssets: {fileID: 1131204582}
   mixImage: {fileID: 1721828343}
   mixedCard: {fileID: 297341261}
@@ -68258,7 +68319,7 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: 5dd4e52187f816345b2fc5d3562fed52, type: 2}
   cardholder: {fileID: 1632956760}
   isAlphaPortal: 0
-  health: {fileID: 0}
+  overSeer: {fileID: 0}
 --- !u!65 &1095362156
 BoxCollider:
   m_ObjectHideFlags: 0

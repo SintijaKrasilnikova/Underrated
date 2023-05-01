@@ -13,7 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID AMBIENCEGENERAL = 497051163U;
+        static const AkUniqueID AMBIENCEPAUSED = 2088329783U;
+        static const AkUniqueID AMBIENCEUNPAUSED = 3908593538U;
         static const AkUniqueID CARDCOMBINE = 2097014402U;
         static const AkUniqueID CARDEQUIP = 969587109U;
         static const AkUniqueID CARDHIGHLIGHT = 1624507745U;
@@ -27,6 +29,7 @@ namespace AK
         static const AkUniqueID HEALPICKUP = 669525935U;
         static const AkUniqueID HIT = 1116398592U;
         static const AkUniqueID INVENTORY = 203281819U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYERDEATH = 1656947812U;
         static const AkUniqueID PLAYERDODGE = 906551347U;
         static const AkUniqueID PLAYERHIT = 3831688773U;
@@ -37,10 +40,22 @@ namespace AK
         static const AkUniqueID SPINATTACKSTOP = 4097783889U;
         static const AkUniqueID SWORDSWIPE = 1496710346U;
         static const AkUniqueID TITLEMUSIC = 2191159630U;
+        static const AkUniqueID WATERFALLAMBIENCE = 1942255421U;
     } // namespace EVENTS
 
     namespace SWITCHES
     {
+        namespace AMBIENCE
+        {
+            static const AkUniqueID GROUP = 85412153U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BIRDS = 352130103U;
+                static const AkUniqueID NOBIRDS = 2538573924U;
+            } // namespace SWITCH
+        } // namespace AMBIENCE
+
         namespace FOOTSTEPMATERIALS
         {
             static const AkUniqueID GROUP = 105740227U;
@@ -49,6 +64,7 @@ namespace AK
             {
                 static const AkUniqueID GRASS = 4248645337U;
                 static const AkUniqueID STONE = 1216965916U;
+                static const AkUniqueID WATER = 2654748154U;
                 static const AkUniqueID WOOD = 2058049674U;
             } // namespace SWITCH
         } // namespace FOOTSTEPMATERIALS
@@ -70,6 +86,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;
         static const AkUniqueID SS_AIR_FURY = 1029930033U;
