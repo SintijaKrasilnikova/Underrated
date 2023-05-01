@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CardStart_StartGame : MonoBehaviour
 {
+    [SerializeField] private PlayerHealth playerHealth;
     [SerializeField] private CardOverseer cardOver;
     public CardStart_Buttons passive1;
     public CardStart_Buttons passive2;
@@ -14,7 +15,7 @@ public class CardStart_StartGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
@@ -51,6 +52,7 @@ public class CardStart_StartGame : MonoBehaviour
             cardOver.loadoutCardRecharge[passive2.selectedCard.cardID] = 0f;
         }
 
+        playerHealth.SetCurrentHealthToMax();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

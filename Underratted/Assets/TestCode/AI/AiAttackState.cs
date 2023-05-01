@@ -37,7 +37,27 @@ public class AiAttackState : AiState
             Debug.Log("Attack area not found!");
         }
 
-         //attackArea = agent.transform.GetComponentInChildren<BoxCollider>();
+
+        if (agent.config.doesEnemyMove == false)
+        {
+            //left
+            if (agent.playerTransform.position.x < agent.transform.localPosition.x)
+            {
+                agent.enemyAnimator.SetFloat("FacingRight", -1);
+                agent.enemyAnimator.SetFloat("FacingUp", 0);
+                agent.startWanderingLeft = true;
+                //Debug.Log("Left");
+            }
+            else
+            {
+                agent.enemyAnimator.SetFloat("FacingRight", 1);
+                agent.enemyAnimator.SetFloat("FacingUp", 0);
+                agent.startWanderingLeft = false;
+                //Debug.Log("Right");
+            }
+        }
+
+        //attackArea = agent.transform.GetComponentInChildren<BoxCollider>();
     }
 
     public void Update(AiAgent agent)
@@ -76,24 +96,24 @@ public class AiAttackState : AiState
             }
         }
 
-        if (agent.config.doesEnemyMove == false)
-        {
-            //left
-            if (agent.playerTransform.position.x < agent.transform.localPosition.x)
-            {
-                agent.enemyAnimator.SetFloat("FacingRight", -1);
-                agent.enemyAnimator.SetFloat("FacingUp", 0);
-                agent.startWanderingLeft = true;
-                //Debug.Log("Left");
-            }
-            else
-            {
-                agent.enemyAnimator.SetFloat("FacingRight", 1);
-                agent.enemyAnimator.SetFloat("FacingUp", 0);
-                agent.startWanderingLeft = false;
-                //Debug.Log("Right");
-            }
-        }
+        //if (agent.config.doesEnemyMove == false)
+        //{
+        //    //left
+        //    if (agent.playerTransform.position.x < agent.transform.localPosition.x)
+        //    {
+        //        agent.enemyAnimator.SetFloat("FacingRight", -1);
+        //        agent.enemyAnimator.SetFloat("FacingUp", 0);
+        //        agent.startWanderingLeft = true;
+        //        //Debug.Log("Left");
+        //    }
+        //    else
+        //    {
+        //        agent.enemyAnimator.SetFloat("FacingRight", 1);
+        //        agent.enemyAnimator.SetFloat("FacingUp", 0);
+        //        agent.startWanderingLeft = false;
+        //        //Debug.Log("Right");
+        //    }
+        //}
 
         agent.enemyAnimator.SetBool("Attacking", attacking);
 

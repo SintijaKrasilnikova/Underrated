@@ -5,7 +5,7 @@ using UnityEngine;
 public class AiHurtingState : AiState
 {
 
-    private float hurtTime = 0.5f;
+    private float hurtTime = 0.2f;
     private float timer = 0f;
 
     public AiStateId GetId()

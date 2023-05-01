@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
     private bool dodgeAvailable = false;
     private bool movingDiognaly = false;
     private bool playerCanControl = true;
+
+    private float speedRef;
     //1-left
     //2-right
     //3-down
@@ -53,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        speedRef = speed;
     }
 
     // Update is called once per frame
@@ -326,6 +328,7 @@ public class PlayerMovement : MonoBehaviour
         {
             speed *= 1.5f;
             spedUp = true;
+            speedRef = speed;
         }
     }
 
@@ -338,6 +341,7 @@ public class PlayerMovement : MonoBehaviour
         //}
 
         speed += additionalSpeed;
+        speedRef = speed;
     }
 
 
@@ -348,5 +352,23 @@ public class PlayerMovement : MonoBehaviour
     public void DownAttackDone()
     {
         slashDown.SetActive(false);
+    }
+
+    //public void MovementSpeedIfAttack(bool makeBigger)
+    //{
+    //    if (makeBigger)
+    //        speed *= 2;
+    //    else
+    //        speed *= 0.5f;
+    //}
+
+    public void HalfSpeed()
+    {
+        speed *= 0.5f;
+    }
+
+    public void SetSpeedNormal()
+    {
+        speed = speedRef;
     }
 }
