@@ -12,9 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/AlphaScenes/AL_Loadout.unity
     guid: 078eda76614f1bc4aa3a4e50fd921235
   - enabled: 1
+    path: Assets/Scenes/AlphaScenes/StellaEnvironment/Tutorial Level.unity
+    guid: 9d87d01b3ef6b2d4697dc5de890fd92c
+  - enabled: 1
+    path: Assets/Scenes/AlphaScenes/StellaEnvironment/Level 1 Level.unity
+    guid: c8e9cd5971c54ff4eb23e12a5f98c79e
+  - enabled: 0
     path: Assets/Scenes/AlphaScenes/OllieLevels/Tutorial_Test.unity
     guid: 0f4043f7a85a8a0418701d7464bab1d2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AlphaScenes/OllieLevels/Level1_Test.unity
     guid: 4ec8b9696a9e9de4dba920ebcb7c0abb
   - enabled: 0

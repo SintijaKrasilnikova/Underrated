@@ -302,6 +302,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 9
   currentHealth: 0
+  hitSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5a6ef7289005d88499c29f0012da56a4, type: 2}
 --- !u!114 &2110641874193837199
 MonoBehaviour:
   m_ObjectHideFlags: 0

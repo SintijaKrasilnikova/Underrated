@@ -15,6 +15,8 @@ public class ArenaActivate : MonoBehaviour
     public int enemiesKilled = 0;
     public int goalKills;
     bool activateArena = false;
+
+    public AK.Wwise.Event arenaSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,7 @@ public class ArenaActivate : MonoBehaviour
         killedText.text = enemiesKilled.ToString();
         if (!card.activeSelf && activateArena == false)
         {
+            arenaSound.Post(gameObject);
             arenaUI.SetActive(true);
             enemies.SetActive(true);
             walls.SetActive(true);

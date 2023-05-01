@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo>
-	<Project Name="UnderrattedSSG" GUID="{15E88835-336F-4A41-9D8F-58A2ED8E4300}" Generator="2022.1.2.8150"/>
+	<Project Name="UnderrattedSSG" GUID="{15E88835-336F-4A41-9D8F-58A2ED8E4300}" Generator="2022.1.1.8100"/>
 	<CacheRoot>../../../../../../WwiseProjects/UnderrattedSSG/.cache</CacheRoot>
 	<Platforms>
 		<Platform Name="Windows" GUID="{EF611425-97E8-456F-A508-8DCB14629E66}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../../../WwiseProjects/UnderrattedSSG/GeneratedSoundBanks/Windows"/>
@@ -8,5 +8,5 @@
 	<Languages>
 		<Language Name="English(US)" Id="684519430" GUID="{A62E74E8-537B-46BD-ADD6-F0B96DA387D5}" Default="true" UseAsStandIn="true"/>
 	</Languages>
-	<FileHash>{331CC2FC-E976-6638-59EF-6440392D4869}</FileHash>
+	<FileHash>{D000348A-BD42-B0C9-8128-66EC0F306F6C}</FileHash>
 </ProjectInfo>

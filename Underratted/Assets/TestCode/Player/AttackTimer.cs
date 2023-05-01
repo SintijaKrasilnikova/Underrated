@@ -41,6 +41,8 @@ public class AttackTimer : MonoBehaviour
     public Animator plyerAnimator;
     public AK.Wwise.Event swordSwipeSound;
     public AK.Wwise.Event spinSwipeSound;
+    public AK.Wwise.Event hitSound;
+    public AK.Wwise.Event critSound;
 
 
     public bool critPossibleActive = false;
@@ -142,7 +144,7 @@ public class AttackTimer : MonoBehaviour
 
        
         movementRef.SetCanDoge(false);
-        
+
         if (critPossibleActive )
         {
             int randomCritChance = UnityEngine.Random.Range(1, 100);
@@ -152,6 +154,7 @@ public class AttackTimer : MonoBehaviour
 
                 willCrit = true;
                 baseDamage = critDamageValue;
+                critSound.Post(gameObject);
             }
             else
             {

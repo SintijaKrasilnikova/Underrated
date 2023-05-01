@@ -27,6 +27,8 @@ public class CardStart_Cards : MonoBehaviour
 
     public GameObject rechargeBar;
     public GameObject useRef;
+
+    public AK.Wwise.Event cardEquip;
     // Start is called before the first frame update
     void Start()
     {
@@ -100,6 +102,7 @@ public class CardStart_Cards : MonoBehaviour
     {
         if(cardUse != 0)
         {
+            cardEquip.Post(gameObject);
             currentButton.GetComponent<CardStart_Buttons>().hasCard = true;
             currentButton.GetComponent<CardStart_Buttons>().equippedID = cardID;
             currentButton.GetComponent<CardStartDescriptions>().cardEquipped();
