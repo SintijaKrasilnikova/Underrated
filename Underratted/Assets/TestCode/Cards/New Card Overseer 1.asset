@@ -12,16 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32fbdd3a95dccee44b3e9017ac82328d, type: 3}
   m_Name: New Card Overseer 1
   m_EditorClassIdentifier: 
-  _HealthHealth: 0
+  _HealthHealth: 1
   _HealthAttack: 0
   _HealthSpeed: 0
   _AttackAttack: 0
   _AttackSpeed: 0
   _SpeedSpeed: 0
   _Dodge: 1
-  halfCards: 
-  fullCards: 
-  loadoutCards: 010000000200000003000000040000000500000006000000
+
+  _CurrentHealth: 4
+  halfCards: 00000000
+  fullCards: 06000000
+  loadoutCards: 
+
   loadoutCardUse: 020000000200000002000000020000000200000002000000
   rechargeAmount: 0.34
   loadoutCardRecharge:

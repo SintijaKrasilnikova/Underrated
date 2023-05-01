@@ -6,7 +6,7 @@ public class AttackPickup : MonoBehaviour
 {
     [SerializeField] private CardOverseer cardOver;
 
-    public int increaseAmount = 2;
+    public float increaseAmount = 2f;
 
     public GameObject pickupRef;
     public BoxCollider col;
@@ -19,7 +19,7 @@ public class AttackPickup : MonoBehaviour
             var playerAttack = collision.GetComponent<AttackTimer>();
             var playerCards = collision.GetComponent<Card_Numbers>();
 
-            playerAttack.IncreaseBaseDamage(increaseAmount);
+            //playerAttack.IncreaseBaseDamage(increaseAmount);
             playerCards.attackCard++;
             cardOver.halfCards.Add(1);
             pickupSoundAttack.Post(gameObject);

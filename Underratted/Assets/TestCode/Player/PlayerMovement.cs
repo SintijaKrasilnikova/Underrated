@@ -329,6 +329,17 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void AddSpeed(float additionalSpeed)
+    {
+        //if (spedUp == false)
+        //{
+        //    speed *= 1.5f;
+        //    spedUp = true;
+        //}
+
+        speed += additionalSpeed;
+    }
+
 
     public void DownAttack()
     {

@@ -17,7 +17,7 @@ public class HealthPickup : MonoBehaviour
             var playerHealth = collision.GetComponent<PlayerHealth>();
             var playerCards = collision.GetComponent<Card_Numbers>();
 
-            playerHealth.AddHealth();
+            //playerHealth.AddHealth();
             playerCards.healthCard++;
             cardOver.halfCards.Add(2);
             pickupSoundHealth.Post(gameObject);
