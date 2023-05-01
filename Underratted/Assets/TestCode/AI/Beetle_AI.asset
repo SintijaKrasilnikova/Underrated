@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Beetle_AI
   m_EditorClassIdentifier: 
   doesEnemyMove: 1
-  huntingDistance: 10
-  huntingStopDistance: 2
+  huntingDistance: 5
+  huntingStopDistance: 1
   wanderDistance: {x: 10, y: 0, z: 0}
   attackCooldown: 3
   attackPrepare: 0.3

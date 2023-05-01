@@ -1130,6 +1130,7 @@ GameObject:
   - component: {fileID: 12100562}
   - component: {fileID: 12100561}
   - component: {fileID: 12100563}
+  - component: {fileID: 12100564}
   m_Layer: 0
   m_Name: Tree 6 (2)
   m_TagString: Untagged
@@ -1145,8 +1146,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12100560}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -1157,7 +1158,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1216,6 +1217,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.97, y: 12.17, z: 0.2}
   m_Center: {x: 0, y: 7.62, z: 0}
+--- !u!114 &12100564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12100560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5a1645b405f6b42867d5d8c59c92e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRef: {fileID: 0}
+  playerRef: {fileID: 0}
+  render: {fileID: 0}
+  treeToCameraDist: 15
+  closeValue: 2
 --- !u!1 &14823676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,8 +1259,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14823676}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -1253,7 +1271,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4416,6 +4434,7 @@ GameObject:
   - component: {fileID: 61259186}
   - component: {fileID: 61259185}
   - component: {fileID: 61259187}
+  - component: {fileID: 61259188}
   m_Layer: 0
   m_Name: Tree 6 (5)
   m_TagString: Untagged
@@ -4431,8 +4450,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 61259184}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -4443,7 +4462,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4502,6 +4521,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.97, y: 12.17, z: 0.2}
   m_Center: {x: 0, y: 7.62, z: 0}
+--- !u!114 &61259188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61259184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5a1645b405f6b42867d5d8c59c92e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRef: {fileID: 0}
+  playerRef: {fileID: 0}
+  render: {fileID: 0}
+  treeToCameraDist: 15
+  closeValue: 2
 --- !u!1 &62106969
 GameObject:
   m_ObjectHideFlags: 0
@@ -11983,8 +12019,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 206683778}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -11995,7 +12031,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14618,8 +14654,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 247035588}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -14630,7 +14666,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17322,6 +17358,7 @@ GameObject:
   - component: {fileID: 295379730}
   - component: {fileID: 295379729}
   - component: {fileID: 295379731}
+  - component: {fileID: 295379732}
   m_Layer: 0
   m_Name: Tree 6 (4)
   m_TagString: Untagged
@@ -17337,8 +17374,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295379728}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -17349,7 +17386,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17408,6 +17445,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.97, y: 12.17, z: 0.2}
   m_Center: {x: 0, y: 7.62, z: 0}
+--- !u!114 &295379732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295379728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5a1645b405f6b42867d5d8c59c92e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRef: {fileID: 0}
+  playerRef: {fileID: 0}
+  render: {fileID: 0}
+  treeToCameraDist: 15
+  closeValue: 2
 --- !u!1 &297341261 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8706855358580277556, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
@@ -28317,6 +28371,7 @@ GameObject:
   - component: {fileID: 465160348}
   - component: {fileID: 465160347}
   - component: {fileID: 465160349}
+  - component: {fileID: 465160350}
   m_Layer: 0
   m_Name: Tree 6 (8)
   m_TagString: Untagged
@@ -28332,8 +28387,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465160346}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -28344,7 +28399,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28403,6 +28458,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.97, y: 12.17, z: 0.2}
   m_Center: {x: 0, y: 7.62, z: 0}
+--- !u!114 &465160350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465160346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5a1645b405f6b42867d5d8c59c92e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRef: {fileID: 0}
+  playerRef: {fileID: 0}
+  render: {fileID: 0}
+  treeToCameraDist: 15
+  closeValue: 2
 --- !u!1 &466415844
 GameObject:
   m_ObjectHideFlags: 0
@@ -29342,8 +29414,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483273781}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -29354,7 +29426,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30926,8 +30998,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 509603712}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -30938,7 +31010,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31468,8 +31540,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515348187}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -31480,7 +31552,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -33948,8 +34020,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 542660070}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -33960,7 +34032,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35729,6 +35801,7 @@ GameObject:
   - component: {fileID: 573424760}
   - component: {fileID: 573424759}
   - component: {fileID: 573424761}
+  - component: {fileID: 573424762}
   m_Layer: 0
   m_Name: Tree 3 (3)
   m_TagString: Untagged
@@ -35744,8 +35817,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573424758}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -35756,7 +35829,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35815,6 +35888,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.31, y: 16.42, z: 0.2}
   m_Center: {x: 0.44, y: 10.05, z: 0}
+--- !u!114 &573424762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573424758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5a1645b405f6b42867d5d8c59c92e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRef: {fileID: 0}
+  playerRef: {fileID: 0}
+  render: {fileID: 0}
+  treeToCameraDist: 15
+  closeValue: 2
 --- !u!1 &574698507
 GameObject:
   m_ObjectHideFlags: 0
@@ -36123,8 +36213,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580275267}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -36135,7 +36225,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -44406,8 +44496,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732542029}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -44418,7 +44508,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -49722,6 +49812,7 @@ GameObject:
   - component: {fileID: 816221877}
   - component: {fileID: 816221876}
   - component: {fileID: 816221878}
+  - component: {fileID: 816221879}
   m_Layer: 0
   m_Name: Tree 3 (1)
   m_TagString: Untagged
@@ -49737,8 +49828,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816221875}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -49749,7 +49840,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -49808,6 +49899,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.31, y: 16.42, z: 0.2}
   m_Center: {x: 0.44, y: 10.05, z: 0}
+--- !u!114 &816221879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816221875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5a1645b405f6b42867d5d8c59c92e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRef: {fileID: 0}
+  playerRef: {fileID: 0}
+  render: {fileID: 0}
+  treeToCameraDist: 15
+  closeValue: 2
 --- !u!1 &816338026
 GameObject:
   m_ObjectHideFlags: 0
@@ -54946,8 +55054,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906778281}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -54958,7 +55066,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -56008,8 +56116,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913723817}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -56020,7 +56128,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -59159,9 +59267,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3350864199433112401, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
+      propertyPath: overSeer
+      value: 
+      objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+    - target: {fileID: 3350864199433112401, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: maxHealth
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4709378532324562514, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1115910580}
     - target: {fileID: 4709378532459093726, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: deathUI
       value: 
@@ -61360,6 +61476,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1115910581}
     - target: {fileID: 3652324690051752383, guid: ead65ce77e3b47546b9e455fad358948, type: 3}
+      propertyPath: dropChances
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3652324690051752383, guid: ead65ce77e3b47546b9e455fad358948, type: 3}
       propertyPath: cardHistroyRef
       value: 
       objectReference: {fileID: 962348180}
@@ -62188,6 +62308,7 @@ GameObject:
   - component: {fileID: 1001084359}
   - component: {fileID: 1001084358}
   - component: {fileID: 1001084360}
+  - component: {fileID: 1001084361}
   m_Layer: 0
   m_Name: Tree 3 (2)
   m_TagString: Untagged
@@ -62203,8 +62324,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001084357}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -62215,7 +62336,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -62274,6 +62395,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.31, y: 16.42, z: 0.2}
   m_Center: {x: 0.44, y: 10.05, z: 0}
+--- !u!114 &1001084361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001084357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5a1645b405f6b42867d5d8c59c92e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRef: {fileID: 0}
+  playerRef: {fileID: 0}
+  render: {fileID: 0}
+  treeToCameraDist: 15
+  closeValue: 2
 --- !u!1 &1002000464
 GameObject:
   m_ObjectHideFlags: 0
@@ -65481,7 +65619,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.5
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -65644,8 +65782,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042096172}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -65656,7 +65794,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -68319,7 +68457,7 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: 5dd4e52187f816345b2fc5d3562fed52, type: 2}
   cardholder: {fileID: 1632956760}
   isAlphaPortal: 0
-  overSeer: {fileID: 0}
+  overSeer: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
 --- !u!65 &1095362156
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68331,7 +68469,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.235581, y: 16.17, z: 0.7664496}
+  m_Size: {x: 10.235581, y: 16.17, z: 2.65}
   m_Center: {x: -0.18669602, y: 8.084999, z: -0.28322476}
 --- !u!114 &1095362157
 MonoBehaviour:
@@ -83651,6 +83789,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1115910581}
     - target: {fileID: 929748819070554645, guid: b6c0d33b308f0ef4c87672ad408651d4, type: 3}
+      propertyPath: dropChances
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 929748819070554645, guid: b6c0d33b308f0ef4c87672ad408651d4, type: 3}
       propertyPath: cardHistroyRef
       value: 
       objectReference: {fileID: 962348180}
@@ -83666,6 +83808,10 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 1115910588}
+    - target: {fileID: 2522589675001886195, guid: b6c0d33b308f0ef4c87672ad408651d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.31
+      objectReference: {fileID: 0}
     - target: {fileID: 4737119488999099891, guid: b6c0d33b308f0ef4c87672ad408651d4, type: 3}
       propertyPath: m_Name
       value: Beetle4.1 (1)
@@ -84884,8 +85030,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351805261}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -84896,7 +85042,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -89020,6 +89166,10 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1115910588}
+    - target: {fileID: 5617530171425489584, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
+      propertyPath: playerHealthRef
+      value: 
+      objectReference: {fileID: 1115910588}
     - target: {fileID: 5922266041712462096, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 3
@@ -90022,8 +90172,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446098250}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -90034,7 +90184,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91187,6 +91337,7 @@ GameObject:
   - component: {fileID: 1457331035}
   - component: {fileID: 1457331034}
   - component: {fileID: 1457331036}
+  - component: {fileID: 1457331037}
   m_Layer: 0
   m_Name: Tree 6 (7)
   m_TagString: Untagged
@@ -91202,8 +91353,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457331033}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -91214,7 +91365,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91273,6 +91424,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.97, y: 12.17, z: 0.2}
   m_Center: {x: 0, y: 7.62, z: 0}
+--- !u!114 &1457331037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457331033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5a1645b405f6b42867d5d8c59c92e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRef: {fileID: 0}
+  playerRef: {fileID: 0}
+  render: {fileID: 0}
+  treeToCameraDist: 15
+  closeValue: 2
 --- !u!1 &1457972231
 GameObject:
   m_ObjectHideFlags: 0
@@ -92122,8 +92290,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469507814}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -92134,7 +92302,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94008,6 +94176,10 @@ PrefabInstance:
       propertyPath: attackTimer
       value: 
       objectReference: {fileID: 1115910581}
+    - target: {fileID: 500438991201757272, guid: 26ba3c0ea4f339c428a63c698d57c417, type: 3}
+      propertyPath: dropChances
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 500438991201757272, guid: 26ba3c0ea4f339c428a63c698d57c417, type: 3}
       propertyPath: cardHistroyRef
       value: 
@@ -97747,8 +97919,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550787995}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -97759,7 +97931,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -98802,6 +98974,7 @@ GameObject:
   - component: {fileID: 1568376075}
   - component: {fileID: 1568376074}
   - component: {fileID: 1568376076}
+  - component: {fileID: 1568376077}
   m_Layer: 0
   m_Name: Tree 6 (1)
   m_TagString: Untagged
@@ -98817,8 +98990,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1568376073}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -98829,7 +99002,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -98888,6 +99061,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.97, y: 12.17, z: 0.2}
   m_Center: {x: 0, y: 7.62, z: 0}
+--- !u!114 &1568376077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568376073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5a1645b405f6b42867d5d8c59c92e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRef: {fileID: 0}
+  playerRef: {fileID: 0}
+  render: {fileID: 0}
+  treeToCameraDist: 15
+  closeValue: 2
 --- !u!1 &1569657525
 GameObject:
   m_ObjectHideFlags: 0
@@ -102816,6 +103006,7 @@ GameObject:
   - component: {fileID: 1632305257}
   - component: {fileID: 1632305256}
   - component: {fileID: 1632305258}
+  - component: {fileID: 1632305259}
   m_Layer: 0
   m_Name: Tree 6 (3)
   m_TagString: Untagged
@@ -102831,8 +103022,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632305255}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -102843,7 +103034,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -102902,6 +103093,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.97, y: 12.17, z: 0.2}
   m_Center: {x: 0, y: 7.62, z: 0}
+--- !u!114 &1632305259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632305255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5a1645b405f6b42867d5d8c59c92e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRef: {fileID: 0}
+  playerRef: {fileID: 0}
+  render: {fileID: 0}
+  treeToCameraDist: 15
+  closeValue: 2
 --- !u!1 &1632956760
 GameObject:
   m_ObjectHideFlags: 0
@@ -103982,8 +104190,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645172124}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -103994,7 +104202,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -104065,8 +104273,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646121373}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -104077,7 +104285,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -104554,6 +104762,7 @@ GameObject:
   - component: {fileID: 1653993702}
   - component: {fileID: 1653993701}
   - component: {fileID: 1653993703}
+  - component: {fileID: 1653993704}
   m_Layer: 0
   m_Name: Tree 3
   m_TagString: Untagged
@@ -104569,8 +104778,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653993700}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -104581,7 +104790,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -104640,6 +104849,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.31, y: 16.42, z: 0.2}
   m_Center: {x: 0.44, y: 10.05, z: 0}
+--- !u!114 &1653993704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653993700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5a1645b405f6b42867d5d8c59c92e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRef: {fileID: 0}
+  playerRef: {fileID: 0}
+  render: {fileID: 0}
+  treeToCameraDist: 15
+  closeValue: 2
 --- !u!1 &1656619805
 GameObject:
   m_ObjectHideFlags: 0
@@ -106652,8 +106878,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697478151}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -106664,7 +106890,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -118064,8 +118290,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869360448}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -118076,7 +118302,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -118907,8 +119133,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887916878}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -118919,7 +119145,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -127269,8 +127495,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2023677995}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -127281,7 +127507,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -132857,6 +133083,7 @@ GameObject:
   - component: {fileID: 2127139970}
   - component: {fileID: 2127139969}
   - component: {fileID: 2127139971}
+  - component: {fileID: 2127139972}
   m_Layer: 0
   m_Name: Tree 6
   m_TagString: Untagged
@@ -132872,8 +133099,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127139968}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -132884,7 +133111,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -132943,6 +133170,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.97, y: 12.17, z: 0.2}
   m_Center: {x: 0, y: 7.62, z: 0}
+--- !u!114 &2127139972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127139968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5a1645b405f6b42867d5d8c59c92e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRef: {fileID: 0}
+  playerRef: {fileID: 0}
+  render: {fileID: 0}
+  treeToCameraDist: 15
+  closeValue: 2
 --- !u!1 &2127542248
 GameObject:
   m_ObjectHideFlags: 0
@@ -133120,6 +133364,7 @@ GameObject:
   - component: {fileID: 2129978180}
   - component: {fileID: 2129978179}
   - component: {fileID: 2129978181}
+  - component: {fileID: 2129978182}
   m_Layer: 0
   m_Name: Tree 6 (6)
   m_TagString: Untagged
@@ -133135,8 +133380,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129978178}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -133147,7 +133392,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d584e956eac7fd4cb095d4465825f56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -133206,6 +133451,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.97, y: 12.17, z: 0.2}
   m_Center: {x: 0, y: 7.62, z: 0}
+--- !u!114 &2129978182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129978178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5a1645b405f6b42867d5d8c59c92e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRef: {fileID: 0}
+  playerRef: {fileID: 0}
+  render: {fileID: 0}
+  treeToCameraDist: 15
+  closeValue: 2
 --- !u!1 &2131119451
 GameObject:
   m_ObjectHideFlags: 0
