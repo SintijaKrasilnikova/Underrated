@@ -103,6 +103,8 @@ public class CardOverseer : ScriptableObject
     public List<float> loadoutCardRecharge = new List<float>();
     public bool firstRun = false;
 
+    public int cardsEquippedInLoadout = 0;
+
     public void rechargeCards()
     {
         loadoutCardRecharge[0] += rechargeAmount;

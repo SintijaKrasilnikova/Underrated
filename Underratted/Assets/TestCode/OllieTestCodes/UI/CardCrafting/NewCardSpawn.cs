@@ -23,11 +23,27 @@ public class NewCardSpawn : MonoBehaviour
     {
         
 
+
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (canRemoveListEle)
+        {
+            cardOver.halfCards.RemoveAt(0);
+            canRemoveListEle = false;
+        }
+    }
+
+    public void makeNewCard()
+    {
         //Debug.Log("Combined");
         var cardImage = gameObject.GetComponent<Image>();
         cardImage.sprite = cardAbilityRef.abilities[cardAbilityRef.abilityNumb];
 
-        switch(cardAbilityRef.GetAbilityNumber())
+        switch (cardAbilityRef.GetAbilityNumber())
         {
             case 1://Speed + Speed ability
                 cardOver.SpeedSpeed = true;
@@ -56,16 +72,5 @@ public class NewCardSpawn : MonoBehaviour
         }
 
         //SceneManager.LoadScene(0);
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (canRemoveListEle)
-        {
-            cardOver.halfCards.RemoveAt(0);
-            canRemoveListEle = false;
-        }
     }
 }

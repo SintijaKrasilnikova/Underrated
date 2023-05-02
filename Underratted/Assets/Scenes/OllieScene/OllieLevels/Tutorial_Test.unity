@@ -68189,7 +68189,7 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: 5dd4e52187f816345b2fc5d3562fed52, type: 2}
   cardholder: {fileID: 1632956760}
   isAlphaPortal: 0
-  health: {fileID: 0}
+  overSeer: {fileID: 0}
 --- !u!65 &1095362156
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88810,7 +88810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2984502619082777863, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3315973063932438004, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: restartPressed.WwiseObjectReference
