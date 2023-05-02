@@ -19,3 +19,7 @@ MonoBehaviour:
   attackCooldown: 1.5
   attackPrepare: 0.5
   attackDuraton: 1.5
+  attackAreaDuraton: 0.7
+  enemyIsBeetle: 0
+  chargeSpeedIncrease: 6
+  startWanderingLeft: 1
