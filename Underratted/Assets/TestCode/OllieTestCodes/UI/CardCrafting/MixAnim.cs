@@ -82,6 +82,7 @@ public class MixAnim : MonoBehaviour
         continueMsg.SetActive(true);
         canLoadNextLevel = true;
         newCard.SetActive(true);
+        newCard.GetComponent<NewCardSpawn>().makeNewCard();
         canChangeCard = true;
         Debug.Log("Mix");
     }

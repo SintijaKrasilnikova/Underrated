@@ -33,7 +33,8 @@ public class CraftingNextScene : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            if(cardOver.halfCards.Count > 0)
+
+            if (cardOver.halfCards.Count > 0)
             {
                 creationAssets.SetActive(true);
                 playerCard.SetActive(true);
@@ -56,18 +57,21 @@ public class CraftingNextScene : MonoBehaviour
                 mixedCard.SetActive(false);
                 newCardData.canRemoveListEle = true;
             }
+
+            if (cardOver.halfCards.Count <= 0)
+            {
+                if (demoEnd == false)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                }
+                else
+                {
+                    SceneManager.LoadScene(0);
+                }
+            }
+
         }
 
-        if(cardOver.halfCards.Count <= 0)
-        {
-            if (demoEnd == false)
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
-            else
-            {
-                SceneManager.LoadScene(0);
-            }
-        }
+
     }
 }

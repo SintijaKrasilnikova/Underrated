@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32fbdd3a95dccee44b3e9017ac82328d, type: 3}
   m_Name: New Card Overseer 1
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   _HealthHealth: 0
   _HealthAttack: 0
   _HealthSpeed: 0
@@ -26,4 +27,23 @@ MonoBehaviour:
   loadoutCardUse: 
   rechargeAmount: 0.35
   loadoutCardRecharge: []
+=======
+  _HealthHealth: 1
+  _HealthAttack: 1
+  _HealthSpeed: 1
+  _AttackAttack: 1
+  _AttackSpeed: 1
+  _SpeedSpeed: 1
+  _Dodge: 1
+  _CurrentHealth: 0
+  halfCards: 
+  fullCards: 
+  loadoutCards: 05000000030000000400000002000000
+  loadoutCardUse: 0200000002000000
+  rechargeAmount: 0.34
+  loadoutCardRecharge:
+  - 13.340004
+  - 11.980003
+>>>>>>> Stashed changes
   firstRun: 0
+  cardsEquippedInLoadout: 0
