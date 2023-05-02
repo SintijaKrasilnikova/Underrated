@@ -16,6 +16,7 @@ public class AiAgentConfig : ScriptableObject
     public float attackCooldown = 3f;
     public float attackPrepare = 0.5f;
     public float attackDuraton = 0.9f;
+    public float attackAreaDuraton = 0.9f;
 
     public bool enemyIsBeetle = false;
     public float chargeSpeedIncrease = 6f;

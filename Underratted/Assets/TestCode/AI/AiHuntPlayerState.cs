@@ -11,8 +11,8 @@ public class AiHuntPlayerState : AiState
 
     
     private float attackCoolDown;
-    private float chargePrepTime = 1.5f;
-    private float chargeTimer = 0.5f;
+    private float chargePrepTime = 0.7f;
+    private float chargeTimer = 0f;
     private Vector3 playerPosWhenSpotted;
     private float startSpeed;
     private float increasedSpeed;
@@ -22,6 +22,7 @@ public class AiHuntPlayerState : AiState
     private float pauseTimer = 0.0f;
 
     private bool canTurn = true;
+    private bool chargeDone = false;
 
     public AiStateId GetId()
     {
@@ -41,9 +42,10 @@ public class AiHuntPlayerState : AiState
         //{
         //    agent.navAgent.destination = agent.playerTransform.position;
         //}
+        chargeDone = false;
         playerPosWhenSpotted = agent.playerTransform.position;
         attackCoolDown = 0f;
-        chargePrepTime = 0f;
+        chargeTimer = 0f;
         startSpeed = agent.navAgent.speed;
         increasedSpeed = startSpeed + agent.config.chargeSpeedIncrease;
         if (agent.config.enemyIsBeetle == true)
@@ -51,23 +53,37 @@ public class AiHuntPlayerState : AiState
     }
     public void Update(AiAgent agent)
     {
-        if (agent.config.enemyIsBeetle == true)
+        if (agent.config.enemyIsBeetle == true && chargeDone == false)
         {
             if (chargeTimer < chargePrepTime)
             {
-                chargeTimer = +Time.deltaTime;
+                chargeTimer += Time.deltaTime;
                 agent.navAgent.speed = 0;
+                agent.enemyAnimator.SetBool("Charging", true);
+                //Debug.Log(chargeTimer);
             }
             else
             {
                 agent.navAgent.destination = playerPosWhenSpotted;
                 agent.navAgent.speed = increasedSpeed;
+                agent.enemyAnimator.SetBool("Charging", false);
+                chargeDone = true;
+                Debug.Log("ChargeEnd");
             }
         }
         else
         {
             attackTargetPos = agent.playerTransform.position;
             agent.navAgent.destination = agent.playerTransform.position;
+        }
+
+        if(chargeDone == true)
+        {
+            agent.enemyAnimator.SetBool("Charging", false);
+        }
+        else
+        {
+            agent.navAgent.speed = 0;
         }
 
         //agent.navAgent.destination = agent.playerTransform.position;
@@ -119,7 +135,7 @@ public class AiHuntPlayerState : AiState
         //    agent.stateMachine.ChangeState(AiStateId.Attack);
         //}
 
-        if (agent.config.enemyIsBeetle == true)
+        if (agent.config.enemyIsBeetle == true && chargeDone == true)
         {
             agent.readyToAttack = true;
         }
