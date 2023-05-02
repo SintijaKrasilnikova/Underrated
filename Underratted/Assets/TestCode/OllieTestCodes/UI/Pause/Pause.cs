@@ -12,6 +12,8 @@ public class Pause : MonoBehaviour
     public GameObject resumeButton;
     public EventSystem eventSystems;
     public AK.Wwise.Event InventoryOpenClose;
+    public AK.Wwise.Event musicLPF;
+    public AK.Wwise.Event musicNormal;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,7 @@ public class Pause : MonoBehaviour
     public void Resume()
     {
         InventoryOpenClose.Post(gameObject);
+        musicNormal.Post(gameObject);
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -45,6 +48,7 @@ public class Pause : MonoBehaviour
     public void PauseAction()
     {
         InventoryOpenClose.Post(gameObject);
+        musicLPF.Post(gameObject);
         eventSystems.SetSelectedGameObject(resumeButton);
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;

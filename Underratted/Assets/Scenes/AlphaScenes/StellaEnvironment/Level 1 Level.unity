@@ -59729,6 +59729,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 64f59f06f5bc9d4428be67c56f06b579, type: 2}
+  musicLPF:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0468345e92343bc4aa3fe8940eca04b5, type: 2}
+  musicNormal:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c4e08b9cc5ecd484985fa8aeb64a3565, type: 2}
 --- !u!1 &1117376900
 GameObject:
   m_ObjectHideFlags: 0
@@ -90412,15 +90420,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7401994044644677000, guid: d52270345a776c744b8a2489177153b3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.12980229
+      value: 0.1298023
       objectReference: {fileID: 0}
     - target: {fileID: 7401994044644677000, guid: d52270345a776c744b8a2489177153b3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000019074568
+      value: -0.000000019074568
       objectReference: {fileID: 0}
     - target: {fileID: 7401994044644677000, guid: d52270345a776c744b8a2489177153b3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000002497048
+      value: 0.0000000024970483
       objectReference: {fileID: 0}
     - target: {fileID: 7401994044644677000, guid: d52270345a776c744b8a2489177153b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
