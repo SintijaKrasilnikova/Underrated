@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: 4b3a42a8eb85b4b4faa82d572e1dbe41
+guid: ed4b29ed930617a479719669fc09d590
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3043595477718582829
-    second: frog_swing_left_0
+      213: 8660236739610685244
+    second: healthPotion_0
   - first:
-      213: -1104519030392770131
-    second: frog_swing_left_1
+      213: 5104582565428591677
+    second: healthPotion_1
   - first:
-      213: -6285219158848979456
-    second: frog_swing_left_2
+      213: -4468136706712477655
+    second: healthPotion_2
   - first:
-      213: 4400607610081046471
-    second: frog_swing_left_3
+      213: -2530415449501267528
+    second: healthPotion_3
   - first:
-      213: -3713268030665601806
-    second: frog_swing_left_4
+      213: 4642722058905842738
+    second: healthPotion_4
   - first:
-      213: -9002500597558317113
-    second: frog_swing_left_5
+      213: 4272405559323414826
+    second: healthPotion_5
   - first:
-      213: -7437237374953210508
-    second: frog_swing_left_6
+      213: 8128822253606609373
+    second: healthPotion_6
   - first:
-      213: 5660790610772520836
-    second: frog_swing_left_7
+      213: 9102778217773433793
+    second: healthPotion_7
   - first:
-      213: -6796441058419267573
-    second: frog_swing_left_8
+      213: 2779366773247861853
+    second: healthPotion_8
   - first:
-      213: -9034286841453987667
-    second: frog_swing_left_9
+      213: 8498126085762850111
+    second: healthPotion_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -95,7 +95,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -107,7 +107,79 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 16384
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -121,211 +193,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: frog_swing_left_0
+      name: healthPotion_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 0
-        width: 1399.5
-        height: 1090
-      alignment: 9
-      pivot: {x: 0.8, y: 0.58}
+        x: 0
+        y: 300
+        width: 290
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d93996e90af2c5d0800000000000000
-      internalID: -3043595477718582829
+      spriteID: c3f28474e675f2870800000000000000
+      internalID: 8660236739610685244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frog_swing_left_1
+      name: healthPotion_1
       rect:
         serializedVersion: 2
-        x: 1409
-        y: 0
-        width: 1399.5
-        height: 1090
-      alignment: 9
-      pivot: {x: 0.8, y: 0.58}
+        x: 290
+        y: 300
+        width: 290
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da1b7c93bc5fba0f0800000000000000
-      internalID: -1104519030392770131
+      spriteID: d3cf50b4cce17d640800000000000000
+      internalID: 5104582565428591677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frog_swing_left_2
+      name: healthPotion_2
       rect:
         serializedVersion: 2
-        x: 2808
-        y: 0
-        width: 1399.5
-        height: 1090
-      alignment: 9
-      pivot: {x: 0.8, y: 0.58}
+        x: 580
+        y: 300
+        width: 290
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00eb35db97a66c8a0800000000000000
-      internalID: -6285219158848979456
+      spriteID: 920e484a65dfdf1c0800000000000000
+      internalID: -4468136706712477655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frog_swing_left_3
+      name: healthPotion_3
       rect:
         serializedVersion: 2
-        x: 4207
-        y: 0
-        width: 1399.5
-        height: 1090
-      alignment: 9
-      pivot: {x: 0.8, y: 0.58}
+        x: 870
+        y: 300
+        width: 290
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cfe2c25e49121d30800000000000000
-      internalID: 4400607610081046471
+      spriteID: 8b9015e2e8822ecd0800000000000000
+      internalID: -2530415449501267528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frog_swing_left_4
+      name: healthPotion_4
       rect:
         serializedVersion: 2
-        x: 5606
-        y: 0
-        width: 1399.5
-        height: 1090
-      alignment: 9
-      pivot: {x: 0.8, y: 0.58}
+        x: 1160
+        y: 300
+        width: 290
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fccc5c5662d77cc0800000000000000
-      internalID: -3713268030665601806
+      spriteID: 234f3f74d134e6040800000000000000
+      internalID: 4642722058905842738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frog_swing_left_5
+      name: healthPotion_5
       rect:
         serializedVersion: 2
-        x: 7005
+        x: 0
         y: 0
-        width: 1399.5
-        height: 1090
-      alignment: 9
-      pivot: {x: 0.8, y: 0.58}
+        width: 290
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cf6b406761b01380800000000000000
-      internalID: -9002500597558317113
+      spriteID: a2150e35832aa4b30800000000000000
+      internalID: 4272405559323414826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frog_swing_left_6
+      name: healthPotion_6
       rect:
         serializedVersion: 2
-        x: 8404
+        x: 290
         y: 0
-        width: 1399.5
-        height: 1090
-      alignment: 9
-      pivot: {x: 0.8, y: 0.58}
+        width: 290
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47db7abf200a9c890800000000000000
-      internalID: -7437237374953210508
+      spriteID: dd1238475c06fc070800000000000000
+      internalID: 8128822253606609373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frog_swing_left_7
+      name: healthPotion_7
       rect:
         serializedVersion: 2
-        x: 9803
+        x: 580
         y: 0
-        width: 1399.5
-        height: 1090
-      alignment: 9
-      pivot: {x: 0.8, y: 0.58}
+        width: 290
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48f66fe711b2f8e40800000000000000
-      internalID: 5660790610772520836
+      spriteID: 1c38c8b7f80935e70800000000000000
+      internalID: 9102778217773433793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frog_swing_left_8
+      name: healthPotion_8
       rect:
         serializedVersion: 2
-        x: 11202
+        x: 870
         y: 0
-        width: 1399.5
-        height: 1090
-      alignment: 9
-      pivot: {x: 0.8, y: 0.58}
+        width: 290
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b082a00ddd03ea1a0800000000000000
-      internalID: -6796441058419267573
+      spriteID: d5466f3ca5b429620800000000000000
+      internalID: 2779366773247861853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frog_swing_left_9
+      name: healthPotion_9
       rect:
         serializedVersion: 2
-        x: 12601
+        x: 1160
         y: 0
-        width: 1399.5
-        height: 1090
-      alignment: 9
-      pivot: {x: 0.8, y: 0.58}
+        width: 290
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da83620cbf3cf9280800000000000000
-      internalID: -9034286841453987667
+      spriteID: f3d106666a86fe570800000000000000
+      internalID: 8498126085762850111
       vertices: []
       indices: 
       edges: []
@@ -333,7 +405,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 857a2f33adf3a0545acd824c64a10351
+    spriteID: af146db95c7c5c947b72d66deb36db6a
     internalID: 0
     vertices: []
     indices: 
