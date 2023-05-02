@@ -111,11 +111,11 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1540
-        height: 1090
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        width: 624
+        height: 1089
+      alignment: 9
+      pivot: {x: 0.45, y: 0.58}
+      border: {x: 0, y: 0, z: 10, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -130,13 +130,13 @@ TextureImporter:
       name: frog_idle_right_1
       rect:
         serializedVersion: 2
-        x: 1540
+        x: 624
         y: 0
-        width: 1540
-        height: 1090
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        width: 624
+        height: 1089
+      alignment: 9
+      pivot: {x: 0.45, y: 0.58}
+      border: {x: 0, y: 0, z: 12, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -151,12 +151,12 @@ TextureImporter:
       name: frog_idle_right_2
       rect:
         serializedVersion: 2
-        x: 3080
+        x: 1248
         y: 0
-        width: 1540
-        height: 1090
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 613
+        height: 1089
+      alignment: 9
+      pivot: {x: 0.45, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,12 +172,12 @@ TextureImporter:
       name: frog_idle_right_3
       rect:
         serializedVersion: 2
-        x: 4620
+        x: 1872
         y: 0
-        width: 1540
-        height: 1090
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 617
+        height: 1089
+      alignment: 9
+      pivot: {x: 0.45, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,12 +193,12 @@ TextureImporter:
       name: frog_idle_right_4
       rect:
         serializedVersion: 2
-        x: 6160
+        x: 2496
         y: 0
-        width: 1540
-        height: 1090
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 624
+        height: 1089
+      alignment: 9
+      pivot: {x: 0.45, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

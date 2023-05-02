@@ -12,6 +12,7 @@ TagManager:
   - PassiveButton
   - ArenaHandler
   - Camera
+  - TRight
   layers:
   - Default
   - TransparentFX

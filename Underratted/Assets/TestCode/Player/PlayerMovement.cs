@@ -347,7 +347,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void DownAttack()
     {
-        slashDown.SetActive(true);
+        if(plyerAnimator.GetFloat("FacingUp") == -1)
+            slashDown.SetActive(true);
     }
     public void DownAttackDone()
     {

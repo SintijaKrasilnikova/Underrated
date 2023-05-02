@@ -20,25 +20,25 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -3043595477718582829, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
-    - time: 0.083333336
-      value: {fileID: -1104519030392770131, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
-    - time: 0.16666667
-      value: {fileID: -6285219158848979456, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
-    - time: 0.25
-      value: {fileID: 4400607610081046471, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
-    - time: 0.33333334
-      value: {fileID: -3713268030665601806, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
-    - time: 0.41666666
-      value: {fileID: -9002500597558317113, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
-    - time: 0.5
-      value: {fileID: -7437237374953210508, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
-    - time: 0.5833333
-      value: {fileID: 5660790610772520836, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
-    - time: 0.6666667
-      value: {fileID: -6796441058419267573, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
-    - time: 0.75
       value: {fileID: -9034286841453987667, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
+    - time: 0.083333336
+      value: {fileID: -6796441058419267573, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
+    - time: 0.16666667
+      value: {fileID: 5660790610772520836, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
+    - time: 0.25
+      value: {fileID: -7437237374953210508, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
+    - time: 0.33333334
+      value: {fileID: -9002500597558317113, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
+    - time: 0.41666666
+      value: {fileID: -6285219158848979456, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
+    - time: 0.5
+      value: {fileID: 4400607610081046471, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
+    - time: 0.5833333
+      value: {fileID: -3713268030665601806, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
+    - time: 0.6666667
+      value: {fileID: -1104519030392770131, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
+    - time: 0.75
+      value: {fileID: -3043595477718582829, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -58,16 +58,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -3043595477718582829, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
-    - {fileID: -1104519030392770131, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
+    - {fileID: -9034286841453987667, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
+    - {fileID: -6796441058419267573, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
+    - {fileID: 5660790610772520836, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
+    - {fileID: -7437237374953210508, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
+    - {fileID: -9002500597558317113, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
     - {fileID: -6285219158848979456, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
     - {fileID: 4400607610081046471, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
     - {fileID: -3713268030665601806, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
-    - {fileID: -9002500597558317113, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
-    - {fileID: -7437237374953210508, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
-    - {fileID: 5660790610772520836, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
-    - {fileID: -6796441058419267573, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
-    - {fileID: -9034286841453987667, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
+    - {fileID: -1104519030392770131, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
+    - {fileID: -3043595477718582829, guid: 4b3a42a8eb85b4b4faa82d572e1dbe41, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -92,4 +92,18 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: ActivateTongueLeft
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.75
+    functionName: TurnOffTongue
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
