@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private GameObject pickup;
     [SerializeField] private KnockbackTest knock;
     [SerializeField] private CardOverseer overSeer;
+    private CapsuleCollider playerCapsule;
 
     public int maxHealth = 4;
     public int maxHealthLimit = 8;
@@ -25,6 +26,8 @@ public class PlayerHealth : MonoBehaviour
     private bool justAttacked = false;
     private bool lifeStealActive = false;
 
+    private bool dead = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +37,7 @@ public class PlayerHealth : MonoBehaviour
         //    currentHealth = overSeer.CurrentHealth;
         //else
         //    currentHealth = maxHealth;
-
+        dead = false;
         currentHealth = overSeer.CurrentHealth;
 
         if (gameObject.CompareTag("Player"))
@@ -44,8 +47,24 @@ public class PlayerHealth : MonoBehaviour
             {
 
                 playerMoveRef = gameObject.GetComponent<PlayerMovement>();
+                playerCapsule = gameObject.GetComponent<CapsuleCollider>();
             }
         }
+    }
+
+    private void Update()
+    {
+        if (currentHealth <= 0)
+        {
+            dead = true;
+            justAttacked = true;
+            //playerCapsule.enabled = false;
+        }
+    }
+
+    public bool IsLuluDead()
+    {
+        return dead;
     }
 
     public void SetCurrentHealthToMax()
@@ -61,6 +80,9 @@ public class PlayerHealth : MonoBehaviour
             knock.Knockback();
             playerMoveRef.HurtPlayer(currentHealth);
             justAttacked = true;
+
+            if(currentHealth <= 0)
+                dead = true;
 
             CallImunity();
             //Invoke(nameof(BeImmune), immunityTime);
