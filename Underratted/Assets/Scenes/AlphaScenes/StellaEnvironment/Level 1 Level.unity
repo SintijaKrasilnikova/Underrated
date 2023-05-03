@@ -14802,7 +14802,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300048896}
   m_LocalRotation: {x: -0, y: 0.0101212505, z: -0, w: 0.99994886}
-  m_LocalPosition: {x: -45.630005, y: -0.00011026859, z: -109.72}
+  m_LocalPosition: {x: -45.63, y: -0.00011026859, z: -109.73}
   m_LocalScale: {x: 0.92759997, y: 0.50302, z: 1}
   m_Children: []
   m_Father: {fileID: 1118638424}
@@ -36695,7 +36695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &715162950
 Transform:
   m_ObjectHideFlags: 0
@@ -50622,7 +50622,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709378532459093727, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4709378532459093727, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: m_Center.x
@@ -59811,6 +59811,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f40da5ddc0ccf7149b2562fb8196672a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &1115910592
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115910580}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.98
+  m_Height: 10.9
+  m_Direction: 1
+  m_Center: {x: 0, y: 5.45, z: 0}
 --- !u!114 &1115910593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60019,7 +60033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1118638424
 Transform:
   m_ObjectHideFlags: 0
@@ -78921,6 +78935,65 @@ Transform:
   m_Father: {fileID: 320468156}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 14.301}
+--- !u!1 &1472697220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1472697222}
+  - component: {fileID: 1472697221}
+  - component: {fileID: 1472697223}
+  m_Layer: 0
+  m_Name: KillBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1472697221
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472697220}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1472697222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472697220}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 337, y: -16.9, z: 20.1}
+  m_LocalScale: {x: 225.5968, y: 6.0011, z: 238.2892}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 59
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1472697223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472697220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7a45f679c95baf4180d950152d40ca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallDamage: 1
+  overSeer: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
 --- !u!1 &1475697844 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3616842742903068272, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
@@ -90545,15 +90618,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7401994044644677000, guid: d52270345a776c744b8a2489177153b3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.1298023
+      value: 0.12980229
       objectReference: {fileID: 0}
     - target: {fileID: 7401994044644677000, guid: d52270345a776c744b8a2489177153b3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000019074568
+      value: 0.000000019074568
       objectReference: {fileID: 0}
     - target: {fileID: 7401994044644677000, guid: d52270345a776c744b8a2489177153b3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000024970483
+      value: -0.000000002497048
       objectReference: {fileID: 0}
     - target: {fileID: 7401994044644677000, guid: d52270345a776c744b8a2489177153b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -97708,6 +97781,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1837750811 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7909401130416749950, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
+  m_PrefabInstance: {fileID: 1431698319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1837750815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837750811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc5de870cf7f9e4dbac109e18b05e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillBar: {fileID: 0}
+  spinValueRef: {fileID: 0}
+  dodgeValueRef: {fileID: 0}
+  spinIcon: 1
+  dodgeIcon: 0
 --- !u!1 &1840302457
 GameObject:
   m_ObjectHideFlags: 0
@@ -103498,6 +103593,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1951875301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8288494101291402483, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
+  m_PrefabInstance: {fileID: 1431698319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1951875305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951875301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc5de870cf7f9e4dbac109e18b05e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillBar: {fileID: 0}
+  spinValueRef: {fileID: 0}
+  dodgeValueRef: {fileID: 0}
+  spinIcon: 0
+  dodgeIcon: 1
 --- !u!1 &1952697509 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7293270246336642750, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}

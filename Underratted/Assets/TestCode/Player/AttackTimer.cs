@@ -78,6 +78,7 @@ public class AttackTimer : MonoBehaviour
         //trailAttackArea.SetActive(false);
 
         startBaseDamage = baseDamage;
+        spinFillValue = spinRestTime;
     }
 
     // Update is called once per frame
@@ -119,6 +120,11 @@ public class AttackTimer : MonoBehaviour
         //Debug.Log(spinFillValue);
         //Debug.Log(normAttackFillValue);
 
+    }
+
+    public float GetSpinFillValue()
+    {
+        return spinFillValue;
     }
 
     public void IncreaseCritChance(int critInc)

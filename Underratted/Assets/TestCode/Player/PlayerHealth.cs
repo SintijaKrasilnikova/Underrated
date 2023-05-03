@@ -69,6 +69,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void CallImunity()
     {
+        justAttacked = true;
         Invoke(nameof(BeImmune), immunityTime);
     }
 

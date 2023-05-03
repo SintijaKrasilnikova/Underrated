@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50bb2090243c5004582880270054adf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beetleDamage: 2
+  beetleDamage: 1
 --- !u!114 &1893060993347299762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,7 +488,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a2846377bf860f469dbd328b04164ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropChances: 80
   prefferdCardType: 
   spinRef: {fileID: 0}
   cardHistroyRef: {fileID: 0}

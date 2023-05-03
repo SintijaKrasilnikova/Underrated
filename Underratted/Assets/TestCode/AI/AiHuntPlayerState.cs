@@ -60,6 +60,7 @@ public class AiHuntPlayerState : AiState
                 chargeTimer += Time.deltaTime;
                 agent.navAgent.speed = 0;
                 agent.enemyAnimator.SetBool("Charging", true);
+                //Debug.Log(agent.navAgent.speed);
                 //Debug.Log(chargeTimer);
             }
             else
@@ -77,20 +78,22 @@ public class AiHuntPlayerState : AiState
             //agent.navAgent.destination = agent.playerTransform.position;
         }
 
-        Debug.Log(agent.readyToAttack);
+        
 
         if (agent.config.enemyIsBeetle == false)
         {
             agent.navAgent.destination = agent.playerTransform.position;
+            attackTargetPos = agent.playerTransform.position;
         }
 
         if(chargeDone == true && agent.config.enemyIsBeetle == true)
         {
             agent.enemyAnimator.SetBool("Charging", false);
-        }
-        else
-        {
-            agent.navAgent.speed = 0;
+
+            if(chargeDone == false)
+            {
+                agent.navAgent.speed = 0;
+            }
         }
 
         //agent.navAgent.destination = agent.playerTransform.position;
@@ -152,10 +155,13 @@ public class AiHuntPlayerState : AiState
             if (Mathf.Abs(attackTargetPos.x - agent.transform.position.x) < agent.navAgent.stoppingDistance
                 && Mathf.Abs(attackTargetPos.z - agent.transform.position.z) < agent.navAgent.stoppingDistance)
             {
+                Debug.Log("AAAAAAAA");
                 agent.navAgent.speed = startSpeed;
                 AiAttackState attackState = agent.stateMachine.GetState(AiStateId.Attack) as AiAttackState;
                 agent.stateMachine.ChangeState(AiStateId.Attack);
             }
+
+            Debug.Log(Mathf.Abs(attackTargetPos.x - agent.transform.position.x));
 
             //if (Mathf.Abs(agent.playerTransform.position.x - agent.transform.position.x) < agent.navAgent.stoppingDistance
             //    && Mathf.Abs(agent.playerTransform.position.z - agent.transform.position.z) < agent.navAgent.stoppingDistance)
@@ -171,22 +177,29 @@ public class AiHuntPlayerState : AiState
                 attackCoolDown += Time.deltaTime;
         }
 
-        if (Mathf.Abs(attackTargetPos.x - agent.navAgent.stoppingDistance - agent.transform.position.x) > agent.config.huntingDistance
-            && Mathf.Abs(attackTargetPos.z - agent.navAgent.stoppingDistance - agent.transform.position.z) > agent.config.huntingDistance)
+        if (agent.readyToAttack == false)
         {
-            agent.navAgent.speed = startSpeed;
-            AiWanderingState wanderState = agent.stateMachine.GetState(AiStateId.Wander) as AiWanderingState;
-            agent.stateMachine.ChangeState(AiStateId.Wander);
+            if (Mathf.Abs(attackTargetPos.x - agent.navAgent.stoppingDistance - agent.transform.position.x) > agent.config.huntingDistance
+                && Mathf.Abs(attackTargetPos.z - agent.navAgent.stoppingDistance - agent.transform.position.z) > agent.config.huntingDistance)
+            {
+                agent.navAgent.speed = startSpeed;
+                AiWanderingState wanderState = agent.stateMachine.GetState(AiStateId.Wander) as AiWanderingState;
+                agent.stateMachine.ChangeState(AiStateId.Wander);
 
-            //if (Mathf.Abs(agent.playerTransform.position.x - agent.navAgent.stoppingDistance - agent.transform.position.x) > agent.config.huntingDistance
-            //&& Mathf.Abs(agent.playerTransform.position.z - agent.navAgent.stoppingDistance - agent.transform.position.z) > agent.config.huntingDistance)
+                //if (Mathf.Abs(agent.playerTransform.position.x - agent.navAgent.stoppingDistance - agent.transform.position.x) > agent.config.huntingDistance
+                //&& Mathf.Abs(agent.playerTransform.position.z - agent.navAgent.stoppingDistance - agent.transform.position.z) > agent.config.huntingDistance)
+            }
         }
 
     }
 
     public void Exit(AiAgent agent)
     {
+        //Debug.Log("HuntEnd");
         //agent.navAgent.speed = startSpeed;
+
+        if(agent.config.enemyIsBeetle == true)
+            agent.enemyAnimator.SetBool("Charging", false);
     }
 
 

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doesEnemyMove: 1
   huntingDistance: 5
-  huntingStopDistance: 2
+  huntingStopDistance: 1
   wanderDistance: {x: 5, y: 0, z: 0}
   attackCooldown: 2
   attackPrepare: 0.5
