@@ -78,47 +78,55 @@ public class AttackTimer : MonoBehaviour
         //trailAttackArea.SetActive(false);
 
         startBaseDamage = baseDamage;
+        spinFillValue = spinRestTime;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (attacking == false)// && resting == false)
+        if (health.IsLuluDead() == false)
         {
-            if (Input.GetKeyDown(KeyCode.I) && normalResting == false)
+            if (attacking == false)// && resting == false)
             {
-                SetCurrentAttackActive(true, "normal");
-                Invoke(nameof(EndAttack), basicAttackTime);
+                if (Input.GetKeyDown(KeyCode.I) && normalResting == false)
+                {
+                    SetCurrentAttackActive(true, "normal");
+                    Invoke(nameof(EndAttack), basicAttackTime);
+                }
+
+                else if (Input.GetKeyDown(KeyCode.O) && spinAttackActive == true && spinResting == false)
+                {
+                    SetCurrentAttackActive(true, "spin");
+                    health.CallImunity();
+                    Invoke(nameof(EndAttack), spinAttackTime);
+                }
+
             }
 
-            else if (Input.GetKeyDown(KeyCode.O) && spinAttackActive == true && spinResting == false)
+            if (damageTrailActivated)
             {
-                SetCurrentAttackActive(true, "spin");
-                health.CallImunity();
-                Invoke(nameof(EndAttack), spinAttackTime);
+                trailAttackArea.SetActive(true);
             }
 
+            //if(resting == true)
+            //{
+            //    UiValueRegen(spinFillValue, spinRestTime);
+            //    UiValueRegen(normAttackFillValue, normalRestTime);
+
+            //}
+
+            //UiValueRegen(spinFillValue, spinRestTime);
+            spinFillValue = UiValueRegen(spinFillValue, spinRestTime);
+            normAttackFillValue = UiValueRegen(normAttackFillValue, normalRestTime);
         }
-
-        if(damageTrailActivated)
-        {
-            trailAttackArea.SetActive(true);
-        }
-
-        //if(resting == true)
-        //{
-        //    UiValueRegen(spinFillValue, spinRestTime);
-        //    UiValueRegen(normAttackFillValue, normalRestTime);
-
-        //}
-
-        //UiValueRegen(spinFillValue, spinRestTime);
-        spinFillValue = UiValueRegen(spinFillValue, spinRestTime);
-        normAttackFillValue = UiValueRegen(normAttackFillValue, normalRestTime);
-
         //Debug.Log(spinFillValue);
         //Debug.Log(normAttackFillValue);
 
+    }
+
+    public float GetSpinFillValue()
+    {
+        return spinFillValue;
     }
 
     public void IncreaseCritChance(int critInc)

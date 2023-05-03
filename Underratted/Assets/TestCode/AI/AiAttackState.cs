@@ -12,6 +12,7 @@ public class AiAttackState : AiState
     private float areaTimer = 0f;
     private GameObject attackArea = default;
     private bool areaActive = false;
+    private GameObject stinger;
 
     public AiStateId GetId()
     {
@@ -21,6 +22,13 @@ public class AiAttackState : AiState
     public void Enter(AiAgent agent)
     {
         //Debug.Log("Attack");
+        if(agent.config.enemyIsBeetle == true)
+        {
+            stinger = agent.transform.GetChild(3).gameObject;
+            stinger.SetActive(false);
+
+        }
+
 
         attacking = true;
         agent.readyToAttack = false;
@@ -58,7 +66,7 @@ public class AiAttackState : AiState
                 //Debug.Log("Right");
             }
         }
-
+        Debug.Log("EnterAttack");
         //attackArea = agent.transform.GetComponentInChildren<BoxCollider>();
     }
 
@@ -131,6 +139,12 @@ public class AiAttackState : AiState
         attacking = false;
         attackArea.SetActive(false);
         agent.enemyAnimator.SetBool("Attacking", false);
+
+        if (agent.config.enemyIsBeetle == true)
+        {
+            stinger.SetActive(true);
+
+        }
     }
 
 }
