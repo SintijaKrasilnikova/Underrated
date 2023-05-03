@@ -1,10 +1,13 @@
+using Newtonsoft.Json.Bson;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class PortalEnd : MonoBehaviour
 {
+
     private int LoadNextLevel;
     public GameObject endScreen;
     public Card_Numbers playerRef;
@@ -16,6 +19,13 @@ public class PortalEnd : MonoBehaviour
     public bool isAlphaPortal = false;
     private PlayerHealth health;
     public CardOverseer overSeer;
+
+    public GameObject dodgeUnlockScreen;
+    public GameObject noCardPieces;
+
+    public GameObject endVideo;
+    public VideoPlayer endVideoData;
+    public bool playVideo = false;
 
     // Start is called before the first frame update
     void Start()
@@ -43,25 +53,58 @@ public class PortalEnd : MonoBehaviour
 
             if (LuluHasCard == true)
             {
-                cardholder.SetActive(false);
-                //lulu.SetActive(false);
-                endLevelSound.Post(gameObject);
-                playerMove.SetCanMove(false);
-                endScreen.SetActive(true);
+                if(playVideo == false)
+                {
+                    cardholder.SetActive(false);
+                    //lulu.SetActive(false);
+                    endLevelSound.Post(gameObject);
+                    playerMove.SetCanMove(false);
+                    endScreen.SetActive(true);
+                }
+                else
+                {
+                    endVideo.SetActive(true);
+                    endVideoData.Play();
+                }
             }
 
             if (isAlphaPortal == true && LuluHasCard == false)
             {
-                SceneManager.LoadScene(0);
+                if (overSeer.DodgeActive == false)
+                {
+                    dodgeUnlockScreen.SetActive(true);
+                }
             }
 
             if (LuluHasCard == false && isAlphaPortal == false)
             {
-                //SceneManager.LoadScene(1);
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                noCardPieces.SetActive(true);
             }
 
 
         }
+    }
+
+    public void VideoLoadCrafting(VideoPlayer vp)
+    {
+        if (playVideo)
+        {
+            endVideo.SetActive(false);
+        }
+
+        cardholder.SetActive(false);
+        //lulu.SetActive(false);
+        endLevelSound.Post(gameObject);
+        playerMove.SetCanMove(false);
+        endScreen.SetActive(true);
+    }
+
+    public void LoadCrafting()
+    {
+        cardholder.SetActive(false);
+        //lulu.SetActive(false);
+        endLevelSound.Post(gameObject);
+        playerMove.SetCanMove(false);
+        endScreen.SetActive(true);
     }
 }
