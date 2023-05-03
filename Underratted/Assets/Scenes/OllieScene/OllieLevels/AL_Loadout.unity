@@ -801,7 +801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdcd88f9a1c938b4dafa8df29bcd1f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   strings:
   - Unleash a powerful Spin Attack with a wide radius!
   - Complete Level 2 to unlock this Ability!
@@ -3352,7 +3352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da902972168bdd541bc61494230897b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   buttons:
   - {fileID: 1800417525}
   - {fileID: 1533581382}
@@ -3490,7 +3490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a66ac2091566c4ba5c79dbd8f238b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   buff1TMP: {fileID: 902202323}
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
@@ -3509,12 +3509,12 @@ MonoBehaviour:
   - Health
   - Health
   abilityText:
-  - SPD + SPD
-  - SPD + ATK
-  - SPD + HP
-  - ATK + ATK
-  - ATK + HP
-  - HP + HP
+  - Increased attack speed
+  - Leave a Damage Trail as you walk
+  - Skills recharge faster
+  - Chance to inflict Critical Hits
+  - Killing enemies have a chance to restore Health
+  - Hearts have a chance to double heal
   noEquipText: 
   isEquip: 0
   equipRef: {fileID: 0}
@@ -4293,8 +4293,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 14.5
+  m_fontSizeBase: 14.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4400,7 +4400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da902972168bdd541bc61494230897b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   buttons:
   - {fileID: 1800417525}
   - {fileID: 1533581382}
@@ -4538,7 +4538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a66ac2091566c4ba5c79dbd8f238b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   buff1TMP: {fileID: 902202323}
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
@@ -4557,12 +4557,12 @@ MonoBehaviour:
   - Health
   - Health
   abilityText:
-  - SPD + SPD
-  - SPD + ATK
-  - SPD + HP
-  - ATK + ATK
-  - ATK + HP
-  - HP + HP
+  - Increased attack speed
+  - Leave a Damage Trail as you walk
+  - Skills recharge faster
+  - Chance to inflict Critical Hits
+  - Killing enemies have a chance to restore Health
+  - Hearts have a chance to double heal
   noEquipText: 
   isEquip: 0
   equipRef: {fileID: 0}
@@ -5372,7 +5372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 0}
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   passive1: {fileID: 1800417525}
   passive2: {fileID: 1533581382}
   skill1: {fileID: 142511924}
@@ -5625,7 +5625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da902972168bdd541bc61494230897b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   buttons:
   - {fileID: 1800417525}
   - {fileID: 1533581382}
@@ -5669,7 +5669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a66ac2091566c4ba5c79dbd8f238b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   buff1TMP: {fileID: 902202323}
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
@@ -5688,12 +5688,12 @@ MonoBehaviour:
   - Health
   - Health
   abilityText:
-  - SPD + SPD
-  - SPD + ATK
-  - SPD + HP
-  - ATK + ATK
-  - ATK + HP
-  - HP + HP
+  - Increased attack speed
+  - Leave a Damage Trail as you walk
+  - Skills recharge faster
+  - Chance to inflict Critical Hits
+  - Killing enemies have a chance to restore Health
+  - Hearts have a chance to double heal
   noEquipText: 
   isEquip: 0
   equipRef: {fileID: 0}
@@ -6311,7 +6311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da902972168bdd541bc61494230897b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   buttons:
   - {fileID: 1800417525}
   - {fileID: 1533581382}
@@ -6449,7 +6449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a66ac2091566c4ba5c79dbd8f238b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   buff1TMP: {fileID: 902202323}
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
@@ -6468,12 +6468,12 @@ MonoBehaviour:
   - Health
   - Health
   abilityText:
-  - SPD + SPD
-  - SPD + ATK
-  - SPD + HP
-  - ATK + ATK
-  - ATK + HP
-  - HP + HP
+  - Increased attack speed
+  - Leave a Damage Trail as you walk
+  - Skills recharge faster
+  - Chance to inflict Critical Hits
+  - Killing enemies have a chance to restore Health
+  - Hearts have a chance to double heal
   noEquipText: 
   isEquip: 0
   equipRef: {fileID: 0}
@@ -6798,7 +6798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da902972168bdd541bc61494230897b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   buttons:
   - {fileID: 1800417525}
   - {fileID: 1533581382}
@@ -6936,7 +6936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a66ac2091566c4ba5c79dbd8f238b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   buff1TMP: {fileID: 902202323}
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
@@ -6955,12 +6955,12 @@ MonoBehaviour:
   - Health
   - Health
   abilityText:
-  - SPD + SPD
-  - SPD + ATK
-  - SPD + HP
-  - ATK + ATK
-  - ATK + HP
-  - HP + HP
+  - Increased attack speed
+  - Leave a Damage Trail as you walk
+  - Skills recharge faster
+  - Chance to inflict Critical Hits
+  - Killing enemies have a chance to restore Health
+  - Hearts have a chance to double heal
   noEquipText: 
   isEquip: 0
   equipRef: {fileID: 0}
@@ -7154,7 +7154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da902972168bdd541bc61494230897b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   buttons:
   - {fileID: 1800417525}
   - {fileID: 1533581382}
@@ -7292,7 +7292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a66ac2091566c4ba5c79dbd8f238b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   buff1TMP: {fileID: 902202323}
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
@@ -7311,12 +7311,12 @@ MonoBehaviour:
   - Health
   - Health
   abilityText:
-  - SPD + SPD
-  - SPD + ATK
-  - SPD + HP
-  - ATK + ATK
-  - ATK + HP
-  - HP + HP
+  - Increased attack speed
+  - Leave a Damage Trail as you walk
+  - Skills recharge faster
+  - Chance to inflict Critical Hits
+  - Killing enemies have a chance to restore Health
+  - Hearts have a chance to double heal
   noEquipText: 
   isEquip: 0
   equipRef: {fileID: 0}
@@ -9412,7 +9412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdcd88f9a1c938b4dafa8df29bcd1f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   strings:
   - Unleash a powerful Spin Attack with a wide radius!
   - Complete Level 2 to unlock this Ability!
@@ -10179,7 +10179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a66ac2091566c4ba5c79dbd8f238b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   buff1TMP: {fileID: 902202323}
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
@@ -11674,7 +11674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdcd88f9a1c938b4dafa8df29bcd1f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   strings:
   - Unleash a powerful Spin Attack with a wide radius!
   - Complete Level 2 to unlock this Ability!
@@ -11864,7 +11864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a66ac2091566c4ba5c79dbd8f238b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   buff1TMP: {fileID: 902202323}
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
@@ -12572,7 +12572,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8be4e9d7143120c4cbf68f1af3cf6b03, type: 2}
   m_sharedMaterial: {fileID: -8741041902473375271, guid: 8be4e9d7143120c4cbf68f1af3cf6b03, type: 2}
@@ -13156,7 +13156,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: '10
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8be4e9d7143120c4cbf68f1af3cf6b03, type: 2}
   m_sharedMaterial: {fileID: -8741041902473375271, guid: 8be4e9d7143120c4cbf68f1af3cf6b03, type: 2}
@@ -13435,7 +13437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdcd88f9a1c938b4dafa8df29bcd1f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: bd81f5a02e3e4ff46b97c319f1b80690, type: 2}
+  cardOver: {fileID: 0}
   strings:
   - Unleash a powerful Spin Attack with a wide radius!
   - Complete Level 2 to unlock this Ability!
