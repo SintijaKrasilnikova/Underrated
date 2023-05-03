@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float hurtTime = 0.3f;
     [SerializeField] public float immuneTime = 1.0f;
     [SerializeField] public float dodgeTime = 0.8f;
+    [SerializeField] public float dodgeCooldown = 3f;
     [Space]
     [SerializeField] private float speed;
     [SerializeField] private Rigidbody playerBody;
@@ -30,10 +31,12 @@ public class PlayerMovement : MonoBehaviour
     private bool canMove = true;
     private bool canDodge = true;
     private bool dodgeAvailable = false;
+    private bool dodgeTimerReady = true;
     private bool movingDiognaly = false;
     private bool playerCanControl = true;
 
     private float speedRef;
+    private float dodgeCooldownTimer = 0;
     //1-left
     //2-right
     //3-down
@@ -56,11 +59,25 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         speedRef = speed;
+        dodgeCooldownTimer = dodgeCooldown;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(dodgeCooldownTimer < dodgeCooldown && dodgeTimerReady ==false)
+        {
+            dodgeCooldownTimer += Time.deltaTime;
+
+            if (dodgeCooldownTimer > dodgeCooldown)
+                dodgeCooldownTimer = dodgeCooldown;
+        }
+        if(dodgeCooldownTimer >= dodgeCooldown)
+        {
+            dodgeTimerReady = true;
+            //dodgeCooldownTimer = 0;
+        }
+
         if (playerCanControl == true)
         {
             playerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
@@ -187,6 +204,11 @@ public class PlayerMovement : MonoBehaviour
             MovePlayer();
     }
 
+    public float GetDodgeTimerValue()
+    {
+        return dodgeCooldownTimer;
+    }
+
     public void SetDodgeIsAvailable()
     {
         dodgeAvailable = true;
@@ -200,11 +222,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void Dodge()
     {
-        if (dodgeAvailable)
+        if (dodgeAvailable && dodgeTimerReady)
         {
             if (Input.GetKeyDown(KeyCode.P) && canDodge == true)
             {
                 //canMove = false;
+                dodgeCooldownTimer = 0;
+                dodgeTimerReady = false;
                 playerCanControl = false;
                 plyerAnimator.SetBool("Dodging", true);
                 canDodge = false;
