@@ -14,14 +14,13 @@ public class ReloadScene : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             var healthComp = collision.GetComponent<PlayerHealth>();
-            if (healthComp != null)
+            if (healthComp != null && healthComp.IsLuluDead() ==false)
             {
                 //Debug.Log("Health decreased");
                 healthComp.TakeDamage(fallDamage);
                 overSeer.CurrentHealth = healthComp.GetCurrentHealth();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
-
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }

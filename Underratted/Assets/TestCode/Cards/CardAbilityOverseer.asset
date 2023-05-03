@@ -19,7 +19,7 @@ MonoBehaviour:
   _AttackSpeed: 0
   _SpeedSpeed: 0
   _Dodge: 1
-  _CurrentHealth: 6
+  _CurrentHealth: 8
   halfCards: 
   fullCards: 
   loadoutCards: 

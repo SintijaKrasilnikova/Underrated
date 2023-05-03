@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     [Space]
     [SerializeField] private float speed;
     [SerializeField] private Rigidbody playerBody;
+    private PlayerHealth health;
    
 
 
@@ -60,147 +61,150 @@ public class PlayerMovement : MonoBehaviour
     {
         speedRef = speed;
         dodgeCooldownTimer = dodgeCooldown;
+        health = this.gameObject.GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(dodgeCooldownTimer < dodgeCooldown && dodgeTimerReady ==false)
+        if (health.IsLuluDead() == false)
         {
-            dodgeCooldownTimer += Time.deltaTime;
-
-            if (dodgeCooldownTimer > dodgeCooldown)
-                dodgeCooldownTimer = dodgeCooldown;
-        }
-        if(dodgeCooldownTimer >= dodgeCooldown)
-        {
-            dodgeTimerReady = true;
-            //dodgeCooldownTimer = 0;
-        }
-
-        if (playerCanControl == true)
-        {
-            playerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
-        }
-        else
-            playerMovementInput = new Vector3(0, 0, 0);
-
-        //playerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
-
-        if (playerCanControl == true)
-        {
-            //MovePlayer();
-            plyerAnimator.SetFloat("Horizontal", playerMovementInput.x);
-            plyerAnimator.SetFloat("Vertical", playerMovementInput.z);
-            plyerAnimator.SetFloat("Speed", playerMovementInput.sqrMagnitude);
-
-            if(Input.GetAxis("Horizontal") != 0 && Input.GetAxis("Vertical") != 0)
+            if (dodgeCooldownTimer < dodgeCooldown && dodgeTimerReady == false)
             {
-                movingDiognaly = true;
+                dodgeCooldownTimer += Time.deltaTime;
+
+                if (dodgeCooldownTimer > dodgeCooldown)
+                    dodgeCooldownTimer = dodgeCooldown;
+            }
+            if (dodgeCooldownTimer >= dodgeCooldown)
+            {
+                dodgeTimerReady = true;
+                //dodgeCooldownTimer = 0;
+            }
+
+            if (playerCanControl == true)
+            {
+                playerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
             }
             else
-            {
-                movingDiognaly = false;
-            }
+                playerMovementInput = new Vector3(0, 0, 0);
 
-            if (playerMovementInput.sqrMagnitude >= 0.01 && canMove == true)
+            //playerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+
+            if (playerCanControl == true)
             {
                 //MovePlayer();
-                //left right for animation
-                if (Input.GetAxis("Horizontal") < 0)
-                {
-                   // plyerAnimator.SetFloat("FacingUp", 0);
-                    plyerAnimator.SetFloat("FacingRight", -1); //left
-                    lastDirection = 1;
-                    footstepSound.Post(gameObject);
+                plyerAnimator.SetFloat("Horizontal", playerMovementInput.x);
+                plyerAnimator.SetFloat("Vertical", playerMovementInput.z);
+                plyerAnimator.SetFloat("Speed", playerMovementInput.sqrMagnitude);
 
-                    if(Input.GetAxis("Vertical")==0)
-                    {
-                        plyerAnimator.SetFloat("FacingUp", 0);
-                    }
+                if (Input.GetAxis("Horizontal") != 0 && Input.GetAxis("Vertical") != 0)
+                {
+                    movingDiognaly = true;
                 }
-                else if (Input.GetAxis("Horizontal") > 0)
+                else
                 {
-                    //plyerAnimator.SetFloat("FacingUp", 0);
-                    plyerAnimator.SetFloat("FacingRight", 1); //right
-                    lastDirection = 2;
-                    footstepSound.Post(gameObject);
-
-                    if (Input.GetAxis("Vertical") == 0)
-                    {
-                        plyerAnimator.SetFloat("FacingUp", 0);
-                    }
+                    movingDiognaly = false;
                 }
 
-                //up down for animation
-                if (Input.GetAxis("Vertical") < 0)
+                if (playerMovementInput.sqrMagnitude >= 0.01 && canMove == true)
                 {
-                    //plyerAnimator.SetFloat("FacingRight", 0);
-                    plyerAnimator.SetFloat("FacingUp", -1); //down
-                    lastDirection = 3;
-                    footstepSound.Post(gameObject);
-
-                    if (Input.GetAxis("Horizontal") == 0)
+                    //MovePlayer();
+                    //left right for animation
+                    if (Input.GetAxis("Horizontal") < 0)
                     {
-                        plyerAnimator.SetFloat("FacingRight", 0);
+                        // plyerAnimator.SetFloat("FacingUp", 0);
+                        plyerAnimator.SetFloat("FacingRight", -1); //left
+                        lastDirection = 1;
+                        footstepSound.Post(gameObject);
+
+                        if (Input.GetAxis("Vertical") == 0)
+                        {
+                            plyerAnimator.SetFloat("FacingUp", 0);
+                        }
+                    }
+                    else if (Input.GetAxis("Horizontal") > 0)
+                    {
+                        //plyerAnimator.SetFloat("FacingUp", 0);
+                        plyerAnimator.SetFloat("FacingRight", 1); //right
+                        lastDirection = 2;
+                        footstepSound.Post(gameObject);
+
+                        if (Input.GetAxis("Vertical") == 0)
+                        {
+                            plyerAnimator.SetFloat("FacingUp", 0);
+                        }
+                    }
+
+                    //up down for animation
+                    if (Input.GetAxis("Vertical") < 0)
+                    {
+                        //plyerAnimator.SetFloat("FacingRight", 0);
+                        plyerAnimator.SetFloat("FacingUp", -1); //down
+                        lastDirection = 3;
+                        footstepSound.Post(gameObject);
+
+                        if (Input.GetAxis("Horizontal") == 0)
+                        {
+                            plyerAnimator.SetFloat("FacingRight", 0);
+                        }
+                    }
+                    else if (Input.GetAxis("Vertical") > 0)
+                    {
+                        //plyerAnimator.SetFloat("FacingRight", 0);
+                        plyerAnimator.SetFloat("FacingUp", 1); //up
+                        lastDirection = 4;
+                        footstepSound.Post(gameObject);
+
+                        if (Input.GetAxis("Horizontal") == 0)
+                        {
+                            plyerAnimator.SetFloat("FacingRight", 0);
+                        }
                     }
                 }
-                else if (Input.GetAxis("Vertical") > 0)
+                else
                 {
-                    //plyerAnimator.SetFloat("FacingRight", 0);
-                    plyerAnimator.SetFloat("FacingUp", 1); //up
-                    lastDirection = 4;
-                    footstepSound.Post(gameObject);
-
-                    if (Input.GetAxis("Horizontal") == 0)
+                    //1-left
+                    //2-right
+                    //3-down
+                    //4-up
+                    switch (lastDirection)
                     {
-                        plyerAnimator.SetFloat("FacingRight", 0);
+                        case 1:
+                            {
+                                plyerAnimator.SetFloat("FacingUp", 0);
+                                plyerAnimator.SetFloat("FacingRight", -1); //left
+                                break;
+                            }
+                        case 2:
+                            {
+                                plyerAnimator.SetFloat("FacingUp", 0);
+                                plyerAnimator.SetFloat("FacingRight", 1); //right
+                                break;
+                            }
+                        case 3:
+                            {
+                                plyerAnimator.SetFloat("FacingRight", 0);
+                                plyerAnimator.SetFloat("FacingUp", -1); //down
+                                break;
+                            }
+                        case 4:
+                            {
+                                plyerAnimator.SetFloat("FacingRight", 0);
+                                plyerAnimator.SetFloat("FacingUp", 1); //up
+                                break;
+                            }
                     }
                 }
             }
-            else
-            {
-                //1-left
-                //2-right
-                //3-down
-                //4-up
-                switch (lastDirection)
-                {
-                    case 1:
-                        {
-                            plyerAnimator.SetFloat("FacingUp", 0);
-                            plyerAnimator.SetFloat("FacingRight", -1); //left
-                            break;
-                        }
-                    case 2:
-                        {
-                            plyerAnimator.SetFloat("FacingUp", 0);
-                            plyerAnimator.SetFloat("FacingRight", 1); //right
-                            break;
-                        }
-                    case 3:
-                        {
-                            plyerAnimator.SetFloat("FacingRight", 0);
-                            plyerAnimator.SetFloat("FacingUp", -1); //down
-                            break;
-                        }
-                    case 4:
-                        {
-                            plyerAnimator.SetFloat("FacingRight", 0);
-                            plyerAnimator.SetFloat("FacingUp", 1); //up
-                            break;
-                        }
-                }
-            }
+
+            Dodge();
         }
-
-        Dodge();
-
     }
 
     void FixedUpdate()
     {
-        if(canMove)
+        if(canMove && health.IsLuluDead() == false)
             MovePlayer();
     }
 
