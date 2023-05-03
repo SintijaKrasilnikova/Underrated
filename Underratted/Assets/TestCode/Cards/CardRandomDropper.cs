@@ -11,6 +11,7 @@ public class CardRandomDropper : MonoBehaviour
 
     //public int dropChances;
     private int dropChances = 40;
+    private int dropChancesPotion = 20;
     public string prefferdCardType;
 
     public SpinPickup spinRef = default;
@@ -101,7 +102,9 @@ public class CardRandomDropper : MonoBehaviour
         }
         else //chance to drop the health pickup
         {
-            playerHealthRef.HealthPickUp(this.transform.position);
+            int randomPotionChance = Random.Range(1, 100);
+            if (randomPotionChance < dropChancesPotion)
+                playerHealthRef.HealthPickUp(this.transform.position);
 
         }
 

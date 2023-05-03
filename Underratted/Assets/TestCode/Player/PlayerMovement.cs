@@ -20,8 +20,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float speed;
     [SerializeField] private Rigidbody playerBody;
     private PlayerHealth health;
-   
 
+    [SerializeField] public GameObject dodgeUI;
 
     public Animator plyerAnimator;
     public Vector3 playerMovementInput;
@@ -35,6 +35,8 @@ public class PlayerMovement : MonoBehaviour
     private bool dodgeTimerReady = true;
     private bool movingDiognaly = false;
     private bool playerCanControl = true;
+
+    private bool dodgeIconIsUp = false;
 
     private float speedRef;
     private float dodgeCooldownTimer = 0;
@@ -62,11 +64,25 @@ public class PlayerMovement : MonoBehaviour
         speedRef = speed;
         dodgeCooldownTimer = dodgeCooldown;
         health = this.gameObject.GetComponent<PlayerHealth>();
+
+        if (dodgeAvailable )//&& dodgeIconIsUp == false)
+        {
+            dodgeUI.SetActive(true);
+            //dodgeIconIsUp = true;
+        }
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        //if (dodgeAvailable && dodgeIconIsUp == false)
+        //{
+        //    dodgeUI.SetActive(true);
+        //    dodgeIconIsUp = true;
+        //}
+
         if (health.IsLuluDead() == false)
         {
             if (dodgeCooldownTimer < dodgeCooldown && dodgeTimerReady == false)
@@ -216,6 +232,10 @@ public class PlayerMovement : MonoBehaviour
     public void SetDodgeIsAvailable()
     {
         dodgeAvailable = true;
+        if (dodgeAvailable)
+        {
+            dodgeUI.SetActive(true);
+        }
     }
 
     public void SetCanDoge(bool newCanDodge)

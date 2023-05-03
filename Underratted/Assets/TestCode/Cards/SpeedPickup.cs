@@ -19,6 +19,8 @@ public class SpeedPickup : MonoBehaviour
             var playerMove = collision.GetComponent<PlayerMovement>();
             var playerCards = collision.GetComponent<Card_Numbers>();
 
+            pickupRef = GameObject.FindGameObjectWithTag("PickupRef");
+
             //playerMove.SpeedUp();
             playerCards.speedCard++;
             cardOver.halfCards.Add(0);

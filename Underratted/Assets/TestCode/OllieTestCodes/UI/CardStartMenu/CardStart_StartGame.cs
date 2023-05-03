@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CardStart_StartGame : MonoBehaviour
 {
-    [SerializeField] private PlayerHealth playerHealth;
+    //[SerializeField] private PlayerHealth playerHealth;
     [SerializeField] private CardOverseer cardOver;
     public CardStart_Buttons passive1;
     public CardStart_Buttons passive2;
@@ -59,7 +59,7 @@ public class CardStart_StartGame : MonoBehaviour
             cardOver.loadoutCardRecharge[passive2.selectedCard.cardID] = 0f;
         }
 
-        playerHealth.SetCurrentHealthToMax();
+        //playerHealth.SetCurrentHealthToMax();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
