@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float dodgeTime = 0.8f;
     [SerializeField] public float dodgeCooldown = 3f;
     [Space]
-    [SerializeField] private float speed;
+    [SerializeField] public float speed;
     [SerializeField] private Rigidbody playerBody;
     private PlayerHealth health;
    
@@ -337,6 +337,7 @@ public class PlayerMovement : MonoBehaviour
     public void PlayerDeath()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        gameObject.GetComponent<Pause>().canBePaused = false;
         canMove = false;
         deathCam.Priority = 21;
         deathUI.SetActive(true);

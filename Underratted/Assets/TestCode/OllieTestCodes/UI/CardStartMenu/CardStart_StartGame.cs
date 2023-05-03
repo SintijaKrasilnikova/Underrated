@@ -29,6 +29,7 @@ public class CardStart_StartGame : MonoBehaviour
     public void ButtonClicked()
     {
         cardOver.fullCards.Clear();
+        cardOver.CurrentHealth = 4;
         ClearCards();
 
         if(passive1.selectedCard != null)

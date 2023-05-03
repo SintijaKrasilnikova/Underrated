@@ -6,8 +6,10 @@ using UnityEngine.EventSystems;
 public class Pause : MonoBehaviour
 {
     public static bool GameIsPaused = false;
+    public bool canBePaused = true;
 
     public GameObject pauseMenuUI;
+    public GameObject quitConfirm;
 
     public GameObject resumeButton;
     public EventSystem eventSystems;
@@ -23,7 +25,7 @@ public class Pause : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && canBePaused)
         {
             if (GameIsPaused)
             {
@@ -38,6 +40,7 @@ public class Pause : MonoBehaviour
 
     public void Resume()
     {
+        quitConfirm.SetActive(false);
         InventoryOpenClose.Post(gameObject);
         musicNormal.Post(gameObject);
         pauseMenuUI.SetActive(false);
