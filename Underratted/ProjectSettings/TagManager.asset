@@ -13,6 +13,7 @@ TagManager:
   - ArenaHandler
   - Camera
   - TRight
+  - PickupRef
   layers:
   - Default
   - TransparentFX

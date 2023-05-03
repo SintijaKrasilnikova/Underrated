@@ -91,6 +91,7 @@ public class PortalEnd : MonoBehaviour
             if(overSeer.DodgeActive == false && isAlphaPortal)
             {
                 dodgeUnlockScreen.SetActive(true);
+                overSeer.DodgeActive = true;
             }
             else
             {
@@ -110,10 +111,20 @@ public class PortalEnd : MonoBehaviour
 
     public void LoadCrafting()
     {
-        cardholder.SetActive(false);
-        //lulu.SetActive(false);
-        endLevelSound.Post(gameObject);
-        playerMove.SetCanMove(false);
-        endScreen.SetActive(true);
+        dodgeUnlockScreen.SetActive(false);
+        if(overSeer.halfCards.Count > 0)
+        {
+            cardholder.SetActive(false);
+            //lulu.SetActive(false);
+            endLevelSound.Post(gameObject);
+            playerMove.SetCanMove(false);
+            endScreen.SetActive(true);
+        }
+        else
+        {
+            noCardPieces.SetActive(true);
+        }
+
+
     }
 }

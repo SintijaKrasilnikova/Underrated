@@ -13,7 +13,7 @@ public class ActivateDodge : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             //movement.SetDodgeIsAvailable();
-            overseer.DodgeActive = true;
+            //overseer.DodgeActive = true;
         }
     }
 }

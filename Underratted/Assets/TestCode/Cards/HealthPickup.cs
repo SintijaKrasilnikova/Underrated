@@ -17,6 +17,8 @@ public class HealthPickup : MonoBehaviour
             var playerHealth = collision.GetComponent<PlayerHealth>();
             var playerCards = collision.GetComponent<Card_Numbers>();
 
+            pickupRef = GameObject.FindGameObjectWithTag("PickupRef");
+
             //playerHealth.AddHealth();
             playerCards.healthCard++;
             cardOver.halfCards.Add(2);

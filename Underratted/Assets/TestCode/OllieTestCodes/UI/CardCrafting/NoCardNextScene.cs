@@ -7,6 +7,7 @@ public class NoCardNextScene : MonoBehaviour
 {
     public bool isUnlockScene = false;
     public PortalEnd portalRef;
+    public bool isLevel2 = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +25,15 @@ public class NoCardNextScene : MonoBehaviour
             }
             else
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                if (isLevel2)
+                {
+                    SceneManager.LoadScene(2);
+                }
+                else
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                }
+
             }
 
         }

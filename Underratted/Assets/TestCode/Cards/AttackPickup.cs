@@ -19,6 +19,8 @@ public class AttackPickup : MonoBehaviour
             var playerAttack = collision.GetComponent<AttackTimer>();
             var playerCards = collision.GetComponent<Card_Numbers>();
 
+            pickupRef = GameObject.FindGameObjectWithTag("PickupRef");
+
             //playerAttack.IncreaseBaseDamage(increaseAmount);
             playerCards.attackCard++;
             cardOver.halfCards.Add(1);

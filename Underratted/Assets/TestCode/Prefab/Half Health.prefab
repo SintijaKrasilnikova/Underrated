@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 784c5909284de554fb2d508d88ed96d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   pickupRef: {fileID: 0}
   col: {fileID: 2439450205417121005}
   pickupSoundHealth:

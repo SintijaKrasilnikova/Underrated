@@ -801,7 +801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdcd88f9a1c938b4dafa8df29bcd1f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   strings:
   - Unleash a powerful Spin Attack with a wide radius!
   - Complete Level 2 to unlock this Ability!
@@ -3352,7 +3352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da902972168bdd541bc61494230897b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   buttons:
   - {fileID: 1800417525}
   - {fileID: 1533581382}
@@ -3363,13 +3363,13 @@ MonoBehaviour:
   cross: {fileID: 403216659}
   cardID: 4
   cardSprites:
-  - {fileID: 0}
   - {fileID: -6634488812079887158, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -5959841860770774389, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 5160100649803568108, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 8654778237023573635, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -7115900486920076368, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -2430606609172744583, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
+  - {fileID: 0}
   inventoryID: 6
   cardUse: 0
   cardRecharge: 0
@@ -3490,7 +3490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a66ac2091566c4ba5c79dbd8f238b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   buff1TMP: {fileID: 902202323}
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
@@ -3893,7 +3893,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &660752608
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4400,7 +4400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da902972168bdd541bc61494230897b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   buttons:
   - {fileID: 1800417525}
   - {fileID: 1533581382}
@@ -4411,7 +4411,7 @@ MonoBehaviour:
   cross: {fileID: 1884909088}
   cardID: 5
   cardSprites:
-  - {fileID: -2430606609172744583, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
+  - {fileID: -6634488812079887158, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -5959841860770774389, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 5160100649803568108, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 8654778237023573635, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
@@ -4538,7 +4538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a66ac2091566c4ba5c79dbd8f238b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   buff1TMP: {fileID: 902202323}
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
@@ -5371,7 +5371,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6187c9a5317734e89c672b5c08fbbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
   cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   passive1: {fileID: 1800417525}
   passive2: {fileID: 1533581382}
@@ -5625,7 +5624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da902972168bdd541bc61494230897b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   buttons:
   - {fileID: 1800417525}
   - {fileID: 1533581382}
@@ -5636,13 +5635,13 @@ MonoBehaviour:
   cross: {fileID: 1224309224}
   cardID: 0
   cardSprites:
-  - {fileID: 0}
   - {fileID: -6634488812079887158, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -5959841860770774389, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 5160100649803568108, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 8654778237023573635, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -7115900486920076368, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -2430606609172744583, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
+  - {fileID: 0}
   inventoryID: 6
   cardUse: 0
   cardRecharge: 0
@@ -5669,7 +5668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a66ac2091566c4ba5c79dbd8f238b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   buff1TMP: {fileID: 902202323}
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
@@ -6311,7 +6310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da902972168bdd541bc61494230897b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   buttons:
   - {fileID: 1800417525}
   - {fileID: 1533581382}
@@ -6322,13 +6321,13 @@ MonoBehaviour:
   cross: {fileID: 467114666}
   cardID: 3
   cardSprites:
-  - {fileID: 0}
   - {fileID: -6634488812079887158, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -5959841860770774389, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 5160100649803568108, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 8654778237023573635, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -7115900486920076368, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -2430606609172744583, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
+  - {fileID: 0}
   inventoryID: 6
   cardUse: 0
   cardRecharge: 0
@@ -6449,7 +6448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a66ac2091566c4ba5c79dbd8f238b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   buff1TMP: {fileID: 902202323}
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
@@ -6798,7 +6797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da902972168bdd541bc61494230897b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   buttons:
   - {fileID: 1800417525}
   - {fileID: 1533581382}
@@ -6809,13 +6808,13 @@ MonoBehaviour:
   cross: {fileID: 998505679}
   cardID: 2
   cardSprites:
-  - {fileID: 0}
   - {fileID: -6634488812079887158, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -5959841860770774389, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 5160100649803568108, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 8654778237023573635, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -7115900486920076368, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -2430606609172744583, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
+  - {fileID: 0}
   inventoryID: 6
   cardUse: 0
   cardRecharge: 0
@@ -6936,7 +6935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a66ac2091566c4ba5c79dbd8f238b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   buff1TMP: {fileID: 902202323}
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
@@ -7154,7 +7153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da902972168bdd541bc61494230897b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   buttons:
   - {fileID: 1800417525}
   - {fileID: 1533581382}
@@ -7165,13 +7164,13 @@ MonoBehaviour:
   cross: {fileID: 2021457185}
   cardID: 1
   cardSprites:
-  - {fileID: 0}
   - {fileID: -6634488812079887158, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -5959841860770774389, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 5160100649803568108, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 8654778237023573635, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -7115900486920076368, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -2430606609172744583, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
+  - {fileID: 0}
   inventoryID: 6
   cardUse: 0
   cardRecharge: 0
@@ -7292,7 +7291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a66ac2091566c4ba5c79dbd8f238b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   buff1TMP: {fileID: 902202323}
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
@@ -9359,7 +9358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da902972168bdd541bc61494230897b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   buttons:
   - {fileID: 142511924}
   - {fileID: 1789290950}
@@ -9412,7 +9411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdcd88f9a1c938b4dafa8df29bcd1f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   strings:
   - Unleash a powerful Spin Attack with a wide radius!
   - Complete Level 2 to unlock this Ability!
@@ -10179,7 +10178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a66ac2091566c4ba5c79dbd8f238b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   buff1TMP: {fileID: 902202323}
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
@@ -11674,7 +11673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdcd88f9a1c938b4dafa8df29bcd1f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   strings:
   - Unleash a powerful Spin Attack with a wide radius!
   - Complete Level 2 to unlock this Ability!
@@ -11864,7 +11863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a66ac2091566c4ba5c79dbd8f238b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   buff1TMP: {fileID: 902202323}
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
@@ -13384,7 +13383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da902972168bdd541bc61494230897b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   buttons:
   - {fileID: 142511924}
   - {fileID: 1789290950}
@@ -13437,7 +13436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdcd88f9a1c938b4dafa8df29bcd1f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   strings:
   - Unleash a powerful Spin Attack with a wide radius!
   - Complete Level 2 to unlock this Ability!
