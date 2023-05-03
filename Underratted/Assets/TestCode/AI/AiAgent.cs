@@ -17,6 +17,8 @@ public class AiAgent : MonoBehaviour
     public EnemyHealth enemiesHealth;
     //public Health enemiesHealth;
 
+
+
     public bool startWanderingLeft = true;
 
 

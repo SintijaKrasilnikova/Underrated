@@ -105,10 +105,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1133.3334
-        height: 2180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1276.3334
+        height: 1190
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -124,12 +124,12 @@ TextureImporter:
       name: attack_front_1
       rect:
         serializedVersion: 2
-        x: 1133
+        x: 1281
         y: 0
-        width: 1133.3334
-        height: 2180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1276
+        height: 1190
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -145,12 +145,12 @@ TextureImporter:
       name: attack_front_2
       rect:
         serializedVersion: 2
-        x: 2266
+        x: 2552
         y: 0
-        width: 1133.3334
-        height: 2180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1276.3334
+        height: 1190
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

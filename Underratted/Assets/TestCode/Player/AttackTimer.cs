@@ -139,10 +139,42 @@ public class AttackTimer : MonoBehaviour
         spinAttackActive = active;
     }
 
+    public void SetAnimationLenghts()
+    {
+        AnimatorClipInfo[] animatorinfo = plyerAnimator.GetCurrentAnimatorClipInfo(0);
+        string current_animation = animatorinfo[0].clip.name;
+        //Debug.Log(current_animation);
+        switch (current_animation)
+        {
+            case "Down":
+                {
+                    basicAttackTime = 0.3f;
+                    break;
+                }
+            case "Up":
+                {
+                    basicAttackTime = 0.3f;
+                    break;
+                }
+            case "Left":
+                {
+                    basicAttackTime = 0.6f;
+                    break;
+                }
+            case "Right":
+                {
+                    basicAttackTime = 0.6f;
+                    break;
+                }
+        }
+
+        Debug.Log(basicAttackTime);
+    }
+
     public void SetCurrentAttackActive(bool active, string attackType)
     {
-
-       
+        SetAnimationLenghts();
+        //plyerAnimator.
         movementRef.SetCanDoge(false);
 
         if (critPossibleActive )
@@ -288,6 +320,8 @@ public class AttackTimer : MonoBehaviour
         spinRestTime -= spinRestTime / 20;
 
     }
+
+    //public void UpDownAttackTime
 
 
 }

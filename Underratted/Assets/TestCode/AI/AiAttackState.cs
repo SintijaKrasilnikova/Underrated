@@ -9,6 +9,7 @@ public class AiAttackState : AiState
     //private float timeToAttack = 0.9f;
     
     private float timer = 0f;
+    private float areaTimer = 0f;
     private GameObject attackArea = default;
     private bool areaActive = false;
 
@@ -25,6 +26,7 @@ public class AiAttackState : AiState
         agent.readyToAttack = false;
 
         timer = 0f;
+        areaTimer = 0f;
         areaActive = false;
 
         if (agent.transform.GetChild(0).gameObject.tag == "AttackArea")
@@ -65,6 +67,7 @@ public class AiAttackState : AiState
         if (attacking)
         {
             timer += Time.deltaTime;
+            areaTimer += Time.deltaTime;
 
             if( timer > agent.config.attackPrepare && areaActive == false)
             {
@@ -74,6 +77,10 @@ public class AiAttackState : AiState
 
             }
            
+            if(areaTimer > agent.config.attackAreaDuraton)
+            {
+                attackArea.SetActive(false);
+            }
 
             if (timer >= agent.config.attackDuraton)
             {

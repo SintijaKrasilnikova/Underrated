@@ -124,12 +124,12 @@ TextureImporter:
       name: frog_swing_left_0
       rect:
         serializedVersion: 2
-        x: 100
+        x: 10
         y: 0
-        width: 1390
+        width: 1399.5
         height: 1090
       alignment: 9
-      pivot: {x: 0.78, y: 0.58}
+      pivot: {x: 0.8, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -145,12 +145,12 @@ TextureImporter:
       name: frog_swing_left_1
       rect:
         serializedVersion: 2
-        x: 1490
+        x: 1409
         y: 0
-        width: 1390
+        width: 1399.5
         height: 1090
       alignment: 9
-      pivot: {x: 0.78, y: 0.58}
+      pivot: {x: 0.8, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,12 +166,12 @@ TextureImporter:
       name: frog_swing_left_2
       rect:
         serializedVersion: 2
-        x: 2880
+        x: 2808
         y: 0
-        width: 1390
+        width: 1399.5
         height: 1090
       alignment: 9
-      pivot: {x: 0.78, y: 0.58}
+      pivot: {x: 0.8, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: frog_swing_left_3
       rect:
         serializedVersion: 2
-        x: 4270
+        x: 4207
         y: 0
-        width: 1390
+        width: 1399.5
         height: 1090
       alignment: 9
-      pivot: {x: 0.78, y: 0.58}
+      pivot: {x: 0.8, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,12 +208,12 @@ TextureImporter:
       name: frog_swing_left_4
       rect:
         serializedVersion: 2
-        x: 5660
+        x: 5606
         y: 0
-        width: 1390
+        width: 1399.5
         height: 1090
       alignment: 9
-      pivot: {x: 0.78, y: 0.58}
+      pivot: {x: 0.8, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -229,12 +229,12 @@ TextureImporter:
       name: frog_swing_left_5
       rect:
         serializedVersion: 2
-        x: 7050
+        x: 7005
         y: 0
-        width: 1390
+        width: 1399.5
         height: 1090
       alignment: 9
-      pivot: {x: 0.78, y: 0.58}
+      pivot: {x: 0.8, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -250,12 +250,12 @@ TextureImporter:
       name: frog_swing_left_6
       rect:
         serializedVersion: 2
-        x: 8440
+        x: 8404
         y: 0
-        width: 1390
+        width: 1399.5
         height: 1090
       alignment: 9
-      pivot: {x: 0.78, y: 0.58}
+      pivot: {x: 0.8, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -271,12 +271,12 @@ TextureImporter:
       name: frog_swing_left_7
       rect:
         serializedVersion: 2
-        x: 9830
+        x: 9803
         y: 0
-        width: 1390
+        width: 1399.5
         height: 1090
       alignment: 9
-      pivot: {x: 0.78, y: 0.58}
+      pivot: {x: 0.8, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -292,12 +292,12 @@ TextureImporter:
       name: frog_swing_left_8
       rect:
         serializedVersion: 2
-        x: 11220
+        x: 11202
         y: 0
-        width: 1390
+        width: 1399.5
         height: 1090
       alignment: 9
-      pivot: {x: 0.78, y: 0.58}
+      pivot: {x: 0.8, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -313,12 +313,12 @@ TextureImporter:
       name: frog_swing_left_9
       rect:
         serializedVersion: 2
-        x: 12610
+        x: 12601
         y: 0
-        width: 1390
+        width: 1399.5
         height: 1090
       alignment: 9
-      pivot: {x: 0.78, y: 0.58}
+      pivot: {x: 0.8, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

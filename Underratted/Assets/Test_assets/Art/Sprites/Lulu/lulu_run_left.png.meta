@@ -35,6 +35,12 @@ TextureImporter:
   - first:
       213: -5006743395938729373
     second: lulu_run_left_10
+  - first:
+      213: -638679386700069490
+    second: lulu_run_left_11
+  - first:
+      213: 3141705812719036158
+    second: lulu_run_left_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -128,12 +134,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1000
+        y: 1090
+        width: 1090
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 12, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -148,13 +154,13 @@ TextureImporter:
       name: lulu_run_left_1
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 1000
+        x: 1090
+        y: 1090
+        width: 1090
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 13, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -169,9 +175,9 @@ TextureImporter:
       name: lulu_run_left_2
       rect:
         serializedVersion: 2
-        x: 2000
-        y: 0
-        width: 1000
+        x: 2180
+        y: 1090
+        width: 1090
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -190,13 +196,13 @@ TextureImporter:
       name: lulu_run_left_3
       rect:
         serializedVersion: 2
-        x: 3000
-        y: 0
-        width: 1000
+        x: 3270
+        y: 1090
+        width: 1090
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 12, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -211,13 +217,13 @@ TextureImporter:
       name: lulu_run_left_4
       rect:
         serializedVersion: 2
-        x: 4000
-        y: 0
-        width: 1000
+        x: 4360
+        y: 1090
+        width: 1090
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 15, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -232,13 +238,13 @@ TextureImporter:
       name: lulu_run_left_5
       rect:
         serializedVersion: 2
-        x: 5000
-        y: 0
-        width: 1000
+        x: 5450
+        y: 1090
+        width: 1090
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 8, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -253,9 +259,9 @@ TextureImporter:
       name: lulu_run_left_6
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 0
-        width: 1000
+        x: 6540
+        y: 1090
+        width: 1090
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -274,9 +280,9 @@ TextureImporter:
       name: lulu_run_left_7
       rect:
         serializedVersion: 2
-        x: 7000
+        x: 0
         y: 0
-        width: 1000
+        width: 1080
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -295,13 +301,13 @@ TextureImporter:
       name: lulu_run_left_8
       rect:
         serializedVersion: 2
-        x: 8000
+        x: 1090
         y: 0
-        width: 1000
+        width: 1090
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 10, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -316,13 +322,13 @@ TextureImporter:
       name: lulu_run_left_9
       rect:
         serializedVersion: 2
-        x: 9000
+        x: 2180
         y: 0
-        width: 1000
+        width: 1090
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 9, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -337,9 +343,9 @@ TextureImporter:
       name: lulu_run_left_10
       rect:
         serializedVersion: 2
-        x: 10000
+        x: 3270
         y: 0
-        width: 1000
+        width: 1090
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -350,6 +356,48 @@ TextureImporter:
       bones: []
       spriteID: 3620a838869748ab0800000000000000
       internalID: -5006743395938729373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lulu_run_left_11
+      rect:
+        serializedVersion: 2
+        x: 5450
+        y: 0
+        width: 1090
+        height: 1090
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85c06e4b74f227f0800000000000000
+      internalID: -638679386700069490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lulu_run_left_12
+      rect:
+        serializedVersion: 2
+        x: 6540
+        y: 0
+        width: 1090
+        height: 1090
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6e5eb8ac4999b20800000000000000
+      internalID: 3141705812719036158
       vertices: []
       indices: 
       edges: []

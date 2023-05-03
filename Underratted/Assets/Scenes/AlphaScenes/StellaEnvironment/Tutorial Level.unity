@@ -24680,7 +24680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c5f8e9b5aba0e3459a60a25f3e40c78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   remaining1: {fileID: 2085971143}
   remaining2: {fileID: 680624243}
   cardSprite:
@@ -56972,7 +56972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2e92e77adeedb43b3f624559477628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   demoEnd: 0
   creationAssets: {fileID: 1131204582}
   mixImage: {fileID: 1721828343}
@@ -59247,6 +59247,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1305654347927644791, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
+      propertyPath: attackData
+      value: 
+      objectReference: {fileID: 1115910581}
+    - target: {fileID: 1305654347927644791, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: hitParticle
       value: 
       objectReference: {fileID: 3512500511150635953, guid: 2d726d7bfc3284443ab40fa385f5fc0c, type: 3}
@@ -59257,11 +59261,11 @@ PrefabInstance:
     - target: {fileID: 2643680959532834292, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: cardOver
       value: 
-      objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+      objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
     - target: {fileID: 2825368885467620151, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: cardOver
       value: 
-      objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+      objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
     - target: {fileID: 2825368885467620151, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: speedCard
       value: 0
@@ -59269,7 +59273,7 @@ PrefabInstance:
     - target: {fileID: 3350864199433112401, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: overSeer
       value: 
-      objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+      objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
     - target: {fileID: 3350864199433112401, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: maxHealth
       value: 8
@@ -68457,7 +68461,7 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: 5dd4e52187f816345b2fc5d3562fed52, type: 2}
   cardholder: {fileID: 1632956760}
   isAlphaPortal: 0
-  overSeer: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+  overSeer: {fileID: 0}
 --- !u!65 &1095362156
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88977,7 +88981,7 @@ PrefabInstance:
     - target: {fileID: 254963006568298407, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: cardOver
       value: 
-      objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+      objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
     - target: {fileID: 259440611443846407, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: isReal
       value: 0
@@ -88985,7 +88989,7 @@ PrefabInstance:
     - target: {fileID: 259440611443846407, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: cardOver
       value: 
-      objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+      objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
     - target: {fileID: 259440611443846407, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -89002,6 +89006,10 @@ PrefabInstance:
       propertyPath: cardOver
       value: 
       objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+    - target: {fileID: 434620006548611654, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
+      propertyPath: cardOver
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
     - target: {fileID: 571331631471527518, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: playerCard
       value: 
@@ -89033,7 +89041,7 @@ PrefabInstance:
     - target: {fileID: 2302707661419245389, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: cardOver
       value: 
-      objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+      objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
     - target: {fileID: 2460608273523656645, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -89193,7 +89201,7 @@ PrefabInstance:
     - target: {fileID: 6223186741350352402, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: cardOver
       value: 
-      objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+      objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
     - target: {fileID: 6363031735327780291, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -89209,7 +89217,7 @@ PrefabInstance:
     - target: {fileID: 6396624576485198333, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: cardOver
       value: 
-      objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+      objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
     - target: {fileID: 6582351009937613615, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -89217,7 +89225,7 @@ PrefabInstance:
     - target: {fileID: 7107794467158387825, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: cardOver
       value: 
-      objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+      objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
     - target: {fileID: 7293270246336642750, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -89226,6 +89234,10 @@ PrefabInstance:
       propertyPath: m_Navigation.m_Mode
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7717527387750993535, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
+      propertyPath: cardOver
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
     - target: {fileID: 7885642519467126308, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: restartPressed.WwiseObjectReference
       value: 
@@ -89233,11 +89245,11 @@ PrefabInstance:
     - target: {fileID: 8594255991261923792, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: cardOver
       value: 
-      objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+      objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
     - target: {fileID: 8896442459215603127, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
       propertyPath: cardOver
       value: 
-      objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+      objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
     m_RemovedComponents:
     - {fileID: 8120141133826218423, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
     - {fileID: 417560542084586448, guid: 44ccb6cdf55b5504c88222edc0bc1a71, type: 3}
@@ -103169,7 +103181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593f88309ae570e4c8859828dbc5fbf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   half1: {fileID: 157411319}
   half2: {fileID: 1491847999}
   half3: {fileID: 1487513974}
