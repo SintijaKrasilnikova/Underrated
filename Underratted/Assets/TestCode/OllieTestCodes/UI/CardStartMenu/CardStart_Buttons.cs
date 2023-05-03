@@ -18,8 +18,13 @@ public class CardStart_Buttons : MonoBehaviour, IEventSystemHandler, ISelectHand
 
     public Outline outline;
     public bool isPassive = false;
-    public int equippedID;
+    public int equippedID = 99;
     public CardStartDescriptions descriptionRef;
+
+    public LoadoutPlayerStats healthStat;
+    public LoadoutPlayerStats attackStat;
+    public LoadoutPlayerStats speedStat;
+
     public void OnDeselect(BaseEventData eventData)
     {
         //outline.enabled = false;
@@ -58,6 +63,9 @@ public class CardStart_Buttons : MonoBehaviour, IEventSystemHandler, ISelectHand
         {
             if (Input.GetKeyDown(KeyCode.O))
             {
+                hasCard = false;
+                removeStat();
+                equippedID = 99;
                 buttonImage.sprite = baseSprite;
                 selectedCard.cardUse++;
                 selectedCard = null;
@@ -75,5 +83,44 @@ public class CardStart_Buttons : MonoBehaviour, IEventSystemHandler, ISelectHand
     {
         nextToSelect.GetComponent<Button>().Select();
         isSelected = true;
+    }
+
+    public void removeStat()
+    {
+        switch (equippedID)
+        {
+            case 0: //SPD+SPD Card
+                {
+                    speedStat.statNumb -= 0.5f;
+                    break;
+                }
+            case 1: //SPD+ATK Card
+                {
+                    speedStat.statNumb -= 0.2f;
+                    attackStat.statNumb -= 0.5f;
+                    break;
+                }
+            case 2: //SPD+HP Card
+                {
+                    speedStat.statNumb -= 0.2f;
+                    healthStat.statNumb -= 1f;
+                    break;
+                }
+            case 3: //ATK+ATK Card
+                {
+                    attackStat.statNumb -= 1f;
+                    break;
+                }
+            case 4: //ATK+HP Card
+                {
+                    attackStat.statNumb -= 0.5f;
+                    break;
+                }
+            case 5: //HP+HP Card
+                {
+                    healthStat.statNumb -= 2f;
+                    break;
+                }
+        }
     }
 }
