@@ -17,7 +17,9 @@ public class NoCardRetunToTitle : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene(0);
+            if (isSet)
+            {
+            }
         }
     }
 }
