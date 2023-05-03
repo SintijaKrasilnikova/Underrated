@@ -29,6 +29,10 @@ public class CardStart_Cards : MonoBehaviour
     public GameObject useRef;
 
     public AK.Wwise.Event cardEquip;
+
+    public LoadoutPlayerStats healthStat;
+    public LoadoutPlayerStats attackStat;
+    public LoadoutPlayerStats speedStat;
     // Start is called before the first frame update
     void Start()
     {
@@ -100,9 +104,10 @@ public class CardStart_Cards : MonoBehaviour
 
     public void cardSelected()
     {
-        if(cardUse != 0)
+        if(cardUse != 0 && currentButton.GetComponent<CardStart_Buttons>().equippedID != cardID)
         {
             cardEquip.Post(gameObject);
+            addStat();
             currentButton.GetComponent<CardStart_Buttons>().hasCard = true;
             currentButton.GetComponent<CardStart_Buttons>().equippedID = cardID;
             currentButton.GetComponent<CardStartDescriptions>().cardEquipped();
@@ -111,6 +116,45 @@ public class CardStart_Cards : MonoBehaviour
             currentButton.GetComponent<CardStart_Buttons>().hasCard = true;
             currentButton.GetComponent<CardStart_Buttons>().selectedCard = this;
             cardUse--;
+        }
+    }
+
+    public void addStat()
+    {
+        switch (cardID)
+        {
+            case 0: //SPD+SPD Card
+                {
+                    speedStat.statNumb += 0.5f;
+                    break;
+                }
+            case 1: //SPD+ATK Card
+                {
+                    speedStat.statNumb += 0.2f;
+                    attackStat.statNumb += 0.5f;
+                    break;
+                }
+            case 2: //SPD+HP Card
+                {
+                    speedStat.statNumb += 0.2f;
+                    healthStat.statNumb += 1f;
+                    break;
+                }
+            case 3: //ATK+ATK Card
+                {
+                    attackStat.statNumb += 1f;
+                    break;
+                }
+            case 4: //ATK+HP Card
+                {
+                    attackStat.statNumb += 0.5f;
+                    break;
+                }
+            case 5: //HP+HP Card
+                {
+                    healthStat.statNumb += 2f;
+                    break;
+                }
         }
     }
 }

@@ -11,11 +11,13 @@ public class CardStart_StartGame : MonoBehaviour
     public CardStart_Buttons passive2;
     public CardStart_Buttons skill1;
     public CardStart_Buttons skill2;
+
+    public int cardAmount = 0;
     
     // Start is called before the first frame update
     void Start()
     {
-        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        //playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
@@ -31,12 +33,14 @@ public class CardStart_StartGame : MonoBehaviour
 
         if(passive1.selectedCard != null)
         {
+            cardAmount++;
             cardOver.fullCards.Add(cardOver.loadoutCards[passive1.selectedCard.cardID]);
             cardOver.loadoutCardUse[passive1.selectedCard.cardID] = passive1.selectedCard.cardUse;
             testActivate1();
         }
         if(passive2.selectedCard != null)
         {
+            cardAmount++;
             cardOver.fullCards.Add(cardOver.loadoutCards[passive2.selectedCard.cardID]);
             cardOver.loadoutCardUse[passive2.selectedCard.cardID] = passive2.selectedCard.cardUse;
             testActivate2();
@@ -45,10 +49,12 @@ public class CardStart_StartGame : MonoBehaviour
 
         if (passive1.selectedCard != null && passive1.selectedCard.cardUse <= 0)
         {
+            cardAmount++;
             cardOver.loadoutCardRecharge[passive1.selectedCard.cardID] = 0f;
         }
         if (passive2.selectedCard != null && passive2.selectedCard.cardUse <= 0)
         {
+            cardAmount++;
             cardOver.loadoutCardRecharge[passive2.selectedCard.cardID] = 0f;
         }
 
