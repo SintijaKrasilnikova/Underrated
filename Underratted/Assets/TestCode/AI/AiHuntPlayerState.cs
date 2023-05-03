@@ -68,16 +68,23 @@ public class AiHuntPlayerState : AiState
                 agent.navAgent.speed = increasedSpeed;
                 agent.enemyAnimator.SetBool("Charging", false);
                 chargeDone = true;
-                Debug.Log("ChargeEnd");
+                //Debug.Log("ChargeEnd");
             }
         }
         else
         {
-            attackTargetPos = agent.playerTransform.position;
+            //attackTargetPos = agent.playerTransform.position;
+            //agent.navAgent.destination = agent.playerTransform.position;
+        }
+
+        Debug.Log(agent.readyToAttack);
+
+        if (agent.config.enemyIsBeetle == false)
+        {
             agent.navAgent.destination = agent.playerTransform.position;
         }
 
-        if(chargeDone == true)
+        if(chargeDone == true && agent.config.enemyIsBeetle == true)
         {
             agent.enemyAnimator.SetBool("Charging", false);
         }

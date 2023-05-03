@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doesEnemyMove: 1
   huntingDistance: 5
-  huntingStopDistance: 1
+  huntingStopDistance: 2
   wanderDistance: {x: 5, y: 0, z: 0}
   attackCooldown: 2
   attackPrepare: 0.5
+  attackDuraton: 0.9
+  attackAreaDuraton: 0.9
+  enemyIsBeetle: 0
+  chargeSpeedIncrease: 6
+  startWanderingLeft: 1
