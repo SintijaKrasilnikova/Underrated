@@ -26,6 +26,8 @@ public class CardRandom : MonoBehaviour, IEventSystemHandler, ISelectHandler, ID
 
     public AK.Wwise.Event cardHighlight;
 
+    public bool isMiddle;
+
     public void OnDeselect(BaseEventData eventData)
     {
         gameObject.tag = "Untagged";
@@ -87,5 +89,13 @@ public class CardRandom : MonoBehaviour, IEventSystemHandler, ISelectHandler, ID
     public void WasCrafted()
     {
         wasCrafted = true;
+    }
+
+    private void Start()
+    {
+        if (isMiddle)
+        {
+            gameObject.GetComponent<Button>().Select();
+        }
     }
 }

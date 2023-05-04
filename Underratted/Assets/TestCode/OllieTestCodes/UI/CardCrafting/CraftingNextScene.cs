@@ -66,7 +66,7 @@ public class CraftingNextScene : MonoBehaviour
                 }
                 else
                 {
-                    SceneManager.LoadScene(0);
+                    SceneManager.LoadScene(2);
                 }
             }
 

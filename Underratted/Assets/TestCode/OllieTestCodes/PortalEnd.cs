@@ -2,7 +2,9 @@ using Newtonsoft.Json.Bson;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine.Video;
 
 public class PortalEnd : MonoBehaviour
@@ -29,6 +31,9 @@ public class PortalEnd : MonoBehaviour
 
     public bool noCards = false;
     public bool endScrrenActivated = false;
+
+    public EventSystem eventSystem;
+    public GameObject cardButton;
 
     // Start is called before the first frame update
     void Start()
@@ -110,6 +115,14 @@ public class PortalEnd : MonoBehaviour
     public void VideoLoadCrafting(VideoPlayer vp)
     {
         endVideo.SetActive(false);
+        //eventSystem.firstSelectedGameObject = cardButton;
+        //cardButton.GetComponent<Button>().Select();
+        cardholder.SetActive(false);
+
+        if(isAlphaPortal == false && overSeer.halfCards.Count > 0)
+        {
+            LoadCrafting();
+        }
 
         if (noCards == true)
         {
@@ -153,11 +166,12 @@ public class PortalEnd : MonoBehaviour
         dodgeUnlockScreen.SetActive(false);
         if(overSeer.halfCards.Count > 0)
         {
+            playerMove.SetCanMove(false);
+            endScreen.SetActive(true);
             cardholder.SetActive(false);
             //lulu.SetActive(false);
             endLevelSound.Post(gameObject);
-            playerMove.SetCanMove(false);
-            endScreen.SetActive(true);
+
         }
         else
         {
