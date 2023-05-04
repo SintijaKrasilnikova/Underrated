@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1558f9340dc3ff46a3c86b1d786ec28e
     GuidInternal: 
-    m_lastTime: -8585186543568779196
+    m_lastTime: -8585184492238596194
     List:
     - name: Main
       guid: d84c12b8016ff448a38b5be01bf74ce1
@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: efbdfc1406597641a03cf89d5cf2a378
     GuidInternal: 
-    m_lastTime: -8585185858711161469
+    m_lastTime: -8585184454461779750
     List:
     - name: AmbienceGeneral
       guid: 6f0ce7cdfde16f45b3ddf2754b75cc4a
@@ -531,6 +531,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: FreakerAttack
+      guid: bf2e42342d55974d8577e5cc52670c98
+      id: 4023738683
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: FreakerAttack
+        ObjectType: 3
+        guid: bf2e42342d55974d8577e5cc52670c98
+      Path: Events\Default Work Unit\FreakerAttack
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: FreakerDeath
       guid: 98d4be7787e9714cb3224cd7e01da3f1
       id: 268554923
@@ -562,6 +579,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: e528568de96b234b8bf7e5b79af447f1
       Path: Events\Default Work Unit\FreakerHit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FrogAttack
+      guid: 968d64ea4c916b4d89639288291420d3
+      id: 674977715
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: FrogAttack
+        ObjectType: 3
+        guid: 968d64ea4c916b4d89639288291420d3
+      Path: Events\Default Work Unit\FrogAttack
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -650,6 +684,57 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: MothAttack
+      guid: e908e1534895df458b065cbe366feccf
+      id: 2627110205
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: MothAttack
+        ObjectType: 3
+        guid: e908e1534895df458b065cbe366feccf
+      Path: Events\Default Work Unit\MothAttack
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MothDeath
+      guid: a96f51155a61234c8ead431b5808e323
+      id: 15019201
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: MothDeath
+        ObjectType: 3
+        guid: a96f51155a61234c8ead431b5808e323
+      Path: Events\Default Work Unit\MothDeath
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MothHit
+      guid: dfe0ac3bf97c8742acf3eaa117d125f5
+      id: 1305179216
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: MothHit
+        ObjectType: 3
+        guid: dfe0ac3bf97c8742acf3eaa117d125f5
+      Path: Events\Default Work Unit\MothHit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Music
       guid: 2340bda589aeac4bb453eec8b06ccfb8
       id: 3991942870
@@ -664,6 +749,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2340bda589aeac4bb453eec8b06ccfb8
       Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MusicStop
+      guid: 2159c73efba1b547819301d6efa670cd
+      id: 3978196478
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: efbdfc1406597641a03cf89d5cf2a378
+      - ElementName: MusicStop
+        ObjectType: 3
+        guid: 2159c73efba1b547819301d6efa670cd
+      Path: Events\Default Work Unit\MusicStop
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1292,7 +1394,7 @@ MonoBehaviour:
     m_lastTime: -8585251305646435847
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000002b0000002c0000002e0000002f0000003000000033000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

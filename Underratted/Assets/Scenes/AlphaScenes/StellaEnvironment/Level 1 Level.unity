@@ -9457,13 +9457,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190016583}
-  m_LocalRotation: {x: -0, y: 0.2838138, z: -0, w: 0.9588794}
-  m_LocalPosition: {x: 315.24, y: 1.92, z: -15.87}
+  m_LocalRotation: {x: -0, y: 0.26390636, z: -0, w: 0.9645483}
+  m_LocalPosition: {x: 316.19, y: 1.92, z: -16.4}
   m_LocalScale: {x: 1, y: 1, z: 23.16262}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 59
-  m_LocalEulerAnglesHint: {x: 0, y: 32.976, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 30.604, z: 0}
 --- !u!1 &190784846
 GameObject:
   m_ObjectHideFlags: 0
@@ -27096,7 +27096,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525363866}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32f6fb3e1642576418ea564e786e3aa4, type: 3}
   m_Name: 
@@ -37444,6 +37444,10 @@ PrefabInstance:
       propertyPath: pauseScript
       value: 
       objectReference: {fileID: 1115910593}
+    - target: {fileID: 4620667522059051532, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
+      propertyPath: combineCardSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 66612346280e7354ba7fc0952b21175b, type: 2}
     - target: {fileID: 5081619466351718606, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
       propertyPath: cardOver
       value: 
@@ -37460,6 +37464,22 @@ PrefabInstance:
     - {fileID: 5237874705152327220, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
     - {fileID: 298118710109976354, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
+--- !u!114 &730903503 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7570906422496241812, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
+  m_PrefabInstance: {fileID: 730903502}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &730903504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4379552487355158256, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
+  m_PrefabInstance: {fileID: 730903502}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &732451196
 GameObject:
   m_ObjectHideFlags: 0
@@ -102587,14 +102607,28 @@ MonoBehaviour:
   enemies: {fileID: 738345232}
   walls: {fileID: 67692179}
   card: {fileID: 1708841364}
-  arenaUI: {fileID: 0}
-  killedText: {fileID: 0}
+  arenaUI: {fileID: 730903504}
+  killedText: {fileID: 730903503}
   enemiesKilled: 0
   goalKills: 5
   arenaSound:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 5c5feb9743d81ab49b58ea6c95c0dcab, type: 2}
+  arenaSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 623fa9915b6313f4fa5a81d533a1dbd9, type: 2}
+  forestSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 455e9d20142694142ae4cff949cd13ee, type: 2}
+  mainCamera: {fileID: 0}
+  hasRun: 0
 --- !u!4 &1939337441
 Transform:
   m_ObjectHideFlags: 0

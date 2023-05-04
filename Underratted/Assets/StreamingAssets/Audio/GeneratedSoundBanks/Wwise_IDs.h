@@ -23,14 +23,20 @@ namespace AK
         static const AkUniqueID CARDPICKUP = 1900974107U;
         static const AkUniqueID CRIT = 4203868981U;
         static const AkUniqueID FOOTSTEPSPLAYER = 3865216745U;
+        static const AkUniqueID FREAKERATTACK = 4023738683U;
         static const AkUniqueID FREAKERDEATH = 268554923U;
         static const AkUniqueID FREAKERHIT = 3122002442U;
+        static const AkUniqueID FROGATTACK = 674977715U;
         static const AkUniqueID FROGDEATH = 1231350003U;
         static const AkUniqueID FROGHIT = 2012877250U;
         static const AkUniqueID HEALPICKUP = 669525935U;
         static const AkUniqueID HIT = 1116398592U;
         static const AkUniqueID INVENTORY = 203281819U;
+        static const AkUniqueID MOTHATTACK = 2627110205U;
+        static const AkUniqueID MOTHDEATH = 15019201U;
+        static const AkUniqueID MOTHHIT = 1305179216U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID MUSICSTOP = 3978196478U;
         static const AkUniqueID PLAYERDEATH = 1656947812U;
         static const AkUniqueID PLAYERDODGE = 906551347U;
         static const AkUniqueID PLAYERHIT = 3831688773U;
@@ -76,6 +82,7 @@ namespace AK
 
             namespace SWITCH
             {
+                static const AkUniqueID ARENA = 680256650U;
                 static const AkUniqueID CREDITS = 2201105581U;
                 static const AkUniqueID DEAD = 2044049779U;
                 static const AkUniqueID GAMING = 4126046746U;

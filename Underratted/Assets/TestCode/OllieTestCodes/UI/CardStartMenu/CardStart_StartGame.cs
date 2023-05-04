@@ -12,6 +12,9 @@ public class CardStart_StartGame : MonoBehaviour
     public CardStart_Buttons skill1;
     public CardStart_Buttons skill2;
 
+    public AK.Wwise.Event musicStop;
+    public GameObject mainCamera;
+
     public int cardAmount = 0;
     
     // Start is called before the first frame update
@@ -60,6 +63,8 @@ public class CardStart_StartGame : MonoBehaviour
         }
 
         //playerHealth.SetCurrentHealthToMax();
+        mainCamera = GameObject.Find("Main Camera");
+        musicStop.Post(mainCamera);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

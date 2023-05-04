@@ -328,8 +328,10 @@ MonoBehaviour:
   hurtTime: 0.3
   immuneTime: 1
   dodgeTime: 0.8
+  dodgeCooldown: 3
   speed: 10
   playerBody: {fileID: 4709378532459093725}
+  dodgeUI: {fileID: 0}
   plyerAnimator: {fileID: 4709378532459093722}
   playerMovementInput: {x: 0, y: 0, z: 0}
   deathCam: {fileID: 0}
@@ -338,6 +340,26 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 737abbc310be34747a46e412063fc951, type: 2}
+  playerDodge:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 15f11f8cea9502448944f0b54052b577, type: 2}
+  deathSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c92f1cb5aa68ccb4cac8b62feea0cb81, type: 2}
+  playerHitSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6f682e12b43ed4e4c96bc802809f62bd, type: 2}
+  deathSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b8f0eb07d94475648bdff5342f04fb65, type: 2}
+  mainCamera: {fileID: 0}
+  slashDown: {fileID: 0}
 --- !u!114 &4709378532324562514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 311735f1b2814d34a8a18d7110ff00a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementRef: {fileID: 4709378532459093726}
+  player: {fileID: 0}
   basicAttackArea: {fileID: 4709378532607826940}
   spinAttackArea: {fileID: 4709378530897092895}
   trailAttackArea: {fileID: 3199169882931980943}
@@ -358,7 +380,10 @@ MonoBehaviour:
   lulu4: 1
   basicAttackTime: 0.6
   spinAttackTime: 1
-  restTime: 0.5
+  spinFillValue: 0
+  normAttackFillValue: 0
+  normalRestTime: 1
+  spinRestTime: 3
   plyerAnimator: {fileID: 4709378532459093722}
   swordSwipeSound:
     idInternal: 0
@@ -368,6 +393,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d43eb02d536b185498b42048c16c4191, type: 2}
+  hitSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  critSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   critPossibleActive: 0
   critChance: 10
   critDamageValue: 10
@@ -412,13 +445,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickup: {fileID: 7417698155081932655, guid: 09a6597f7c4892a46b1957094b699a50, type: 3}
   knock: {fileID: 1235186299361392541}
+  overSeer: {fileID: 0}
   maxHealth: 8
+  maxHealthLimit: 8
   immunityTime: 1
   healthGainFromPickup: 2
   healthPickupChance: 100
+  healthPickupChanceCap: 50
   healthGainFromCard: 2
   healthGainFromSteal: 2
   healthStealChance: 20
+  healthStealChanceCap: 50
   currentHealth: 0
 --- !u!114 &4984637515605432069
 MonoBehaviour:
@@ -444,9 +481,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e6abfc8446cd504ab7b62aefab77fb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardOver: {fileID: 0}
   speedCard: 0
   attackCard: 0
   healthCard: 0
+  hasCard: 0
 --- !u!114 &2643680959532834292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -459,7 +498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b612244131328414486de2f319db892c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 11400000, guid: d29ea87b92767db448c662f8ae887949, type: 2}
+  cardOver: {fileID: 0}
   playerHealth: {fileID: 3350864199433112401}
   attack: {fileID: 4709378532324562514}
   playerMovement: {fileID: 4709378532459093726}

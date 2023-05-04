@@ -49,6 +49,7 @@ public class PortalEnd : MonoBehaviour
         {
             lulu.GetComponent<Pause>().canBePaused = false;
             overSeer.CurrentHealth = health.GetCurrentHealth();
+            endLevelSound.Post(gameObject);
 
             //Debug.Log(playerRef.GetHasCard());
             bool LuluHasCard = playerRef.GetHasCard();
@@ -85,7 +86,6 @@ public class PortalEnd : MonoBehaviour
     {
         endVideo.SetActive(false);
 
-
         if (noCards == true)
         {
             if(overSeer.DodgeActive == false && isAlphaPortal)
@@ -102,7 +102,6 @@ public class PortalEnd : MonoBehaviour
         {
             cardholder.SetActive(false);
             //lulu.SetActive(false);
-            endLevelSound.Post(gameObject);
             playerMove.SetCanMove(false);
             endScreen.SetActive(true);
         }

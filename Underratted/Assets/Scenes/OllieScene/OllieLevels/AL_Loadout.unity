@@ -5376,6 +5376,11 @@ MonoBehaviour:
   passive2: {fileID: 1533581382}
   skill1: {fileID: 142511924}
   skill2: {fileID: 1789290950}
+  musicStop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 814c876314eff804faae7097d119714a, type: 2}
+  mainCamera: {fileID: 0}
   cardAmount: 0
 --- !u!114 &836922523
 MonoBehaviour:

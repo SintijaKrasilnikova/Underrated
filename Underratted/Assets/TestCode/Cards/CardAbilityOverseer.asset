@@ -26,11 +26,11 @@ MonoBehaviour:
   loadoutCardUse: 020000000200000002000000020000000200000002000000
   rechargeAmount: 0.34
   loadoutCardRecharge:
-  - 3.6799998
-  - 3.6799998
-  - 3.6799998
-  - 3.6799998
-  - 3.6799998
-  - 3.6799998
+  - 1.1
+  - 1.1
+  - 1.1
+  - 1.1
+  - 1.1
+  - 1.1
   firstRun: 1
   cardsEquippedInLoadout: 0

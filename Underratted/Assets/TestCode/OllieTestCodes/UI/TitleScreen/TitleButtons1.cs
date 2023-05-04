@@ -12,6 +12,12 @@ public class TitleButtons1 : MonoBehaviour
     public GameObject credits;
     public bool controlsShown = false;
     public bool creditsShown = false;
+    public GameObject MainCamera;
+    [SerializeField]
+    private AK.Wwise.Switch creditsSwitch;
+    [SerializeField]
+    private AK.Wwise.Switch titleSwitch;
+    public AK.Wwise.Event musicStop;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +49,8 @@ public class TitleButtons1 : MonoBehaviour
             {
                 creditsShown = false;
                 credits.SetActive(false);
+                MainCamera = GameObject.Find("Main Camera");
+                titleSwitch.SetValue(MainCamera.gameObject);
             }
         }
     }
@@ -53,10 +61,14 @@ public class TitleButtons1 : MonoBehaviour
         {
             if (cardOver.firstRun)
             {
+                MainCamera = GameObject.Find("Main Camera");
+                musicStop.Post(MainCamera);
                 SceneManager.LoadScene(2);
             }
             else
             {
+                MainCamera = GameObject.Find("Main Camera");
+                musicStop.Post(MainCamera);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
@@ -77,6 +89,8 @@ public class TitleButtons1 : MonoBehaviour
         {
             credits.SetActive(true);
             creditsShown = true;
+            MainCamera = GameObject.Find("Main Camera");
+            creditsSwitch.SetValue(MainCamera.gameObject);
         }
 
     }

@@ -7570,7 +7570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4737119488999099894, guid: b6c0d33b308f0ef4c87672ad408651d4, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4737119488999099894, guid: b6c0d33b308f0ef4c87672ad408651d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32288,7 +32288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fec7be116920f5042b4eff42138806f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: ae8d9d44
+  triggerList: f7e1664c
   useOtherObject: 0
   data:
     idInternal: 0
@@ -75812,7 +75812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4737119488999099894, guid: b6c0d33b308f0ef4c87672ad408651d4, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4737119488999099894, guid: b6c0d33b308f0ef4c87672ad408651d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -84503,6 +84503,10 @@ PrefabInstance:
       propertyPath: pauseScript
       value: 
       objectReference: {fileID: 1115910587}
+    - target: {fileID: 4620667522059051532, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
+      propertyPath: combineCardSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 66612346280e7354ba7fc0952b21175b, type: 2}
     - target: {fileID: 5081619466351718606, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
       propertyPath: cardOver
       value: 
@@ -97683,7 +97687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4737119488999099894, guid: b6c0d33b308f0ef4c87672ad408651d4, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4737119488999099894, guid: b6c0d33b308f0ef4c87672ad408651d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -104430,7 +104434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4737119488999099894, guid: b6c0d33b308f0ef4c87672ad408651d4, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4737119488999099894, guid: b6c0d33b308f0ef4c87672ad408651d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -127050,7 +127054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4737119488999099894, guid: b6c0d33b308f0ef4c87672ad408651d4, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4737119488999099894, guid: b6c0d33b308f0ef4c87672ad408651d4, type: 3}
       propertyPath: m_LocalPosition.x

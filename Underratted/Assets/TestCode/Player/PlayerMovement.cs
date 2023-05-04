@@ -54,6 +54,8 @@ public class PlayerMovement : MonoBehaviour
     public AK.Wwise.Event playerDodge;
     public AK.Wwise.Event deathSound;
     public AK.Wwise.Event playerHitSound;
+    [SerializeField] private AK.Wwise.Switch deathSwitch;
+    public GameObject mainCamera;
 
     //just for alpha for the swipe down animation
     public GameObject slashDown;
@@ -363,6 +365,8 @@ public class PlayerMovement : MonoBehaviour
         deathUI.SetActive(true);
         this.GetComponent<Renderer>().sortingOrder = 1;
         deathSound.Post(gameObject);
+        mainCamera = GameObject.Find("Main Camera (1)");
+        deathSwitch.SetValue(mainCamera.gameObject);
     }
 
     public void ImmunityOff()

@@ -17,6 +17,10 @@ public class ArenaActivate : MonoBehaviour
     bool activateArena = false;
 
     public AK.Wwise.Event arenaSound;
+    [SerializeField] AK.Wwise.Switch arenaSwitch;
+    [SerializeField] AK.Wwise.Switch forestSwitch;
+    public GameObject mainCamera;
+    public bool hasRun = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +34,8 @@ public class ArenaActivate : MonoBehaviour
         if (!card.activeSelf && activateArena == false)
         {
             arenaSound.Post(gameObject);
+            mainCamera = GameObject.Find("Main Camera (1)");
+            arenaSwitch.SetValue(mainCamera.gameObject);
             arenaUI.SetActive(true);
             enemies.SetActive(true);
             walls.SetActive(true);
@@ -40,6 +46,13 @@ public class ArenaActivate : MonoBehaviour
         {
             arenaUI.SetActive(false);
             walls.SetActive(false);
+            if(hasRun==false)
+            {
+                arenaSound.Post(gameObject);
+                mainCamera = GameObject.Find("Main Camera (1)");
+                forestSwitch.SetValue(mainCamera.gameObject);
+                hasRun = true;
+            }
         }
     }
 }

@@ -544,6 +544,7 @@ GameObject:
   - component: {fileID: 3652324690051752383}
   - component: {fileID: 2110641875831737920}
   - component: {fileID: 2110641875831737935}
+  - component: {fileID: 6135150520984512116}
   - component: {fileID: 1795870984159851476}
   m_Layer: 0
   m_Name: Frog2.1
@@ -721,7 +722,7 @@ MonoBehaviour:
   freakerDeathSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: d1842aea896151d4382322a306ae410c, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: c7e0ee09eb576044a9831734981d85dc, type: 2}
 --- !u!114 &2110641875831737935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,7 +738,23 @@ MonoBehaviour:
   freakerHurtSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 4da71341a481b60429056b4a066acdd5, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 943cc9fc51a333f449a2b2495da88d35, type: 2}
+--- !u!114 &6135150520984512116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9220321408049577561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc55dbed90fdcf446b010b12b29b19ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  freakerAttackSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b16224cdce69964489d7294784daf665, type: 2}
 --- !u!114 &1795870984159851476
 MonoBehaviour:
   m_ObjectHideFlags: 0
