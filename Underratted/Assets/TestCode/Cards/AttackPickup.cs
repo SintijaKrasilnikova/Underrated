@@ -12,6 +12,7 @@ public class AttackPickup : MonoBehaviour
     public BoxCollider col;
     bool hasBeenPickedUp = false;
     public AK.Wwise.Event pickupSoundAttack;
+    private PortalEnd portalEndRef;
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Player"))
@@ -20,6 +21,8 @@ public class AttackPickup : MonoBehaviour
             var playerCards = collision.GetComponent<Card_Numbers>();
 
             pickupRef = GameObject.FindGameObjectWithTag("PickupRef");
+            //portalEndRef = GameObject.FindGameObjectWithTag("Portal").GetComponent<PortalEnd>();
+            //portalEndRef.SetHasAnyCards(false);
 
             //playerAttack.IncreaseBaseDamage(increaseAmount);
             playerCards.attackCard++;

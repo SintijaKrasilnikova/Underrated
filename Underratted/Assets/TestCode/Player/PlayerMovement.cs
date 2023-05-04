@@ -85,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
         //    dodgeIconIsUp = true;
         //}
 
-        if (health.IsLuluDead() == false)
+        if (health.IsLuluDead() == false && canMove == true)
         {
             if (dodgeCooldownTimer < dodgeCooldown && dodgeTimerReady == false)
             {

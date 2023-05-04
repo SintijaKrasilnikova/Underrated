@@ -28,25 +28,42 @@ public class PortalEnd : MonoBehaviour
     public bool playVideo = false;
 
     public bool noCards = false;
+    public bool endScrrenActivated = false;
 
     // Start is called before the first frame update
     void Start()
     {
         health = playerRef.GetComponent<PlayerHealth>();
+        playerMove = playerRef.GetComponent<PlayerMovement>();
         //overSeer = playerRef.GetComponent<CardOverseer>();
+        //noCards = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(endScrrenActivated)
+        {
+            playerMove.SetCanMove(false);
+            health.SetEndScreen(true);
+        }
+
+        Debug.Log(noCards);
     }
 
+    public void SetHasAnyCards(bool gotACard)
+    {
+        noCards = gotACard;
+    }
     //load the end card screen if the player picked up a card in the level
     private void OnTriggerEnter(Collider collision)
     {
          if (collision.gameObject.CompareTag("Player"))
         {
+
+            endScrrenActivated = true;
+            lulu.transform.position = new Vector3(300, -80, 0);
+
             lulu.GetComponent<Pause>().canBePaused = false;
             overSeer.CurrentHealth = health.GetCurrentHealth();
             endLevelSound.Post(gameObject);
@@ -69,6 +86,13 @@ public class PortalEnd : MonoBehaviour
                     endVideo.SetActive(true);
                     endVideoData.Play();
                 }
+                else
+                {
+                    noCards = true;
+                    endVideo.SetActive(true);
+                    endVideoData.Play();
+
+                }
             }
 
             if (LuluHasCard == false && isAlphaPortal == false)
@@ -77,6 +101,7 @@ public class PortalEnd : MonoBehaviour
                 endVideo.SetActive(true);
                 endVideoData.Play();
             }
+            
 
 
         }
@@ -98,12 +123,27 @@ public class PortalEnd : MonoBehaviour
                 noCardPieces.SetActive(true);
             }
         }
+        //else
+        //{
+        //    cardholder.SetActive(false);
+        //    //lulu.SetActive(false);
+        //    playerMove.SetCanMove(false);
+        //    endScreen.SetActive(true);
+        //}
         else
         {
-            cardholder.SetActive(false);
-            //lulu.SetActive(false);
-            playerMove.SetCanMove(false);
-            endScreen.SetActive(true);
+            if (overSeer.DodgeActive == false && isAlphaPortal)
+            {
+                dodgeUnlockScreen.SetActive(true);
+                overSeer.DodgeActive = true;
+
+                //endScreen.SetActive(true);
+            }
+            if (overSeer.DodgeActive == true)
+            {
+                endScreen.SetActive(true);
+            }
+
         }
 
     }

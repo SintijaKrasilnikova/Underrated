@@ -11,6 +11,7 @@ public class ReloadScene : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
+        Debug.Log("Fell in void");
         if (collision.CompareTag("Player"))
         {
             var healthComp = collision.GetComponent<PlayerHealth>();

@@ -21,6 +21,8 @@ public class PlayerHealth : MonoBehaviour
     public int healthStealChance = 20;
     public int healthStealChanceCap = 50;
     public int currentHealth;
+
+    private bool endScreen = false;
     
 
     private bool justAttacked = false;
@@ -39,6 +41,7 @@ public class PlayerHealth : MonoBehaviour
         //    currentHealth = maxHealth;
         dead = false;
         currentHealth = overSeer.CurrentHealth;
+        endScreen = false;
 
         if (gameObject.CompareTag("Player"))
         {
@@ -62,6 +65,12 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void SetEndScreen(bool IsScreenActive)
+    {
+        endScreen = IsScreenActive;
+        justAttacked = IsScreenActive;
+    }
+
     public bool IsLuluDead()
     {
         return dead;
@@ -74,7 +83,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damageAmount)
     {
-        if (justAttacked == false)
+        if (justAttacked == false && endScreen == false)
         {
             currentHealth -= damageAmount;
             knock.Knockback();

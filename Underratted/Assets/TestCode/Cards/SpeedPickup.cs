@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpeedPickup : MonoBehaviour
 {
     [SerializeField] private CardOverseer cardOver;
+    private PortalEnd portalEndRef;
 
     public GameObject pickupRef;
     public BoxCollider col;
@@ -20,11 +21,15 @@ public class SpeedPickup : MonoBehaviour
             var playerCards = collision.GetComponent<Card_Numbers>();
 
             pickupRef = GameObject.FindGameObjectWithTag("PickupRef");
+            //portalEndRef = GameObject.FindGameObjectWithTag("Portal").GetComponent<PortalEnd>();
+            //portalEndRef.SetHasAnyCards(false);
 
             //playerMove.SpeedUp();
             playerCards.speedCard++;
             cardOver.halfCards.Add(0);
             pickupSoundSpeed.Post(gameObject);
+
+            
 
             col.enabled = false;
             hasBeenPickedUp = true;

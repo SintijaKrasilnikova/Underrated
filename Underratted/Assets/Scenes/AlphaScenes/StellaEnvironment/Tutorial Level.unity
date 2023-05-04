@@ -67955,7 +67955,7 @@ GameObject:
   - component: {fileID: 1095362157}
   m_Layer: 0
   m_Name: Portal Swirl
-  m_TagString: Untagged
+  m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68055,6 +68055,7 @@ MonoBehaviour:
   endVideoData: {fileID: 1553413004}
   playVideo: 1
   noCards: 0
+  endScrrenActivated: 0
 --- !u!65 &1095362156
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -121668,6 +121669,20 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  arenaSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  forestSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  mainCamera: {fileID: 0}
+  hasRun: 0
 --- !u!4 &1939337441
 Transform:
   m_ObjectHideFlags: 0

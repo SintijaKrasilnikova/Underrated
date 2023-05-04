@@ -10,6 +10,7 @@ public class HealthPickup : MonoBehaviour
     public BoxCollider col;
     bool hasBeenPickedUp = false;
     public AK.Wwise.Event pickupSoundHealth;
+    private PortalEnd portalEndRef;
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Player"))
@@ -18,6 +19,8 @@ public class HealthPickup : MonoBehaviour
             var playerCards = collision.GetComponent<Card_Numbers>();
 
             pickupRef = GameObject.FindGameObjectWithTag("PickupRef");
+            //portalEndRef = GameObject.FindGameObjectWithTag("Portal").GetComponent<PortalEnd>();
+            //portalEndRef.SetHasAnyCards(false);
 
             //playerHealth.AddHealth();
             playerCards.healthCard++;
