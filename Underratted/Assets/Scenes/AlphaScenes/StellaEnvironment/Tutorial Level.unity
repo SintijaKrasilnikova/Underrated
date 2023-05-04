@@ -40840,6 +40840,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &678778638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5407891315289695871, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
+  m_PrefabInstance: {fileID: 1350224153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &678778640 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2078478788510671763, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
+  m_PrefabInstance: {fileID: 1350224153}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678778638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92eaf55c03c38f14281911bd55291026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &679623652
 GameObject:
   m_ObjectHideFlags: 0
@@ -58971,6 +58987,10 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3350864199433112401, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
+      propertyPath: isTutorial
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3616842742903068272, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: m_TagString
       value: PickupRef
@@ -59003,6 +59023,10 @@ PrefabInstance:
       propertyPath: slashDown
       value: 
       objectReference: {fileID: 2081862120}
+    - target: {fileID: 4709378532459093726, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
+      propertyPath: arenaAssets
+      value: 
+      objectReference: {fileID: 1733249638}
     - target: {fileID: 4709378532459093726, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: deathSound.WwiseObjectReference
       value: 
@@ -68056,6 +68080,8 @@ MonoBehaviour:
   playVideo: 1
   noCards: 0
   endScrrenActivated: 0
+  eventSystem: {fileID: 1779486300}
+  cardButton: {fileID: 678778638}
 --- !u!65 &1095362156
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68102,6 +68128,7 @@ MonoBehaviour:
   multiPositionTypeLabel: 0
   attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
   LargeModePositions:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -84477,6 +84504,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
     - target: {fileID: 1692890743360464451, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
+      propertyPath: cardRef
+      value: 
+      objectReference: {fileID: 678778640}
+    - target: {fileID: 1692890743360464451, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
+      propertyPath: moveRef
+      value: 
+      objectReference: {fileID: 678778638}
+    - target: {fileID: 1692890743360464451, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
       propertyPath: cardNumber
       value: 
       objectReference: {fileID: 1115910586}
@@ -84496,6 +84531,18 @@ PrefabInstance:
       propertyPath: portal
       value: 
       objectReference: {fileID: 1095362155}
+    - target: {fileID: 3407017294059335877, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
+      propertyPath: cardOver
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
+    - target: {fileID: 3407017294063637246, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
+      propertyPath: cardOver
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
+    - target: {fileID: 3407017295431384646, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
+      propertyPath: cardOver
+      value: 
+      objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
     - target: {fileID: 4103021384129030844, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
       propertyPath: cardOver
       value: 
@@ -84512,6 +84559,10 @@ PrefabInstance:
       propertyPath: cardOver
       value: 
       objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
+    - target: {fileID: 5407891315289695871, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
+      propertyPath: m_TagString
+      value: UIActive
+      objectReference: {fileID: 0}
     - target: {fileID: 5908216806015557422, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -108889,6 +108940,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1733249638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4379552487355158256, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
+  m_PrefabInstance: {fileID: 1350224153}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1733771270
 GameObject:
   m_ObjectHideFlags: 0

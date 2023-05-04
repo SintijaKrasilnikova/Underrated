@@ -4650,6 +4650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlockScene: 0
   portalRef: {fileID: 0}
+  isLevel2: 0
 --- !u!1 &1563947200028525995
 GameObject:
   m_ObjectHideFlags: 0
@@ -5069,7 +5070,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5237874705152327220}
+      - m_Target: {fileID: 8354870899191182742}
         m_TargetAssemblyTypeName: QuitButtonPause, Assembly-CSharp
         m_MethodName: deactivateQuit
         m_Mode: 1
@@ -6681,6 +6682,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: c864c2cc2bf00704ca815d88a52c10f1, type: 2}
+  isMiddle: 0
 --- !u!95 &7483315074303071064
 Animator:
   serializedVersion: 3
@@ -8566,6 +8568,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: c864c2cc2bf00704ca815d88a52c10f1, type: 2}
+  isMiddle: 0
 --- !u!95 &5440712659277414060
 Animator:
   serializedVersion: 3
@@ -9959,6 +9962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85de79b4887c16489a329d9fd93893e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardOver: {fileID: 0}
   animator: {fileID: 3407017294059335876}
   sprites:
   - {fileID: -8308030763261903793, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
@@ -10074,6 +10078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85de79b4887c16489a329d9fd93893e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardOver: {fileID: 0}
   animator: {fileID: 3407017294063637245}
   sprites:
   - {fileID: -8308030763261903793, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
@@ -10320,6 +10325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85de79b4887c16489a329d9fd93893e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardOver: {fileID: 0}
   animator: {fileID: 3407017295431384645}
   sprites:
   - {fileID: -8308030763261903793, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
@@ -10400,6 +10406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlockScene: 1
   portalRef: {fileID: 0}
+  isLevel2: 0
 --- !u!1 &3495068211539151864
 GameObject:
   m_ObjectHideFlags: 0
@@ -15054,6 +15061,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: c864c2cc2bf00704ca815d88a52c10f1, type: 2}
+  isMiddle: 0
 --- !u!95 &1806116492841583100
 Animator:
   serializedVersion: 3
@@ -26997,7 +27005,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 298118710109976354}
+      - m_Target: {fileID: 4325275455470555016}
         m_TargetAssemblyTypeName: QuitButtonPause, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1

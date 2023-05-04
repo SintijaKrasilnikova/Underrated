@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CollectedHalfCard : MonoBehaviour
 {
+    [SerializeField] private CardOverseer cardOver;
     public Animator animator;
     public Sprite[] sprites;
     public int cardRef;
@@ -18,6 +19,6 @@ public class CollectedHalfCard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //gameObject.GetComponent<Image>().sprite = sprites[cardID];
+        gameObject.GetComponent<Image>().sprite = sprites[cardOver.halfCards[cardID]];
     }
 }

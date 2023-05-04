@@ -60,6 +60,8 @@ public class PlayerMovement : MonoBehaviour
     //just for alpha for the swipe down animation
     public GameObject slashDown;
 
+    public GameObject arenaAssets;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -359,6 +361,7 @@ public class PlayerMovement : MonoBehaviour
     public void PlayerDeath()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        arenaAssets.SetActive(false);
         gameObject.GetComponent<Pause>().canBePaused = false;
         canMove = false;
         deathCam.Priority = 21;

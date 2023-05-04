@@ -30,6 +30,8 @@ public class PlayerHealth : MonoBehaviour
 
     private bool dead = false;
 
+    public bool isTutorial = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +55,8 @@ public class PlayerHealth : MonoBehaviour
                 playerCapsule = gameObject.GetComponent<CapsuleCollider>();
             }
         }
+
+
     }
 
     private void Update()
@@ -62,6 +66,17 @@ public class PlayerHealth : MonoBehaviour
             dead = true;
             justAttacked = true;
             //playerCapsule.enabled = false;
+        }
+
+        if(currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+
+        if (isTutorial && overSeer.DodgeActive == false && currentHealth != maxHealth)
+        {
+            currentHealth = maxHealth;
+            isTutorial = false;
         }
     }
 

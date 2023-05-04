@@ -31,11 +31,13 @@ public class SelectingCard : MonoBehaviour
     void Start()
     {
         cardNumberRef = cardOver.halfCards[0];
+        moveRef.GetComponent<Button>().Select();
+        ChangeCard();
     }
 
     private void Awake()
     {
-
+        ChangeCard();
     }
 
     // Update is called once per frame
@@ -68,7 +70,10 @@ public class SelectingCard : MonoBehaviour
             animator.SetBool("LeftIdle", false);
             animator.SetBool("RightIdle", true);
         }
+    }
 
+    public void ChangeCard()
+    {
         var selectImage = gameObject.GetComponent<Image>();
         if (cardNumberRef == 0)
         {
@@ -88,6 +93,5 @@ public class SelectingCard : MonoBehaviour
             buffText = "Health +1";
             playerCardNumber = 3;
         }
-
     }
 }

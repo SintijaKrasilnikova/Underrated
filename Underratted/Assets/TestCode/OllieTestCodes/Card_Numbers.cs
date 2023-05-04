@@ -14,7 +14,7 @@ public class Card_Numbers : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        cardOver.halfCards.Clear();
     }
 
     // Update is called once per frame
