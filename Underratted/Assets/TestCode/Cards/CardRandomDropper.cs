@@ -10,7 +10,7 @@ public class CardRandomDropper : MonoBehaviour
     //public GameObject spinCardRef = default;
 
     //public int dropChances;
-    private int dropChances = 40;
+    private int dropChances = 100;
     private int dropChancesPotion = 20;
     public string prefferdCardType;
 
@@ -108,6 +108,40 @@ public class CardRandomDropper : MonoBehaviour
 
         }
 
+
+    }
+
+    public void StartRandomCard(Vector3 position)
+    {
+        string cardType = ChooseRandomCard();
+
+        switch (cardType)
+        {
+            case "speed":
+                {
+                    currentCardRef = speedRef.gameObject;
+                    currentUp = cardHistroyRef.GetSpeedUp();
+                    cardHistroyRef.SetSpeedUp(true);
+                    break;
+                }
+            case "health":
+                {
+                    currentCardRef = healthRef.gameObject;
+                    currentUp = cardHistroyRef.GetHealthUp();
+                    cardHistroyRef.SetHealthUp(true);
+                    break;
+                }
+            case "attack":
+                {
+                    currentCardRef = attackRef.gameObject;
+                    currentUp = cardHistroyRef.GetAttackUp();
+                    cardHistroyRef.SetAttackUp(true);
+                    break;
+                }
+        }
+
+        currentCardRef.transform.position = position;
+        currentCardRef.SetActive(true);
 
     }
 
