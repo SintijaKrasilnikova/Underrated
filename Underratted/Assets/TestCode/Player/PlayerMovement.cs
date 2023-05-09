@@ -39,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
     private bool dodgeIconIsUp = false;
 
     private float speedRef;
+    private float speedCap = 16;
     private float dodgeCooldownTimer = 0;
     //1-left
     //2-right
@@ -340,9 +341,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (currentHP <= 0)
         {
-
+            PlayerDeath();
             plyerAnimator.SetBool("Death", true);
-            Invoke(nameof(PlayerDeath), deathTime);
+            //Invoke(nameof(PlayerDeath), deathTime);
+            //Invoke(nameof(PlayerDeath), 0);
+            //PlayerDeath();
+            //Debug.Log("Died function!!!");
+            //Debug.Log("Died called finction");
         }
         else
         {
@@ -366,10 +371,12 @@ public class PlayerMovement : MonoBehaviour
         canMove = false;
         deathCam.Priority = 21;
         deathUI.SetActive(true);
-        this.GetComponent<Renderer>().sortingOrder = 1;
+        this.GetComponent<Renderer>().sortingOrder = 0;
         deathSound.Post(gameObject);
         mainCamera = GameObject.Find("Main Camera (1)");
         deathSwitch.SetValue(mainCamera.gameObject);
+
+        Debug.Log("Died called finction");
     }
 
     public void ImmunityOff()
@@ -396,7 +403,15 @@ public class PlayerMovement : MonoBehaviour
         //    spedUp = true;
         //}
 
-        speed += additionalSpeed;
+        if (speed < speedCap)
+        {
+            speed += additionalSpeed;
+        }
+        if (speed > speedCap)
+        {
+            speed = speedCap;
+        }
+
         speedRef = speed;
     }
 

@@ -18,9 +18,17 @@ public class ReloadScene : MonoBehaviour
             if (healthComp != null && healthComp.IsLuluDead() ==false)
             {
                 //Debug.Log("Health decreased");
-                healthComp.TakeDamage(fallDamage);
-                overSeer.CurrentHealth = healthComp.GetCurrentHealth();
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                if (healthComp.GetCurrentHealth() > 1)
+                {
+                    healthComp.TakeDamage(fallDamage);
+                    overSeer.CurrentHealth = healthComp.GetCurrentHealth();
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                }
+                else
+                {
+                    //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                    healthComp.TakeDamage(fallDamage);
+                }
             }
         }
     }

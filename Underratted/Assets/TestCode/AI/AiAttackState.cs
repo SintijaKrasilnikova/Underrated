@@ -66,8 +66,6 @@ public class AiAttackState : AiState
                 //Debug.Log("Right");
             }
         }
-        Debug.Log("EnterAttack");
-        //attackArea = agent.transform.GetComponentInChildren<BoxCollider>();
     }
 
     public void Update(AiAgent agent)

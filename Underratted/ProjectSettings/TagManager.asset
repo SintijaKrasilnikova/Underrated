@@ -15,6 +15,7 @@ TagManager:
   - TRight
   - PickupRef
   - Portal
+  - CardPoint
   layers:
   - Default
   - TransparentFX

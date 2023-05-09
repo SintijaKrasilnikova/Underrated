@@ -155,13 +155,11 @@ public class AiHuntPlayerState : AiState
             if (Mathf.Abs(attackTargetPos.x - agent.transform.position.x) < agent.navAgent.stoppingDistance
                 && Mathf.Abs(attackTargetPos.z - agent.transform.position.z) < agent.navAgent.stoppingDistance)
             {
-                Debug.Log("AAAAAAAA");
                 agent.navAgent.speed = startSpeed;
                 AiAttackState attackState = agent.stateMachine.GetState(AiStateId.Attack) as AiAttackState;
                 agent.stateMachine.ChangeState(AiStateId.Attack);
             }
 
-            Debug.Log(Mathf.Abs(attackTargetPos.x - agent.transform.position.x));
 
             //if (Mathf.Abs(agent.playerTransform.position.x - agent.transform.position.x) < agent.navAgent.stoppingDistance
             //    && Mathf.Abs(agent.playerTransform.position.z - agent.transform.position.z) < agent.navAgent.stoppingDistance)

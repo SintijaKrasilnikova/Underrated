@@ -53,7 +53,7 @@ public class PortalEnd : MonoBehaviour
             health.SetEndScreen(true);
         }
 
-        Debug.Log(noCards);
+        //Debug.Log(noCards);
     }
 
     public void SetHasAnyCards(bool gotACard)
