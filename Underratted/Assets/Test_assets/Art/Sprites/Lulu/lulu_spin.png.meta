@@ -186,7 +186,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1351
+        width: 1334
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -205,9 +205,9 @@ TextureImporter:
       name: lulu_spin_1
       rect:
         serializedVersion: 2
-        x: 1351
+        x: 1334
         y: 0
-        width: 1351
+        width: 1334
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -226,9 +226,9 @@ TextureImporter:
       name: lulu_spin_2
       rect:
         serializedVersion: 2
-        x: 2702
+        x: 2668
         y: 0
-        width: 1351
+        width: 1334
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -247,9 +247,9 @@ TextureImporter:
       name: lulu_spin_3
       rect:
         serializedVersion: 2
-        x: 4053
+        x: 4002
         y: 0
-        width: 1351
+        width: 1334
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -268,9 +268,9 @@ TextureImporter:
       name: lulu_spin_4
       rect:
         serializedVersion: 2
-        x: 5404
+        x: 5336
         y: 0
-        width: 1351
+        width: 1334
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -289,9 +289,9 @@ TextureImporter:
       name: lulu_spin_5
       rect:
         serializedVersion: 2
-        x: 6755
+        x: 6670
         y: 0
-        width: 1351
+        width: 1334
         height: 1090
       alignment: 7
       pivot: {x: 0.5, y: 0}
