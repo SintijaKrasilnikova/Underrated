@@ -30,9 +30,11 @@ public class SaveButton : MonoBehaviour
 
     public void ButtonClicked()
     {
+        cardOver.firstRun = false;
+
         //find the cards in the overseer to check if any slots are empty
 
-        if(cardOver.loadoutCards.All(x => x != currentButton.GetComponent<DeathCardSelector>().cardID))
+        if (cardOver.loadoutCards.All(x => x != currentButton.GetComponent<DeathCardSelector>().cardID))
         {
             cardOver.loadoutCards.Add(currentButton.GetComponent<DeathCardSelector>().cardID);
             cardOver.loadoutCardUse.Add(2);

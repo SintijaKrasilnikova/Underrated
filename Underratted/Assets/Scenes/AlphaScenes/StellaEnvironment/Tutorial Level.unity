@@ -58980,6 +58980,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3350864199433112401, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
+      propertyPath: healVFX
+      value: 
+      objectReference: {fileID: 50604873735735663, guid: 6ac29cf8991af4c48a9b96bd6ae6f6cd, type: 3}
+    - target: {fileID: 3350864199433112401, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: overSeer
       value: 
       objectReference: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
@@ -58991,6 +58995,10 @@ PrefabInstance:
       propertyPath: isTutorial
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3608060571219900698, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1115910580}
     - target: {fileID: 3616842742903068272, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: m_TagString
       value: PickupRef
@@ -84523,6 +84531,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1115910580}
+    - target: {fileID: 2787932506760556981, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3061468614668305686, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
       propertyPath: pauseScript
       value: 
@@ -84562,6 +84574,10 @@ PrefabInstance:
     - target: {fileID: 5407891315289695871, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
       propertyPath: m_TagString
       value: UIActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 5867098955107873547, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5908216806015557422, guid: a38e2ffecd0a7474b81f09de45389cab, type: 3}
       propertyPath: m_IsActive

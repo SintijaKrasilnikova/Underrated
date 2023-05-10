@@ -36,8 +36,9 @@ public class CardStart_Cards : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cardUse = cardOver.loadoutCardUse[cardID];
-        cardRecharge = cardOver.loadoutCardRecharge[cardID];
+        cardID = cardOver.loadoutCards[inventoryID];
+        cardUse = cardOver.loadoutCardUse[inventoryID];
+        cardRecharge = cardOver.loadoutCardRecharge[inventoryID];
 
         if(cardUse <= 0)
         {
@@ -64,11 +65,11 @@ public class CardStart_Cards : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cardOver.loadoutCards.Count < cardID +1)
+        if (cardOver.loadoutCards.Count < inventoryID +1)
         {
             this.gameObject.SetActive(false);
         }
-        cardImage.sprite = cardSprites[cardOver.loadoutCards[cardID]];
+        cardImage.sprite = cardSprites[cardOver.loadoutCards[inventoryID]];
 
         //see all selected buttons in scene
         foreach (CardStart_Buttons button in buttons)
@@ -104,7 +105,7 @@ public class CardStart_Cards : MonoBehaviour
 
     public void cardSelected()
     {
-        if(cardUse != 0 && currentButton.GetComponent<CardStart_Buttons>().equippedID != cardID)
+        if(cardUse != 0 && currentButton.GetComponent<CardStart_Buttons>().equippedID != inventoryID)
         {
             cardEquip.Post(gameObject);
             addStat();

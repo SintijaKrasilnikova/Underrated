@@ -32,6 +32,8 @@ public class PlayerHealth : MonoBehaviour
 
     public bool isTutorial = false;
 
+    public GameObject healVFX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -73,8 +75,9 @@ public class PlayerHealth : MonoBehaviour
             currentHealth = maxHealth;
         }
 
-        if (isTutorial && overSeer.DodgeActive == false && currentHealth != maxHealth)
+        if (overSeer.runStarted)
         {
+            overSeer.runStarted = false;
             currentHealth = maxHealth;
             isTutorial = false;
         }
@@ -152,6 +155,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (lifeStealActive && randomChance < healthStealChance)
         {
+            Instantiate(healVFX, gameObject.transform.position, gameObject.transform.rotation);
             currentHealth += healthGainFromSteal;
         }
 
@@ -173,6 +177,8 @@ public class PlayerHealth : MonoBehaviour
 
     public void GainHealthFromPickup()
     {
+        Instantiate(healVFX, gameObject.transform.position, gameObject.transform.rotation);
+
         if (currentHealth <= maxHealth)
         {
             currentHealth += healthGainFromPickup;
