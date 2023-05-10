@@ -97,7 +97,8 @@ public class AttackTimer : MonoBehaviour
                 else if (Input.GetKeyDown(KeyCode.O) && spinAttackActive == true && spinResting == false)
                 {
                     SetCurrentAttackActive(true, "spin");
-                    health.CallImunity();
+                    health.StartImunity();
+                    //health.CallImunity();
                     Invoke(nameof(EndAttack), spinAttackTime);
                 }
 
@@ -246,6 +247,7 @@ public class AttackTimer : MonoBehaviour
     public void EndAttack()
     {
         movementRef.SetSpeedNormal();
+        health.EndImunity();
 
         if (plyerAnimator.GetBool("Spin") == true)
         {

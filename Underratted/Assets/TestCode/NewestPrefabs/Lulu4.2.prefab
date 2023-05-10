@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 4984637515605432069}
   - component: {fileID: 2825368885467620151}
   - component: {fileID: 2643680959532834292}
+  - component: {fileID: 8907458349954700647}
   m_Layer: 0
   m_Name: Lulu4.2
   m_TagString: Player
@@ -253,7 +254,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3c62a0505eab77d469d906148cc6128c, type: 3}
+  m_Sprite: {fileID: -9162280643527153449, guid: 8cbd829bc2536ea4399236aa73e7d89a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -308,7 +309,7 @@ BoxCollider:
   m_GameObject: {fileID: 4709378532459093733}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 10.59, y: 10, z: 3.66}
   m_Center: {x: 0, y: 5, z: 0}
@@ -459,6 +460,7 @@ MonoBehaviour:
   healthStealChanceCap: 50
   currentHealth: 0
   isTutorial: 0
+  healVFX: {fileID: 0}
 --- !u!114 &4984637515605432069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,6 +506,20 @@ MonoBehaviour:
   playerHealth: {fileID: 3350864199433112401}
   attack: {fileID: 4709378532324562514}
   playerMovement: {fileID: 4709378532459093726}
+--- !u!136 &8907458349954700647
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4709378532459093733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.32
+  m_Height: 10.9
+  m_Direction: 1
+  m_Center: {x: 0, y: 5.45, z: 0}
 --- !u!1 &4709378532607826940
 GameObject:
   m_ObjectHideFlags: 0

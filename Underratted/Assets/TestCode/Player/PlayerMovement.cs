@@ -37,10 +37,14 @@ public class PlayerMovement : MonoBehaviour
     private bool playerCanControl = true;
 
     private bool dodgeIconIsUp = false;
+    private bool dodgeLoopActive = false;
+    private int dodgeLoopCounter = 0;
+    private Vector3 dodgeLoopForceRef;
 
     private float speedRef;
     private float speedCap = 16;
     private float dodgeCooldownTimer = 0;
+   
     //1-left
     //2-right
     //3-down
@@ -220,6 +224,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
             Dodge();
+
         }
     }
 
@@ -255,13 +260,19 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.P) && canDodge == true)
             {
-                //canMove = false;
+                //health.CallImunity();
+                health.StartImunity();
+                dodgeLoopActive = true;
+                dodgeLoopCounter = 0;
+
                 dodgeCooldownTimer = 0;
                 dodgeTimerReady = false;
                 playerCanControl = false;
                 plyerAnimator.SetBool("Dodging", true);
                 canDodge = false;
-                float dodgeForceValue = 25000f;
+                //float dodgeForceValue = 25000f;
+                //float dodgeForceValue = 600f;
+                float dodgeForceValue = 100f;
                 Vector3 dodgeForce = new Vector3(0, 0, 0);
                 playerDodge.Post(gameObject);
                 if (plyerAnimator.GetFloat("FacingUp") == 1)
@@ -300,7 +311,8 @@ public class PlayerMovement : MonoBehaviour
                 }
 
                 playerBody.velocity = new Vector3(0, 0, 0);
-                playerBody.AddForce(dodgeForce);
+                dodgeLoopForceRef = dodgeForce;
+                playerBody.AddForce(dodgeForce, ForceMode.Impulse);
                 Invoke(nameof(RestoreDodge), dodgeTime);
                 //Debug.Log("Dodge called");
             }
@@ -311,6 +323,7 @@ public class PlayerMovement : MonoBehaviour
     public void RestoreDodge()
     {
         //canMove = true;
+        health.EndImunity();
         plyerAnimator.SetBool("Dodging", false);
         canDodge = true;
         playerCanControl = true;
@@ -322,7 +335,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer()
     {
-        if (canMove == true )
+        if (canMove == true && playerCanControl ==true)
         {
             
             Vector3 movePlayer = playerMovementInput.normalized * speed;

@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private KnockbackTest knock;
     [SerializeField] private CardOverseer overSeer;
     private CapsuleCollider playerCapsule;
+    private SpriteRenderer playerSprite;
 
     public int maxHealth = 4;
     public int maxHealthLimit = 8;
@@ -55,6 +56,7 @@ public class PlayerHealth : MonoBehaviour
 
                 playerMoveRef = gameObject.GetComponent<PlayerMovement>();
                 playerCapsule = gameObject.GetComponent<CapsuleCollider>();
+                playerSprite = gameObject.GetComponent<SpriteRenderer>();
             }
         }
 
@@ -81,6 +83,14 @@ public class PlayerHealth : MonoBehaviour
             currentHealth = maxHealth;
             isTutorial = false;
         }
+
+        if(justAttacked)
+        {
+            playerSprite = gameObject.GetComponent<SpriteRenderer>();
+            playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.b, playerSprite.color.g, 0.5f);
+        }
+
+        
     }
 
     public void SetEndScreen(bool IsScreenActive)
@@ -112,15 +122,35 @@ public class PlayerHealth : MonoBehaviour
                 dead = true;
 
             overSeer.CurrentHealth = currentHealth;
-            CallImunity();
+            CallHealthImunity();
             //Invoke(nameof(BeImmune), immunityTime);
         }
     }
 
-    public void CallImunity()
+    //public void CallImunity()
+    //{
+    //    playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.b, playerSprite.color.g, 0.5f);
+
+    //    justAttacked = true;
+    //    Invoke(nameof(BeImmune), immunityTime);
+    //}
+
+    public void CallHealthImunity()
+    {
+        StartImunity();
+        Invoke(nameof(EndImunity), immunityTime);
+    }
+
+    public void StartImunity()
     {
         justAttacked = true;
-        Invoke(nameof(BeImmune), immunityTime);
+    }
+
+    public void EndImunity()
+    {
+        playerSprite = gameObject.GetComponent<SpriteRenderer>();
+        playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.b, playerSprite.color.g, 1f);
+        justAttacked = false;
     }
 
     public int GetCurrentHealth()
@@ -128,10 +158,12 @@ public class PlayerHealth : MonoBehaviour
         return currentHealth;
     }
 
-    public void BeImmune()
-    {
-        justAttacked = false;
-    }
+
+    //public void BeImmune()
+    //{
+    //    playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.b, playerSprite.color.g, 1f);
+    //    justAttacked = false;
+    //}
 
     public void AddHealth()
     {

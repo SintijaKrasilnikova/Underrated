@@ -19,25 +19,13 @@ MonoBehaviour:
   _AttackSpeed: 0
   _SpeedSpeed: 0
   _Dodge: 1
-
-  _CurrentHealth: 4
-  halfCards: 
+  _CurrentHealth: 3
+  halfCards: 01000000
   fullCards: 
-  loadoutCards: 0100000005000000
-  loadoutCardUse: 02000000020000000200000002000000020000000200000002000000020000000200000002000000
-  rechargeAmount: 0.34
-  loadoutCardRecharge:
-  - 2.02
-  - 2.02
-  - 2.02
-  - 2.02
-  - 2.02
-  - 2.02
-
-  - 1.1
-  - 1.1
-  - 1.1
-  - 1.1
+  loadoutCards: 
+  loadoutCardUse: 
+  rechargeAmount: 0
+  loadoutCardRecharge: []
   firstRun: 0
   runStarted: 0
   cardsEquippedInLoadout: 0

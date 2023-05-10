@@ -6,7 +6,7 @@ public class WaterMovement : MonoBehaviour
 {
 
     /*[SerializeField] */private float waterSpeed = 1f;
-    /*[SerializeField] */private float movementDist = 6f;
+    [SerializeField] private float movementDist = 6f;
     [SerializeField] private bool movingRight = true;
     private float startPosition;
 
