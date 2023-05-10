@@ -34348,7 +34348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7073173006060070570, guid: 839fc88d061192241881d24ffce8aaa8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7073173006060070574, guid: 839fc88d061192241881d24ffce8aaa8, type: 3}
       propertyPath: cardOver
@@ -52600,6 +52600,64 @@ Transform:
   m_Father: {fileID: 1394537171}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+--- !u!1 &867635537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 867635538}
+  - component: {fileID: 867635540}
+  - component: {fileID: 867635539}
+  m_Layer: 0
+  m_Name: CardLocation
+  m_TagString: CardPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &867635538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867635537}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.929993, y: 54.73, z: -50.10627}
+  m_LocalScale: {x: 1.03809, y: 1.77333, z: 0.29999998}
+  m_Children: []
+  m_Father: {fileID: 1939337441}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &867635539
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867635537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &867635540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867635537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce498a3efa653724bacc240d6bfa0c36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropper: {fileID: 0}
 --- !u!1 &868884699
 GameObject:
   m_ObjectHideFlags: 0
@@ -121769,6 +121827,7 @@ Transform:
   - {fileID: 738345233}
   - {fileID: 67692180}
   - {fileID: 1708841369}
+  - {fileID: 867635538}
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

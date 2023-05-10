@@ -17,31 +17,38 @@ public class ActivateCombinedCards : MonoBehaviour
         {
             switch (cardOver.fullCards[i])
             {
+                case 0:
+                    {
+                        playerMovement.AddSpeed(2f);
+                        //Debug.Log("SpeedSpeed activated");
+                        //Debug.Log(playerMovement.speed);
+                        break;
+                    }
                 case 1:
                     {
-                        playerMovement.AddSpeed(1.5f);
+                        playerMovement.AddSpeed(0.5f);
+                        attack.IncreaseBaseDamage(0.5f);
+                        //Debug.Log("SpeedAttack activated");
+
+                        //Debug.Log(attack.baseDamage);
+                        //Debug.Log(playerMovement.speed);
                         break;
                     }
                 case 2:
                     {
-                        playerMovement.AddSpeed(1f);
-                        attack.IncreaseBaseDamage(0.5f);
+                        attack.ChangeRestTime();
+
+                        playerHealth.IncreaseMaxHealth(1);
+                        playerMovement.AddSpeed(0.5f);
                         break;
                     }
                 case 3:
                     {
-                        attack.ChangeRestTime();
-
-                        playerHealth.IncreaseMaxHealth(1);
-                        playerMovement.AddSpeed(1f);
-                        break;
-                    }
-                case 4:
-                    {
+                        attack.IncreaseBaseDamage(1f);
                         attack.IncreaseCritChance(5);
                         break;
                     }
-                case 5:
+                case 4:
                     {
                         attack.IncreaseBaseDamage(0.5f);
                         playerHealth.IncreaseMaxHealth(1);
@@ -49,7 +56,7 @@ public class ActivateCombinedCards : MonoBehaviour
                         playerHealth.IncreaseHealthSteal(5);
                         break;
                     }
-                case 6:
+                case 5:
                     {
                         playerHealth.IncreaseMaxHealth(2);
                         playerHealth.IncreaseHealthPickupRate();

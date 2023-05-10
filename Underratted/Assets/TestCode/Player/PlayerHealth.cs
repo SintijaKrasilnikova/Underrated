@@ -111,6 +111,7 @@ public class PlayerHealth : MonoBehaviour
             if(currentHealth <= 0)
                 dead = true;
 
+            overSeer.CurrentHealth = currentHealth;
             CallImunity();
             //Invoke(nameof(BeImmune), immunityTime);
         }
@@ -140,6 +141,8 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
+
+        overSeer.CurrentHealth = currentHealth;
     }
 
     public void IncreaseHealthSteal(int stealInc)
@@ -163,6 +166,8 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
+
+        overSeer.CurrentHealth = currentHealth;
     }
 
     public void HealthPickUp(Vector3 enemyPos)
@@ -188,6 +193,8 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
+
+        overSeer.CurrentHealth = currentHealth;
 
     }
 
