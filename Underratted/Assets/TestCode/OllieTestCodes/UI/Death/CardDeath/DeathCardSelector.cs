@@ -33,11 +33,14 @@ public class DeathCardSelector : MonoBehaviour, IEventSystemHandler, ISelectHand
 
     public GameObject noCardScreen;
     public GameObject saveAssets;
+    public bool isMiddle = false;
     // Start is called before the first frame update
     void Start()
     {
 
         finalCardCount = cardOver.fullCards.Count;
+
+
 
         if(finalCardCount == cardOver.cardsEquippedInLoadout)
         {
@@ -63,6 +66,13 @@ public class DeathCardSelector : MonoBehaviour, IEventSystemHandler, ISelectHand
 
         eventSystem.firstSelectedGameObject = firstToBeSelected;
         firstButton.Select();
+
+        if (isMiddle)
+        {
+            buff1TMP.text = buff1Text[cardID];
+            buff2TMP.text = buff2Text[cardID];
+            abilityTMP.text = abilityText[cardID];
+        }
 
     }
 

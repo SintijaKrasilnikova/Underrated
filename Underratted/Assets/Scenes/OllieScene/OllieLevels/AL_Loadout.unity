@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5, y: 0.1}
+  m_AnchoredPosition: {x: 1.0000207, y: 0.79999715}
   m_SizeDelta: {x: 10.02, y: 12.144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &53714757
@@ -182,8 +182,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: S
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 812129a227d68cf43b7d58afb9c8ca9d, type: 2}
-  m_sharedMaterial: {fileID: 7746681513818148441, guid: 812129a227d68cf43b7d58afb9c8ca9d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d043179c6c7ee4f45a3479a885850395, type: 2}
+  m_sharedMaterial: {fileID: 737132545486008185, guid: d043179c6c7ee4f45a3479a885850395, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -207,8 +207,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.89
-  m_fontSizeBase: 12.89
+  m_fontSize: 10.5
+  m_fontSizeBase: 10.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -488,7 +488,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.9, y: -0.0000029802}
+  m_AnchoredPosition: {x: 1.2, y: 1.8}
   m_SizeDelta: {x: 10.02, y: 12.144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &121437192
@@ -513,8 +513,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: O
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 812129a227d68cf43b7d58afb9c8ca9d, type: 2}
-  m_sharedMaterial: {fileID: 7746681513818148441, guid: 812129a227d68cf43b7d58afb9c8ca9d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d043179c6c7ee4f45a3479a885850395, type: 2}
+  m_sharedMaterial: {fileID: 737132545486008185, guid: d043179c6c7ee4f45a3479a885850395, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -538,8 +538,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.89
-  m_fontSizeBase: 12.89
+  m_fontSize: 12.5
+  m_fontSizeBase: 12.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1778,7 +1778,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.2, y: 0.1}
+  m_AnchoredPosition: {x: 0.7000208, y: 0.79999715}
   m_SizeDelta: {x: 10.02, y: 12.144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &317284864
@@ -1803,8 +1803,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 812129a227d68cf43b7d58afb9c8ca9d, type: 2}
-  m_sharedMaterial: {fileID: 7746681513818148441, guid: 812129a227d68cf43b7d58afb9c8ca9d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d043179c6c7ee4f45a3479a885850395, type: 2}
+  m_sharedMaterial: {fileID: 737132545486008185, guid: d043179c6c7ee4f45a3479a885850395, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1828,8 +1828,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.89
-  m_fontSizeBase: 12.89
+  m_fontSize: 10.5
+  m_fontSizeBase: 10.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2592,7 +2592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.6, y: 0.1}
+  m_AnchoredPosition: {x: 0.10002074, y: 0.79999715}
   m_SizeDelta: {x: 10.02, y: 12.144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &407320314
@@ -2617,8 +2617,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: W
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 812129a227d68cf43b7d58afb9c8ca9d, type: 2}
-  m_sharedMaterial: {fileID: 7746681513818148441, guid: 812129a227d68cf43b7d58afb9c8ca9d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d043179c6c7ee4f45a3479a885850395, type: 2}
+  m_sharedMaterial: {fileID: 737132545486008185, guid: d043179c6c7ee4f45a3479a885850395, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2642,8 +2642,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.89
-  m_fontSizeBase: 12.89
+  m_fontSize: 10.5
+  m_fontSizeBase: 10.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2726,7 +2726,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.8, y: -0.0000029802}
+  m_AnchoredPosition: {x: 1, y: 2.1}
   m_SizeDelta: {x: 10.02, y: 12.144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &411286525
@@ -2751,8 +2751,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: I
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 812129a227d68cf43b7d58afb9c8ca9d, type: 2}
-  m_sharedMaterial: {fileID: 7746681513818148441, guid: 812129a227d68cf43b7d58afb9c8ca9d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d043179c6c7ee4f45a3479a885850395, type: 2}
+  m_sharedMaterial: {fileID: 737132545486008185, guid: d043179c6c7ee4f45a3479a885850395, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2885,8 +2885,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: P
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 812129a227d68cf43b7d58afb9c8ca9d, type: 2}
-  m_sharedMaterial: {fileID: 7746681513818148441, guid: 812129a227d68cf43b7d58afb9c8ca9d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d043179c6c7ee4f45a3479a885850395, type: 2}
+  m_sharedMaterial: {fileID: 737132545486008185, guid: d043179c6c7ee4f45a3479a885850395, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2910,8 +2910,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 12.7
+  m_fontSizeBase: 12.7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3311,7 +3311,7 @@ GameObject:
   - component: {fileID: 499719275}
   - component: {fileID: 499719276}
   m_Layer: 5
-  m_Name: Button (9)
+  m_Name: Card_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3363,15 +3363,15 @@ MonoBehaviour:
   cross: {fileID: 403216659}
   cardID: 4
   cardSprites:
+  - {fileID: 0}
   - {fileID: -6634488812079887158, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -5959841860770774389, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 5160100649803568108, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 8654778237023573635, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -7115900486920076368, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -2430606609172744583, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
-  - {fileID: 0}
-  inventoryID: 6
-  cardUse: 0
+  inventoryID: 4
+  cardUse: 2
   cardRecharge: 0
   isRecharging: 0
   useText: {fileID: 752683148}
@@ -3495,6 +3495,7 @@ MonoBehaviour:
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
   buff1Text:
+  - DUMMY
   - Speed
   - Speed
   - Speed
@@ -3502,6 +3503,7 @@ MonoBehaviour:
   - Attack
   - Health
   buff2Text:
+  - DUMMY
   - Speed
   - Attack
   - Health
@@ -3509,6 +3511,7 @@ MonoBehaviour:
   - Health
   - Health
   abilityText:
+  - DUMMY
   - Increased attack speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
@@ -4359,7 +4362,7 @@ GameObject:
   - component: {fileID: 696165286}
   - component: {fileID: 696165287}
   m_Layer: 5
-  m_Name: Button (10)
+  m_Name: Card_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4411,14 +4414,14 @@ MonoBehaviour:
   cross: {fileID: 1884909088}
   cardID: 5
   cardSprites:
+  - {fileID: 0}
   - {fileID: -6634488812079887158, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -5959841860770774389, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 5160100649803568108, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 8654778237023573635, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -7115900486920076368, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -2430606609172744583, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
-  - {fileID: 0}
-  inventoryID: 6
+  inventoryID: 5
   cardUse: 0
   cardRecharge: 0
   isRecharging: 0
@@ -4543,6 +4546,7 @@ MonoBehaviour:
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
   buff1Text:
+  - DUMMY
   - Speed
   - Speed
   - Speed
@@ -4550,6 +4554,7 @@ MonoBehaviour:
   - Attack
   - Health
   buff2Text:
+  - DUMMY
   - Speed
   - Attack
   - Health
@@ -4557,6 +4562,7 @@ MonoBehaviour:
   - Health
   - Health
   abilityText:
+  - DUMMY
   - Increased attack speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
@@ -4651,7 +4657,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 83842750926a6ed419e43dae49da5be9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00f284cdcac32814795b70ed0faeb2d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5494,7 +5500,7 @@ GameObject:
   - component: {fileID: 875614953}
   - component: {fileID: 875614954}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Card_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5640,14 +5646,14 @@ MonoBehaviour:
   cross: {fileID: 1224309224}
   cardID: 0
   cardSprites:
+  - {fileID: 0}
   - {fileID: -6634488812079887158, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -5959841860770774389, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 5160100649803568108, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 8654778237023573635, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -7115900486920076368, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -2430606609172744583, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
-  - {fileID: 0}
-  inventoryID: 6
+  inventoryID: 0
   cardUse: 0
   cardRecharge: 0
   isRecharging: 0
@@ -5678,6 +5684,7 @@ MonoBehaviour:
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
   buff1Text:
+  - DUMMY
   - Speed
   - Speed
   - Speed
@@ -5685,6 +5692,7 @@ MonoBehaviour:
   - Attack
   - Health
   buff2Text:
+  - DUMMY
   - Speed
   - Attack
   - Health
@@ -5692,6 +5700,7 @@ MonoBehaviour:
   - Health
   - Health
   abilityText:
+  - DUMMY
   - Increased attack speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
@@ -6274,7 +6283,7 @@ GameObject:
   - component: {fileID: 1006163222}
   - component: {fileID: 1006163223}
   m_Layer: 5
-  m_Name: Button (8)
+  m_Name: Card_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6326,14 +6335,14 @@ MonoBehaviour:
   cross: {fileID: 467114666}
   cardID: 3
   cardSprites:
+  - {fileID: 0}
   - {fileID: -6634488812079887158, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -5959841860770774389, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 5160100649803568108, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 8654778237023573635, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -7115900486920076368, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -2430606609172744583, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
-  - {fileID: 0}
-  inventoryID: 6
+  inventoryID: 3
   cardUse: 0
   cardRecharge: 0
   isRecharging: 0
@@ -6458,6 +6467,7 @@ MonoBehaviour:
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
   buff1Text:
+  - DUMMY
   - Speed
   - Speed
   - Speed
@@ -6465,6 +6475,7 @@ MonoBehaviour:
   - Attack
   - Health
   buff2Text:
+  - DUMMY
   - Speed
   - Attack
   - Health
@@ -6472,6 +6483,7 @@ MonoBehaviour:
   - Health
   - Health
   abilityText:
+  - DUMMY
   - Increased attack speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
@@ -6761,7 +6773,7 @@ GameObject:
   - component: {fileID: 1031848789}
   - component: {fileID: 1031848790}
   m_Layer: 5
-  m_Name: Button (7)
+  m_Name: Card_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6813,14 +6825,14 @@ MonoBehaviour:
   cross: {fileID: 998505679}
   cardID: 2
   cardSprites:
+  - {fileID: 0}
   - {fileID: -6634488812079887158, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -5959841860770774389, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 5160100649803568108, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 8654778237023573635, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -7115900486920076368, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -2430606609172744583, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
-  - {fileID: 0}
-  inventoryID: 6
+  inventoryID: 2
   cardUse: 0
   cardRecharge: 0
   isRecharging: 0
@@ -6945,6 +6957,7 @@ MonoBehaviour:
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
   buff1Text:
+  - DUMMY
   - Speed
   - Speed
   - Speed
@@ -6952,6 +6965,7 @@ MonoBehaviour:
   - Attack
   - Health
   buff2Text:
+  - DUMMY
   - Speed
   - Attack
   - Health
@@ -6959,6 +6973,7 @@ MonoBehaviour:
   - Health
   - Health
   abilityText:
+  - DUMMY
   - Increased attack speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
@@ -7117,7 +7132,7 @@ GameObject:
   - component: {fileID: 1115373623}
   - component: {fileID: 1115373624}
   m_Layer: 5
-  m_Name: Button (6)
+  m_Name: Card_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7169,14 +7184,14 @@ MonoBehaviour:
   cross: {fileID: 2021457185}
   cardID: 1
   cardSprites:
+  - {fileID: 0}
   - {fileID: -6634488812079887158, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -5959841860770774389, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 5160100649803568108, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: 8654778237023573635, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -7115900486920076368, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
   - {fileID: -2430606609172744583, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
-  - {fileID: 0}
-  inventoryID: 6
+  inventoryID: 1
   cardUse: 0
   cardRecharge: 0
   isRecharging: 0
@@ -7301,6 +7316,7 @@ MonoBehaviour:
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
   buff1Text:
+  - DUMMY
   - Speed
   - Speed
   - Speed
@@ -7308,6 +7324,7 @@ MonoBehaviour:
   - Attack
   - Health
   buff2Text:
+  - DUMMY
   - Speed
   - Attack
   - Health
@@ -7315,6 +7332,7 @@ MonoBehaviour:
   - Health
   - Health
   abilityText:
+  - DUMMY
   - Increased attack speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
@@ -7510,7 +7528,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -187, y: -162.30002}
+  m_AnchoredPosition: {x: -187, y: -160.7}
   m_SizeDelta: {x: 20.578, y: 20.578}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1154677412
@@ -7533,7 +7551,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 83842750926a6ed419e43dae49da5be9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00f284cdcac32814795b70ed0faeb2d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7586,7 +7604,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100.689, y: -162.30002}
+  m_AnchoredPosition: {x: -100.689, y: -160.7}
   m_SizeDelta: {x: 20.578, y: 20.578}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1188673287
@@ -7609,7 +7627,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 83842750926a6ed419e43dae49da5be9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00f284cdcac32814795b70ed0faeb2d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7920,7 +7938,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 83842750926a6ed419e43dae49da5be9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00f284cdcac32814795b70ed0faeb2d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7972,7 +7990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.6, y: 0.1}
+  m_AnchoredPosition: {x: 0.1, y: 0.8}
   m_SizeDelta: {x: 10.02, y: 12.144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1261269082
@@ -7997,8 +8015,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: A
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 812129a227d68cf43b7d58afb9c8ca9d, type: 2}
-  m_sharedMaterial: {fileID: 7746681513818148441, guid: 812129a227d68cf43b7d58afb9c8ca9d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d043179c6c7ee4f45a3479a885850395, type: 2}
+  m_sharedMaterial: {fileID: 737132545486008185, guid: d043179c6c7ee4f45a3479a885850395, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8022,8 +8040,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.89
-  m_fontSizeBase: 12.89
+  m_fontSize: 10.5
+  m_fontSizeBase: 10.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8705,8 +8723,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21.6, y: 20.5}
-  m_SizeDelta: {x: 20.401, y: 20.401}
+  m_AnchoredPosition: {x: 22.054, y: 22.088}
+  m_SizeDelta: {x: 21.309, y: 23.577}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1377043659
 MonoBehaviour:
@@ -8728,7 +8746,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 83842750926a6ed419e43dae49da5be9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00f284cdcac32814795b70ed0faeb2d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9708,8 +9726,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20.5, y: 20.499998}
-  m_SizeDelta: {x: 20.401, y: 20.401}
+  m_AnchoredPosition: {x: 21.181, y: 22.088}
+  m_SizeDelta: {x: 21.762, y: 23.577}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1503568984
 MonoBehaviour:
@@ -9731,7 +9749,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 83842750926a6ed419e43dae49da5be9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00f284cdcac32814795b70ed0faeb2d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11447,7 +11465,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 83842750926a6ed419e43dae49da5be9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00f284cdcac32814795b70ed0faeb2d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12144,8 +12162,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: O
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 812129a227d68cf43b7d58afb9c8ca9d, type: 2}
-  m_sharedMaterial: {fileID: 7746681513818148441, guid: 812129a227d68cf43b7d58afb9c8ca9d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d043179c6c7ee4f45a3479a885850395, type: 2}
+  m_sharedMaterial: {fileID: 737132545486008185, guid: d043179c6c7ee4f45a3479a885850395, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12169,8 +12187,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 13.54
+  m_fontSizeBase: 13.54
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -12205,7 +12223,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -1.1475708, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -13585,7 +13603,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 83842750926a6ed419e43dae49da5be9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00f284cdcac32814795b70ed0faeb2d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

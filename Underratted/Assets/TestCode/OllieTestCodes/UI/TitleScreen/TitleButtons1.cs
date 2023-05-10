@@ -59,6 +59,8 @@ public class TitleButtons1 : MonoBehaviour
     {
         if(!creditsShown || !controlsShown)
         {
+            cardOver.runStarted = true;
+
             if (cardOver.firstRun)
             {
                 MainCamera = GameObject.Find("Main Camera");
