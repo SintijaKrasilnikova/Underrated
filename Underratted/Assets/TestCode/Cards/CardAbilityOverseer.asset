@@ -22,19 +22,20 @@ MonoBehaviour:
   _CurrentHealth: 4
   halfCards: 
   fullCards: 
-  loadoutCards: 
-  loadoutCardUse: 020000000200000002000000020000000200000002000000020000000200000002000000
+  loadoutCards: 02000000
+  loadoutCardUse: 02000000020000000200000002000000020000000200000002000000020000000200000002000000
   rechargeAmount: 0.34
   loadoutCardRecharge:
-  - 3.0399997
-  - 3.0399997
-  - 3.0399997
-  - 3.0399997
-  - 3.0399997
-  - 3.0399997
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
   - 1.1
   - 1.1
   - 1.1
-  firstRun: 1
-  runStarted: 0
-  cardsEquippedInLoadout: 0
+  - 1.1
+  firstRun: 0
+  runStarted: 1
+  cardsEquippedInLoadout: 2

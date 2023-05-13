@@ -8,8 +8,14 @@ public class CardCounter : MonoBehaviour
     public static bool speedUp = false;
     public static bool healthUp = false;
     public static bool attackUp = false;
-    
-   
+
+    void Start()
+    {
+    //    speedUp = false;
+    //    healthUp = false;
+    //    attackUp = false;
+    }
+
 
     //spin attack
     public bool GetSpinUp()
