@@ -46,6 +46,7 @@ public class DeathCardSelector : MonoBehaviour, IEventSystemHandler, ISelectHand
         {
             if (noCardScreen.GetComponent<NoCardRetunToTitle>().isSet == false)
             {
+                
                 noCardScreen.SetActive(true);
                 saveAssets.SetActive(false);
             }
@@ -53,6 +54,7 @@ public class DeathCardSelector : MonoBehaviour, IEventSystemHandler, ISelectHand
 
         int indexElement;
         var currentSprite = gameObject.GetComponent<Image>();
+
 
         //pick a random card from the list the player has
         indexElement = Random.Range(cardOver.cardsEquippedInLoadout, cardOver.fullCards.Count - 1);
@@ -74,6 +76,8 @@ public class DeathCardSelector : MonoBehaviour, IEventSystemHandler, ISelectHand
             abilityTMP.text = abilityText[cardID];
         }
 
+        
+
     }
 
     private void Awake()
@@ -84,6 +88,11 @@ public class DeathCardSelector : MonoBehaviour, IEventSystemHandler, ISelectHand
 
     // Update is called once per frame
     void Update()
+    {
+        IDCheck();
+    }
+
+    public void IDCheck()
     {
         if (cardID == 0)
         {

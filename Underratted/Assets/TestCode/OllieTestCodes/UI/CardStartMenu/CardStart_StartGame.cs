@@ -37,33 +37,36 @@ public class CardStart_StartGame : MonoBehaviour
 
         if(passive1.selectedCard != null)
         {
+            
             cardAmount++;
-            cardOver.fullCards.Add(cardOver.loadoutCards[passive1.selectedCard.cardID]);
-            cardOver.loadoutCardUse[passive1.selectedCard.cardID] = passive1.selectedCard.cardUse;
+
+            cardOver.fullCards.Add(passive1.equippedID -1);
+            cardOver.loadoutCardUse[passive1.equippedID] = passive1.selectedCard.cardUse;
+            
             testActivate1();
         }
         if(passive2.selectedCard != null)
         {
             cardAmount++;
-            cardOver.fullCards.Add(cardOver.loadoutCards[passive2.selectedCard.cardID]);
-            cardOver.loadoutCardUse[passive2.selectedCard.cardID] = passive2.selectedCard.cardUse;
+            cardOver.fullCards.Add(passive2.equippedID -1);
+            cardOver.loadoutCardUse[passive2.equippedID] = passive2.selectedCard.cardUse;
             testActivate2();
         }
 
 
         if (passive1.selectedCard != null && passive1.selectedCard.cardUse <= 0)
         {
-            cardAmount++;
-            cardOver.loadoutCardRecharge[passive1.selectedCard.cardID] = 0f;
+            cardOver.loadoutCardRecharge[passive1.equippedID] = 0f;
         }
         if (passive2.selectedCard != null && passive2.selectedCard.cardUse <= 0)
         {
-            cardAmount++;
-            cardOver.loadoutCardRecharge[passive2.selectedCard.cardID] = 0f;
+            cardOver.loadoutCardRecharge[passive2.equippedID] = 0f;
         }
 
+        cardOver.cardsEquippedInLoadout = cardAmount;
+
         //playerHealth.SetCurrentHealthToMax();
-        mainCamera = GameObject.Find("Main Camera");
+        //mainCamera = GameObject.Find("MainCamera");
         musicStop.Post(mainCamera);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }

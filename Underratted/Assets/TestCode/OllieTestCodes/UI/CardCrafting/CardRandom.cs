@@ -49,20 +49,20 @@ public class CardRandom : MonoBehaviour, IEventSystemHandler, ISelectHandler, ID
         if(randomCard == 1)
         {
             cardImage.sprite = health;
-            buffDescRef = "Health +1";
+            buffDescRef = "Max Health + 1";
 
             cardValue = 3;
         }
         if(randomCard == 2)
         {
             cardImage.sprite = attack;
-            buffDescRef = "Attack +1";
+            buffDescRef = "Attack + 0.5";
             cardValue = 2;
         }
         if(randomCard == 3)
         {
             cardImage.sprite = speed;
-            buffDescRef = "Speed +1";
+            buffDescRef = "Movement Speed + 0.5";
             cardValue = 1;
         }
     }

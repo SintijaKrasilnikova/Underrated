@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: efbdfc1406597641a03cf89d5cf2a378
     GuidInternal: 
-    m_lastTime: -8585184454461779750
+    m_lastTime: -8585179539296725687
     List:
     - name: AmbienceGeneral
       guid: 6f0ce7cdfde16f45b3ddf2754b75cc4a
@@ -1163,7 +1163,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 746da9f586d65148b93f37c697c8fa5a
     GuidInternal: 
-    m_lastTime: -8585186663685848618
+    m_lastTime: -8585184438678702246
     List:
     - name: Ambience
       guid: d540d38eeaf1fd449b8a42f8f0565349
@@ -1312,6 +1312,22 @@ MonoBehaviour:
         guid: 64c16d5ba46d7940a650aa5c9f70eca4
       Path: Switches\Default Work Unit\Music
       values:
+      - name: Arena
+        guid: bbe68fd055eb5d4f9720cf3a5b10133a
+        id: 680256650
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 746da9f586d65148b93f37c697c8fa5a
+        - ElementName: Music
+          ObjectType: 11
+          guid: 64c16d5ba46d7940a650aa5c9f70eca4
+        - ElementName: Arena
+          ObjectType: 10
+          guid: bbe68fd055eb5d4f9720cf3a5b10133a
       - name: Credits
         guid: d23c2233ec442a4ca9c013c1d0fb6faf
         id: 2201105581
@@ -1394,7 +1410,7 @@ MonoBehaviour:
     m_lastTime: -8585251305646435847
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000002b0000002c0000002e0000002f0000003000000033000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

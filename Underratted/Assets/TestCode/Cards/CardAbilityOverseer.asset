@@ -12,20 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32fbdd3a95dccee44b3e9017ac82328d, type: 3}
   m_Name: CardAbilityOverseer
   m_EditorClassIdentifier: 
-  _HealthHealth: 1
+  _HealthHealth: 0
   _HealthAttack: 0
   _HealthSpeed: 0
   _AttackAttack: 0
   _AttackSpeed: 0
   _SpeedSpeed: 0
-  _Dodge: 1
-  _CurrentHealth: 3
-  halfCards: 01000000
+  _Dodge: 0
+  _CurrentHealth: 4
+  halfCards: 
   fullCards: 
   loadoutCards: 
-  loadoutCardUse: 
-  rechargeAmount: 0
-  loadoutCardRecharge: []
-  firstRun: 0
+  loadoutCardUse: 020000000200000002000000020000000200000002000000020000000200000002000000
+  rechargeAmount: 0.34
+  loadoutCardRecharge:
+  - 3.0399997
+  - 3.0399997
+  - 3.0399997
+  - 3.0399997
+  - 3.0399997
+  - 3.0399997
+  - 1.1
+  - 1.1
+  - 1.1
+  firstRun: 1
   runStarted: 0
   cardsEquippedInLoadout: 0

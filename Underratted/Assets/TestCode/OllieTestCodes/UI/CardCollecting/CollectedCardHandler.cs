@@ -39,6 +39,8 @@ public class CollectedCardHandler : MonoBehaviour
         //    half1.GetComponent<Image>().sprite = halfSprites[half1.GetComponent<CollectedHalfCard>().cardID];
         //}
 
+        
+
         if(cardOver.halfCards.Count == 3)
         {
             half3.SetActive(true);

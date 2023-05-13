@@ -170,7 +170,6 @@ public class PortalEnd : MonoBehaviour
             endScreen.SetActive(true);
             cardholder.SetActive(false);
             //lulu.SetActive(false);
-            endLevelSound.Post(gameObject);
 
         }
         else

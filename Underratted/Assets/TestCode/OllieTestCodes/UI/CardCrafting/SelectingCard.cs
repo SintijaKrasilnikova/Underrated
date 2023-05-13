@@ -70,6 +70,8 @@ public class SelectingCard : MonoBehaviour
             animator.SetBool("LeftIdle", false);
             animator.SetBool("RightIdle", true);
         }
+
+        ChangeCard();
     }
 
     public void ChangeCard()
@@ -78,19 +80,19 @@ public class SelectingCard : MonoBehaviour
         if (cardNumberRef == 0)
         {
             selectImage.sprite = speed;
-            buffText = "Speed +1";
+            buffText = "Movement Speed + 0.5";
             playerCardNumber = 1;
         }
         else if (cardNumberRef == 1)
         {
             selectImage.sprite = attack;
-            buffText = "Attack +1";
+            buffText = "Attack + 0.5";
             playerCardNumber = 2;
         }
         else if (cardNumberRef == 2)
         {
             selectImage.sprite = health;
-            buffText = "Health +1";
+            buffText = "Max Health + 1";
             playerCardNumber = 3;
         }
     }

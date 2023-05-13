@@ -3333,7 +3333,7 @@ RectTransform:
   - {fileID: 282435823}
   - {fileID: 752683147}
   m_Father: {fileID: 660752608}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3496,28 +3496,28 @@ MonoBehaviour:
   Ability: {fileID: 668572503}
   buff1Text:
   - DUMMY
-  - Speed
-  - Speed
-  - Speed
-  - Attack
-  - Attack
-  - Health
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Attack+ 0.5
+  - Max Health + 1
   buff2Text:
   - DUMMY
-  - Speed
-  - Attack
-  - Health
-  - Attack
-  - Health
-  - Health
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health + 1
+  - Max Health + 1
   abilityText:
   - DUMMY
-  - Increased attack speed
+  - Additional +1 Movment Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance for Health drops (+10%)
   noEquipText: 
   isEquip: 0
   equipRef: {fileID: 0}
@@ -3810,8 +3810,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3908,13 +3908,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 713861261}
   - {fileID: 875614948}
   - {fileID: 1115373618}
-  - {fileID: 1031848784}
-  - {fileID: 1006163217}
   - {fileID: 499719270}
   - {fileID: 696165281}
+  - {fileID: 1006163217}
+  - {fileID: 1031848784}
+  - {fileID: 713861261}
   - {fileID: 1730651643}
   m_Father: {fileID: 1236812353}
   m_RootOrder: 1
@@ -4296,8 +4296,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14.5
-  m_fontSizeBase: 14.5
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4384,7 +4384,7 @@ RectTransform:
   - {fileID: 1306047536}
   - {fileID: 793115439}
   m_Father: {fileID: 660752608}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4547,28 +4547,28 @@ MonoBehaviour:
   Ability: {fileID: 668572503}
   buff1Text:
   - DUMMY
-  - Speed
-  - Speed
-  - Speed
-  - Attack
-  - Attack
-  - Health
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Attack+ 0.5
+  - Max Health + 1
   buff2Text:
   - DUMMY
-  - Speed
-  - Attack
-  - Health
-  - Attack
-  - Health
-  - Health
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health + 1
+  - Max Health + 1
   abilityText:
   - DUMMY
-  - Increased attack speed
+  - Additional +1 Movment Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance for Health drops (+10%)
   noEquipText: 
   isEquip: 0
   equipRef: {fileID: 0}
@@ -5386,7 +5386,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 814c876314eff804faae7097d119714a, type: 2}
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 81264982}
   cardAmount: 0
 --- !u!114 &836922523
 MonoBehaviour:
@@ -5522,7 +5522,7 @@ RectTransform:
   - {fileID: 1598538234}
   - {fileID: 666199751}
   m_Father: {fileID: 660752608}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5685,28 +5685,28 @@ MonoBehaviour:
   Ability: {fileID: 668572503}
   buff1Text:
   - DUMMY
-  - Speed
-  - Speed
-  - Speed
-  - Attack
-  - Attack
-  - Health
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Attack+ 0.5
+  - Max Health + 1
   buff2Text:
   - DUMMY
-  - Speed
-  - Attack
-  - Health
-  - Attack
-  - Health
-  - Health
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health + 1
+  - Max Health + 1
   abilityText:
   - DUMMY
-  - Increased attack speed
+  - Additional +1 Movment Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance for Health drops (+10%)
   noEquipText: 
   isEquip: 0
   equipRef: {fileID: 0}
@@ -5816,8 +5816,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6468,28 +6468,28 @@ MonoBehaviour:
   Ability: {fileID: 668572503}
   buff1Text:
   - DUMMY
-  - Speed
-  - Speed
-  - Speed
-  - Attack
-  - Attack
-  - Health
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Attack+ 0.5
+  - Max Health + 1
   buff2Text:
   - DUMMY
-  - Speed
-  - Attack
-  - Health
-  - Attack
-  - Health
-  - Health
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health + 1
+  - Max Health + 1
   abilityText:
   - DUMMY
-  - Increased attack speed
+  - Additional +1 Movment Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance for Health drops (+10%)
   noEquipText: 
   isEquip: 0
   equipRef: {fileID: 0}
@@ -6795,7 +6795,7 @@ RectTransform:
   - {fileID: 465077479}
   - {fileID: 1415108057}
   m_Father: {fileID: 660752608}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6958,28 +6958,28 @@ MonoBehaviour:
   Ability: {fileID: 668572503}
   buff1Text:
   - DUMMY
-  - Speed
-  - Speed
-  - Speed
-  - Attack
-  - Attack
-  - Health
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Attack+ 0.5
+  - Max Health + 1
   buff2Text:
   - DUMMY
-  - Speed
-  - Attack
-  - Health
-  - Attack
-  - Health
-  - Health
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health + 1
+  - Max Health + 1
   abilityText:
   - DUMMY
-  - Increased attack speed
+  - Additional +1 Movment Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance for Health drops (+10%)
   noEquipText: 
   isEquip: 0
   equipRef: {fileID: 0}
@@ -7154,7 +7154,7 @@ RectTransform:
   - {fileID: 1310567711}
   - {fileID: 1663092031}
   m_Father: {fileID: 660752608}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7317,28 +7317,28 @@ MonoBehaviour:
   Ability: {fileID: 668572503}
   buff1Text:
   - DUMMY
-  - Speed
-  - Speed
-  - Speed
-  - Attack
-  - Attack
-  - Health
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Attack+ 0.5
+  - Max Health + 1
   buff2Text:
   - DUMMY
-  - Speed
-  - Attack
-  - Health
-  - Attack
-  - Health
-  - Health
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health + 1
+  - Max Health + 1
   abilityText:
   - DUMMY
-  - Increased attack speed
+  - Additional +1 Movment Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance for Health drops (+10%)
   noEquipText: 
   isEquip: 0
   equipRef: {fileID: 0}
@@ -10206,26 +10206,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
   buff1Text:
-  - Speed
-  - Speed
-  - Speed
-  - Attack
-  - Attack
-  - Health
+  - Movment Speed +0.5
+  - Movment Speed +0.5
+  - Movment Speed +0.5
+  - Attack + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed
-  - Attack
-  - Health
-  - Attack
-  - Health
-  - Health
+  - Movment Speed +0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health + 1
+  - Max Health + 1
   abilityText:
-  - SPD + SPD
-  - SPD + ATK
-  - SPD + HP
-  - ATK + ATK
-  - ATK + HP
-  - HP + HP
+  - Additional +1 Movment Speed
+  - Leave a Damage Trail as you walk
+  - Skills recharge faster
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance for Health drops (+10%)
   noEquipText: Nothing Equipped! Press 'i' to select a Card.
   isEquip: 1
   equipRef: {fileID: 0}
@@ -11031,7 +11031,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7497527519488381815, guid: 88bef5580b5715e4eb364118562ec3fb, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7497527519488381815, guid: 88bef5580b5715e4eb364118562ec3fb, type: 3}
       propertyPath: m_SizeDelta.x
@@ -11891,26 +11891,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 580402385}
   Ability: {fileID: 668572503}
   buff1Text:
-  - Speed
-  - Speed
-  - Speed
-  - Attack
-  - Attack
-  - Health
+  - Movment Speed +0.5
+  - Movment Speed +0.5
+  - Movment Speed +0.5
+  - Attack + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed
-  - Attack
-  - Health
-  - Attack
-  - Health
-  - Health
+  - Movment Speed +0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health + 1
+  - Max Health + 1
   abilityText:
-  - SPD + SPD
-  - SPD + ATK
-  - SPD + HP
-  - ATK + ATK
-  - ATK + HP
-  - HP + HP
+  - Additional +1 Movment Speed
+  - Leave a Damage Trail as you walk
+  - Skills recharge faster
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance for Health drops (+10%)
   noEquipText: Nothing Equipped! Press 'i' to select a Card.
   isEquip: 1
   equipRef: {fileID: 1800417525}

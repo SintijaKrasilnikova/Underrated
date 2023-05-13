@@ -6,6 +6,7 @@ public class RandomizeStartCard : MonoBehaviour
 {
     //private GameObject cardSpawnLocation;
     [SerializeField] private CardRandomDropper dropper;
+    //[SerializeField] private bool startActive
     private BoxCollider collider;
     // Start is called before the first frame update
     void Start()

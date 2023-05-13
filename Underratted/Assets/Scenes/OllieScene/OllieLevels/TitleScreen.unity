@@ -3569,7 +3569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1321dc9bbb2dca24da67add135933e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
 --- !u!114 &2105489336
 MonoBehaviour:
   m_ObjectHideFlags: 0

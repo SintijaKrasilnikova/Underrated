@@ -177,26 +177,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &23043327498816015
 GameObject:
@@ -1004,26 +1004,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &346249264541558059
 GameObject:
@@ -1435,26 +1435,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &474989857670449884
 GameObject:
@@ -2526,26 +2526,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &697252514617805140
 GameObject:
@@ -2724,26 +2724,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &732836461610107798
 GameObject:
@@ -2922,26 +2922,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &800823019379734817
 GameObject:
@@ -3402,26 +3402,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &1041218339075621122
 GameObject:
@@ -4431,28 +4431,28 @@ MonoBehaviour:
   abilityTMP: {fileID: 7624901283585778271}
   buff1Text:
   - DUMMY0
-  - Speed + 1
-  - Speed + 1
-  - Speed + 1
-  - Attack + 1
-  - Attack + 1
-  - Health + 1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
   - DUMMY0
-  - Speed + 1
-  - Attack + 1
-  - Health + 1
-  - Attack + 1
-  - Health + 1
-  - Health + 1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health + 1
+  - Max Health + 1
   abilityText:
   - DUMMY0
-  - Increased attack speed
+  - Additional +1 Speed
   - 'Leave a damage Trail as you walk '
   - Skills recharge faster
-  - Chance to inflict critical hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict critical hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance for Health drops (+10%)
   isMiddleCard: 1
   isRightCard: 1
   finalCardCount: 0
@@ -4828,12 +4828,12 @@ MonoBehaviour:
   abilityNumb: 0
   abilityNames:
   - DUMMY0
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5% Chance)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Increases the chance for Health drops (+10%)
   abilities:
   - {fileID: 0}
   - {fileID: -6634488812079887158, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
@@ -4864,7 +4864,7 @@ MonoBehaviour:
   newCard: {fileID: 4274665555178966591}
   canChangeCard: 1
   canLoadNextLevel: 1
-  continueMsg: {fileID: 0}
+  continueMsg: {fileID: 8022785457508206809}
   titleMsg: {fileID: 269249121239110010}
   combineCardSound:
     idInternal: 0
@@ -5363,26 +5363,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &2197051956756291694
 GameObject:
@@ -6169,26 +6169,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &2545855909266287464
 GameObject:
@@ -6282,8 +6282,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6685,26 +6685,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &2589318894980137643
 GameObject:
@@ -6958,26 +6958,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &2671809606293116500
 GameObject:
@@ -7306,26 +7306,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &2722717637762821937
 GameObject:
@@ -7690,26 +7690,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &2766600010715198500
 GameObject:
@@ -8328,7 +8328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0f8b3f0844ee48468fa9d687885d2d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOver: {fileID: 0}
+  cardOver: {fileID: 11400000, guid: fbbd6c00dc301f846b306b87cfa68847, type: 2}
   playerCard: {fileID: 6578472988213690215}
   uiCard: {fileID: 0}
   leftCard: {fileID: 2546959351669481573}
@@ -8337,7 +8337,7 @@ MonoBehaviour:
   newCard: {fileID: 4274665555178966591}
   canChangeCard: 1
   canLoadNextLevel: 0
-  continueMsg: {fileID: 0}
+  continueMsg: {fileID: 8022785457508206809}
   titleMsg: {fileID: 269249121239110010}
   combineCardSound:
     idInternal: 0
@@ -8705,26 +8705,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &3136950045803188881
 GameObject:
@@ -8903,26 +8903,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &3230399079708356496
 GameObject:
@@ -9177,26 +9177,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &3296650165497605329
 GameObject:
@@ -11169,26 +11169,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &3859975171681937157
 GameObject:
@@ -11442,26 +11442,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &3981413107080109348
 GameObject:
@@ -11715,26 +11715,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &4067896463267482088
 GameObject:
@@ -11829,8 +11829,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5.1
-  m_fontSizeBase: 5.1
+  m_fontSize: 3.5
+  m_fontSizeBase: 3.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -12393,26 +12393,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &4265556263595828974
 GameObject:
@@ -13143,26 +13143,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &4559504872099748473
 GameObject:
@@ -13696,8 +13696,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -13915,26 +13915,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &4837392251438691437
 GameObject:
@@ -14702,28 +14702,28 @@ MonoBehaviour:
   abilityTMP: {fileID: 7624901283585778271}
   buff1Text:
   - DUMMY0
-  - Speed + 1
-  - Speed + 1
-  - Speed + 1
-  - Attack + 1
-  - Attack + 1
-  - Health + 1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
   - DUMMY0
-  - Speed + 1
-  - Attack + 1
-  - Health + 1
-  - Attack + 1
-  - Health + 1
-  - Health + 1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health + 1
+  - Max Health + 1
   abilityText:
   - DUMMY0
-  - Increased attack speed
+  - Additional +1 Speed
   - 'Leave a damage Trail as you walk '
   - Skills recharge faster
-  - Chance to inflict critical hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict critical hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance for Health drops (+10%)
   isMiddleCard: 0
   isRightCard: 0
   finalCardCount: 0
@@ -20537,26 +20537,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &5861741240487882369
 GameObject:
@@ -20713,7 +20713,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3873583421316954225
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20874,28 +20874,28 @@ MonoBehaviour:
   abilityTMP: {fileID: 7624901283585778271}
   buff1Text:
   - DUMMY0
-  - Speed + 1
-  - Speed + 1
-  - Speed + 1
-  - Attack + 1
-  - Attack + 1
-  - Health + 1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
   - DUMMY0
-  - Speed + 1
-  - Attack + 1
-  - Health + 1
-  - Attack + 1
-  - Health + 1
-  - Health + 1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health + 1
+  - Max Health + 1
   abilityText:
   - DUMMY0
-  - Increased attack speed
+  - Additional +1 Speed
   - 'Leave a damage Trail as you walk '
   - Skills recharge faster
-  - Chance to inflict critical hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict critical hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance for Health drops (+10%)
   isMiddleCard: 1
   isRightCard: 0
   finalCardCount: 0
@@ -21949,26 +21949,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &6556916807048499351
 GameObject:
@@ -22222,26 +22222,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &6730284776030422771
 GameObject:
@@ -23000,26 +23000,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &7244794791388517631
 GameObject:
@@ -23113,8 +23113,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -23332,26 +23332,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &7278527245145552975
 GameObject:
@@ -23743,26 +23743,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &7410109437140303523
 GameObject:
@@ -23941,26 +23941,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &7441754009843017393
 GameObject:
@@ -24388,26 +24388,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &7627665147925552301
 GameObject:
@@ -24586,26 +24586,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &7677744580802860768
 GameObject:
@@ -25337,26 +25337,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &8229404879586658622
 GameObject:
@@ -25535,26 +25535,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &8275602998592140248
 GameObject:
@@ -25733,26 +25733,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &8339937334049605844
 GameObject:
@@ -26123,26 +26123,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &8534236156522046303
 GameObject:
@@ -26321,26 +26321,26 @@ MonoBehaviour:
   buff2TMP: {fileID: 8004704823796717450}
   abilityTMP: {fileID: 5021934257680219167}
   buff1Text:
-  - Speed +1
-  - Speed +1
-  - Speed +1
-  - Attack +1
-  - Attack +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Movement Speed + 0.5
+  - Attack  + 0.5
+  - Attack + 0.5
+  - Max Health + 1
   buff2Text:
-  - Speed +1
-  - Attack +1
-  - Health +1
-  - Attack +1
-  - Health +1
-  - Health +1
+  - Movement Speed + 0.5
+  - Attack + 0.5
+  - Max Health + 1
+  - Attack + 0.5
+  - Max Health +1
+  - Max Health +1
   abilityText:
-  - Increased attack speed
+  - Additional + 1 Movement Speed
   - Leave a Damage Trail as you walk
   - Skills recharge faster
-  - Chance to inflict Critical Hits
-  - Killing enemies have a chance to restore Health
-  - Hearts have a chance to double heal
+  - Chance to inflict Critical Hits (+5%)
+  - Killing enemies have a chance to restore Health (+5%)
+  - Inceases the chance of Health drops (+10%)
   self: {fileID: 0}
 --- !u!1 &8579716590148686283
 GameObject:

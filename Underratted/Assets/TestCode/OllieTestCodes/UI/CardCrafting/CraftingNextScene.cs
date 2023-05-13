@@ -42,6 +42,7 @@ public class CraftingNextScene : MonoBehaviour
                 rightCard.SetActive(true);
                 middleCard.SetActive(true);
                 mixData.canChangeCard = true;
+                playerCard.GetComponent<SelectingCard>().ChangeCard();
                 
 
                 if (leftCard.GetComponent<CardRandom>().wasCrafted == false)

@@ -50,4 +50,14 @@ public class SpeedPickup : MonoBehaviour
         yield return new WaitForSeconds(delay);
         this.gameObject.SetActive(false);
     }
+
+    public void SpawnCard()
+    {
+        col.enabled = false;
+    }
+
+    public void EnableCollision()
+    {
+        col.enabled = true;
+    }
 }

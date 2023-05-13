@@ -10,7 +10,7 @@ public class CardRandomDropper : MonoBehaviour
     //public GameObject spinCardRef = default;
 
     //public int dropChances;
-    private int dropChances = 100;
+    private int dropChances = 20;
     private int dropChancesPotion = 20;
     public string prefferdCardType;
 
@@ -37,6 +37,9 @@ public class CardRandomDropper : MonoBehaviour
 
     void Start()
     {
+        //cardHistroyRef.SetSpeedUp(false);
+        //cardHistroyRef.SetAttackUp(false);
+        //cardHistroyRef.SetHealthUp(false);
     }
 
 

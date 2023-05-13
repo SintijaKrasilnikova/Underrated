@@ -8789,6 +8789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85de79b4887c16489a329d9fd93893e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardOver: {fileID: 0}
   animator: {fileID: 0}
   sprites:
   - {fileID: -8308030763261903793, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
@@ -16472,6 +16473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2303876f229bf34f9979b5a5151f694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementDist: 6
   movingRight: 0
 --- !u!1 &346975153
 GameObject:
@@ -47689,11 +47691,11 @@ PrefabInstance:
     - target: {fileID: 2643680959532834292, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: cardOver
       value: 
-      objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 2825368885467620151, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: cardOver
       value: 
-      objectReference: {fileID: 11400000, guid: 5482fbd12c204634da6df5e886185b73, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 2825368885467620151, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: speedCard
       value: 0
@@ -47709,6 +47711,10 @@ PrefabInstance:
     - target: {fileID: 3350864199433112401, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: currentHealth
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687017908316855919, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4709378532324562514, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: player
@@ -47797,6 +47803,10 @@ PrefabInstance:
     - target: {fileID: 4709378532459093735, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8084628858176444799, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5aedd60b48087684c966c70719a4c3b1, type: 3}
@@ -54856,6 +54866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2303876f229bf34f9979b5a5151f694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementDist: 6
   movingRight: 0
 --- !u!1 &1088416495
 GameObject:
@@ -56527,7 +56538,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b34b6e02b28f27b42b325a010eaad7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canBePaused: 1
   pauseMenuUI: {fileID: 1952697509}
+  quitConfirm: {fileID: 0}
   resumeButton: {fileID: 853182635}
   eventSystems: {fileID: 334902794}
   InventoryOpenClose:
@@ -60911,6 +60924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85de79b4887c16489a329d9fd93893e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardOver: {fileID: 0}
   animator: {fileID: 0}
   sprites:
   - {fileID: -8308030763261903793, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
@@ -63571,6 +63585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2303876f229bf34f9979b5a5151f694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementDist: 6
   movingRight: 1
 --- !u!1 &1250834809
 GameObject:
@@ -69983,6 +69998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2303876f229bf34f9979b5a5151f694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementDist: 6
   movingRight: 1
 --- !u!1 &1374178794
 GameObject:
@@ -73859,6 +73875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2303876f229bf34f9979b5a5151f694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementDist: 6
   movingRight: 1
 --- !u!1 &1451276649
 GameObject:
@@ -86533,15 +86550,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7401994044644677000, guid: d52270345a776c744b8a2489177153b3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.1298023
+      value: 0.12980229
       objectReference: {fileID: 0}
     - target: {fileID: 7401994044644677000, guid: d52270345a776c744b8a2489177153b3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000019074568
+      value: 0.000000019074568
       objectReference: {fileID: 0}
     - target: {fileID: 7401994044644677000, guid: d52270345a776c744b8a2489177153b3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000024970483
+      value: -0.000000002497048
       objectReference: {fileID: 0}
     - target: {fileID: 7401994044644677000, guid: d52270345a776c744b8a2489177153b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -94264,6 +94281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85de79b4887c16489a329d9fd93893e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardOver: {fileID: 0}
   animator: {fileID: 0}
   sprites:
   - {fileID: -8308030763261903793, guid: 0a2489e8dfedf2d4b8771c8532c15de1, type: 3}
@@ -97767,6 +97785,20 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  arenaSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  forestSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  mainCamera: {fileID: 0}
+  hasRun: 0
 --- !u!4 &1939337441
 Transform:
   m_ObjectHideFlags: 0
@@ -101871,6 +101903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2303876f229bf34f9979b5a5151f694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementDist: 6
   movingRight: 1
 --- !u!1 &2024837327
 GameObject:
@@ -102545,6 +102578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2303876f229bf34f9979b5a5151f694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementDist: 6
   movingRight: 0
 --- !u!1 &2035330492
 GameObject:
@@ -106810,6 +106844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2303876f229bf34f9979b5a5151f694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementDist: 6
   movingRight: 1
 --- !u!1 &2134662211
 GameObject:

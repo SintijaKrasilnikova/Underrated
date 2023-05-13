@@ -21,6 +21,8 @@ public class TitleScreenStart : MonoBehaviour
         cardOver.halfCards.Clear();
         cardOver.fullCards.Clear();
 
+        cardOver.CurrentHealth = 4;
+
         cardOver.loadoutCardRecharge[0] = 1;
         cardOver.loadoutCardRecharge[1] = 1;
         cardOver.loadoutCardRecharge[2] = 1;
