@@ -45,9 +45,9 @@ public class CardStartDescriptions : MonoBehaviour, IEventSystemHandler, ISelect
             }
             else
             {
-                buff1TMP.text = buff1Text[equipRef.equippedID];
-                buff2TMP.text = buff2Text[equipRef.equippedID];
-                Ability.text = abilityText[equipRef.equippedID];
+                buff1TMP.text = buff1Text[equipRef.equippedID - 1];
+                buff2TMP.text = buff2Text[equipRef.equippedID - 1];
+                Ability.text = abilityText[equipRef.equippedID - 1];
             }
         }
 
@@ -74,8 +74,8 @@ public class CardStartDescriptions : MonoBehaviour, IEventSystemHandler, ISelect
 
     public void cardEquipped()
     {
-        buff1TMP.text = buff1Text[equipRef.equippedID];
-        buff2TMP.text = buff2Text[equipRef.equippedID];
-        Ability.text = abilityText[equipRef.equippedID];
+        buff1TMP.text = buff1Text[equipRef.equippedID - 1];
+        buff2TMP.text = buff2Text[equipRef.equippedID - 1];
+        Ability.text = abilityText[equipRef.equippedID - 1];
     }
 }
