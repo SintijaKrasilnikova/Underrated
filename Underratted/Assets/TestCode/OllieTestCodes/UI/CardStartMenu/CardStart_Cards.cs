@@ -105,7 +105,7 @@ public class CardStart_Cards : MonoBehaviour
 
     public void cardSelected()
     {
-        if(cardUse != 0 && currentButton.GetComponent<CardStart_Buttons>().equippedID != inventoryID)
+        if(cardUse != 0 && currentButton.GetComponent<CardStart_Buttons>().equippedID != cardID)
         {
             cardEquip.Post(gameObject);
             addStat();
