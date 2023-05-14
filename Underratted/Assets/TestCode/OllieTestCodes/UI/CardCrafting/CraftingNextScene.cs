@@ -45,7 +45,11 @@ public class CraftingNextScene : MonoBehaviour
                 playerCard.GetComponent<SelectingCard>().ChangeCard();
                 
 
-                if (leftCard.GetComponent<CardRandom>().wasCrafted == false)
+                if(middleCard.GetComponent<CardRandom>().wasCrafted == false)
+                {
+                    eventSystem.SetSelectedGameObject(middleCard);
+                }
+                else if (leftCard.GetComponent<CardRandom>().wasCrafted == false)
                 {
                     eventSystem.SetSelectedGameObject(leftCard);
                 }
@@ -53,7 +57,8 @@ public class CraftingNextScene : MonoBehaviour
                 {
                     eventSystem.SetSelectedGameObject(rightCard);
                 }
-                
+
+
                 mixImage.SetActive(false);
                 mixedCard.SetActive(false);
                 newCardData.canRemoveListEle = true;
