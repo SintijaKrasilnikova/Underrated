@@ -122,22 +122,22 @@ public class CardStart_Cards : MonoBehaviour
 
     public void addStat()
     {
-        switch (cardID)
+        switch (cardID -1)
         {
             case 0: //SPD+SPD Card
                 {
-                    speedStat.statNumb += 0.5f;
+                    speedStat.statNumb += 2f;
                     break;
                 }
             case 1: //SPD+ATK Card
                 {
-                    speedStat.statNumb += 0.2f;
+                    speedStat.statNumb += 0.5f;
                     attackStat.statNumb += 0.5f;
                     break;
                 }
             case 2: //SPD+HP Card
                 {
-                    speedStat.statNumb += 0.2f;
+                    speedStat.statNumb += 0.5f;
                     healthStat.statNumb += 1f;
                     break;
                 }
@@ -149,6 +149,7 @@ public class CardStart_Cards : MonoBehaviour
             case 4: //ATK+HP Card
                 {
                     attackStat.statNumb += 0.5f;
+                    healthStat.statNumb += 1f;
                     break;
                 }
             case 5: //HP+HP Card

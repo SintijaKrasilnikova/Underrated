@@ -52,13 +52,16 @@ public class DeathCardSelector : MonoBehaviour, IEventSystemHandler, ISelectHand
             }
         }
 
+
+
         int indexElement;
         var currentSprite = gameObject.GetComponent<Image>();
 
 
         //pick a random card from the list the player has
         indexElement = Random.Range(cardOver.cardsEquippedInLoadout, cardOver.fullCards.Count - 1);
-        cardID = cardOver.fullCards[indexElement];
+        cardID = cardOver.fullCards[indexElement] +1;
+
 
         //remove element from list
         cardOver.fullCards.RemoveAt(indexElement);
