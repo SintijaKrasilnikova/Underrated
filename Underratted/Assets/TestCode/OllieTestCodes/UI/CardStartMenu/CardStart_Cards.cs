@@ -37,8 +37,14 @@ public class CardStart_Cards : MonoBehaviour
     void Start()
     {
         cardID = cardOver.loadoutCards[inventoryID];
-        cardUse = cardOver.loadoutCardUse[inventoryID];
-        cardRecharge = cardOver.loadoutCardRecharge[inventoryID];
+        cardUse = cardOver.loadoutCardUse[inventoryID +1];
+
+        if (cardUse > 0)
+        {
+            cardOver.loadoutCardRecharge[inventoryID + 1] = 1.1f;
+        }
+
+        cardRecharge = cardOver.loadoutCardRecharge[inventoryID +1];
 
         if(cardUse <= 0)
         {
@@ -59,7 +65,15 @@ public class CardStart_Cards : MonoBehaviour
             isRecharging = false;
             rechargeBar.SetActive(false);
             hasBeenSelected = false;
+
+            if(cardUse <= 0)
+            {
+                cardUse = 2;
+                useRef.SetActive(true);
+            }
         }
+
+
     }
 
     // Update is called once per frame

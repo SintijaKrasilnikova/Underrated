@@ -23,20 +23,6 @@ public class TitleScreenStart : MonoBehaviour
 
         cardOver.CurrentHealth = 4;
 
-        cardOver.loadoutCardRecharge[0] = 1;
-        cardOver.loadoutCardRecharge[1] = 1;
-        cardOver.loadoutCardRecharge[2] = 1;
-        cardOver.loadoutCardRecharge[3] = 1;
-        cardOver.loadoutCardRecharge[4] = 1;
-        cardOver.loadoutCardRecharge[5] = 1;
-
-        cardOver.loadoutCardUse[0] = 2;
-        cardOver.loadoutCardUse[1] = 2;
-        cardOver.loadoutCardUse[2] = 2;
-        cardOver.loadoutCardUse[3] = 2;
-        cardOver.loadoutCardUse[4] = 2;
-        cardOver.loadoutCardUse[5] = 2;
-
         cardOver.HealthAttack = false;
         cardOver.HealthHealth = false;
         cardOver.HealthSpeed = false;

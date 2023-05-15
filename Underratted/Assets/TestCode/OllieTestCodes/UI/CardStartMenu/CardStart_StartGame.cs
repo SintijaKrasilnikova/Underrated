@@ -56,11 +56,17 @@ public class CardStart_StartGame : MonoBehaviour
 
         if (passive1.selectedCard != null && passive1.selectedCard.cardUse <= 0)
         {
-            cardOver.loadoutCardRecharge[passive1.equippedID] = 0f;
+            if(cardOver.loadoutCardRecharge[passive1.equippedID] > 1)
+            {
+                cardOver.loadoutCardRecharge[passive1.equippedID] = 0f;
+            }
         }
         if (passive2.selectedCard != null && passive2.selectedCard.cardUse <= 0)
         {
-            cardOver.loadoutCardRecharge[passive2.equippedID] = 0f;
+            if (cardOver.loadoutCardRecharge[passive2.equippedID] > 1)
+            {
+                cardOver.loadoutCardRecharge[passive2.equippedID] = 0f;
+            }
         }
 
         cardOver.cardsEquippedInLoadout = cardAmount;
