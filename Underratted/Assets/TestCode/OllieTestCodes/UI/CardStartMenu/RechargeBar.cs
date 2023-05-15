@@ -18,7 +18,7 @@ public class RechargeBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        fillValue = cardOver.loadoutCardRecharge[cardStart.cardID];
+        fillValue = cardOver.loadoutCardRecharge[cardStart.inventoryID +1];
         bar.fillAmount = fillValue;
     }
 }

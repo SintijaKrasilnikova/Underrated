@@ -114,6 +114,7 @@ public class CardOverseer : ScriptableObject
         loadoutCardRecharge[3] += rechargeAmount;
         loadoutCardRecharge[4] += rechargeAmount;
         loadoutCardRecharge[5] += rechargeAmount;
+        loadoutCardRecharge[6] += rechargeAmount;
 
     }
 }

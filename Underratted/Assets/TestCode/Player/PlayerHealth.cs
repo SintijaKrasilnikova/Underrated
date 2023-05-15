@@ -190,7 +190,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (lifeStealActive && randomChance < healthStealChance)
         {
-            Instantiate(healVFX, gameObject.transform.position, gameObject.transform.rotation);
+            Instantiate(healVFX, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 0.1f, gameObject.transform.position.z), gameObject.transform.rotation);
             currentHealth += healthGainFromSteal;
         }
 
@@ -214,7 +214,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void GainHealthFromPickup()
     {
-        Instantiate(healVFX, gameObject.transform.position, gameObject.transform.rotation);
+        Instantiate(healVFX, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 0.1f, gameObject.transform.position.z), gameObject.transform.rotation);
 
         if (currentHealth <= maxHealth)
         {

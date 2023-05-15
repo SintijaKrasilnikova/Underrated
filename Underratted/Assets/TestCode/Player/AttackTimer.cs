@@ -94,7 +94,7 @@ public class AttackTimer : MonoBehaviour
                     Invoke(nameof(EndAttack), basicAttackTime);
                 }
 
-                else if (Input.GetKeyDown(KeyCode.O) && spinAttackActive == true && spinResting == false)
+                else if (Input.GetKeyDown(KeyCode.O) && spinAttackActive == true && spinResting == false && plyerAnimator.GetBool("Dodging") == false)
                 {
                     SetCurrentAttackActive(true, "spin");
                     health.StartImunity();
@@ -248,6 +248,7 @@ public class AttackTimer : MonoBehaviour
     {
         movementRef.SetSpeedNormal();
         health.EndImunity();
+        movementRef.SetCanDoge(true);
 
         if (plyerAnimator.GetBool("Spin") == true)
         {

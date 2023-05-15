@@ -41,7 +41,7 @@ public class CardStart_StartGame : MonoBehaviour
             cardAmount++;
 
             cardOver.fullCards.Add(passive1.equippedID -1);
-            cardOver.loadoutCardUse[passive1.equippedID] = passive1.selectedCard.cardUse;
+            cardOver.loadoutCardUse[passive1.selectedCard.inventoryID + 1] = passive1.selectedCard.cardUse;
             
             testActivate1();
         }
@@ -49,23 +49,23 @@ public class CardStart_StartGame : MonoBehaviour
         {
             cardAmount++;
             cardOver.fullCards.Add(passive2.equippedID -1);
-            cardOver.loadoutCardUse[passive2.equippedID] = passive2.selectedCard.cardUse;
+            cardOver.loadoutCardUse[passive2.selectedCard.inventoryID + 1] = passive2.selectedCard.cardUse;
             testActivate2();
         }
 
 
         if (passive1.selectedCard != null && passive1.selectedCard.cardUse <= 0)
         {
-            if(cardOver.loadoutCardRecharge[passive1.equippedID] > 1)
+            if(cardOver.loadoutCardRecharge[passive1.selectedCard.inventoryID + 1] > 1)
             {
-                cardOver.loadoutCardRecharge[passive1.equippedID] = 0f;
+                cardOver.loadoutCardRecharge[passive1.selectedCard.inventoryID + 1] = 0f;
             }
         }
         if (passive2.selectedCard != null && passive2.selectedCard.cardUse <= 0)
         {
-            if (cardOver.loadoutCardRecharge[passive2.equippedID] > 1)
+            if (cardOver.loadoutCardRecharge[passive2.selectedCard.inventoryID + 1] > 1)
             {
-                cardOver.loadoutCardRecharge[passive2.equippedID] = 0f;
+                cardOver.loadoutCardRecharge[passive2.selectedCard.inventoryID + 1] = 0f;
             }
         }
 

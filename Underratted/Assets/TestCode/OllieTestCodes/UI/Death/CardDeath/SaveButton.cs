@@ -38,6 +38,9 @@ public class SaveButton : MonoBehaviour
         {
             cardOver.loadoutCards.Add(currentButton.GetComponent<DeathCardSelector>().cardID);
         }
+
+        cardOver.loadoutCardRecharge[currentButton.GetComponent<DeathCardSelector>().cardID] = 1.1f;
+        cardOver.loadoutCardUse[currentButton.GetComponent<DeathCardSelector>().cardID] = 2;
         SceneManager.LoadScene(0);
     }
 }

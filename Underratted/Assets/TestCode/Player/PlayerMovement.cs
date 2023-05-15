@@ -256,7 +256,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Dodge()
     {
-        if (dodgeAvailable && dodgeTimerReady)
+        if (dodgeAvailable && dodgeTimerReady && plyerAnimator.GetBool("Spin") == false)
         {
             if (Input.GetKeyDown(KeyCode.P) && canDodge == true)
             {

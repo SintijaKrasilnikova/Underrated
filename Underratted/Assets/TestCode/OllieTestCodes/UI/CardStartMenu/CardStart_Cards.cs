@@ -60,7 +60,7 @@ public class CardStart_Cards : MonoBehaviour
             hasBeenSelected = false;
         }
 
-        if (cardRecharge > 1.0f)
+        if (cardRecharge >= 1.0f)
         {
             isRecharging = false;
             rechargeBar.SetActive(false);
@@ -121,6 +121,12 @@ public class CardStart_Cards : MonoBehaviour
     {
         if(cardUse != 0 && currentButton.GetComponent<CardStart_Buttons>().equippedID != cardID)
         {
+            if (currentButton.GetComponent<CardStart_Buttons>().selectedCard != null)
+            {
+                currentButton.GetComponent<CardStart_Buttons>().selectedCard.cardUse++;
+                currentButton.GetComponent<CardStart_Buttons>().removeStat();
+            }
+
             cardEquip.Post(gameObject);
             addStat();
             currentButton.GetComponent<CardStart_Buttons>().hasCard = true;
@@ -131,6 +137,8 @@ public class CardStart_Cards : MonoBehaviour
             currentButton.GetComponent<CardStart_Buttons>().hasCard = true;
             currentButton.GetComponent<CardStart_Buttons>().selectedCard = this;
             cardUse--;
+
+
         }
     }
 

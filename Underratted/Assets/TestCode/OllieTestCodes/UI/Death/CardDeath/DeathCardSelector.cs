@@ -118,6 +118,7 @@ public class DeathCardSelector : MonoBehaviour, IEventSystemHandler, ISelectHand
 
     public void firstCardSlideIn()
     {
+        cardOver.rechargeCards();
         noCardScreen.GetComponent<NoCardRetunToTitle>().isSet = true;
         if(finalCardCount > cardOver.cardsEquippedInLoadout)
         {
@@ -128,8 +129,6 @@ public class DeathCardSelector : MonoBehaviour, IEventSystemHandler, ISelectHand
             eventSystem.firstSelectedGameObject = firstToBeSelected;
             firstButton.Select();
         }
-        cardOver.rechargeCards();
-
     }
 
     public void leftSlideIn()
