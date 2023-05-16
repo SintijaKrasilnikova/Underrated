@@ -67,7 +67,6 @@ public class PortalEnd : MonoBehaviour
         {
 
             endScrrenActivated = true;
-            lulu.transform.position = new Vector3(300, -80, 0);
 
             lulu.GetComponent<Pause>().canBePaused = false;
             overSeer.CurrentHealth = health.GetCurrentHealth();
@@ -106,8 +105,8 @@ public class PortalEnd : MonoBehaviour
                 endVideo.SetActive(true);
                 endVideoData.Play();
             }
-            
 
+            lulu.transform.position = new Vector3(300, -80, 0);
 
         }
     }
